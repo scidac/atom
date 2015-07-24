@@ -1,5 +1,0 @@
-I'm just testing if the tarball link on the project webpage that was automatically created by github pages contains the private files (which would be a problem and have to be removed). It does contain the Readme.md file, but that may be public for some reason.
-
-Update 1: Indeed this file is available in the tarball, which means it's NOT private. Those links to the tarballs will have to be removed.
-
-Update 2: Nope, turns out it is handled correctly. The links only work if you are logged into github with an appropriate user in another browser tab or the like.
