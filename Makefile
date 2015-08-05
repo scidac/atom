@@ -18,7 +18,11 @@ EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
 EPED_VER=master
 
-ALL= OMFIT IPS_ATOM GACODE GACODE_ADD EPED
+HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
+HARVEST_CLIENT_DIR=harvest_client
+HARVEST_CLIENT_VER=master
+
+ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 
 GIT_CLONE = git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule init ; git submodule update
 GIT_PULL  = echo $(2) ; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
@@ -76,6 +80,16 @@ gacode_add:
 
 GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR) 
 	$(call GIT_PULL, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
+
+#===============
+# HARVEST_CLIENT
+#===============
+harvest_client:
+	$(call GIT_CLONE, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
+
+HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
+	$(call GIT_PULL, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
+	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`PWD`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(HARVEST_CLIENT_DIR); make all
 
 #===========
 # EPED
