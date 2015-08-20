@@ -47,7 +47,7 @@ FORCE:
 #======
 # OMFIT
 #======
-OMFIT-source:
+$(OMFIT_DIR):
 	$(call GIT_CLONE, $(OMFIT_GIT), $(OMFIT_DIR), $(OMFIT_VER))
 
 OMFIT: FORCE | $(OMFIT_DIR)
@@ -56,7 +56,7 @@ OMFIT: FORCE | $(OMFIT_DIR)
 #=========
 # IPS_ATOM
 #=========
-ips-atom:
+$(IPS_ATOM_DIR):
 	$(call GIT_CLONE, $(IPS_ATOM_GIT), $(IPS_ATOM_DIR), $(IPS_ATOM_VER))
 
 IPS_ATOM: FORCE | $(IPS_ATOM_DIR)
@@ -65,7 +65,7 @@ IPS_ATOM: FORCE | $(IPS_ATOM_DIR)
 #=======
 # GACODE
 #=======
-gacode:
+$(GACODE_DIR):
 	$(call GIT_CLONE, $(GACODE_GIT), $(GACODE_DIR), $(GACODE_VER))
 
 GACODE: FORCE | $(GACODE_DIR)
@@ -75,7 +75,7 @@ GACODE: FORCE | $(GACODE_DIR)
 #===========
 # GACODE_ADD
 #===========
-gacode_add:
+$(GACODE_ADD_DIR):
 	$(call GIT_CLONE, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
 
 GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR) 
@@ -84,7 +84,7 @@ GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR)
 #===============
 # HARVEST_CLIENT
 #===============
-harvest_client:
+$(HARVEST_CLIENT_DIR):
 	$(call GIT_CLONE, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
 
 HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
@@ -94,7 +94,7 @@ HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
 #===========
 # EPED
 #===========
-EPED-source:
+$(EPED_DIR):
 	$(call GIT_CLONE, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
 
 EPED: FORCE | $(EPED_DIR) $(GACODE_DIR) 
