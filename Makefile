@@ -70,7 +70,7 @@ $(GACODE_DIR):
 
 GACODE: FORCE | $(GACODE_DIR)
 	$(call GIT_PULL, $(GACODE_GIT), $(GACODE_DIR), $(GACODE_VER))
-	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`PWD`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(GACODE_DIR); make
+	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`pwd`/$(GACODE_DIR);. $(GACODE_DIR)/shared/bin/gacode_setup; cd $(GACODE_DIR); make
 
 #===========
 # GACODE_ADD
@@ -89,7 +89,7 @@ $(HARVEST_CLIENT_DIR):
 
 HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
 	$(call GIT_PULL, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
-	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`PWD`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(HARVEST_CLIENT_DIR); make all
+	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`pwd`/$(GACODE_DIR);. $(GACODE_DIR)/shared/bin/gacode_setup; cd $(HARVEST_CLIENT_DIR); make all
 
 #===========
 # EPED
