@@ -99,4 +99,4 @@ $(EPED_DIR):
 
 EPED: FORCE | $(EPED_DIR) $(GACODE_DIR) 
 	$(call GIT_PULL, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
-	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`PWD`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(EPED_DIR); make
+	export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`pwd`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(EPED_DIR); make
