@@ -6,6 +6,12 @@ and the components already integrated with them, as well as the advanced composi
 There are many established workflows, dedicated users and use cases represented by both the composite components,
 as well as for advanced components like GYRO, COGENT and M3D-C1.
 
+We endeavour to support -- rather than subvert -- current workflows, build essential new infrastructure to address
+critical modeling gaps, and guide integration of high-performance computing resources to enable new physics capabilities.
+The guiding philosophy of AToM is to take a bottom-up, collaborative approach that focuses on leveraging and integrating
+the wide spectrum of existing research activities throughout the US fusion community.
+In this way, will take the US fusion program’s existing, mission-critical integrated modeling capabilities and make them even better.
+
 .. figure:: images/AToM_world.png
   :width: 80%
   :align: center
