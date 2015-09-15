@@ -22,10 +22,12 @@ HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_CLIENT_DIR=harvest_client
 HARVEST_CLIENT_VER=master
 
+ATOM_WEBDIR=$(PWD)/../atom-website
+
 ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 
-GIT_CLONE = git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule init ; git submodule update
-GIT_PULL  = echo $(2) ; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
+GIT_CLONE = echo $(PWD)/$(2) ; git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule init ; git submodule update
+GIT_PULL  = echo $(PWD)/$(2) ; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
 
 help:
 	@echo "Usage: make all PLATFORM="
@@ -43,6 +45,18 @@ clean:
 	rm -rf $(EPED_DIR)
 
 FORCE:
+
+#======
+# AToM website
+#======
+$(ATOM_WEBDIR)/html:
+	mkdir -p $(ATOM_WEBDIR); cd $(ATOM_WEBDIR); git clone git@github.com:scidac/atom.git -b gh-pages html
+
+website: FORCE | $(ATOM_WEBDIR)/html
+	cd docs; make commit
+
+online: FORCE | $(ATOM_WEBDIR)/html
+	cd docs; make commit; make push
 
 #======
 # OMFIT
