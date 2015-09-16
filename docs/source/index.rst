@@ -5,7 +5,7 @@
   :target: _images/AToM_banner.png
 
 
-Advanced TOkamak Modeling project
+Advanced Tokamak Modeling Project
 ---------------------------------
 
 Fusion is the process that powers the sun and stars, and magnetic confinement devices, such as the tokamak,

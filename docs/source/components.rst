@@ -13,12 +13,13 @@ the wide spectrum of existing research activities throughout the US fusion commu
 In this way, will take the US fusion program’s existing, mission-critical integrated modeling capabilities and make them even better.
 
 .. figure:: images/AToM_world.png
-  :width: 80%
+  :width: 100%
+  :figwidth: 80%
   :align: center
   :alt: AToM world
   :target: _images/AToM_world.png
 
-  A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM
+  *A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM*
 
 =====
 OMFIT
@@ -112,6 +113,22 @@ sense, practical performance modeling MUST use TGLF.  To my knowledge TGLF
 is far superior to any other transport model.  It is a significant
 improvement on its predecesor GLF23, especially in the weak or negative
 shear regime and for strongly shaped plasmas.
+
+====
+NEO
+====
+
+`[NEO] <https://fusion.gat.com/theory/Neooverview>`_
+is a :math:`\large \delta f` Eulerian code which provides first-principles based numerical calculations
+of the neoclassical transport (particle flux, energy flux, bootstrap current,
+poloidal flows, etc.). NEO solves a hierarchy of equations derived by expanding
+the drift-kinetic equation in powers of , the ratio of the ion gyroradius to
+the system size. NEO includes the self-consistent coupling of electrons and
+multiple ion species via complete cross-species collisional coupling, the
+calculation of the first-order electrostatic potential via coupling with
+the Poisson equation, general geometry effects, and rapid toroidal rotation
+effects (including centrifugal effects). NEO has recently been upgraded to
+include the full linearized Fokker-Planck collision operator.
 
 ====
 EPED
