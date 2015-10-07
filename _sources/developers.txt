@@ -35,6 +35,8 @@ The `Makefile` is capable of downloading the source of the individual AToM compo
 The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms:
 
 ===================             ===================
+C1                              C2
+===================             ===================
 ALCF_BGP                        HPC_ITE
 ALCF_CETUS                      IFORT_CORE2
 BABBAGE                         IFORT_PENRYN
