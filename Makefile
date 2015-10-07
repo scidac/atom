@@ -43,6 +43,7 @@ clean:
 	rm -rf $(OMFIT_DIR)
 	rm -rf $(GACODE_ADD_DIR)
 	rm -rf $(EPED_DIR)
+	rm -rf $(HARVEST_CLIENT_DIR)
 
 FORCE:
 
