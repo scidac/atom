@@ -33,6 +33,7 @@ This will make a `atom` directory with a `Makefile` in it::
 
 The `Makefile` is capable of downloading the source of the individual AToM components and building them.
 The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms:
+
 * ALCF_BGP
 * ALCF_CETUS
 * BABBAGE
