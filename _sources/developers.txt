@@ -7,11 +7,9 @@ AToM is not a new physics code, but rather a concept:
 
 As such, the project supports numerous physics codes, frameworks and tools which have been developed independently by
 the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
-deployment and support.
+deployment and support. These page is meant to describe how to obtain and deploy the AToM tools.
 
-These pages describe how to obtain and deploy the AToM tools.
-
-.. note:: Most users can get access to the AToM tools and use them through public installations, which are supported and maintened up-to-date.
+.. note:: **Users** are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
