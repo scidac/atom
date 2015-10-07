@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Developers corner &mdash; AToM</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="top" title="AToM" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img height=60, src="_static/AToM_logo.png">
+          <!-- AToM-->
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="research.html">Research</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="team.html">Team</a></li>
+            
+            
+              
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">In this page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Developers corner</a><ul>
+<li><a class="reference internal" href="#supported-public-atom-installations">Supported public AToM installations</a></li>
+<li><a class="reference internal" href="#build-atom-source">Build AToM source</a></li>
+<li><a class="reference internal" href="#maintaining-an-atom-installation-up-to-date">Maintaining an AToM installation up-to-date</a></li>
+<li><a class="reference internal" href="#to-update-and-build-this-documentation">To update and build this documentation</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+           <!-- 
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+           -->
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="developers-corner">
+<h1>Developers corner<a class="headerlink" href="#developers-corner" title="Permalink to this headline">¶</a></h1>
+<p>The AToM project is...</p>
+<div class="section" id="supported-public-atom-installations">
+<h2>Supported public AToM installations<a class="headerlink" href="#supported-public-atom-installations" title="Permalink to this headline">¶</a></h2>
+<p>We are supporting an AToM public installation on the EDISON supercomputer at NERSC.</p>
+<p>Users must be part of the <strong>atom</strong> unix user group to access the NERSC public installation.</p>
+<p>If you do not have an account at NERSC already, fill out <a class="reference external" href="https://nim.nersc.gov/nersc_account_request.php">this form</a> to request one.
+Use <cite>AToM</cite> for the repository name.</p>
+</div>
+<div class="section" id="build-atom-source">
+<h2>Build AToM source<a class="headerlink" href="#build-atom-source" title="Permalink to this headline">¶</a></h2>
+<p>Contact <span class="xref std std-ref">contact</span> to obtain access to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a> (GitHub account needed)</p>
+<p>To clone the repository:</p>
+<div class="highlight-python"><div class="highlight"><pre>git clone git@github.com:scidac/atom.git
+</pre></div>
+</div>
+<p>This will make a <cite>atom</cite> directory with a <cite>Makefile</cite> in it:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom
+ls
+</pre></div>
+</div>
+<p>The <cite>Makefile</cite> is capable of downloading the source of the individual AToM components and building them.
+The AToM <cite>Makefile</cite> leverages the <a class="reference external" href="https://github.com/gafusion/gacode">GACODE</a> build system, and as such it supports compilation of its components on several platforms:</p>
+<div class="highlight-python"><div class="highlight"><pre>ALCF_BGP    ALCF_CETUS      BABBAGE BANACH  CAOS    CARVER  CMODWS  DELPHI  DROP    EDISON_CRAY     EDISON_INTEL
+FT  GFORTRAN_CORE2  GFORTRAN_OSX    GFORTRAN_OSX_64 GFORTRAN_OSX_BELLI      GFORTRAN_OSX_MACPORTS
+GFORTRAN_OSX_TECHX  GFORTRAN_PENRYN GFORTRAN_TECHX  HOPPER_CRAY     HOPPER_INTEL    HPC_ITE IFORT_CORE2     IFORT_PENRYN
+JAC LINDGREN        LOHAN   LOKI    LOKI_SCRATCH    METIUS  NEWT    OSX_MOUNTAINLION        PACER   PGFORTRAN_OSX
+PG_OPT6     PG_OPT64_FFTW   PG_OPT64_MUMPS  PPPL    PPPL_PATHSCALE  RANGER  SATURN  TITAN_CRAY      VENUS
+</pre></div>
+</div>
+<p>AToM components include:</p>
+<div class="highlight-python"><div class="highlight"><pre>OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
+</pre></div>
+</div>
+<p>To make individual components (for example <cite>GACODE</cite> on the <cite>VENUS</cite> platform):</p>
+<div class="highlight-python"><div class="highlight"><pre>make GACODE PLATFORM=VENUS
+</pre></div>
+</div>
+<p>To make all of the AToM components:</p>
+<div class="highlight-python"><div class="highlight"><pre>make all PLATFORM=VENUS
+</pre></div>
+</div>
+<p>The <cite>Makefile</cite> takes care of satisfying any interdependency between the AToM components.</p>
+</div>
+<div class="section" id="maintaining-an-atom-installation-up-to-date">
+<h2>Maintaining an AToM installation up-to-date<a class="headerlink" href="#maintaining-an-atom-installation-up-to-date" title="Permalink to this headline">¶</a></h2>
+<p>The AToM <cite>Makefile</cite> is also capable to keep the components up-to-date and in sync with each others-versions.
+To update the AToM installation:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom
+git pull
+make all PLATFORM=VENUS
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-update-and-build-this-documentation">
+<h2>To update and build this documentation<a class="headerlink" href="#to-update-and-build-this-documentation" title="Permalink to this headline">¶</a></h2>
+<p>The AToM documentation (<a class="reference external" href="http://scidac.github.io/atom/">published online at this website</a>)
+is self contained in the AToM repository.</p>
+<p>The python packages required for buidling the AToM documentation can be installed with:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo yum install sphinx
+sudo yum install python-sphinx
+sudo pip install sphinx-bootstrap-theme
+sudo pip install sphinxcontrib.bibtex
+</pre></div>
+</div>
+<p>To build a local copy of the website:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom
+make website
+</pre></div>
+</div>
+<p>which will generate the HTML pages in:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom-website/html
+</pre></div>
+</div>
+<p>To see the website locally point your browser to open the <cite>index.html</cite> contained in that directory. For example</p>
+<div class="highlight-python"><div class="highlight"><pre>firefox file:///Users/username/Coding/atom-website/html/index.html
+</pre></div>
+</div>
+<p>To publish the documentation online (must have write permissions to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a>).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+        &copy; Copyright 2014-2015 AToM TEAM.<br/>
+      Last updated on Oct 06, 2015.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

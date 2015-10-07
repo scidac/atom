@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
@@ -60,6 +61,7 @@
             
                 <li><a href="research.html">Research</a></li>
                 <li><a href="#">Components</a></li>
+                <li><a href="developers.html">Developers</a></li>
                 <li><a href="team.html">Team</a></li>
             
             
@@ -81,6 +83,7 @@
 <li><a class="reference internal" href="#cogent">COGENT</a></li>
 <li><a class="reference internal" href="#tgyro">TGYRO</a></li>
 <li><a class="reference internal" href="#tglf">TGLF</a></li>
+<li><a class="reference internal" href="#neo">NEO</a></li>
 <li><a class="reference internal" href="#eped">EPED</a></li>
 </ul>
 </li>
@@ -123,9 +126,9 @@ critical modeling gaps, and guide integration of high-performance computing reso
 The guiding philosophy of AToM is to take a bottom-up, collaborative approach that focuses on leveraging and integrating
 the wide spectrum of existing research activities throughout the US fusion community.
 In this way, will take the US fusion program’s existing, mission-critical integrated modeling capabilities and make them even better.</p>
-<div class="figure align-center" id="id6">
-<a class="reference external image-reference" href="_images/AToM_world.png"><img alt="AToM world" src="_images/AToM_world.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-text">A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM</span></p>
+<div class="figure align-center" id="id7" style="width: 80%">
+<a class="reference external image-reference" href="_images/AToM_world.png"><img alt="AToM world" src="_images/AToM_world.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text"><em>A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM</em></span></p>
 </div>
 <div class="section" id="omfit">
 <h2>OMFIT<a class="headerlink" href="#omfit" title="Permalink to this headline">¶</a></h2>
@@ -209,6 +212,20 @@ is far superior to any other transport model.  It is a significant
 improvement on its predecesor GLF23, especially in the weak or negative
 shear regime and for strongly shaped plasmas.</p>
 </div>
+<div class="section" id="neo">
+<h2>NEO<a class="headerlink" href="#neo" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://fusion.gat.com/theory/Neooverview">[NEO]</a>
+is a <span class="math">\(\large \delta f\)</span> Eulerian code which provides first-principles based numerical calculations
+of the neoclassical transport (particle flux, energy flux, bootstrap current,
+poloidal flows, etc.). NEO solves a hierarchy of equations derived by expanding
+the drift-kinetic equation in powers of , the ratio of the ion gyroradius to
+the system size. NEO includes the self-consistent coupling of electrons and
+multiple ion species via complete cross-species collisional coupling, the
+calculation of the first-order electrostatic potential via coupling with
+the Poisson equation, general geometry effects, and rapid toroidal rotation
+effects (including centrifugal effects). NEO has recently been upgraded to
+include the full linearized Fokker-Planck collision operator.</p>
+</div>
 <div class="section" id="eped">
 <h2>EPED<a class="headerlink" href="#eped" title="Permalink to this headline">¶</a></h2>
 <p>EPED is a model to predict the height (ie pressure, or temperature at a given density) and width
@@ -244,7 +261,7 @@ pedestal height and width.</p>
     </p>
     <p>
         &copy; Copyright 2014-2015 AToM TEAM.<br/>
-      Last updated on Sep 15, 2015.<br/>
+      Last updated on Oct 06, 2015.<br/>
     </p>
   </div>
 </footer>
