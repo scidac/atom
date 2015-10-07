@@ -79,7 +79,7 @@ The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_
 * TITAN_CRAY
 * VENUS
 
-AToM components include::
+AToM components include:
 
 * OMFIT
 * IPS_ATOM
