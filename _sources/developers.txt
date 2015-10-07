@@ -3,13 +3,13 @@ Developers corner
 
 The idea at the core of the AToM project is
 
-    to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research
+    to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research.
 
 As such, the project supports numerous physics codes, frameworks and tools which have been developed independently by
 the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
 deployment and support. These page is meant to describe how to obtain and deploy the AToM tools.
 
-.. note:: **Users** are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date
+.. note:: Users are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
