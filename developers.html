@@ -221,8 +221,13 @@ make all PLATFORM=VENUS
 </div>
 <div class="section" id="to-update-and-build-this-documentation">
 <h2>To update and build this documentation<a class="headerlink" href="#to-update-and-build-this-documentation" title="Permalink to this headline">¶</a></h2>
-<p>The AToM documentation (<a class="reference external" href="http://scidac.github.io/atom/">published online at this website</a>)
-is self contained in the AToM repository.</p>
+<p>The <a class="reference external" href="http://scidac.github.io/atom/">AToM documentation website</a> is self contained in the AToM repository.
+To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the <cite>.rst</cite> files
+in the <cite>docs/</cite> directory:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom/docs
+emacs index.rst
+</pre></div>
+</div>
 <p>The python packages required for buidling the AToM documentation can be installed with:</p>
 <div class="highlight-python"><div class="highlight"><pre>sudo yum install sphinx
 sudo yum install python-sphinx
