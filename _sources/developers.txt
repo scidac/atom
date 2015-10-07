@@ -9,17 +9,18 @@ As such, the project supports numerous physics codes, frameworks and tools which
 the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
 deployment and support. These page is meant to describe how to obtain and deploy the AToM tools.
 
-.. note:: Users are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: Users are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date.
 
 We are supporting an AToM public installation on the EDISON supercomputer at NERSC.
 
 Users must be part of the **atom** unix user group to access the NERSC public installation.
 
-If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one. Use `AToM` for the repository name.
+If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one.
+Use `AToM` for the repository name.
 
 The project install directory in under `/project/projectdirs/atom/atom-install-edison`.
 
