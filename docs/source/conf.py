@@ -126,7 +126,7 @@ html_theme_options = {
                      ("Components", "components"),
                      #("Physics Modules", "modules"),
                      #("Installation", "install"),
-                     #("Development","development"),
+                     ("Developers","developers"),
                      #("API","code"),
                      ("Team", "team"),
                      #("Search", "search.html", 1),

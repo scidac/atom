@@ -1,5 +1,6 @@
 AToM Team
 =========
+.. _contact:
 
 :Project PI:
  | **Jeff Candy**, General Atomics 

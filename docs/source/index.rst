@@ -6,7 +6,7 @@
 
 
 Advanced Tokamak Modeling Project
----------------------------------
+=================================
 
 Fusion is the process that powers the sun and stars, and magnetic confinement devices, such as the tokamak,
 provide a possible path to tap this benign and inexhaustible source of energy here on Earth.
