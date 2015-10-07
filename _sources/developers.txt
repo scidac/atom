@@ -10,7 +10,7 @@ Supported public AToM installations
 
 We are supporting an AToM public installation on the EDISON supercomputer at NERSC.
 
-Users must be part of the **atom*unix user group to access the NERSC public installation.
+Users must be part of the **atom** unix user group to access the NERSC public installation.
 
 If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one. Use `AToM` for the repository name.
 
@@ -34,32 +34,50 @@ This will make a `atom` directory with a `Makefile` in it::
 The `Makefile` is capable of downloading the source of the individual AToM components and building them.
 The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms:
 
-===================             ===================
-C1                              C2
-===================             ===================
-ALCF_BGP                        HPC_ITE
-ALCF_CETUS                      IFORT_CORE2
-BABBAGE                         IFORT_PENRYN
-BANACH                          JAC
-CAOS                            LINDGREN
-CARVER                          LOHAN
-CMODWS                          LOKI
-DELPHI                          LOKI_SCRATCH
-DROP                            METIUS
-EDISON_CRAY                     NEWT
-EDISON_INTEL                    OSX_MOUNTAINLION
-FT                              PACER
-GFORTRAN_CORE2                  PGFORTRAN_OSX
-GFORTRAN_OSX                    PG_OPT6
-GFORTRAN_OSX_64                 PG_OPT64_FFTW
-GFORTRAN_OSX_BELLI              PG_OPT64_MUMPS
-GFORTRAN_OSX_MACPORTS           PPPL
-GFORTRAN_OSX_TECHX              PPPL_PATHSCALE
-GFORTRAN_PENRYN                 RANGER
-GFORTRAN_TECHX                  SATURN
-HOPPER_CRAY                     TITAN_CRAY
-HOPPER_INTEL                    VENUS
-===================             ===================
+* ALCF_BGP
+* ALCF_CETUS
+* BABBAGE
+* BANACH
+* CAOS
+* CARVER
+* CMODWS
+* DELPHI
+* DROP
+* EDISON_CRAY
+* EDISON_INTEL
+* FT
+* GFORTRAN_CORE2
+* GFORTRAN_OSX
+* GFORTRAN_OSX_64
+* GFORTRAN_OSX_BELLI
+* GFORTRAN_OSX_MACPORTS
+* GFORTRAN_OSX_TECHX
+* GFORTRAN_PENRYN
+* GFORTRAN_TECHX
+* HOPPER_CRAY
+* HOPPER_INTEL
+* HPC_ITE
+* IFORT_CORE2
+* IFORT_PENRYN
+* JAC
+* LINDGREN
+* LOHAN
+* LOKI
+* LOKI_SCRATCH
+* METIUS
+* NEWT
+* OSX_MOUNTAINLION
+* PACER
+* PGFORTRAN_OSX
+* PG_OPT6
+* PG_OPT64_FFTW
+* PG_OPT64_MUMPS
+* PPPL
+* PPPL_PATHSCALE
+* RANGER
+* SATURN
+* TITAN_CRAY
+* VENUS
 
 AToM components include::
 
