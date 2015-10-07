@@ -11,8 +11,7 @@ deployment and support.
 
 These pages describe how to obtain and deploy the AToM tools.
 
-Most users can get access to the AToM tools and use them through public installations, which are supported and maintened up-to-date.
-
+.. note:: Most users can get access to the AToM tools and use them through public installations, which are supported and maintened up-to-date.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
