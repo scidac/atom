@@ -1,7 +1,7 @@
 Developers corner
 =================
 
-AToM is not a new physics code, but rather a concept:
+The idea at the core of the AToM project is
 
     to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research
 
@@ -110,15 +110,15 @@ Maintaining an AToM installation up-to-date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The AToM `Makefile` is also capable to keep the components up-to-date and in sync with each others-versions.
-To update the AToM installation::
+To update the AToM installation simply::
 
     cd atom
     git pull
     make all PLATFORM=VENUS
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To update and build this documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Edit and build the AToM documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The `AToM documentation website <http://scidac.github.io/atom/>`_ is self contained in the AToM repository.
 To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files
