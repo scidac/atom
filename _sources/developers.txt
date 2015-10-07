@@ -7,7 +7,7 @@ The idea at the core of the AToM project is
 
 As such, the project supports numerous physics codes, frameworks and tools which have been developed independently by
 the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
-deployment and support. These page is meant to describe how to obtain and deploy the AToM tools.
+deployment and support. These page is meant to describe how to obtain and deploy the AToM environment.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
