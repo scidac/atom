@@ -81,7 +81,12 @@ The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_
 
 AToM components include::
 
-    OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
+* OMFIT
+* IPS_ATOM
+* GACODE
+* HARVEST_CLIENT
+* GACODE_ADD
+* EPED
 
 To make individual components (for example `GACODE` on the `VENUS` platform)::
 
