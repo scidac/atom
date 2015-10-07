@@ -1,7 +1,11 @@
 Developers corner
 =================
 
-The AToM project is...
+Not a new physics code, but rather a concept:
+
+    To enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research
+
+asdasd
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
