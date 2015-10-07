@@ -121,9 +121,8 @@ To update the AToM installation simply::
 Edit and build the AToM documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The `AToM documentation website <http://scidac.github.io/atom/>`_ is self contained in the AToM repository.
-To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files
-in the `docs/` directory::
+The `AToM documentation website <http://scidac.github.io/atom/>`_ is self-contained in the AToM repository.
+To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files in the `docs/` directory::
 
     cd atom/docs
     emacs index.rst
