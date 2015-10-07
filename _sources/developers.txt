@@ -12,8 +12,9 @@ We are supporting an AToM public installation on the EDISON supercomputer at NER
 
 Users must be part of the **atom** unix user group to access the NERSC public installation.
 
-If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one.
-Use `AToM` for the repository name.
+If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one. Use `AToM` for the repository name.
+
+The project install directory in under `/project/projectdirs/atom/atom-install-edison`
 
 ~~~~~~~~~~~~~~~~~
 Build AToM source
@@ -31,9 +32,51 @@ This will make a `atom` directory with a `Makefile` in it::
     ls
 
 The `Makefile` is capable of downloading the source of the individual AToM components and building them.
-The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms::
-
-    ALCF_BGP	ALCF_CETUS	BABBAGE	BANACH	CAOS	CARVER	CMODWS	DELPHI	DROP	EDISON_CRAY	EDISON_INTEL    FT	GFORTRAN_CORE2	GFORTRAN_OSX	GFORTRAN_OSX_64	GFORTRAN_OSX_BELLI	GFORTRAN_OSX_MACPORTS   GFORTRAN_OSX_TECHX	GFORTRAN_PENRYN	GFORTRAN_TECHX	HOPPER_CRAY	HOPPER_INTEL	HPC_ITE	IFORT_CORE2	IFORT_PENRYN    JAC	LINDGREN	LOHAN	LOKI	LOKI_SCRATCH	METIUS	NEWT	OSX_MOUNTAINLION	PACER	PGFORTRAN_OSX   PG_OPT6	PG_OPT64_FFTW	PG_OPT64_MUMPS	PPPL	PPPL_PATHSCALE	RANGER	SATURN	TITAN_CRAY	VENUS
+The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms:
+* ALCF_BGP
+* ALCF_CETUS
+* BABBAGE
+* BANACH
+* CAOS
+* CARVER
+* CMODWS
+* DELPHI
+* DROP
+* EDISON_CRAY
+* EDISON_INTEL
+* FT
+* GFORTRAN_CORE2
+* GFORTRAN_OSX
+* GFORTRAN_OSX_64
+* GFORTRAN_OSX_BELLI
+* GFORTRAN_OSX_MACPORTS
+* GFORTRAN_OSX_TECHX
+* GFORTRAN_PENRYN
+* GFORTRAN_TECHX
+* HOPPER_CRAY
+* HOPPER_INTEL
+* HPC_ITE
+* IFORT_CORE2
+* IFORT_PENRYN
+* JAC
+* LINDGREN
+* LOHAN
+* LOKI
+* LOKI_SCRATCH
+* METIUS
+* NEWT
+* OSX_MOUNTAINLION
+* PACER
+* PGFORTRAN_OSX
+* PG_OPT6
+* PG_OPT64_FFTW
+* PG_OPT64_MUMPS
+* PPPL
+* PPPL_PATHSCALE
+* RANGER
+* SATURN
+* TITAN_CRAY
+* VENUS
 
 AToM components include::
 
@@ -79,12 +122,15 @@ To build a local copy of the website::
     cd atom
     make website
 
-which will generate the HTML pages in::
+which will generate the HTML pages in the directory::
 
     cd atom-website/html
 
 To see the website locally point your browser to open the `index.html` contained in that directory. For example ::
 
-    firefox file:///Users/username/Coding/atom-website/html/index.html
+    firefox file:///...../atom-website/html/index.html
 
-To publish the documentation online (must have write permissions to the `AToM GitHub repository <https://github.com/scidac/atom>`_).
+To publish the documentation online (must have write permissions to the `AToM GitHub repository <https://github.com/scidac/atom>`_)::
+
+    cd atom
+    make online

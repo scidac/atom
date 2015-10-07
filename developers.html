@@ -118,8 +118,8 @@
 <h2>Supported public AToM installations<a class="headerlink" href="#supported-public-atom-installations" title="Permalink to this headline">¶</a></h2>
 <p>We are supporting an AToM public installation on the EDISON supercomputer at NERSC.</p>
 <p>Users must be part of the <strong>atom</strong> unix user group to access the NERSC public installation.</p>
-<p>If you do not have an account at NERSC already, fill out <a class="reference external" href="https://nim.nersc.gov/nersc_account_request.php">this form</a> to request one.
-Use <cite>AToM</cite> for the repository name.</p>
+<p>If you do not have an account at NERSC already, fill out <a class="reference external" href="https://nim.nersc.gov/nersc_account_request.php">this form</a> to request one. Use <cite>AToM</cite> for the repository name.</p>
+<p>The project install directory in under <cite>/project/projectdirs/atom/atom-install-edison</cite></p>
 </div>
 <div class="section" id="build-atom-source">
 <h2>Build AToM source<a class="headerlink" href="#build-atom-source" title="Permalink to this headline">¶</a></h2>
@@ -134,10 +134,51 @@ ls
 </pre></div>
 </div>
 <p>The <cite>Makefile</cite> is capable of downloading the source of the individual AToM components and building them.
-The AToM <cite>Makefile</cite> leverages the <a class="reference external" href="https://github.com/gafusion/gacode">GACODE</a> build system, and as such it supports compilation of its components on several platforms:</p>
-<div class="highlight-python"><div class="highlight"><pre>ALCF_BGP    ALCF_CETUS      BABBAGE BANACH  CAOS    CARVER  CMODWS  DELPHI  DROP    EDISON_CRAY     EDISON_INTEL    FT      GFORTRAN_CORE2  GFORTRAN_OSX    GFORTRAN_OSX_64 GFORTRAN_OSX_BELLI      GFORTRAN_OSX_MACPORTS   GFORTRAN_OSX_TECHX      GFORTRAN_PENRYN GFORTRAN_TECHX  HOPPER_CRAY     HOPPER_INTEL    HPC_ITE IFORT_CORE2     IFORT_PENRYN    JAC     LINDGREN        LOHAN   LOKI    LOKI_SCRATCH    METIUS  NEWT    OSX_MOUNTAINLION        PACER   PGFORTRAN_OSX   PG_OPT6 PG_OPT64_FFTW   PG_OPT64_MUMPS  PPPL    PPPL_PATHSCALE  RANGER  SATURN  TITAN_CRAY      VENUS
-</pre></div>
-</div>
+The AToM <cite>Makefile</cite> leverages the <a class="reference external" href="https://github.com/gafusion/gacode">GACODE</a> build system, and as such it supports compilation of its components on several platforms:
+* ALCF_BGP
+* ALCF_CETUS
+* BABBAGE
+* BANACH
+* CAOS
+* CARVER
+* CMODWS
+* DELPHI
+* DROP
+* EDISON_CRAY
+* EDISON_INTEL
+* FT
+* GFORTRAN_CORE2
+* GFORTRAN_OSX
+* GFORTRAN_OSX_64
+* GFORTRAN_OSX_BELLI
+* GFORTRAN_OSX_MACPORTS
+* GFORTRAN_OSX_TECHX
+* GFORTRAN_PENRYN
+* GFORTRAN_TECHX
+* HOPPER_CRAY
+* HOPPER_INTEL
+* HPC_ITE
+* IFORT_CORE2
+* IFORT_PENRYN
+* JAC
+* LINDGREN
+* LOHAN
+* LOKI
+* LOKI_SCRATCH
+* METIUS
+* NEWT
+* OSX_MOUNTAINLION
+* PACER
+* PGFORTRAN_OSX
+* PG_OPT6
+* PG_OPT64_FFTW
+* PG_OPT64_MUMPS
+* PPPL
+* PPPL_PATHSCALE
+* RANGER
+* SATURN
+* TITAN_CRAY
+* VENUS</p>
 <p>AToM components include:</p>
 <div class="highlight-python"><div class="highlight"><pre>OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 </pre></div>
@@ -178,15 +219,19 @@ sudo pip install sphinxcontrib.bibtex
 make website
 </pre></div>
 </div>
-<p>which will generate the HTML pages in:</p>
+<p>which will generate the HTML pages in the directory:</p>
 <div class="highlight-python"><div class="highlight"><pre>cd atom-website/html
 </pre></div>
 </div>
 <p>To see the website locally point your browser to open the <cite>index.html</cite> contained in that directory. For example</p>
-<div class="highlight-python"><div class="highlight"><pre>firefox file:///Users/username/Coding/atom-website/html/index.html
+<div class="highlight-python"><div class="highlight"><pre>firefox file:///...../atom-website/html/index.html
 </pre></div>
 </div>
-<p>To publish the documentation online (must have write permissions to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a>).</p>
+<p>To publish the documentation online (must have write permissions to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a>):</p>
+<div class="highlight-python"><div class="highlight"><pre>cd atom
+make online
+</pre></div>
+</div>
 </div>
 </div>
 
