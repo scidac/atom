@@ -1,12 +1,17 @@
 Developers corner
 =================
 
-Not a new physics code, but rather a concept:
+AToM is not a new physics code, but rather a concept:
 
-    To enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research
+    to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research
 
-asdasd
+As such, the project supports numerous physics codes, frameworks and tools which have been developed independently by
+the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
+deployment and support.
 
+These pages describe how to obtain and deploy the AToM tools.
+
+Most users can get access to the AToM tools and use them through public installations, which are supported and maintened up-to-date.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
@@ -18,7 +23,7 @@ Users must be part of the **atom** unix user group to access the NERSC public in
 
 If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one. Use `AToM` for the repository name.
 
-The project install directory in under `/project/projectdirs/atom/atom-install-edison`
+The project install directory in under `/project/projectdirs/atom/atom-install-edison`.
 
 ~~~~~~~~~~~~~~~~~
 Build AToM source
