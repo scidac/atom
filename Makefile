@@ -2,6 +2,8 @@ OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
 OMFIT_DIR=OMFIT-source
 OMFIT_VER=unstable
 
+OMFIT_WEBDIR=OMFIT-docs
+
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
 IPS_ATOM_VER=master
@@ -30,11 +32,17 @@ GIT_CLONE = @echo ; echo ================; echo $(2) ; echo ================; gi
 GIT_PULL  = @echo ; echo ================; echo $(2) ; echo ================; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
 
 help:
-	@echo "Usage: make all PLATFORM="
+	@echo "Usage: make ... PLATFORM=..."
+	@echo
+	@echo "Suppoerted platforms:"
 	@if [ -a "$(GACODE_DIR)" ]; then echo `ls $(GACODE_DIR)/shared/install/ | sed s/\
 make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
 	@cat platform
 	@echo
+	@echo
+	@echo "Supported make options:"
+	@echo
+	@echo "all ATOM-website ATOM-online OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE GACODE_ADD HARVEST_CLIENT EPED"
 
 all: $(ALL)
 
@@ -53,10 +61,10 @@ FORCE:
 $(ATOM_WEBDIR)/html:
 	mkdir -p $(ATOM_WEBDIR); cd $(ATOM_WEBDIR); git clone git@github.com:scidac/atom.git -b gh-pages html
 
-website: FORCE | $(ATOM_WEBDIR)/html
+ATOM-website: FORCE | $(ATOM_WEBDIR)/html
 	cd docs; make html
 
-online: FORCE | $(ATOM_WEBDIR)/html
+ATOM-online: FORCE | $(ATOM_WEBDIR)/html
 	cd docs; make commit; make push
 
 #======
@@ -67,6 +75,15 @@ $(OMFIT_DIR):
 
 OMFIT: FORCE | $(OMFIT_DIR)
 	$(call GIT_PULL, $(OMFIT_GIT), $(OMFIT_DIR), $(OMFIT_VER))
+
+$(OMFIT_WEBDIR)/html:
+	mkdir -p $(OMFIT_WEBDIR); cd $(OMFIT_WEBDIR); git clone git@github.com:gafusion/OMFIT-source.git -b gh-pages html
+
+OMFIT-website: FORCE | $(OMFIT_WEBDIR)/html $(OMFIT_DIR)
+	cd $(OMFIT_DIR)/docs; make html
+
+OMFIT-online: FORCE | $(OMFIT_WEBDIR)/html $(OMFIT_DIR)
+	cd $(OMFIT_DIR)/docs; make commit; make push
 
 #=========
 # IPS_ATOM
@@ -95,6 +112,7 @@ $(GACODE_ADD_DIR):
 
 GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR) 
 	$(call GIT_PULL, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
+	#missing make...
 
 #===============
 # HARVEST_CLIENT
@@ -112,6 +130,6 @@ HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
 $(EPED_DIR):
 	$(call GIT_CLONE, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
 
-EPED: FORCE | $(EPED_DIR) $(GACODE_DIR) 
+EPED: FORCE | $(EPED_DIR) $(GACODE_DIR)
 	$(call GIT_PULL, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
 	@export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=`pwd`/$(GACODE_DIR);. $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(EPED_DIR); make
