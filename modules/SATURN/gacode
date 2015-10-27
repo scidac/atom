@@ -24,7 +24,7 @@ conflict gacode
 module-whatis gacode
 
 if { ! [ is-loaded pgi ] } {
-  module load pgi
+  module load pgi/13.2
 }
 
 if { ! [ is-loaded mpi_pgf13 ] } {
