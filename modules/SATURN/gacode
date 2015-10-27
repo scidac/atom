@@ -35,7 +35,7 @@ if { ! [ is-loaded netcdf_pgf13.2 ] } {
   module load netcdf
 }
 
-set GACODE_ROOT `pwd`/../../gacode
+set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 
 setenv GACODE_ROOT ${GACODE_ROOT}
 setenv GACODE_PLATFORM SATURN
