@@ -37,7 +37,7 @@ ATOM_DOC_GIT=git@github.com:scidac/atom-doc.git
 ATOM_DOC_DIR=atom-doc
 
 ATOM_GIT=git@github.com:scidac/atom.git
-ATOM_WEBDIR=atom-website
+ATOM_WEBDIR=../atom-website
 
 ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 
@@ -63,16 +63,16 @@ GACODE_MAKE = @echo ; \
               echo ================; \
               echo $(1) [make]  ; \
               echo ================; \
-              bash -c "export GACODE_PLATFORM=$(PLATFORM); \
+              bash -c "export GACODE_PLATFORM=$(ATOM_PLATFORM); \
                 export GACODE_ROOT=`pwd`/$(GACODE_DIR); \
                 cd $(1); \
                 . shared/bin/gacode_setup; \
                 $(2)"
 
 help:
-	@echo "Usage: make ... PLATFORM=..."
+	@echo "Usage: make ... ATOM_PLATFORM=..."
 	@echo
-	@echo "Suppoerted platforms:"
+	@echo "Supported platforms:"
 	@if [ -a "$(GACODE_DIR)" ]; then echo `ls $(GACODE_DIR)/shared/install/ | sed s/\
 make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
 	@cat platform
