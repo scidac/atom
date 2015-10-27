@@ -27,12 +27,12 @@ if { ! [ is-loaded pgi ] } {
   module load pgi/13.2
 }
 
-if { ! [ is-loaded mpi_pgf13 ] } {
+if { ! [ is-loaded mpi_pgf13.2 ] } {
   module load mpi_pgf13.2
 }
 
 if { ! [ is-loaded netcdf_pgf13.2 ] } {
-  module load netcdf
+  module load netcdf_pgf13.2
 }
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
