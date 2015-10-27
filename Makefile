@@ -1,40 +1,73 @@
+ATOM_VERSION = stable # or devel
+ifeq ($(strip $(ATOM_VERSION)),stable)
+        OMFIT_VER=master # master & unstable
+        IPS_ATOM_VER=master # master & devel
+        GACODE_VER=stable # stable & master
+        GACODE_ADD_VER=master # master
+else
+        OMFIT_VER=unstable # master & unstable
+        IPS_ATOM_VER=devel # master & devel
+        GACODE_VER=master # stable & master
+        GACODE_ADD_VER=master # master
+endif
+EPED_VER=master # master
+HARVEST_CLIENT_VER=master # master
+ATOM_DOC_VER=master # master
+
 OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
 OMFIT_DIR=OMFIT-source
-OMFIT_VER=unstable # master & unstable
 OMFIT_WEBDIR=OMFIT-docs
 
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
-IPS_ATOM_VER=devel # master & devel
 
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
-GACODE_VER=master # stable & master
 
 GACODE_ADD_GIT=git@github.com:gafusion/gacode_add.git
 GACODE_ADD_DIR=gacode_add
-GACODE_ADD_VER=master # master
 
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
-EPED_VER=master # master
 
 HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_CLIENT_DIR=harvest_client
-HARVEST_CLIENT_VER=master # master
 
 ATOM_DOC_GIT=git@github.com:scidac/atom-doc.git
 ATOM_DOC_DIR=atom-doc
-ATOM_DOC_VER=master # master
 
 ATOM_GIT=git@github.com:scidac/atom.git
 ATOM_WEBDIR=atom-website
 
 ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 
-GIT_CLONE   = @echo ; echo ================; echo $(2) [clone] ; echo ================; git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule init ; git submodule update
-GIT_PULL    = @echo ; echo ================; echo $(2) [pull]  ; echo ================; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
-GACODE_MAKE = @echo ; echo ================; echo $(1) [make]  ; echo ================; bash -c "export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=$(PWD)/$(GACODE_DIR); . $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(1); $(2)"
+GIT_CLONE   = @echo ; \
+              echo ================; \
+              echo $(2) [clone] ; \
+              echo ================; \
+              git clone -b $(3) $(1) $(2) ; \
+              cd $(2) ; \
+              git submodule init ; \
+              git submodule update
+GIT_PULL    = @echo ; \
+              echo ================; \
+              echo $(2) [pull]  ; \
+              echo ================; \
+              cd $(2) ; \
+              git fetch ; \
+              git checkout $(3) ; \
+              git pull; \
+              git submodule init ; \
+              git submodule update
+GACODE_MAKE = @echo ; \
+              echo ================; \
+              echo $(1) [make]  ; \
+              echo ================; \
+              bash -c "export GACODE_PLATFORM=$(PLATFORM); \
+                export GACODE_ROOT=`pwd`/$(GACODE_DIR); \
+                cd $(1); \
+                . shared/bin/gacode_setup; \
+                $(2)"
 
 help:
 	@echo "Usage: make ... PLATFORM=..."
