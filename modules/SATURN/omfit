@@ -1,0 +1,37 @@
+#%Module
+#
+# Module file for loading paths for OMFIT
+#
+
+proc ModulesHelp { } {
+        puts stderr "This modulefile sets the environment for OMFIT"
+	puts stderr ""
+	puts stderr "OMFIT is a software developed to support both integrated modeling and experimental data analysis."
+	puts stderr ""
+	puts stderr "The main idea at the heart of OMFIT is to treat files, data, and scripts as a uniform collection "
+	puts stderr "of objects organized into a tree structure. The OMFIT framework provides a consistent way to "
+	puts stderr "access and manipulate such a collection of heterogeneous objects, independent of their origin. "
+	puts stderr ""
+	puts stderr "http://gafusion.github.io/OMFIT-source/index.html"
+	puts stderr ""
+}
+
+conflict omfit
+
+module-whatis omfit
+
+if { ! [ is-loaded python/2.7 ] } {
+  module load python/2.7
+}
+
+if { ! [ is-loaded mdsplus ] } {
+  module load mdsplus
+}
+
+set omfit_root `pwd`/../../OMFIT-source
+setenv OMFIT_ROOT $omfit_root
+
+set-alias omfit "python2.7 $omfit_root/src/omfit.py"
+set-alias python python2.7
+
+prepend-path PYTHONPATH $omfit_root/src/
