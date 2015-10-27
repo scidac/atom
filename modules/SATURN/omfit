@@ -28,7 +28,7 @@ if { ! [ is-loaded mdsplus ] } {
   module load mdsplus
 }
 
-set omfit_root `pwd`/../../OMFIT-source
+set omfit_root $::env(ATOM_ROOT)/OMFIT-source
 setenv OMFIT_ROOT $omfit_root
 
 set-alias omfit "python2.7 $omfit_root/src/omfit.py"
