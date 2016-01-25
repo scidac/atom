@@ -32,8 +32,8 @@ ATOM_WEBDIR=atom-website
 
 ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
 
-GIT_CLONE   = @echo ; echo ================; echo $(2) [clone] ; echo ================; git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule init ; git submodule update
-GIT_PULL    = @echo ; echo ================; echo $(2) [pull]  ; echo ================; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule init ; git submodule update
+GIT_CLONE   = @echo ; echo ================; echo $(2) [clone] ; echo ================; git clone -b $(3) $(1) $(2) ; cd $(2) ; git submodule update --init --recursive
+GIT_PULL    = @echo ; echo ================; echo $(2) [pull]  ; echo ================; cd $(2) ; git fetch ; git checkout $(3) ; git pull; git submodule update --init --recursive
 GACODE_MAKE = @echo ; echo ================; echo $(1) [make]  ; echo ================; bash -c "export GACODE_PLATFORM=$(PLATFORM); export GACODE_ROOT=$(PWD)/$(GACODE_DIR); . $(GACODE_ROOT)/shared/bin/gacode_setup; cd $(1); $(2)"
 
 help:
