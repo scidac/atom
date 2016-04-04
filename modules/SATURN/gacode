@@ -23,23 +23,15 @@ conflict gacode
 
 module-whatis gacode
 
-#if { ! [ is-loaded pgi ] } {
-#  module load pgi/13.2
-#}
+if { [ module-info mode load ] } {
 
-#if { ! [ is-loaded mpi_pgf13.2 ] } {
-#  module load mpi_pgf13.2
-#}#
+    module load defaults
+    module load pgi
+    module unload mpich
+    module load mpich/pgi
+    module load netcdf
 
-#if { ! [ is-loaded netcdf_pgf13.2 ] } {
-#  module load netcdf_pgf13.2
-#}
-module load defaults
-module load pgi
-module unload mpich
-module load mpich/pgi
-module load netcdf
-
+}
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 
