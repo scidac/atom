@@ -22,29 +22,23 @@ proc ModulesHelp { } {
 conflict gacode
 
 module-whatis gacode
+if { [ module-info mode load ] } {
 
-#if { ! [ is-loaded pgi ] } {
-#  module load pgi/13.2
-#}
+  if { ! [ is-loaded default-paths ] } {
+    module load default-paths
+  }
+  if { ! [ is-loaded netcdf ] } {
+    module load netcdf
+  }
+  if { ! [is-loaded git ] } {
+    module load git
+  }
 
-#if { ! [ is-loaded mpi_pgf13.2 ] } {
-#  module load mpi_pgf13.2
-#}#
-
-#if { ! [ is-loaded netcdf_pgf13.2 ] } {
-#  module load netcdf_pgf13.2
-#}
-module load defaults
-module load pgi
-module unload mpich
-module load mpich/pgi
-module load netcdf
-
-
+}
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 
 setenv GACODE_ROOT ${GACODE_ROOT}
-setenv GACODE_PLATFORM SATURN
+setenv GACODE_PLATFORM SATURN_GCC
 
 prepend-path PATH ${GACODE_ROOT}/tgyro/bin
 prepend-path PATH ${GACODE_ROOT}/gyro/bin

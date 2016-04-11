@@ -20,16 +20,25 @@ conflict omfit
 
 module-whatis omfit
 
-if { ! [ is-loaded python/2.7 ] } {
-  module load python/2.7
-}
+if { [ module-info mode load ] } {
 
-if { ! [ is-loaded mdsplus ] } {
-  module load mdsplus
-}
+    if { ! [ is-loaded python/2.7 ] } {
+      module load python/2.7
+    }
 
-if { ! [ is-loaded gcc-4.7.2 ] } {
-  module load gcc-4.7.2
+    if { ! [ is-loaded mdsplus ] } {
+      module load mdsplus
+    }
+
+    if { ! [ is-loaded gcc-4.7.2 ] } {
+      module load gcc-4.7.2
+    }
+    if { ! [ is-loaded fann ] } {
+      module load fann
+    }
+    if { ! [ is-loaded pact ] } {
+      module load pact
+    }
 }
 
 set omfit_root $::env(ATOM_ROOT)/OMFIT-source
