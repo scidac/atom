@@ -1,3 +1,4 @@
+
 ~~~~~~~~~~~~~
 Presentations
 ~~~~~~~~~~~~~
@@ -9,15 +10,27 @@ Presentations
    * - Year
      - Presenter
      - Title
+   * - 2016
+     - `Meneghini O. <http://www-internal.psfc.mit.edu/TTF2016/posters/posters.html>`_
+     - Development and validation of NEUPED, a neural-network based regression of the EPED1 first-principles pedestal model
    * - 2015
-     - `J. Candy <http://portal.nersc.gov/project/atom/candy/scidac2015_atom_candy.pdf>`_
+     - `Candy J. <https://www.orau.gov/scidac3pi2015/presentations/ThursdayPM/11_Candy-AToM-Advanced_Tokamak_Modeling.pdf>`_
      - AToM: Advanced Tokamak Modeling: Introduction and First Physics Results
    * - 2015
-     - `D. Batchelor <http://nstx.pppl.gov/DragNDrop/TUG2015/Presentations/TRANSP_users_group_2015_Batchelor.pdf>`_
+     - `Batchelor D. <http://nstx.pppl.gov/DragNDrop/Scientific_Conferences/TUG2015/Presentations/TRANSP_users_group_2015_Batchelor.pdf>`_
      - Integrated Plasma Simulator (IPS)
    * - 2015
-     - `O. Meneghini <http://nstx.pppl.gov/DragNDrop/TUG2015/Presentations/meneghini_TRANSP_user_group_2015.pdf>`_
+     - `Snyder P.B. <https://scholar.google.com/>`_
+     - The EPED Pedestal Model: Validation, Super H-Mode, and Core-Pedestal Coupling
+   * - 2015
+     - `Meneghini O <https://fusion.gat.com/theory-wiki/images/2/2c/APS_meneghini_2015.pdf>`_
+     - Validation of a coupled core-transport, pedestal-structure, current-profile and equilibrium model
+   * - 2015
+     - `Meneghini O. <http://nstx.pppl.gov/DragNDrop/Scientific_Conferences/TUG2015/Presentations/meneghini_TRANSP_user_group_2015.pdf>`_
      - Integrated modeling with TRANSP and OMFIT
+   * - 2015
+     - `Dorf M. <https://scholar.google.com/>`_
+     - Continuum Kinetic Modeling of the Tokamak Plasma Edge
 
 ~~~~~~~~~~~~~~~~~~~~
 Journal Publications
@@ -30,6 +43,18 @@ Journal Publications
    * - Year
      - Main author
      - Title
+   * - 2016
+     - `Meneghini O. <http://scitation.aip.org/content/aip/journal/pop/23/4/10.1063/1.4947204>`_
+     - Integrated fusion simulation with self-consistent core-pedestal coupling
+   * - 2016
+     - `Howard N.T. <http://stacks.iop.org/0029-5515/56/i=1/a=014004>`_
+     - Multi-scale gyrokinetic simulation of tokamak plasmas: enhanced heat loss due to cross-scale coupling of plasma turbulence
+   * - 2016
+     - `Howard N.T. <http://dx.doi.org/10.1063/1.4946028>`_
+     - Multi-scale gyrokinetic simulations: Comparison with experiment and implications for predicting turbulence and transport
+   * - 2016
+     - `Dorf M.A. <http://scitation.aip.org/content/aip/journal/pop/23/5/10.1063/1.4943106>`_
+     - Continuum kinetic modeling of the tokamak plasma edge
    * - 2015
-     - `O. Meneghini <http://dx.doi.org/10.1088/0029-5515/55/8/083008>`_
+     - `Meneghini O. <http://stacks.iop.org/0029-5515/55/i=8/a=083008>`_
      - Integrated modeling applications for tokamak experiments with OMFIT

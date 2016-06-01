@@ -6,7 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 
-BUILDDIR      = ../../atom-website
+BUILDDIR      = ../atom-website
 PDFBUILDDIR   = /tmp
 PDF           = ../AToM.pdf
 
@@ -42,10 +42,10 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 clean:
-	mv $(BUILDDIR)/html/.git /tmp/atom-website-GIT
+	-mv $(BUILDDIR)/html/.git /tmp/atom-website-GIT
 	-rm -rf $(BUILDDIR)/*
-	mkdir -p $(BUILDDIR)/html
-	mv /tmp/atom-website-GIT $(BUILDDIR)/html/.git
+	-mkdir -p $(BUILDDIR)/html
+	-mv /tmp/atom-website-GIT $(BUILDDIR)/html/.git
 	touch $(BUILDDIR)/html/.nojekyll
 
 html:   clean
