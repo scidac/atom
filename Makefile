@@ -30,6 +30,10 @@ GACODE_ADD_DIR=gacode_add
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
 
+BOUT++_GIT=git@github.com:boutproject/BOUT-dev.git
+BOUT++_DIR=BOUT
+BOUT++_VER=master #master
+
 HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_CLIENT_DIR=harvest_client
 
@@ -39,7 +43,7 @@ ATOM_DOC_DIR=atom-doc
 ATOM_GIT=git@github.com:scidac/atom.git
 ATOM_WEBDIR=../atom-website
 
-ALL= OMFIT IPS_ATOM GACODE HARVEST_CLIENT GACODE_ADD EPED
+ALL= OMFIT GACODE IPS_ATOM HARVEST_CLIENT GACODE_ADD EPED BOUT++
 
 GIT_CLONE   = @echo ; \
               echo ================; \
@@ -47,8 +51,7 @@ GIT_CLONE   = @echo ; \
               echo ================; \
               git clone -b $(3) $(1) $(2) ; \
               cd $(2) ; \
-              git submodule init ; \
-              git submodule update
+              git submodule update --init --recursive
 GIT_PULL    = @echo ; \
               echo ================; \
               echo $(2) [pull]  ; \
@@ -57,8 +60,7 @@ GIT_PULL    = @echo ; \
               git fetch ; \
               git checkout $(3) ; \
               git pull; \
-              git submodule init ; \
-              git submodule update
+              git submodule update --init --recursive
 GACODE_MAKE = @echo ; \
               echo ================; \
               echo $(1) [make]  ; \
@@ -66,8 +68,9 @@ GACODE_MAKE = @echo ; \
               bash -c "export GACODE_PLATFORM=$(ATOM_PLATFORM); \
                 export GACODE_ROOT=`pwd`/$(GACODE_DIR); \
                 cd $(1); \
-                . shared/bin/gacode_setup; \
+                . $(GACODE_ROOT)/shared/bin/gacode_setup; \
                 $(2)"
+
 
 help:
 	@echo "Usage: make ... ATOM_PLATFORM=..."
@@ -80,7 +83,7 @@ make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
 	@echo
 	@echo "Supported make options:"
 	@echo
-	@echo "all ATOM-website ATOM-online ATOM_DOC OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE GACODE_ADD HARVEST_CLIENT EPED"
+	@echo "all ATOM-website ATOM-online ATOM_DOC OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE GACODE_ADD HARVEST_CLIENT EPED BOUT"
 
 all: $(ALL)
 
@@ -90,6 +93,7 @@ clean:
 	rm -rf $(GACODE_ADD_DIR)
 	rm -rf $(EPED_DIR)
 	rm -rf $(HARVEST_CLIENT_DIR)
+	rm -rf $(BOUT++_DIR)
 
 FORCE:
 
@@ -181,3 +185,14 @@ $(EPED_DIR):
 EPED: FORCE | $(EPED_DIR) $(GACODE_DIR)
 	$(call GIT_PULL, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
 	$(call GACODE_MAKE, $(EPED_DIR), make)
+
+#=========
+# BOUT++
+#=========
+$(BOUT++_DIR):
+	$(call GIT_CLONE, $(BOUT++_GIT), $(BOUT++_DIR), $(BOUT++_VER))
+
+BOUT++: FORCE | $(BOUT++_DIR)
+	$(call GIT_PULL, $(BOUT++_GIT), $(BOUT++_DIR), $(BOUT++_VER))
+	@cd $(BOUT++_DIR); ./configure
+	@cd $(BOUT++_DIR); make
