@@ -1,16 +1,16 @@
 AToM project
 ============
 
-This repository contains the Makefile that allows download, update and build of all AToM components.
+This repository contains the Makefile that allows the download, update, and build of all AToM components.
 To use it:
 
 ```bash
 git clone git@github.com:scidac/atom.git
 cd atom
-make all PLATFORM=???
+make all ATOM_PLATFORM=???
 ```
 
-where platform can be one among the following:
+where ATOM_PLATFORM can be one of the following:
 
 ```
 ALCF_BGP ALCF_CETUS BABBAGE BANACH CAOS CARVER CMODWS DELPHI
