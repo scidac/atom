@@ -22,19 +22,11 @@ proc ModulesHelp { } {
 conflict gacode
 
 module-whatis gacode
-if { [ module-info mode load ] } {
+module load default-paths
+module load netcdf
+module load fftw
+module load git
 
-  if { ! [ is-loaded default-paths ] } {
-    module load default-paths
-  }
-  if { ! [ is-loaded netcdf ] } {
-    module load netcdf
-  }
-  if { ! [is-loaded git ] } {
-    module load git
-  }
-
-}
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 
 setenv GACODE_ROOT ${GACODE_ROOT}
@@ -49,4 +41,4 @@ prepend-path PATH ${GACODE_ROOT}/glf23/bin
 prepend-path PATH ${GACODE_ROOT}/le3/bin
 prepend-path PATH ${GACODE_ROOT}/shared/bin
 prepend-path PYTHONPATH ${GACODE_ROOT}/python
-prepend-path IDL_PATH ${GACODE_ROOT}/gyro/vugyro
+append-path IDL_PATH ${GACODE_ROOT}/gyro/vugyro
