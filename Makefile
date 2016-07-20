@@ -55,7 +55,7 @@ make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
 
 all: $(ALL)
 
-clean:
+delete_all:
 	rm -rf $(GACODE_DIR)
 	rm -rf $(OMFIT_DIR)
 	rm -rf $(GACODE_ADD_DIR)
