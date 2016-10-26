@@ -71,6 +71,9 @@ Journal Publications
      - Main author
      - Title
    * - 2016
+     - `Candy J. <http://www.sciencedirect.com/science/article/pii/S0021999116303400>`_
+     - A high-accuracy Eulerian gyrokinetic solver for collisional plasmas
+   * - 2016
      - `Dorf M.A. <http://scitation.aip.org/content/aip/journal/pop/23/5/10.1063/1.4943106>`_
      - Continuum kinetic modeling of the tokamak plasma edge
    * - 2016

@@ -5,9 +5,9 @@ The idea at the core of the AToM project is
 
     to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research.
 
-As such, the project supports numerous physics codes, frameworks and tools which have been developed independently by
-the fusion community over (in some instances over decades of research). AToM streamlines their integration, development,
-deployment and support. These page is meant to describe how to obtain and deploy the AToM environment.
+As such, the project supports numerous physics codes, frameworks, and tools which have been developed independently by
+the fusion community (in some instances over decades of research). AToM streamlines their integration, development,
+deployment, and support. This page is meant to describe how to obtain and deploy the AToM environment.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
@@ -22,7 +22,7 @@ Users must be part of the **atom** unix user group to access the NERSC public in
 If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one.
 Use `AToM` for the repository name.
 
-The project install directory in under `/project/projectdirs/atom/atom-install-edison`.
+The project install directory is under `/project/projectdirs/atom/atom-install-edison`.
 
 ~~~~~~~~~~~~~~~~~
 Build AToM source
@@ -39,7 +39,7 @@ This will make a `atom` directory with a `Makefile` in it::
     cd atom
     ls
 
-The `Makefile` is capable of downloading the source of the individual AToM components and building them.
+The `Makefile` is capable of downloading the sources of the individual AToM components and building them.
 The AToM `Makefile` leverages the `GACODE <https://github.com/gafusion/gacode>`_ build system, and as such it supports compilation of its components on several platforms::
 
     ALCF_BGP ALCF_CETUS BABBAGE BANACH CAOS CARVER CMODWS DELPHI
@@ -62,11 +62,11 @@ AToM components include:
 
 To make individual components (for example `GACODE` on the `VENUS` platform)::
 
-    make GACODE PLATFORM=VENUS
+    make GACODE ATOM_PLATFORM=VENUS
 
 To make all of the AToM components::
 
-    make all PLATFORM=VENUS
+    make all ATOM_PLATFORM=VENUS
 
 The `Makefile` takes care of satisfying any interdependency between the AToM components.
 
@@ -74,12 +74,12 @@ The `Makefile` takes care of satisfying any interdependency between the AToM com
 Maintaining an AToM installation up-to-date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The AToM `Makefile` is also capable to keep the components up-to-date and in sync with each others-versions.
+The AToM `Makefile` is also capable of keeping the components up-to-date and in sync with each others' versions.
 To update the AToM installation simply::
 
     cd atom
     git pull
-    make all PLATFORM=VENUS
+    make all ATOM_PLATFORM=VENUS
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Edit and build the AToM documentation
@@ -89,7 +89,7 @@ The `AToM documentation website <http://scidac.github.io/atom/>`_ is self-contai
 To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files in the `docs/` directory::
 
     cd atom/docs
-    emacs index.rst
+    $EDITOR index.rst
 
 The python packages required for buidling the AToM documentation can be installed with::
 
@@ -101,11 +101,11 @@ The python packages required for buidling the AToM documentation can be installe
 To build a local copy of the website::
 
     cd atom
-    make website
+    make ATOM-website
 
 which will generate the HTML pages in the directory::
 
-    cd atom-website/html
+    ../atom-website/html
 
 To see the website locally point your browser to open the `index.html` contained in that directory. For example ::
 
@@ -114,4 +114,4 @@ To see the website locally point your browser to open the `index.html` contained
 To publish the documentation online (must have write permissions to the `AToM GitHub repository <https://github.com/scidac/atom>`_)::
 
     cd atom
-    make online
+    make ATOM-online
