@@ -1,16 +1,17 @@
 Components
 ==========
 
-The guiding philosophy of AToM is to fully leverage the existing capability represented by the OMFIT and IPS frameworks
-and the components already integrated with them, as well as the advanced composite components TGYRO, TSC and FASTRAN.
-There are many established workflows, dedicated users and use cases represented by both the composite components,
-as well as for advanced components like GYRO, COGENT and M3Dc1.
+The guiding philosophy of AToM is to fully leverage the existing capability represented by the OMFIT and 
+IPS frameworks and the components already integrated with them, as well as the advanced composite 
+components TGYRO, TSC and FASTRAN.  There are many established workflows, dedicated users and use cases 
+represented by both the composite components, as well as for advanced components like GYRO, COGENT and M3Dc1.
 
-We endeavour to support -- rather than subvert -- current workflows, build essential new infrastructure to address
-critical modeling gaps, and guide integration of high-performance computing resources to enable new physics capabilities.
-The guiding philosophy of AToM is to take a bottom-up, collaborative approach that focuses on leveraging and integrating
-the wide spectrum of existing research activities throughout the US fusion community.
-In this way, will take the US fusion program’s existing, mission-critical integrated modeling capabilities and make them even better.
+We endeavour to support -- rather than subvert -- current workflows, build essential new infrastructure 
+to address critical modeling gaps, and guide integration of high-performance computing resources to enable 
+new physics capabilities.  The guiding philosophy of AToM is to take a bottom-up, collaborative approach 
+that focuses on leveraging and integrating the wide spectrum of existing research activities throughout 
+the US fusion community.  In this way, we seek to improve and extend the US fusion program’s existing, 
+mission-critical integrated modeling capabilities.
 
 .. figure:: images/AToM_world.png
   :width: 100%
@@ -25,7 +26,7 @@ In this way, will take the US fusion program’s existing, mission-critical inte
 OMFIT
 ~~~~~
 
-`[OMFIT] <http://gafusion.github.io/OMFIT-source/>`_
+`OMFIT <http://gafusion.github.io/OMFIT-source/>`_
 is a software developed at General Atomics to support integrated modeling and experimental
 data analysis of magnetically confined thermonuclear fusion experiments.
 The goal of OMFIT is to enhance existing scientific workflows and enable new integrated modeling capabilities.
@@ -36,7 +37,7 @@ is used worldwide by over one hundred fusion scientists.
 IPS
 ~~~
 
-`[IPS] <http://ipsframework.sourceforge.net/doc/html/>`_
+`IPS <http://ipsframework.sourceforge.net/doc/html/>`_
 (Integrated Plasma Simulator) is an environment to orchestrate
 complex coupled simulation workflows on parallel computers. The IPS
 is designed primarily for use in a batch-processing environment, with
@@ -48,7 +49,7 @@ progresses.
 GYRO
 ~~~~
 
-`[GYRO] <https://fusion.gat.com/theory/Gyrooverview>`_
+`GYRO <https://fusion.gat.com/theory/Gyrooverview>`_
 is an Eulerian gyrokinetic code. Unlike the various US PIC codes (GTC, GTS,
 XGC1, GEM) full gyrokinetic electron dynamics and compressional electromagnetic
 effects are treated. In terms of efficiency, even for simple problems, GYRO is
@@ -60,30 +61,34 @@ required at most 20K cores, but typically (say for ITER) will probably use
 about 512-2048 cores.  The direct coupling scheme in TGYRO can use
 about 16*4=64 instances, which brings the TGYRO core count to over 100K cores.
 
-~~~~~
+~~~~~~
 COGENT
-~~~~~
+~~~~~~
+
 COGENT is a continuum gyrokinetic code being developed at LLNL for edge plasma modeling.
-The present version of the code models a nonlinear (full-F) axisymmetric 4D gyrokinetic equation coupled to the
-long-wavelength limit of the gyro-Poisson equation. There are two configuration dimensions: labels of flux surface and
-poloidal angle, and two velocity-space dimensions: parallel velocity and magnetic-moment.
-The code is distinguished by the use of a fourth-order finite-volume (conservative) discretization combined with
-arbitrary mapped multiblock grid technology (nearly field-aligned on blocks) to handle the complexity of divertor
-geometry with high accuracy. COGENT has a variety of collision options including the fully nonlinear Fokker-Plank (FP) collision model.
-COGENT is built upon the Chombo adaptive mesh refinement library, which is under development in the FASTMath SciDAC Institute (LBNL).
-In more detail, COGENT exploits mapped multiblock grid technology, whereby the inner and outer closed flux surface regions,
-the inner and outer scrape off layer, the inner and outer divertor legs, and the inner and outer portions of the private
-flux region are mapped from the physical toroidal geometry (with appropriate metric information) onto properly
-communicating rectangular grid blocks. The code was "born parallel", with grid blocks assigned to groups of processors.
-Phase, configuration and velocity space can be domain decomposed independently for flexible and efficient mapping to
-current and future parallel machines. The code gets single-null geometric data via fourth-order interpolation of tabular
-data generated by the UEDGE edge fluid code.
+The present version of the code models a nonlinear (full-F) axisymmetric 4D gyrokinetic equation 
+coupled to the long-wavelength limit of the gyro-Poisson equation. There are two configuration 
+dimensions: labels of flux surface and poloidal angle, and two velocity-space dimensions: parallel 
+velocity and magnetic-moment.  The code is distinguished by the use of a fourth-order 
+finite-volume (conservative) discretization combined with arbitrary mapped multiblock grid 
+technology (nearly field-aligned on blocks) to handle the complexity of divertor geometry with 
+high accuracy. COGENT has a variety of collision options including the fully nonlinear 
+Fokker-Planck (FP) collision model.  COGENT is built upon the Chombo adaptive mesh refinement 
+library, which is under development in the FASTMath SciDAC Institute (LBNL).  In more detail, COGENT 
+exploits mapped multiblock grid technology, whereby the inner and outer closed flux surface regions, 
+the inner and outer scrape off layer, the inner and outer divertor legs, and the inner and outer 
+portions of the private flux region are mapped from the physical toroidal geometry (with appropriate 
+metric information) onto communicating rectangular grid blocks. The code was ''born parallel'', with 
+grid blocks assigned to groups of processors.  Phase, configuration and velocity space can be domain 
+decomposed independently for flexible and efficient mapping to current and future parallel machines. 
+The code gets single-null geometric data via fourth-order interpolation of tabular data generated 
+by the UEDGE edge fluid code.
 
 ~~~~~
 TGYRO
 ~~~~~
 
-`[TGYRO] <https://fusion.gat.com/theory/Tgyrooverview>`_
+`TGYRO <https://fusion.gat.com/theory/Tgyrooverview>`_
 is a transport solver based on the drift-ordering formulation of Sugama.
 This formulation is by far the most complete and rigourous formulation of
 the core transport equations (for axisymmetric plasmas).
@@ -104,7 +109,7 @@ the parallelism of the turbulence component.
 TGLF
 ~~~~
 
-`[TGLF] <https://fusion.gat.com/theory/Tglfoverview>`_
+`TGLF <https://fusion.gat.com/theory/Tglfoverview>`_
 is a theory-based transport model based on linear gyrofluid equations plus
 "calibration" with a database of GYRO nonlinear simulations.  In some sense,
 the goal of TGLF is to provide an answer as close as possible to that one
@@ -118,7 +123,7 @@ shear regime and for strongly shaped plasmas.
 NEO
 ~~~~
 
-`[NEO] <https://fusion.gat.com/theory/Neooverview>`_
+`NEO <https://fusion.gat.com/theory/Neooverview>`_
 is a :math:`\large \delta f` Eulerian code which provides first-principles based numerical calculations
 of the neoclassical transport (particle flux, energy flux, bootstrap current,
 poloidal flows, etc.). NEO solves a hierarchy of equations derived by expanding

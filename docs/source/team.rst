@@ -12,7 +12,7 @@ AToM Team
  | candy@fusion.gat.com
 
 :FES PIs:
-  | **David L. Green**, Oak Ridge National Laboratory |
+  | **David L. Green**, Oak Ridge National Laboratory
   | **Mikhail Dorf**, Lawrence Livermore National Laboratory
   | **Christopher Holland**, University of California, San Diego
 

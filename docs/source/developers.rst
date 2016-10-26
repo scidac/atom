@@ -1,34 +1,32 @@
-Developers corner
-=================
+Information for Developers
+==========================
 
-The idea at the core of the AToM project is
-
-    to enhance and extend present modeling capabilities, by supporting, leveraging, and integrating existing research.
-
-As such, the project supports numerous physics codes, frameworks, and tools which have been developed independently by
-the fusion community (in some instances over decades of research). AToM streamlines their integration, development,
-deployment, and support. This page is meant to describe how to obtain and deploy the AToM environment.
+The AToM project philosophy is to **enhance and extend present modeling capabilities, 
+by supporting, leveraging, and integrating existing research**.  As such, the project supports numerous 
+physics codes, frameworks, and tools which have been developed independently by the fusion community 
+(in some instances over decades of research). AToM streamlines their integration, development, deployment, 
+and support. This page is meant to describe how to obtain and deploy the AToM environment.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: Users are highly encouraged to make use of the AToM public installations, which we support and maintain up-to-date.
+.. note:: Users are highly encouraged to make use of the AToM public installations, which we maintain and support.
 
-We are supporting an AToM public installation on the EDISON supercomputer at NERSC.
+We currently support an AToM public installation on the Edison supercomputer at NERSC.   The project install directory 
+is under::
 
-Users must be part of the **atom** unix user group to access the NERSC public installation.
+    /project/projectdirs/atom/atom-install-edison
 
-If you do not have an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request one.
-Use `AToM` for the repository name.
+Users must be part of the ``atom`` unix user group to access the NERSC public installation.  If you do not have 
+an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request 
+one.  Use ``atom`` for the repository name. 
 
-The project install directory is under `/project/projectdirs/atom/atom-install-edison`.
+~~~~~~~~~~~~~~~~~~~~~~
+Build AToM from source
+~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~
-Build AToM source
-~~~~~~~~~~~~~~~~~
-
-Contact :ref:`contact <Jeff Candy>` to obtain access to the `AToM GitHub repository <https://github.com/scidac/atom>`_ (GitHub account needed)
+Contact :samp:`candy(at)fusion.gat.com` to obtain access to the `AToM GitHub repository <https://github.com/scidac/atom>`_ (GitHub account needed)
 
 To clone the repository::
 
