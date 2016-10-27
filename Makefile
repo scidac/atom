@@ -1,14 +1,15 @@
+# Makefile for AToM modules.  
+# For webpages, see ./html
+
 ATOM_VERSION = stable # or devel
 ifeq ($(strip $(ATOM_VERSION)),stable)
         OMFIT_VER=master # master & unstable
         IPS_ATOM_VER=master # master & devel
         GACODE_VER=stable # stable & master
-        GACODE_ADD_VER=master # master
 else
         OMFIT_VER=unstable # master & unstable
         IPS_ATOM_VER=devel # master & devel
         GACODE_VER=master # stable & master
-        GACODE_ADD_VER=master # master
 endif
 EPED_VER=master # master
 HARVEST_CLIENT_VER=master # master
@@ -24,9 +25,6 @@ IPS_ATOM_DIR=ips-atom
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
 
-GACODE_ADD_GIT=git@github.com:gafusion/gacode_add.git
-GACODE_ADD_DIR=gacode_add
-
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
 
@@ -37,13 +35,9 @@ BOUT++_VER=master #master
 HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_CLIENT_DIR=harvest_client
 
-ATOM_DOC_GIT=git@github.com:scidac/atom-doc.git
-ATOM_DOC_DIR=atom-doc
-
 ATOM_GIT=git@github.com:scidac/atom.git
-ATOM_WEBDIR=../atom-website
 
-ALL= OMFIT GACODE IPS_ATOM HARVEST_CLIENT GACODE_ADD EPED BOUT++
+ALL= OMFIT GACODE IPS_ATOM HARVEST_CLIENT EPED BOUT++
 
 GIT_CLONE   = @echo ; \
               echo ================; \
@@ -90,34 +84,11 @@ all: $(ALL)
 delete_all:
 	rm -rf $(GACODE_DIR)
 	rm -rf $(OMFIT_DIR)
-	rm -rf $(GACODE_ADD_DIR)
 	rm -rf $(EPED_DIR)
 	rm -rf $(HARVEST_CLIENT_DIR)
 	rm -rf $(BOUT++_DIR)
 
 FORCE:
-
-#======
-# AToM docs
-#======
-$(ATOM_DOC_DIR):
-	$(call GIT_CLONE, $(ATOM_DOC_GIT), $(ATOM_DOC_DIR), $(ATOM_DOC_VER))
-
-ATOM_DOC: FORCE | $(ATOM_DOC_DIR)
-	$(call GIT_PULL, $(ATOM_DOC_GIT), $(ATOM_DOC_DIR), $(ATOM_DOC_VER))
-
-
-#======
-# AToM website
-#======
-$(ATOM_WEBDIR)/html:
-	mkdir -p $(ATOM_WEBDIR); cd $(ATOM_WEBDIR); git clone $(ATOM_GIT) -b gh-pages html
-
-ATOM-website: FORCE | $(ATOM_WEBDIR)/html
-	cd docs; make html
-
-ATOM-online: FORCE | $(ATOM_WEBDIR)/html
-	cd docs; make commit; make push
 
 #======
 # OMFIT
@@ -155,16 +126,6 @@ $(GACODE_DIR):
 GACODE: FORCE | $(GACODE_DIR)
 	$(call GIT_PULL, $(GACODE_GIT), $(GACODE_DIR), $(GACODE_VER))
 	$(call GACODE_MAKE, $(GACODE_DIR), make)
-
-#===========
-# GACODE_ADD
-#===========
-$(GACODE_ADD_DIR):
-	$(call GIT_CLONE, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
-
-GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR) 
-	$(call GIT_PULL, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
-	#missing make...
 
 #===============
 # HARVEST_CLIENT
