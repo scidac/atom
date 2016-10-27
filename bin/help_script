@@ -1,16 +1,31 @@
 #!/bin/bash
 
-DIR=$GACODE_ROOT
+DIR=$PWD/gacode
 
-echo "Usage: make <module> ATOM_PLATFORM=<platform>"
+echo "Usage: $ make clone                  [STEP 1: clone or update repositories]"
+echo "       $ make set plat=<platform>    [STEP 2: set platform]"
+echo "       $ make build                  [STEP 3: build executables]"
+echo "       $ make clean                  [STEP 4: clean build]"
 echo
-echo "Supported platforms:"
+
+# Check to see if CONFIG file generated
+if [ -f CONFIG ]
+then
+   . ./CONFIG
+   echo "<platform>=$GACODE_PLATFORM"
+   exit 0
+fi
+
+# If no CONFIG file, try to print platform list
 if [ -d $DIR ]
 then
-   echo `ls $DIR/shared/install/ | sed s/\make\.inc\.//g | tr -s '\n' '\t' > platform`
-   cat platform ; rm -f platform
+   echo "Supported values for <platform>:"   
+   list=`ls -1 $DIR/shared/install/`
+   for x in $list
+   do
+      echo -n "${x#*inc.}  "
+   done
+   echo
+else
+   echo "After cloning, type 'make' again to see a list of available platforms"
 fi
-echo
-echo "Supported make options:"
-echo
-echo "all OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE HARVEST_CLIENT EPED BOUT"
