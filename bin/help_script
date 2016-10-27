@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR=$GACODE_ROOT
+
+echo "Usage: make <module> ATOM_PLATFORM=<platform>"
+echo
+echo "Supported platforms:"
+if [ -d $DIR ]
+then
+   echo `ls $DIR/shared/install/ | sed s/\make\.inc\.//g | tr -s '\n' '\t' > platform`
+   cat platform ; rm -f platform
+fi
+echo
+echo "Supported make options:"
+echo
+echo "all OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE HARVEST_CLIENT EPED BOUT"

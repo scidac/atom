@@ -67,18 +67,7 @@ GACODE_MAKE = @echo ; \
 
 
 help:
-	@echo "Usage: make ... ATOM_PLATFORM=..."
-	@echo
-	@echo "Supported platforms:"
-	@if [ -a "$(GACODE_DIR)" ]; then echo `ls $(GACODE_DIR)/shared/install/ | sed s/\
-make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
-	@cat platform
-	@echo
-	@echo
-	@echo "Supported make options:"
-	@echo
-	@echo "all ATOM-website ATOM-online ATOM_DOC OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE GACODE_ADD HARVEST_CLIENT EPED BOUT"
-
+	./bin/help_script
 all: $(ALL)
 
 delete_all:
