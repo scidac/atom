@@ -68,12 +68,14 @@ GACODE_MAKE = @echo ; \
 
 help:
 	./bin/help_script
+
 all: $(ALL)
 
 delete_all:
 	rm -rf $(GACODE_DIR)
 	rm -rf $(OMFIT_DIR)
 	rm -rf $(EPED_DIR)
+	rm -rf $(IPS_ATOM_DIR)
 	rm -rf $(HARVEST_CLIENT_DIR)
 	rm -rf $(BOUT++_DIR)
 
