@@ -1,5 +1,11 @@
 # Makefile for AToM modules (for webpages, see ./html)
 
+help:
+	@./bin/help_script
+
+#---------------------------------------------------------
+# Module configuration
+#
 OMFIT_VER=master
 #OMFIT_VER=unstable
 OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
@@ -26,9 +32,7 @@ BOUT_DIR=BOUT
 HARVEST_VER=master
 HARVEST_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_DIR=harvest_client
-
-help:
-	@./bin/help_script
+#---------------------------------------------------------
 
 clone:
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
@@ -55,10 +59,23 @@ else
 	@echo ". $(PWD)/$(GACODE_DIR)/shared/bin/gacode_setup" >> CONFIG
 endif
 
-build:
+#--------------------------------------------------------------------
+# Modules that need to be built/cleaned
+
+BUILD=GACODE HARVEST EPED BOUT
+
+all: $(BUILD)
+
+GACODE:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
+
+HARVEST:
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
+
+EPED:
 	. ./CONFIG ; cd $(EPED_DIR) ; make
+
+BOUT:
 	@cd $(BOUT_DIR); ./configure
 	@cd $(BOUT_DIR); make
 
@@ -67,3 +84,6 @@ clean:
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
 	. ./CONFIG ; cd $(EPED_DIR) ; make clean
 	@cd $(BOUT_DIR); make clean
+
+.PHONY: $(BUILD)
+#--------------------------------------------------------------------
