@@ -1,5 +1,5 @@
-Advanced Tokamak Modeling Project
-=================================
+AToM Introduction
+=================
 
 .. figure:: images/AToM_banner.png
   :width: 100%

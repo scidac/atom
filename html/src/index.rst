@@ -1,3 +1,6 @@
+Advanced Tokamak Modeling Project
+=================================
+
 .. toctree::
 
    self

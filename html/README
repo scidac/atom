@@ -1,2 +1,3 @@
-To build webpages, type 'make' in this directory.
+To *edit* webpages, edit files in the src directory.
+To *build* webpages, type 'make' in this directory.
 
