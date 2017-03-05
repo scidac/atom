@@ -8,6 +8,10 @@
 /ips-atom
 /harvest_client
 /BOUT
+/fann
+/atom-doc
+/atom-website
 stats.txt
 html/src/_build
 CONFIG
+platform

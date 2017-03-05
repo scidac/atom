@@ -32,23 +32,30 @@ BOUT_DIR=BOUT
 HARVEST_VER=master
 HARVEST_GIT=git@github.com:gafusion/harvest_client.git
 HARVEST_DIR=harvest_client
+
+FANN_VER=master
+FANN_GIT=git@github.com:libfann/fann.git
+FANN_DIR=fann
+
 #---------------------------------------------------------
 
 clone:
-	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
-	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
-	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
-	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
-	@./bin/clone_script $(EPED_GIT)     $(EPED_DIR)     $(EPED_VER)
-	@./bin/clone_script $(BOUT_GIT)     $(BOUT_DIR)     $(BOUT_VER)
+#	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
+#	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
+#	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
+#	@./bin/clone_script $(EPED_GIT)     $(EPED_DIR)     $(EPED_VER)
+#	@./bin/clone_script $(BOUT_GIT)     $(BOUT_DIR)     $(BOUT_VER)
+#	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
+	@./bin/clone_script $(FANN_GIT)     $(FANN_DIR)     $(FANN_VER)
 
 delete:
 	rm -rf $(OMFIT_DIR)
 	rm -rf $(IPS_ATOM_DIR)
 	rm -rf $(GACODE_DIR)
-	rm -rf $(HARVEST_DIR)
 	rm -rf $(EPED_DIR)
 	rm -rf $(BOUT_DIR)
+	rm -rf $(HARVEST_DIR)
+	rm -rf $(FANN_DIR)
 
 set:
 ifndef plat
@@ -62,7 +69,7 @@ endif
 #--------------------------------------------------------------------
 # Modules that need to be built/cleaned
 
-BUILD=GACODE HARVEST EPED BOUT
+BUILD=GACODE HARVEST EPED BOUT FANN
 
 all: $(BUILD)
 
@@ -79,11 +86,16 @@ BOUT:
 	@cd $(BOUT_DIR); ./configure
 	@cd $(BOUT_DIR); make
 
+FANN:
+	@cd $(FANN_DIR); cmake .
+	@cd $(FANN_DIR); make
+
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
-	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
 	. ./CONFIG ; cd $(EPED_DIR) ; make clean
-	@cd $(BOUT_DIR); make clean
+	. ./CONFIG ; cd $(BOUT_DIR) ; make clean
+	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
+	. ./CONFIG ; cd $(FANN_DIR) ; make clean
 
 .PHONY: $(BUILD)
 #--------------------------------------------------------------------
