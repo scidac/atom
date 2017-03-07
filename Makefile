@@ -39,14 +39,7 @@ FANN_DIR=fann
 
 #---------------------------------------------------------
 
-clone:
-#	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
-#	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
-#	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
-#	@./bin/clone_script $(EPED_GIT)     $(EPED_DIR)     $(EPED_VER)
-#	@./bin/clone_script $(BOUT_GIT)     $(BOUT_DIR)     $(BOUT_VER)
-#	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
-	@./bin/clone_script $(FANN_GIT)     $(FANN_DIR)     $(FANN_VER)
+clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR)
 
 delete:
 	rm -rf $(OMFIT_DIR)
@@ -69,24 +62,53 @@ endif
 #--------------------------------------------------------------------
 # Modules that need to be built/cleaned
 
-BUILD=GACODE HARVEST EPED BOUT FANN
+BUILD=GACODE HARVEST EPED BOUT++ FANN
 
-all: $(BUILD)
+build: $(BUILD)
 
-GACODE:
+all: clone build
+
+$(OMFIT_DIR):
+	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
+
+OMFIT: $(OMFIT_DIR)
+	@echo
+
+IPS: $(IPS_ATOM_DIR)
+	@echo
+
+$(IPS_ATOM_DIR):
+	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
+
+$(GACODE_DIR):
+	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
+
+GACODE: $(GACODE_DIR)
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
-HARVEST:
+$(HARVEST_DIR):
+	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
+
+HARVEST:$(HARVEST_DIR)
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
 
-EPED:
+$(EPED_DIR):
+	@./bin/clone_script $(EPED_GIT)  $(EPED_DIR)  $(EPED_VER)
+
+EPED: $(EPED_DIR)
 	. ./CONFIG ; cd $(EPED_DIR) ; make
 
-BOUT:
+$(BOUT_DIR):
+	@./bin/clone_script $(BOUT_GIT)  $(BOUT_DIR)  $(BOUT_VER)
+
+BOUT++: $(BOUT_DIR)
 	@cd $(BOUT_DIR); ./configure
 	@cd $(BOUT_DIR); make
 
-FANN:
+$(FANN_DIR):
+	@./bin/clone_script $(FANN_GIT)  $(FANN_DIR)  $(FANN_VER)
+
+FANN: $(FANN_DIR)
 	@cd $(FANN_DIR); cmake .
 	@cd $(FANN_DIR); make
 
