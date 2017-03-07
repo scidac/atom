@@ -16,8 +16,8 @@ IPS_ATOM_VER=master
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
 
-GACODE_VER=master 
-#GACODE_VER=stable
+#GACODE_VER=master 
+GACODE_VER=stable
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
 
