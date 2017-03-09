@@ -21,7 +21,7 @@ fi
 if [ -d $DIR ]
 then
    echo "Supported values for <platform>:"   
-   list=`ls -1 $DIR/shared/install/`
+   list=`ls -1 $DIR/shared/install/ $DIR/platform/build/ 2> /dev/null`
    for x in $list
    do
       echo -n "${x#*inc.}  "
