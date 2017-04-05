@@ -54,6 +54,9 @@ set:
 ifndef plat
 	rm -rf CONFIG
 else
+
+	@echo "$(plat)" > PLATFORM
+
 	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
 	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
 
@@ -100,7 +103,7 @@ $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
 GACODE: $(GACODE_DIR) FANN
-	. ./CONFIG ; cd $(GACODE_DIR) ; make
+	. ./CONFIG ; cd $(GACODE_DIR) ; make some
 
 $(HARVEST_DIR):
 	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
@@ -127,6 +130,7 @@ $(FANN_DIR):
 FANN: $(FANN_DIR)
 	@cd $(FANN_DIR); cmake .
 	@cd $(FANN_DIR); make -i; echo
+	@cd $(FANN_DIR)/lib; ln -fs ../src/lib* ./
 
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
