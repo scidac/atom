@@ -27,6 +27,8 @@ module-whatis gacode
 #=====================
 module load mvapich2-1.8/intel
 
+setenv LD_LIBRARY_PATH $::env(ATOM_ROOT)/fann/lib:$::env(LD_LIBRARY_PATH)
+
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM DROP
 
