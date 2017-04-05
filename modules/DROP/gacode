@@ -25,9 +25,6 @@ module-whatis gacode
 #=====================
 # begin of machine-specific settings here
 #=====================
-if { ! [ is-loaded default-paths ] } {
-  module load default-paths
-}
 module load mvapich2-1.8/intel
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode

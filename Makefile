@@ -54,8 +54,23 @@ set:
 ifndef plat
 	rm -rf CONFIG
 else
-
-	@echo "$(plat)" > PLATFORM
+	@echo ""
+	@echo "when this AToM installation will be completed"
+	@echo "you can use it by typing at the terminal: "
+	@echo ""
+	@echo "  module use $(PWD)/modules"
+	@echo "  module load atom"
+	@echo ""
+	@echo "#%Module"                                        > modules/atom
+	@echo "#at the termial type the following to use this AToM installation"      >> modules/atom
+	@echo ""                                               >> modules/atom
+	@echo "#  module use $(PWD)/modules"                   >> modules/atom
+	@echo "#  module load atom"                            >> modules/atom
+	@echo ""                                               >> modules/atom
+	@echo "setenv ATOM_ROOT $(PWD)"                        >> modules/atom
+	@echo "setenv GACODE_PLATFORM $(plat)"                 >> modules/atom
+	@echo "module use $(PWD)/modules/$(plat)"              >> modules/atom
+	@echo "module load `ls $(PWD)/modules/$(plat)`"        >> modules/atom
 
 	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
 	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
