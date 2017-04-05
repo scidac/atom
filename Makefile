@@ -16,8 +16,8 @@ IPS_ATOM_VER=master
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
 
-#GACODE_VER=master 
 GACODE_VER=stable
+#GACODE_VER=master
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
 
@@ -54,8 +54,24 @@ set:
 ifndef plat
 	rm -rf CONFIG
 else
-	@echo "export GACODE_PLATFORM=$(plat)" > CONFIG
-	@echo "export GACODE_ROOT=$(PWD)/$(GACODE_DIR)" >> CONFIG
+	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
+	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
+
+	@echo "export IPS_ATOM_DIR=$(PWD)/$(IPS_ATOM_DIR)"     >> CONFIG
+
+	@echo "export EPED_DIR=$(PWD)/$(EPED_DIR)"             >> CONFIG
+
+	@echo "export BOUT_DIR=$(PWD)/$(BOUT_DIR)"             >> CONFIG
+	@echo "export BOUT_ROOT=$(PWD)/$(BOUT_DIR)"            >> CONFIG
+
+	@echo "export HARVEST_DIR=$(PWD)/$(HARVEST_DIR)"       >> CONFIG
+	@echo "export HARVEST_ROOT=$(PWD)/$(HARVEST_DIR)"      >> CONFIG
+
+	@echo "export FANN_DIR=$(PWD)/$(FANN_DIR)"             >> CONFIG
+	@echo "export FANN_ROOT=$(PWD)/$(FANN_DIR)"            >> CONFIG
+
+	@echo "export GACODE_ROOT=$(PWD)/$(GACODE_DIR)"        >> CONFIG
+	@echo "export GACODE_PLATFORM=$(plat)"                 >> CONFIG
 	@echo ". $(PWD)/$(GACODE_DIR)/shared/bin/gacode_setup" >> CONFIG
 endif
 
@@ -83,7 +99,7 @@ $(IPS_ATOM_DIR):
 $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
-GACODE: $(GACODE_DIR)
+GACODE: $(GACODE_DIR) FANN
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
 $(HARVEST_DIR):
@@ -110,7 +126,7 @@ $(FANN_DIR):
 
 FANN: $(FANN_DIR)
 	@cd $(FANN_DIR); cmake .
-	@cd $(FANN_DIR); make
+	@cd $(FANN_DIR); make -i; echo
 
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
