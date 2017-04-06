@@ -29,6 +29,9 @@ module load mvapich2-1.8/intel
 
 setenv LD_LIBRARY_PATH $::env(ATOM_ROOT)/fann/lib:$::env(LD_LIBRARY_PATH)
 
+setenv NCDIR /opt/netcdf-4.1.3-intel
+setenv PATH  /opt/netcdf-4.1.3-intel/bin:$::env(PATH)
+
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM DROP
 
