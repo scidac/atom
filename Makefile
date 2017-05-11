@@ -21,6 +21,10 @@ GACODE_VER=stable
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
 
+GACODE_ADD_VER=master
+GACODE_ADD_GIT=git@github.com:gafusion/gacode_add.git
+GACODE_ADD_DIR=gacode_add
+
 EPED_VER=master 
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
@@ -39,12 +43,13 @@ FANN_DIR=fann
 
 #---------------------------------------------------------
 
-clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR)
+clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR)
 
 delete:
 	rm -rf $(OMFIT_DIR)
 	rm -rf $(IPS_ATOM_DIR)
 	rm -rf $(GACODE_DIR)
+	rm -rf $(GACODE_ADD_DIR)
 	rm -rf $(EPED_DIR)
 	rm -rf $(BOUT_DIR)
 	rm -rf $(HARVEST_DIR)
@@ -119,6 +124,9 @@ $(GACODE_DIR):
 
 GACODE: $(GACODE_DIR) FANN
 	. ./CONFIG ; cd $(GACODE_DIR) ; make some
+
+$(GACODE_ADD_DIR):
+	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
 
 $(HARVEST_DIR):
 	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
