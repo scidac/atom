@@ -36,6 +36,7 @@ prepend-path PATH ${GACODE_ROOT}/tgyro/bin
 prepend-path PATH ${GACODE_ROOT}/gyro/bin
 prepend-path PATH ${GACODE_ROOT}/cgyro/bin
 prepend-path PATH ${GACODE_ROOT}/neo/bin
+prepend-path PATH ${GACODE_ROOT}/vgen/bin
 prepend-path PATH ${GACODE_ROOT}/tglf/bin
 prepend-path PATH ${GACODE_ROOT}/glf23/bin
 prepend-path PATH ${GACODE_ROOT}/le3/bin
