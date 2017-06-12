@@ -1,6 +1,6 @@
 #%Module
 #
-# Module file for loading paths for GACODE
+# Module file for loading environment for GACODE
 #
 
 proc ModulesHelp { } {
@@ -20,26 +20,34 @@ proc ModulesHelp { } {
 }
 
 conflict gacode
-
 module-whatis gacode
-module load default-paths
+
+#=====================
+# begin of machine-specific settings here
+#=====================
+if { ! [ is-loaded default-paths ] } {
+  module load default-paths
+}
 module load netcdf
 module load fftw
 module load git
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
-
-setenv GACODE_ROOT ${GACODE_ROOT}
 setenv GACODE_PLATFORM SATURN_GCC
 
-prepend-path PATH ${GACODE_ROOT}/tgyro/bin
-prepend-path PATH ${GACODE_ROOT}/gyro/bin
-prepend-path PATH ${GACODE_ROOT}/cgyro/bin
-prepend-path PATH ${GACODE_ROOT}/neo/bin
-prepend-path PATH ${GACODE_ROOT}/vgen/bin
-prepend-path PATH ${GACODE_ROOT}/tglf/bin
-prepend-path PATH ${GACODE_ROOT}/glf23/bin
-prepend-path PATH ${GACODE_ROOT}/le3/bin
-prepend-path PATH ${GACODE_ROOT}/shared/bin
-prepend-path PYTHONPATH ${GACODE_ROOT}/python
-append-path IDL_PATH ${GACODE_ROOT}/gyro/vugyro
+#=====================
+# end of machine-specific settings here
+# do not modify the settings below
+#=====================
+
+setenv GACODE_ROOT ${GACODE_ROOT}
+
+if { [ module-info mode load ] } {
+  module use ${GACODE_ROOT}/shared/modulefiles
+} 
+
+module load gacode_base
+
+if { [ module-info mode remove ] } {
+  module use ${GACODE_ROOT}/shared/modulefiles
+}

@@ -1,198 +1,166 @@
-ATOM_VERSION = stable # or devel
-ifeq ($(strip $(ATOM_VERSION)),stable)
-        OMFIT_VER=master # master & unstable
-        IPS_ATOM_VER=master # master & devel
-        GACODE_VER=stable # stable & master
-        GACODE_ADD_VER=master # master
-else
-        OMFIT_VER=unstable # master & unstable
-        IPS_ATOM_VER=devel # master & devel
-        GACODE_VER=master # stable & master
-        GACODE_ADD_VER=master # master
-endif
-EPED_VER=master # master
-HARVEST_CLIENT_VER=master # master
-ATOM_DOC_VER=master # master
+# Makefile for AToM modules (for webpages, see ./html)
 
+help:
+	@./bin/help_script
+
+#---------------------------------------------------------
+# Module configuration
+#
+OMFIT_VER=master
+#OMFIT_VER=unstable
 OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
 OMFIT_DIR=OMFIT-source
-OMFIT_WEBDIR=OMFIT-docs
 
+IPS_ATOM_VER=master 
+#IPS_ATOM_VER=devel
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
 
+GACODE_VER=stable
+#GACODE_VER=master
 GACODE_GIT=git@github.com:gafusion/gacode.git
 GACODE_DIR=gacode
 
+GACODE_ADD_VER=master
 GACODE_ADD_GIT=git@github.com:gafusion/gacode_add.git
 GACODE_ADD_DIR=gacode_add
 
+EPED_VER=master 
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
 
-BOUT++_GIT=git@github.com:boutproject/BOUT-dev.git
-BOUT++_DIR=BOUT
-BOUT++_VER=master #master
+BOUT_VER=master 
+BOUT_GIT=git@github.com:boutproject/BOUT-dev.git
+BOUT_DIR=BOUT
 
-HARVEST_CLIENT_GIT=git@github.com:gafusion/harvest_client.git
-HARVEST_CLIENT_DIR=harvest_client
+HARVEST_VER=master
+HARVEST_GIT=git@github.com:gafusion/harvest_client.git
+HARVEST_DIR=harvest_client
 
-ATOM_DOC_GIT=git@github.com:scidac/atom-doc.git
-ATOM_DOC_DIR=atom-doc
+FANN_VER=master
+FANN_GIT=git@github.com:libfann/fann.git
+FANN_DIR=fann
 
-ATOM_GIT=git@github.com:scidac/atom.git
-ATOM_WEBDIR=../atom-website
+#---------------------------------------------------------
 
-ALL= OMFIT GACODE IPS_ATOM HARVEST_CLIENT GACODE_ADD EPED BOUT++
+clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR)
 
-GIT_CLONE   = @echo ; \
-              echo ================; \
-              echo $(2) [clone] ; \
-              echo ================; \
-              git clone -b $(3) $(1) $(2) ; \
-              cd $(2) ; \
-              git submodule update --init --recursive
-GIT_PULL    = @echo ; \
-              echo ================; \
-              echo $(2) [pull]  ; \
-              echo ================; \
-              cd $(2) ; \
-              git fetch ; \
-              git checkout $(3) ; \
-              git pull; \
-              git submodule update --init --recursive
-GACODE_MAKE = @echo ; \
-              echo ================; \
-              echo $(1) [make]  ; \
-              echo ================; \
-              bash -c "export GACODE_PLATFORM=$(ATOM_PLATFORM); \
-                export GACODE_ROOT=`pwd`/$(GACODE_DIR); \
-                cd $(1); \
-                . $(GACODE_ROOT)/shared/bin/gacode_setup; \
-                $(2)"
-
-
-help:
-	@echo "Usage: make ... ATOM_PLATFORM=..."
-	@echo
-	@echo "Supported platforms:"
-	@if [ -a "$(GACODE_DIR)" ]; then echo `ls $(GACODE_DIR)/shared/install/ | sed s/\
-make\.inc\.//g | tr -s '\n' '\t' > platform`; fi;
-	@cat platform
-	@echo
-	@echo
-	@echo "Supported make options:"
-	@echo
-	@echo "all ATOM-website ATOM-online ATOM_DOC OMFIT OMFIT-website OMFIT-online IPS_ATOM GACODE GACODE_ADD HARVEST_CLIENT EPED BOUT"
-
-all: $(ALL)
-
-clean:
-	rm -rf $(GACODE_DIR)
+delete:
 	rm -rf $(OMFIT_DIR)
+	rm -rf $(IPS_ATOM_DIR)
+	rm -rf $(GACODE_DIR)
 	rm -rf $(GACODE_ADD_DIR)
 	rm -rf $(EPED_DIR)
-	rm -rf $(HARVEST_CLIENT_DIR)
-	rm -rf $(BOUT++_DIR)
+	rm -rf $(BOUT_DIR)
+	rm -rf $(HARVEST_DIR)
+	rm -rf $(FANN_DIR)
 
-FORCE:
+set:
+ifndef plat
+	rm -rf CONFIG
+else
+	@echo ""
+	@echo "when this AToM installation will be completed"
+	@echo "you can use it by typing at the terminal: "
+	@echo ""
+	@echo "  module use $(PWD)/modules"
+	@echo "  module load atom"
+	@echo ""
+	@echo "#%Module"                                        > modules/atom
+	@echo "#at the termial type the following to use this AToM installation"      >> modules/atom
+	@echo ""                                               >> modules/atom
+	@echo "#  module use $(PWD)/modules"                   >> modules/atom
+	@echo "#  module load atom"                            >> modules/atom
+	@echo ""                                               >> modules/atom
+	@echo "setenv ATOM_ROOT $(PWD)"                        >> modules/atom
+	@echo "setenv GACODE_PLATFORM $(plat)"                 >> modules/atom
+	@echo "module use $(PWD)/modules/$(plat)"              >> modules/atom
+	@echo "module load `ls $(PWD)/modules/$(plat)`"        >> modules/atom
 
-#======
-# AToM docs
-#======
-$(ATOM_DOC_DIR):
-	$(call GIT_CLONE, $(ATOM_DOC_GIT), $(ATOM_DOC_DIR), $(ATOM_DOC_VER))
+	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
+	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
 
-ATOM_DOC: FORCE | $(ATOM_DOC_DIR)
-	$(call GIT_PULL, $(ATOM_DOC_GIT), $(ATOM_DOC_DIR), $(ATOM_DOC_VER))
+	@echo "export IPS_ATOM_DIR=$(PWD)/$(IPS_ATOM_DIR)"     >> CONFIG
 
+	@echo "export EPED_DIR=$(PWD)/$(EPED_DIR)"             >> CONFIG
 
-#======
-# AToM website
-#======
-$(ATOM_WEBDIR)/html:
-	mkdir -p $(ATOM_WEBDIR); cd $(ATOM_WEBDIR); git clone $(ATOM_GIT) -b gh-pages html
+	@echo "export BOUT_DIR=$(PWD)/$(BOUT_DIR)"             >> CONFIG
+	@echo "export BOUT_ROOT=$(PWD)/$(BOUT_DIR)"            >> CONFIG
 
-ATOM-website: FORCE | $(ATOM_WEBDIR)/html
-	cd docs; make html
+	@echo "export HARVEST_DIR=$(PWD)/$(HARVEST_DIR)"       >> CONFIG
+	@echo "export HARVEST_ROOT=$(PWD)/$(HARVEST_DIR)"      >> CONFIG
 
-ATOM-online: FORCE | $(ATOM_WEBDIR)/html
-	cd docs; make commit; make push
+	@echo "export FANN_DIR=$(PWD)/$(FANN_DIR)"             >> CONFIG
+	@echo "export FANN_ROOT=$(PWD)/$(FANN_DIR)"            >> CONFIG
 
-#======
-# OMFIT
-#======
+	@echo "export GACODE_ROOT=$(PWD)/$(GACODE_DIR)"        >> CONFIG
+	@echo "export GACODE_PLATFORM=$(plat)"                 >> CONFIG
+	@echo ". $(PWD)/$(GACODE_DIR)/shared/bin/gacode_setup" >> CONFIG
+endif
+
+#--------------------------------------------------------------------
+# Modules that need to be built/cleaned
+
+BUILD=GACODE HARVEST EPED BOUT++ FANN
+
+build: $(BUILD)
+
+all: clone build
+
 $(OMFIT_DIR):
-	$(call GIT_CLONE, $(OMFIT_GIT), $(OMFIT_DIR), $(OMFIT_VER))
+	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
-OMFIT: FORCE | $(OMFIT_DIR)
-	$(call GIT_PULL, $(OMFIT_GIT), $(OMFIT_DIR), $(OMFIT_VER))
+OMFIT: $(OMFIT_DIR)
+	@echo
 
-$(OMFIT_WEBDIR)/html:
-	mkdir -p $(OMFIT_WEBDIR); cd $(OMFIT_WEBDIR); git clone $(OMFIT_GIT) -b gh-pages html
+IPS: $(IPS_ATOM_DIR)
+	@echo
 
-OMFIT-website: FORCE | $(OMFIT_WEBDIR)/html $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/docs; make html
-
-OMFIT-online: FORCE | $(OMFIT_WEBDIR)/html $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/docs; make commit; make push
-
-#=========
-# IPS_ATOM
-#=========
 $(IPS_ATOM_DIR):
-	$(call GIT_CLONE, $(IPS_ATOM_GIT), $(IPS_ATOM_DIR), $(IPS_ATOM_VER))
+	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
 
-IPS_ATOM: FORCE | $(IPS_ATOM_DIR)
-	$(call GIT_PULL, $(IPS_ATOM_GIT), $(IPS_ATOM_DIR), $(IPS_ATOM_VER))
-
-#=======
-# GACODE
-#=======
 $(GACODE_DIR):
-	$(call GIT_CLONE, $(GACODE_GIT), $(GACODE_DIR), $(GACODE_VER))
+	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
-GACODE: FORCE | $(GACODE_DIR)
-	$(call GIT_PULL, $(GACODE_GIT), $(GACODE_DIR), $(GACODE_VER))
-	$(call GACODE_MAKE, $(GACODE_DIR), make)
+GACODE: $(GACODE_DIR) FANN
+	. ./CONFIG ; cd $(GACODE_DIR) ; make some
 
-#===========
-# GACODE_ADD
-#===========
 $(GACODE_ADD_DIR):
-	$(call GIT_CLONE, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
+	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
 
-GACODE_ADD: FORCE | $(GACODE_ADD_DIR) $(GACODE_DIR) 
-	$(call GIT_PULL, $(GACODE_ADD_GIT), $(GACODE_ADD_DIR), $(GACODE_ADD_VER))
-	#missing make...
+$(HARVEST_DIR):
+	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
 
-#===============
-# HARVEST_CLIENT
-#===============
-$(HARVEST_CLIENT_DIR):
-	$(call GIT_CLONE, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
+HARVEST:$(HARVEST_DIR)
+	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
 
-HARVEST_CLIENT: FORCE | $(HARVEST_CLIENT_DIR) $(GACODE_DIR)
-	$(call GIT_PULL, $(HARVEST_CLIENT_GIT), $(HARVEST_CLIENT_DIR), $(HARVEST_CLIENT_VER))
-	$(call GACODE_MAKE, $(HARVEST_CLIENT_DIR), make all)
-
-#===========
-# EPED
-#===========
 $(EPED_DIR):
-	$(call GIT_CLONE, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
+	@./bin/clone_script $(EPED_GIT)  $(EPED_DIR)  $(EPED_VER)
 
-EPED: FORCE | $(EPED_DIR) $(GACODE_DIR)
-	$(call GIT_PULL, $(EPED_GIT), $(EPED_DIR), $(EPED_VER))
-	$(call GACODE_MAKE, $(EPED_DIR), make)
+EPED: $(EPED_DIR)
+	. ./CONFIG ; cd $(EPED_DIR) ; make
 
-#=========
-# BOUT++
-#=========
-$(BOUT++_DIR):
-	$(call GIT_CLONE, $(BOUT++_GIT), $(BOUT++_DIR), $(BOUT++_VER))
+$(BOUT_DIR):
+	@./bin/clone_script $(BOUT_GIT)  $(BOUT_DIR)  $(BOUT_VER)
 
-BOUT++: FORCE | $(BOUT++_DIR)
-	$(call GIT_PULL, $(BOUT++_GIT), $(BOUT++_DIR), $(BOUT++_VER))
-	@cd $(BOUT++_DIR); ./configure
-	@cd $(BOUT++_DIR); make
+BOUT++: $(BOUT_DIR)
+	@cd $(BOUT_DIR); ./configure
+	@cd $(BOUT_DIR); make
+
+$(FANN_DIR):
+	@./bin/clone_script $(FANN_GIT)  $(FANN_DIR)  $(FANN_VER)
+
+FANN: $(FANN_DIR)
+	@cd $(FANN_DIR); cmake .
+	@cd $(FANN_DIR); make -i; echo
+	@cd $(FANN_DIR)/lib; ln -fs ../src/lib* ./
+
+clean:
+	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
+	. ./CONFIG ; cd $(EPED_DIR) ; make clean
+	. ./CONFIG ; cd $(BOUT_DIR) ; make clean
+	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
+	. ./CONFIG ; cd $(FANN_DIR) ; make clean
+
+.PHONY: $(BUILD)
+#--------------------------------------------------------------------

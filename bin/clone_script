@@ -1,0 +1,22 @@
+#!/bin/bash
+
+repo=$1
+dir=$2
+branch=$3
+
+if [ -d $dir ]
+then
+   echo
+   echo "INFO: (clone_script) Pulling $dir"
+   cd $dir
+   git fetch 
+   git checkout $branch 
+   git pull
+else
+   echo
+   echo "INFO: (clone_script) Cloning $repo"
+   git clone -b $branch $repo $dir 
+   cd $dir
+fi
+
+git submodule update --init --recursive
