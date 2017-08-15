@@ -6,3 +6,6 @@
 module-whatis bout
 
 setenv BOUT_TOP $::env(ATOM_ROOT)/BOUT
+
+module load netcdf/4.4.1-mpich3.2-gcc4.9.2
+module load fftw/3.3.6-mpich3.2
