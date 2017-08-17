@@ -28,8 +28,8 @@ module-whatis gacode
 if { ! [ is-loaded default-paths ] } {
   module load default-paths
 }
-module load netcdf/4.4.1-mpich3.2-gcc4.9.2
-module load fftw/3.3.6-mpich3.2
+module load netcdf/gnu
+module load fftw
 module load git
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode

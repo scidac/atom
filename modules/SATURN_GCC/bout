@@ -7,5 +7,9 @@ module-whatis bout
 
 setenv BOUT_TOP $::env(ATOM_ROOT)/BOUT
 
-module load netcdf/4.4.1-mpich3.2-gcc4.9.2
-module load fftw/3.3.6-mpich3.2
+# These are needed to build bout, but gcc4.9.2 is not compatible with most of the iris infrastructure public installation (i.e. python MDSplus)
+#module load netcdf/4.4.1-mpich3.2-gcc4.9.2
+#module load fftw/3.3.6-mpich3.2
+
+module load netcdf/gnu
+module load fftw
