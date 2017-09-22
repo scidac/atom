@@ -1,3 +1,5 @@
 To *edit* webpages, edit files in the src directory.
-To *build* webpages, type 'make' in this directory.
 
+To *build* webpages, type 'make' in this directory. This will copy data to ../docs
+
+To *publish* webpages, 'git push' to push docs to master at GitHub.

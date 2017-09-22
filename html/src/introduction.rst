@@ -1,11 +1,11 @@
-AToM Introduction
-=================
+About AToM 
+==========
 
-.. figure:: images/AToM_banner.png
+.. figure:: images/atom_banner.png
   :width: 100%
   :align: center
   :alt: AToM banner
-  :target: _images/AToM_banner.png
+  :target: _images/atom_banner.png
 
 Fusion is the process that powers the sun and stars, and magnetic confinement devices, such as 
 the tokamak, provide a possible path to tap this benign and inexhaustible source of energy 
