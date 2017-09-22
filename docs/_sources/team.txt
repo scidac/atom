@@ -1,13 +1,18 @@
 Meetings and AToM Team Members
 ==============================
 
-2017.09.27 -- Kickoff Conference call 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. figure:: images/atom_cupcakes.jpg
 
-1. Introductions (20 min)
-2. Summary presentations by Institutionsl PIs
-3. Delegation of short-term action items
-4. Discussion of rationale for November F2F meeting at GA
+2017.09.27 -- Kickoff Conference call 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Time: Wednesday, 27 Sept 2017 -- 1:30pm-3:00pm PDT 
+:Join: https://fusion.gat.com/global/Remote13-301
+
+:Agenda:
+1. Self-introduction from each team member (25 min)
+2. Summary presentations by Institutional PIs (30 min)
+3. Discussion of action items for November F2F meeting at GA
 
 ----
 
@@ -28,23 +33,37 @@ AToM Team (2017-present)
   | **David L. Green**, Oak Ridge National Laboratory
   | **Mikhail Dorf**, Lawrence Livermore National Laboratory
   | **Christopher Holland**, University of California, San Diego
+  | **Charles Kessel**, Princeton Plasma Physics Laboratory
+  | **Paul Bonoli**, Massachusetts Institute of Technology
 
 :ASCR PIs:
  | **David E. Bernholdt**, Oak Ridge National Laboratory
  | **Milo Dorr**, Lawrence Livermore National Laboratory
  | **David Schissel**, General Atomics
 
+:Contractors:
+ | **Richard Kalling**, Kalling Software
+ | **Yang Chen**, University of Colorado, Boulder
+ | **Don Batchelor**, Oak Ridge National Laboratory
+
 :Funded Collaborators:
  | **O. Meneghini**, General Atomics
- | **S. Smith**, General Atomics
+ | **S.P. Smith**, General Atomics
  | **P.B. Snyder**, General Atomics
+ | **D. Eldon**, General Atomics
+ | **E. Belli**, General Atomics
+ | **M. Kostuk**, General Atomics
  | **W. Elwasif**, Oak Ridge National Laboratory
- | **E. D'Azevedo**, Oak Ridge National Laboratory
+ | **G. Fann**, Oak Ridge National Laboratory
+ | **M. Cianciosa**, Oak Ridge National Laboratory
  | **J.M. Park**, Oak Ridge National Laboratory
- | **D. Batchelor**, Oak Ridge National Laboratory
+ | **K. Law**, Oak Ridge National Laboratory
  | **M. Umansky** Lawerence Livermore National Laboratory
+ | **A. Pankin** Lawerence Livermore National Laboratory
  | **V. Izzo**, University of California, San Diego
  | **D. Orlov**, University of California, San Diego
+ | **N. Howard**, Massachusetts Institute of Technology
+ | **J. Sachdev**, Princeton Plasma Physics Laboratory
 
 ----
  

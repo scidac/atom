@@ -99,10 +99,10 @@ html_theme_options = {
     'navbar_site_name': "Jump to",
 
     # A list of tuples containing pages or urls to link to.
-    'navbar_links': [("Components", "components"),
-                     ('Literature', "literature"),
+    'navbar_links': [('Literature', "literature"),
                      ("Install","install"),
                      ("Team", "team"),
+                     ("Find", "find"),
                      ("Index", "index")
                      ],
 

@@ -5,9 +5,9 @@ Advanced Tokamak Modeling Project
 
    self
    introduction
-   components
    literature
    install
    team
+   find
 
  
