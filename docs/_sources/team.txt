@@ -6,7 +6,7 @@ Meetings and AToM Team Members
 2017.09.27 -- Kickoff Conference call 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:Time: Wednesday, 27 Sept 2017 -- 1:30pm-3:00pm PDT 
+:Time: Wednesday, 27 Sept 2017 -- 1:00pm-2:30pm PDT 
 :Join: https://fusion.gat.com/global/Remote13-301
 
 :Agenda:
@@ -68,7 +68,6 @@ AToM Team (2017-present)
  | **K. Law**, Oak Ridge National Laboratory
  | **M. Umansky** Lawerence Livermore National Laboratory
  | **A. Pankin** Lawerence Livermore National Laboratory
- | **V. Izzo**, University of California, San Diego
  | **D. Orlov**, University of California, San Diego
  | **N. Howard**, Massachusetts Institute of Technology
  | **J. Sachdev**, Princeton Plasma Physics Laboratory
