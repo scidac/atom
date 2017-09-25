@@ -10,9 +10,17 @@ Meetings and AToM Team Members
 :Join: https://fusion.gat.com/global/Remote13-301
 
 :Agenda:
-1. Self-introduction from each team member (25 min)
-2. Summary presentations by Institutional PIs (30 min)
-3. Discussion of action items for November F2F meeting at GA
+#. Summary of AToM-0, vision for AToM (Candy, 10 min)
+#. Self-introduction from each team member (all, 20 min)
+#. Summary presentations by AToM-0 Institutional PIs 
+
+   #. Bernholdt (6 min)
+   #. Dorf (6 min)
+   #. Dorr (6 min)
+   #. Green (6 min)
+   #. Holland (6 min)
+   
+#. Open discussion of action items for November F2F meeting at GA (30 min)
 
 ----
 
