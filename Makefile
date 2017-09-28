@@ -74,8 +74,13 @@ else
 	@echo ""                                               >> modules/atom
 	@echo "setenv ATOM_ROOT $(PWD)"                        >> modules/atom
 	@echo "setenv GACODE_PLATFORM $(plat)"                 >> modules/atom
-	@echo "module use $(PWD)/modules/$(plat)"              >> modules/atom
-	@echo "module load `ls $(PWD)/modules/$(plat)`"        >> modules/atom
+	@echo "if { [ module-info mode load ] } { "            >> modules/atom
+	@echo "  module use $(PWD)/modules/$(plat)"            >> modules/atom
+	@echo "}"                                              >> modules/atom
+	@echo "module load `ls $(PWD)/modules/$(plat)|tr '\n' ' '`"        >> modules/atom
+	@echo "if { [ module-info mode remove ] } {"           >> modules/atom
+	@echo "  module use $(PWD)/modules/$(plat)"            >> modules/atom
+	@echo "}"                                              >> modules/atom
 
 	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
 	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
@@ -144,7 +149,7 @@ $(BOUT_DIR):
 	@./bin/clone_script $(BOUT_GIT)  $(BOUT_DIR)  $(BOUT_VER)
 
 BOUT++: $(BOUT_DIR)
-	@cd $(BOUT_DIR); ./configure
+	@cd $(BOUT_DIR); ./configure --with-hdf5=${HDF5_DIR}/bin/h5pcc
 	@cd $(BOUT_DIR); make
 
 $(FANN_DIR):

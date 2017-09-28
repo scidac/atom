@@ -40,3 +40,6 @@ if { ! [ file exists /fusion/projects/omfit-results/$::env(USER) ] } {
     file mkdir /fusion/projects/omfit-results/$::env(USER)
 }
 file attributes /fusion/projects/omfit-results/$::env(USER) -permissions og-w
+
+catch { exec chmod  og-w {*}[glob /fusion/projects/omfit-results/$::env(USER)/projects/*.zip] }
+exec chmod  og-w /fusion/projects/omfit-results/$::env(USER)/

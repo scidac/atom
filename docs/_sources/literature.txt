@@ -1,3 +1,6 @@
+AToM Literature
+===============
+
 ~~~~~~~~~~~~~
 Presentations
 ~~~~~~~~~~~~~
@@ -69,6 +72,9 @@ Journal Publications
    * - Year
      - Main author
      - Title
+   * - 2017
+     - `Belli E.A. <http://iopscience.iop.org/0029-5515/57/11/116053>`_
+     - Implications of advanced collision operators for gyrokinetic simulation
    * - 2016
      - `Candy J. <http://www.sciencedirect.com/science/article/pii/S0021999116303400>`_
      - A high-accuracy Eulerian gyrokinetic solver for collisional plasmas
