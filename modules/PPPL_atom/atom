@@ -1,0 +1,23 @@
+#%Module
+##
+## atom modulefile
+##
+proc ModulesHelp {} {
+        puts stderr "This module loads ATOM PPPL_atom"
+}
+module-whatis "AToM "
+
+conflict atom 
+
+module load slurm
+module load ppplcluster
+
+set atomhome "/p/atom/atom_PPPL_atom"
+
+setenv ATOM_ROOT ${atomhome}
+
+#prepend-path MODULEPATH "${atomhome}/modules"
+
+prepend-path PATH /p/atom/conda/bin
+
+prepend-path LD_LIBRARY_PATH /lib64:/usr/lib64:/p/conda/atom/lib

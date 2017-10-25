@@ -73,6 +73,9 @@ Journal Publications
      - Main author
      - Title
    * - 2017
+     - `O. Meneghini <https://doi.org/10.1088/1741-4326/aa7776>`_
+     - Self-consistent core-pedestal transport simulations with neural network accelerated models
+   * - 2017
      - `Belli E.A. <http://iopscience.iop.org/0029-5515/57/11/116053>`_
      - Implications of advanced collision operators for gyrokinetic simulation
    * - 2016
