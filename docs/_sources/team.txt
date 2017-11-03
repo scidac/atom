@@ -7,9 +7,9 @@ Meetings and AToM Team Members
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :Time:     Monday 27 Nov -- Thursday Nov 30 
-:Location: General Atomics Bldg 7
+:Location: General Atomics Bldg 7, Room G07-120
 :Badges:   gonzalesl@fusion.gat.com
-:Location: `Google Maps <https://www.google.com/maps/dir//32.8935643,-117.2346108/@32.893284,-117.2345311,18.5z>`_
+:Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
 
 ------
 AGENDA
@@ -44,19 +44,23 @@ AGENDA
 +-----------------+-----------+-------------+---------------------------------------+
 |                 | 01:40PM   | Chen        | EP inteaction with MHD/turbulence     |
 +-----------------+-----------+-------------+---------------------------------------+
-|                 | 02:20PM   | Kalling     | My experience installing AToM         |
+|                 | 02:00PM   | Fann        | Parallel-in-time methods              |
 +-----------------+-----------+-------------+---------------------------------------+
-|                 | 02:40PM   | Fann        | Parallel-in-time methods              |
+|                 | 02:20PM   | **BREAK**                                           |
++-----------------+-----------+-------------+---------------------------------------+
+|                 | 02:40PM   | Law         | Reduced Models                        |
++-----------------+-----------+-------------+---------------------------------------+
+|                 | 03:00PM   | Berhholdt   | SciDAC ASCR Institutes (remote)       |
 +-----------------+-----------+-------------+---------------------------------------+
 | **Wednesday**   | **AToM Technical day**  |                                       |
 +-----------------+-----------+-------------+---------------------------------------+
 |                 | 09:00AM   | Smith       | Logistics, Github navigation, etc     |
 +-----------------+-----------+-------------+---------------------------------------+
-|                 | 10:00AM   | Elwasif     | IPS modules and development           |
+|                 | 09:30AM   | Elwasif     | IPS modules and development           |
 +-----------------+-----------+-------------+---------------------------------------+
-|                 | 11:00AM   | Kalling     | AToM cohesiveness, packaging          |
+|                 | 10:00AM   | Kalling     | My experience installing AToM         |
 +-----------------+-----------+-------------+---------------------------------------+
-|                 | 02:00PM   | Meneghini   | TBA                                   |
+|                 | 01:00PM   | Meneghini   | TBA                                   |
 +-----------------+-----------+-------------+---------------------------------------+
 | **Thursday**    | **AToM coding frenzy**  |                                       |
 +-----------------+-----------+-------------+---------------------------------------+
