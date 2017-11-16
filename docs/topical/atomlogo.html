@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>plasma-state build notes &#8212; AToM</title>
+    <title>Image gallery &#8212; AToM</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -79,8 +79,9 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">plasma-state build notes</a><ul>
-<li><a class="reference internal" href="#edison-gnu">Edison GNU</a></li>
+<li><a class="reference internal" href="#">Image gallery</a><ul>
+<li><a class="reference internal" href="#raw-logos">raw logos</a></li>
+<li><a class="reference internal" href="#wallpaper">wallpaper</a></li>
 </ul>
 </li>
 </ul>
@@ -111,35 +112,37 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="plasma-state-build-notes">
-<h1>plasma-state build notes<a class="headerlink" href="#plasma-state-build-notes" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="http://w3.pppl.gov/ntcc/PlasmaState/](http://w3.pppl.gov/ntcc/PlasmaState/">http://w3.pppl.gov/ntcc/PlasmaState/](http://w3.pppl.gov/ntcc/PlasmaState/</a></p>
-<p>Requires: pspline, TranspSubs, Xplasma, sglib (all these are in ntcc-source)
-There seem to be both <a href="#id1"><span class="problematic" id="id2">t_</span></a> versions and regular versions. Looks like the <a href="#id3"><span class="problematic" id="id4">t_</span></a> versions are related to SWIM, so we will use those. Be nice if someone documented what the difference was.</p>
-<p>Looks like you simply put the contents of the downloaded source into the same directory and run the gmake command since all the top-level Makefiles are the same.</p>
-<div class="figure">
-<img alt="../_images/ps-tree.png" src="../_images/ps-tree.png" />
+  <div class="section" id="image-gallery">
+<h1>Image gallery<a class="headerlink" href="#image-gallery" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="raw-logos">
+<h2>raw logos<a class="headerlink" href="#raw-logos" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="../_images/atom.png"><img alt="atom logo" src="../_images/atom.png" style="width: 360.0px; height: 120.0px;" /></a>
+<p class="caption"><span class="caption-text">AToM logo, white background, 900x300</span></p>
 </div>
-<div class="section" id="edison-gnu">
-<h2>Edison GNU<a class="headerlink" href="#edison-gnu" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>module swap PrgEnv-intel PrgEnv-gnu
-module swap gcc gcc/4.8.2 <span class="c1"># This is because there is no netcdf built for gcc49</span>
-module load netcdf
-<span class="nb">cd</span> /project/projectdirs/atom/atom-install-edison/plasma-state-source/ntcc-source
-<span class="nv">NTCC_DIR</span><span class="o">=</span>/project/projectdirs/atom/atom-install-edison/plasma-state-source/ntcc-gnu
-make realclean
-<span class="nv">FC</span><span class="o">=</span><span class="s2">&quot;ftn&quot;</span> <span class="nv">CC</span><span class="o">=</span><span class="s2">&quot;cc&quot;</span> <span class="nv">CXX</span><span class="o">=</span><span class="s2">&quot;CC&quot;</span> <span class="nv">FORTRAN_VARIANT</span><span class="o">=</span><span class="s2">&quot;GCC&quot;</span> gmake <span class="nv">NO_EDITLIBS</span><span class="o">=</span>Y <span class="nv">LAPACK</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="nv">BLAS</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
-gmake install <span class="nv">PREFIX</span><span class="o">=</span><span class="nv">$NTCC_DIR</span>
-</pre></div>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../_images/atom_transparent.png"><img alt="atom logo" src="../_images/atom_transparent.png" style="width: 360.0px; height: 120.0px;" /></a>
+<p class="caption"><span class="caption-text">AToM logo, transparent background, 900x300</span></p>
 </div>
-<p>A lot of the test routines seem to fail building with the following error</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>/opt/cray/hdf5/1.8.13/GNU/48/lib/libhdf5.a(H5PL.o): In function `H5PL_load&#39;: H5PL.c:(.text+0x4ac): warning: Using &#39;dlopen&#39; in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
-/usr/bin/ld: link errors found, deleting executable `../LINUX/test/update_state&#39;
-collect2: error: ld returned 1 exit status
-gmake[1]: *** [../LINUX/test/update_state] Error 1
-</pre></div>
 </div>
-<p>But it seems OK not to worry about that.</p>
+<div class="section" id="wallpaper">
+<h2>wallpaper<a class="headerlink" href="#wallpaper" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="../_images/atom_1366x768.png"><img alt="atom wallpaper" src="../_images/atom_1366x768.png" style="width: 204.9px; height: 115.2px;" /></a>
+<p class="caption"><span class="caption-text">AToM desktop wallpaper, 1366x768</span></p>
+</div>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="../_images/atom_1920x1080.png"><img alt="atom wallpaper" src="../_images/atom_1920x1080.png" style="width: 288.0px; height: 162.0px;" /></a>
+<p class="caption"><span class="caption-text">AToM desktop wallpaper, 1920x1080</span></p>
+</div>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="../_images/atom_2560x1440.png"><img alt="atom wallpaper" src="../_images/atom_2560x1440.png" style="width: 384.0px; height: 216.0px;" /></a>
+<p class="caption"><span class="caption-text">AToM desktop wallpaper, 2560x1440</span></p>
+</div>
+<div class="figure" id="id6">
+<a class="reference internal image-reference" href="../_images/atom_1440x2560.png"><img alt="atom wallpaper" src="../_images/atom_1440x2560.png" style="width: 216.0px; height: 384.0px;" /></a>
+<p class="caption"><span class="caption-text">AToM smartphone wallpaper, 1440x2560</span></p>
+</div>
 </div>
 </div>
 
@@ -156,14 +159,14 @@ gmake[1]: *** [../LINUX/test/update_state] Error 1
         <br/>
         
 <div id="sourcelink">
-  <a href="../_sources/topical/plasma_state.txt"
+  <a href="../_sources/topical/atomlogo.txt"
      rel="nofollow">Source</a>
 </div>
       
     </p>
     <p>
         &copy; Copyright 2014-2017.<br/>
-      Last updated on Sep 26, 2017.<br/>
+      Last updated on Nov 15, 2017.<br/>
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
     </p>
   </div>

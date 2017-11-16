@@ -1,6 +1,11 @@
 Repositories, links, and information
 ====================================
 
+Artwork and Screenshots 
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* :doc:`AToM Logo <topical/atomlogo>` 
+
 Software repositories
 ~~~~~~~~~~~~~~~~~~~~~
 
