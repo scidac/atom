@@ -31,6 +31,12 @@ wallpaper
 
    AToM desktop wallpaper, 1920x1080    
 
+.. figure:: ../images/logo/atom_1920x1200.png
+   :scale: 15%
+   :alt: atom wallpaper
+
+   AToM desktop wallpaper, 1920x1200    
+
 .. figure:: ../images/logo/atom_2560x1440.png
    :scale: 15%
    :alt: atom wallpaper
