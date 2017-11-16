@@ -41,9 +41,17 @@ FANN_VER=master
 FANN_GIT=git@github.com:libfann/fann.git
 FANN_DIR=fann
 
+OMAS_VER=master
+OMAS_GIT=git@github.com:gafusion/omas.git
+OMAS_DIR=omas
+
+NEURAL_VER=master
+NEURAL_GIT=git@github.com:gafusion/neural.git
+NEURAL_DIR=neural
+
 #---------------------------------------------------------
 
-clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR)
+clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR) $(NEURAL_DIR) $(OMAS_DIR)
 
 delete:
 	rm -rf $(OMFIT_DIR)
@@ -54,6 +62,8 @@ delete:
 	rm -rf $(BOUT_DIR)
 	rm -rf $(HARVEST_DIR)
 	rm -rf $(FANN_DIR)
+	rm -rf $(NEURAL_DIR)
+	rm -rf $(OMAS_DIR)
 
 set:
 ifndef plat
@@ -97,6 +107,12 @@ else
 
 	@echo "export FANN_DIR=$(PWD)/$(FANN_DIR)"             >> CONFIG
 	@echo "export FANN_ROOT=$(PWD)/$(FANN_DIR)"            >> CONFIG
+
+	@echo "export NEURAL_DIR=$(PWD)/$(NEURAL_DIR)"         >> CONFIG
+	@echo "export NEURAL_ROOT=$(PWD)/$(NEURAL_DIR)"        >> CONFIG
+
+	@echo "export OMAS_DIR=$(PWD)/$(OMAS_DIR)"             >> CONFIG
+	@echo "export OMAS_ROOT=$(PWD)/$(OMAS_DIR)"            >> CONFIG
 
 	@echo "export GACODE_ROOT=$(PWD)/$(GACODE_DIR)"        >> CONFIG
 	@echo "export GACODE_PLATFORM=$(plat)"                 >> CONFIG
@@ -170,6 +186,18 @@ FANN: $(FANN_DIR)
 	@cd $(FANN_DIR); cmake .
 	@cd $(FANN_DIR); make -i; echo
 	@cd $(FANN_DIR)/lib; ln -fs ../src/lib* ./
+
+$(NEURAL_DIR):
+	@./bin/clone_script $(NEURAL_GIT)  $(NEURAL_DIR)  $(NEURAL_VER)
+
+NEURAL: $(NEURAL_DIR)
+	. ./CONFIG ; cd $(NEURAL_DIR) ; make
+
+$(OMAS_DIR):
+	@./bin/clone_script $(OMAS_GIT)  $(OMAS_DIR)  $(OMAS_VER)
+
+OMAS: $(OMAS_DIR)
+	@cd $(OMAS_DIR); python samples/build_json_structures.py
 
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean

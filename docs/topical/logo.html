@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>plasma-state build notes &#8212; AToM</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/my-styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="AToM" href="../introduction.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../introduction.html"><img height=60, src="../_static/atom_transparent.png">
+          <!-- AToM-->
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../literature.html">Literature</a></li>
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../find.html">Find</a></li>
+                <li><a href="../index.html">Index</a></li>
+            
+            
+              
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">In this page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">plasma-state build notes</a><ul>
+<li><a class="reference internal" href="#edison-gnu">Edison GNU</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+           <!-- 
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+           -->
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="plasma-state-build-notes">
+<h1>plasma-state build notes<a class="headerlink" href="#plasma-state-build-notes" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://w3.pppl.gov/ntcc/PlasmaState/](http://w3.pppl.gov/ntcc/PlasmaState/">http://w3.pppl.gov/ntcc/PlasmaState/](http://w3.pppl.gov/ntcc/PlasmaState/</a></p>
+<p>Requires: pspline, TranspSubs, Xplasma, sglib (all these are in ntcc-source)
+There seem to be both <a href="#id1"><span class="problematic" id="id2">t_</span></a> versions and regular versions. Looks like the <a href="#id3"><span class="problematic" id="id4">t_</span></a> versions are related to SWIM, so we will use those. Be nice if someone documented what the difference was.</p>
+<p>Looks like you simply put the contents of the downloaded source into the same directory and run the gmake command since all the top-level Makefiles are the same.</p>
+<div class="figure">
+<img alt="../_images/ps-tree.png" src="../_images/ps-tree.png" />
+</div>
+<div class="section" id="edison-gnu">
+<h2>Edison GNU<a class="headerlink" href="#edison-gnu" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>module swap PrgEnv-intel PrgEnv-gnu
+module swap gcc gcc/4.8.2 <span class="c1"># This is because there is no netcdf built for gcc49</span>
+module load netcdf
+<span class="nb">cd</span> /project/projectdirs/atom/atom-install-edison/plasma-state-source/ntcc-source
+<span class="nv">NTCC_DIR</span><span class="o">=</span>/project/projectdirs/atom/atom-install-edison/plasma-state-source/ntcc-gnu
+make realclean
+<span class="nv">FC</span><span class="o">=</span><span class="s2">&quot;ftn&quot;</span> <span class="nv">CC</span><span class="o">=</span><span class="s2">&quot;cc&quot;</span> <span class="nv">CXX</span><span class="o">=</span><span class="s2">&quot;CC&quot;</span> <span class="nv">FORTRAN_VARIANT</span><span class="o">=</span><span class="s2">&quot;GCC&quot;</span> gmake <span class="nv">NO_EDITLIBS</span><span class="o">=</span>Y <span class="nv">LAPACK</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="nv">BLAS</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+gmake install <span class="nv">PREFIX</span><span class="o">=</span><span class="nv">$NTCC_DIR</span>
+</pre></div>
+</div>
+<p>A lot of the test routines seem to fail building with the following error</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/opt/cray/hdf5/1.8.13/GNU/48/lib/libhdf5.a(H5PL.o): In function `H5PL_load&#39;: H5PL.c:(.text+0x4ac): warning: Using &#39;dlopen&#39; in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/bin/ld: link errors found, deleting executable `../LINUX/test/update_state&#39;
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [../LINUX/test/update_state] Error 1
+</pre></div>
+</div>
+<p>But it seems OK not to worry about that.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/topical/logo.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014-2017.<br/>
+      Last updated on Nov 15, 2017.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

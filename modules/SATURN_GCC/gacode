@@ -31,6 +31,8 @@ if { ! [ is-loaded default-paths ] } {
 module load netcdf/gnu
 module load fftw
 module load git
+module load fann
+setenv FANN_ROOT $::env(FANN_DIR)
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM SATURN_GCC
