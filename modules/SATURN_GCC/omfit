@@ -30,6 +30,7 @@ module load pyual
 set omfit_root $::env(ATOM_ROOT)/OMFIT-source
 setenv OMFIT_ROOT $omfit_root
 setenv OMFIT_TMPDIR /local-scratch/
+setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
 
 prepend-path PATH $omfit_root/bin/
 set-alias python python2.7
