@@ -149,7 +149,18 @@ $(BOUT_DIR):
 	@./bin/clone_script $(BOUT_GIT)  $(BOUT_DIR)  $(BOUT_VER)
 
 BOUT++: $(BOUT_DIR)
-	@cd $(BOUT_DIR); ./configure --with-hdf5=${HDF5_DIR}/bin/h5pcc
+	@cd $(BOUT_DIR); ./configure \
+CPPFLAGS=" -g -fPIC " \
+CC=g++ \
+CXX=g++ \
+MPICC=mpicxx \
+MPICXX=mpicxx \
+--with-lapack=/usr/lib64 \
+--with-netcdf=${NETCDF_DIR} \
+--with-fftw=${FFTW_DIR} \
+--with-hdf5=${HDF5_DIR}/bin/h5pcc \
+--with-parallelhdf5=${HDF5_DIR}/bin/h5pcc
+
 	@cd $(BOUT_DIR); make
 
 $(FANN_DIR):
