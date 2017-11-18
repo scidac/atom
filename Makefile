@@ -144,7 +144,7 @@ $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
 GACODE: $(GACODE_DIR) FANN
-	. ./CONFIG ; cd $(GACODE_DIR) ; make some
+	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
 $(GACODE_ADD_DIR):
 	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
