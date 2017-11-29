@@ -187,7 +187,7 @@ AToM Team (2017-present)
  | **D. Eldon**, General Atomics @eldond
  | **E. Belli**, General Atomics
  | **M. Kostuk**, General Atomics, @kostukm
- | **W. Elwasif**, Oak Ridge National Laboratory
+ | **W. Elwasif**, Oak Ridge National Laboratory, `@elwasif <https://github.com/elwasif>`_
  | **G. Fann**, Oak Ridge National Laboratory
  | **M. Cianciosa**, Oak Ridge National Laboratory, `@cianciosa <https://github.com/cianciosa>`_
  | **J.M. Park**, Oak Ridge National Laboratory
@@ -227,7 +227,7 @@ Original AToM Team (2014-2017)
  | **O. Meneghini**, General Atomics, @orso82
  | **S. Smith**, General Atomics, @smithsp
  | **P.B. Snyder**, General Atomics
- | **W. Elwasif**, Oak Ridge National Laboratory
+ | **W. Elwasif**, Oak Ridge National Laboratory, `@elwasif <https://github.com/elwasif>`_
  | **E. D'Azevedo**, Oak Ridge National Laboratory
  | **J.M. Park**, Oak Ridge National Laboratory
  | **D. Batchelor**, Oak Ridge National Laboratory
