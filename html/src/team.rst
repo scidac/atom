@@ -191,7 +191,7 @@ AToM Team (2017-present)
  | **G. Fann**, Oak Ridge National Laboratory
  | **M. Cianciosa**, Oak Ridge National Laboratory, @cianciosa
  | **J.M. Park**, Oak Ridge National Laboratory
- | **K. Law**, Oak Ridge National Laboratory
+ | **K. Law**, Oak Ridge National Laboratory, @klaw1980
  | **M. Umansky** Lawerence Livermore National Laboratory
  | **A. Pankin** Lawerence Livermore National Laboratory
  | **D. Orlov**, University of California, San Diego
