@@ -196,7 +196,7 @@ AToM Team (2017-present)
  | **A. Pankin** Lawerence Livermore National Laboratory
  | **D. Orlov**, University of California, San Diego
  | **N. Howard**, Massachusetts Institute of Technology
- | **J. Sachdev**, Princeton Plasma Physics Laboratory
+ | **J. Sachdev**, Princeton Plasma Physics Laboratory, @jsachdev
 
 ----
  
