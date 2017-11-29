@@ -164,7 +164,7 @@ AToM Team (2017-present)
  | candy@fusion.gat.com
 
 :FES PIs:
-  | **David L. Green**, Oak Ridge National Laboratory
+  | **David L. Green**, Oak Ridge National Laboratory, @dlg0
   | **Mikhail Dorf**, Lawrence Livermore National Laboratory
   | **Christopher Holland**, University of California, San Diego
   | **Charles Kessel**, Princeton Plasma Physics Laboratory
@@ -214,7 +214,7 @@ Original AToM Team (2014-2017)
  | candy@fusion.gat.com
 
 :FES PIs:
-  | **David L. Green**, Oak Ridge National Laboratory
+  | **David L. Green**, Oak Ridge National Laboratory, @dlg0
   | **Mikhail Dorf**, Lawrence Livermore National Laboratory
   | **Christopher Holland**, University of California, San Diego
 
