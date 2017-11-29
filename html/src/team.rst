@@ -224,7 +224,7 @@ Original AToM Team (2014-2017)
  | **David Schissel**, General Atomics
 
 :Funded Collaborators:
- | **O. Meneghini**, General Atomics
+ | **O. Meneghini**, General Atomics, @orso82
  | **S. Smith**, General Atomics, @smithsp
  | **P.B. Snyder**, General Atomics
  | **W. Elwasif**, Oak Ridge National Laboratory
