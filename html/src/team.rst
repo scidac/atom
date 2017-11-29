@@ -225,7 +225,7 @@ Original AToM Team (2014-2017)
 
 :Funded Collaborators:
  | **O. Meneghini**, General Atomics
- | **S. Smith**, General Atomics
+ | **S. Smith**, General Atomics, @smithsp
  | **P.B. Snyder**, General Atomics
  | **W. Elwasif**, Oak Ridge National Laboratory
  | **E. D'Azevedo**, Oak Ridge National Laboratory
