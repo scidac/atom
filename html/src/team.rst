@@ -155,7 +155,7 @@ AToM Team (2017-present)
 .. _contact:
 
 :Project PI:
- | **Jeff Candy**, @jcandy
+ | **Jeff Candy**, `@jcandy <https://github.com/jcandy>`_
  | General Atomics, P.O. Box 85608
  | San Diego, CA 92186 
  |
