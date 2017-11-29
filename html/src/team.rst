@@ -189,7 +189,7 @@ AToM Team (2017-present)
  | **M. Kostuk**, General Atomics, @kostukm
  | **W. Elwasif**, Oak Ridge National Laboratory
  | **G. Fann**, Oak Ridge National Laboratory
- | **M. Cianciosa**, Oak Ridge National Laboratory, `@cianciosa <https://github.com/cianciosa>`
+ | **M. Cianciosa**, Oak Ridge National Laboratory, `@cianciosa <https://github.com/cianciosa>`_
  | **J.M. Park**, Oak Ridge National Laboratory
  | **K. Law**, Oak Ridge National Laboratory, @klaw1980
  | **M. Umansky** Lawerence Livermore National Laboratory
