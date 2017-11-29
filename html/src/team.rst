@@ -181,8 +181,8 @@ AToM Team (2017-present)
  | **Don Batchelor**, Oak Ridge National Laboratory
 
 :Funded Collaborators:
- | **O. Meneghini**, General Atomics
- | **S.P. Smith**, General Atomics
+ | **O. Meneghini**, General Atomics, @orso82
+ | **S.P. Smith**, General Atomics, @smithsp
  | **P.B. Snyder**, General Atomics
  | **D. Eldon**, General Atomics
  | **E. Belli**, General Atomics
