@@ -184,7 +184,7 @@ AToM Team (2017-present)
  | **O. Meneghini**, General Atomics, @orso82
  | **S.P. Smith**, General Atomics, @smithsp
  | **P.B. Snyder**, General Atomics
- | **D. Eldon**, General Atomics
+ | **D. Eldon**, General Atomics @eldond
  | **E. Belli**, General Atomics
  | **M. Kostuk**, General Atomics, @kostukm
  | **W. Elwasif**, Oak Ridge National Laboratory
