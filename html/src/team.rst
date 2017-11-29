@@ -186,7 +186,7 @@ AToM Team (2017-present)
  | **P.B. Snyder**, General Atomics
  | **D. Eldon**, General Atomics
  | **E. Belli**, General Atomics
- | **M. Kostuk**, General Atomics
+ | **M. Kostuk**, General Atomics, @kostukm
  | **W. Elwasif**, Oak Ridge National Laboratory
  | **G. Fann**, Oak Ridge National Laboratory
  | **M. Cianciosa**, Oak Ridge National Laboratory, @cianciosa
