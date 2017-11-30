@@ -176,7 +176,7 @@ AToM Team (2017-present)
 
 :Contractors:
  | **Paul Bonoli**, Massachusetts Institute of Technology
- | **Richard Kalling**, Kalling Software
+ | **Richard Kalling**, Kalling Software, `@kalling <https://github.com/kalling>`_
  | **Yang Chen**, University of Colorado, Boulder
  | **Don Batchelor**, Oak Ridge National Laboratory
 
