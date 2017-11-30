@@ -193,7 +193,7 @@ AToM Team (2017-present)
  | **J.M. Park**, Oak Ridge National Laboratory
  | **K. Law**, Oak Ridge National Laboratory, @klaw1980
  | **M. Umansky** Lawerence Livermore National Laboratory
- | **A. Pankin** Lawerence Livermore National Laboratory
+ | **A. Pankin** Lawerence Livermore National Laboratory, @pankin
  | **D. Orlov**, University of California, San Diego
  | **N. Howard**, Massachusetts Institute of Technology
  | **J. Sachdev**, Princeton Plasma Physics Laboratory, @jsachdev
