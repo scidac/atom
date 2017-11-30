@@ -206,7 +206,7 @@ $(OMAS_DIR):
 OMAS: $(OMAS_DIR)
 	@cd $(OMAS_DIR); python samples/build_json_structures.py
 
-$(IPS_DIR):
+$(IPS_SOURCE_DIR):
 	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
 
 IPS: $(IPS_SOURCE_DIR)
