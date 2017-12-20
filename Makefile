@@ -210,7 +210,7 @@ $(IPS_SOURCE_DIR):
 	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
 
 IPS: $(IPS_SOURCE_DIR)
-	@cd $(IPS_SOURCE_DIR) && rm -rf build && mkdir build && cd build && pwd && cmake -DCMAKE_INSTALL_PREFIX:PATH=$(ATOM_DIR)/$(IPS_DIR) .. && make && make install
+	@cd $(IPS_SOURCE_DIR) && rm -rf build && mkdir build && cd build && pwd && cmake -DCMAKE_INSTALL_PREFIX:PATH=$(ATOM_DIR)/$(IPS_DIR) -DCMAKE_BUILD_TYPE=Release .. && make && make install
 
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
