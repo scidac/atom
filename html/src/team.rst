@@ -3,6 +3,34 @@ Meetings and AToM Team Members
 
 .. figure:: images/atom_cupcakes.jpg
 
+2018.01.18 -- January Conference Call
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Time: Thursday, 18 Jan 2018 -- 1:00pm-2:30pm PDT 
+:Join: Email connection info sent (16 Jan)
+
+:Agenda:
+
+#. Progress on AToM build system
+ 
+   - Tier-0 installation
+   - GACODE build system
+   - Spack
+
+#. Liaisons
+
+   - Use/benchmark cases 
+   - Interacting with SciDAC centers
+   - Access to ITER scenario database
+
+#. Volunteers for webpage work
+
+   - Managing publications
+   - Maintaining project overview/summary pages
+   - Developing useful software map (including liaison-related info)
+
+----
+
 2017.11.27 -- ESL/AToM All-hands Meeting and Code Camp 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
