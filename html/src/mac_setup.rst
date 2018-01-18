@@ -104,7 +104,7 @@ Install
 
    If you run into problems with Mac Ports here, you may need to switch to the unstable branch. (From within the OMFIT-source directory) ::
 
-    git branch unstable
+    git checkout unstable
     cd OMFIT-source/install/ports
     ./install.sh
 
