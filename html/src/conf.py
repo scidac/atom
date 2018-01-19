@@ -41,7 +41,7 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'introduction'
+master_doc = 'index'
 
 autoclass_content = 'both'
 
@@ -103,7 +103,7 @@ html_theme_options = {
                      ("Install","install"),
                      ("Team", "team"),
                      ("Find", "find"),
-                     ("Index", "index")
+                     ("Tree", "tree")
                      ],
 
     # Render the next and previous page links in navbar. (Default: true)
@@ -176,7 +176,7 @@ html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%b %d, %Y'
+#html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -219,7 +219,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'OMFIT.tex', 'AToM Documentation', 'AToM team', 'manual'),
+  ('index', 'atom.tex', 'AToM Documentation', 'AToM team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

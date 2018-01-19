@@ -1,40 +1,45 @@
 
 <!DOCTYPE html>
 
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Information for Developers &#8212; AToM</title>
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <title>Information for Developers &mdash; AToM</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="AToM" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body>
+  <body role="document">
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -45,7 +50,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="introduction.html"><img height=60, src="_static/atom_transparent.png">
+        <a class="navbar-brand" href="index.html"><img height=60, src="_static/atom_transparent.png">
           <!-- AToM-->
         </a>
         <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
@@ -58,7 +63,7 @@
                 <li><a href="#">Install</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="find.html">Find</a></li>
-                <li><a href="index.html">Index</a></li>
+                <li><a href="tree.html">Tree</a></li>
             
             
               
@@ -131,8 +136,8 @@ one.  Use <code class="docutils literal"><span class="pre">atom</span></code> fo
 </div>
 <div class="section" id="build-atom-from-source">
 <h2>Build AToM from source<a class="headerlink" href="#build-atom-from-source" title="Permalink to this headline">¶</a></h2>
-<p>If you are running MacOS, full instructions on building AToM from source can be found <a class="reference external" href="mac_setup.html">here.</a></p>
 <p>Contact <code class="samp docutils literal"><span class="pre">candy(at)fusion.gat.com</span></code> to obtain access to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a> (GitHub account needed)</p>
+<p>If you are running MacOS, detailed instructions on building AToM from source can be found <a class="reference external" href="mac_setup.html">here.</a></p>
 <p>To clone the repository:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scidac</span><span class="o">/</span><span class="n">atom</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
@@ -175,7 +180,7 @@ The AToM <cite>Makefile</cite> leverages the <a class="reference external" href=
 </div>
 <div class="section" id="maintaining-an-atom-installation-up-to-date">
 <h2>Maintaining an AToM installation up-to-date<a class="headerlink" href="#maintaining-an-atom-installation-up-to-date" title="Permalink to this headline">¶</a></h2>
-<p>The AToM <cite>Makefile</cite> is also capable of keeping the components up-to-date and in sync with each others’ versions.
+<p>The AToM <cite>Makefile</cite> is also capable of keeping the components up-to-date and in sync with each others&#8217; versions.
 To update the AToM installation simply:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atom</span>
 <span class="n">git</span> <span class="n">pull</span>
@@ -232,15 +237,14 @@ $EDITOR index.rst
         <br/>
         
 <div id="sourcelink">
-  <a href="_sources/install.rst.txt"
+  <a href="_sources/install.txt"
      rel="nofollow">Source</a>
 </div>
       
     </p>
     <p>
         &copy; Copyright 2014-2018.<br/>
-      Last updated on Jan 19, 2018.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
     </p>
   </div>
 </footer>
