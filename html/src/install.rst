@@ -28,6 +28,8 @@ Build AToM from source
 
 Contact :samp:`candy(at)fusion.gat.com` to obtain access to the `AToM GitHub repository <https://github.com/scidac/atom>`_ (GitHub account needed)
 
+If you are running MacOS, detailed instructions on building AToM from source can be found `here. <mac_setup.html>`_
+
 To clone the repository::
 
     git clone git@github.com:scidac/atom.git
