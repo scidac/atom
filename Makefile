@@ -3,6 +3,14 @@
 help:
 	@./bin/help_script
 
+#--------------
+# Prefix
+#
+SHELL=bash
+PREFIX=./conda
+$(PREFIX)/bin/conda:
+	PREFIX=$(PREFIX) ./bin/install_conda_script
+
 #---------------------------------------------------------
 # Module configuration
 #
@@ -72,9 +80,11 @@ delete:
 	rm -rf $(IPS_DIR)
 	rm -rf $(IPS_SOURCE_DIR)
 
-set:
+CONFIG:
 ifndef plat
 	rm -rf CONFIG
+	@./bin/help_script
+	exit 1
 else
 	@echo ""
 	@echo "when this AToM installation will be completed"
@@ -138,11 +148,15 @@ build: $(BUILD)
 
 all: clone build
 
+ENV: CONFIG $(PREFIX)/bin/conda
+	$(PREFIX)/bin/conda install -c smithsp -c conda-forge gacode
+	@echo "export PREFIX=$(PREFIX)" >> CONFIG
+
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
 OMFIT: $(OMFIT_DIR)
-	@echo
+	cd $(OMFIT_DIR)/install/; ./install-conda.sh
 
 $(IPS_ATOM_DIR):
 	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
@@ -150,7 +164,7 @@ $(IPS_ATOM_DIR):
 $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
-GACODE: $(GACODE_DIR) FANN
+GACODE: CONFIG $(GACODE_DIR) FANN 
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
 $(GACODE_ADD_DIR):
@@ -159,13 +173,13 @@ $(GACODE_ADD_DIR):
 $(HARVEST_DIR):
 	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
 
-HARVEST:$(HARVEST_DIR)
+HARVEST:$(HARVEST_DIR) CONFIG
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
 
 $(EPED_DIR):
 	@./bin/clone_script $(EPED_GIT)  $(EPED_DIR)  $(EPED_VER)
 
-EPED: $(EPED_DIR)
+EPED: $(EPED_DIR) CONFIG
 	. ./CONFIG ; cd $(EPED_DIR) ; make
 
 $(BOUT_DIR):
@@ -197,7 +211,7 @@ FANN: $(FANN_DIR)
 $(NEURAL_DIR):
 	@./bin/clone_script $(NEURAL_GIT)  $(NEURAL_DIR)  $(NEURAL_VER)
 
-NEURAL: $(NEURAL_DIR)
+NEURAL: $(NEURAL_DIR) CONFIG
 	. ./CONFIG ; cd $(NEURAL_DIR) ; make
 
 $(OMAS_DIR):
