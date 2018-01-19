@@ -83,21 +83,22 @@ else
 	@echo "  module use $(ATOM_DIR)/modules"
 	@echo "  module load atom"
 	@echo ""
-	@echo "#%Module"                                                               > modules/atom
-	@echo "#at the termial type the following to use this AToM installation"      >> modules/atom
-	@echo ""                                                                      >> modules/atom
-	@echo "#  module use $(ATOM_DIR)/modules"                                     >> modules/atom
-	@echo "#  module load atom"                                                   >> modules/atom
-	@echo ""                                                                      >> modules/atom
-	@echo "setenv ATOM_ROOT $(ATOM_DIR)"                                          >> modules/atom
-	@echo "setenv GACODE_PLATFORM $(plat)"                                        >> modules/atom
-	@echo "if { [ module-info mode load ] } { "                                   >> modules/atom
-	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                              >> modules/atom
-	@echo "}"                                                                     >> modules/atom
-	@echo "module load `ls $(ATOM_DIR)/modules/$(plat)|tr '\n' ' '`"              >> modules/atom
-	@echo "if { [ module-info mode remove ] } {"                                  >> modules/atom
-	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                              >> modules/atom
-	@echo "}"                                                                     >> modules/atom
+	@echo "#%Module"                                                                   > modules/atom
+	@echo "#at the termial type the following to use this AToM installation"          >> modules/atom
+	@echo ""                                                                          >> modules/atom
+	@echo "#  module use $(ATOM_DIR)/modules"                                         >> modules/atom
+	@echo "#  module load atom"                                                       >> modules/atom
+	@echo ""                                                                          >> modules/atom
+	@echo "setenv ATOM_ROOT $(ATOM_DIR)"                                              >> modules/atom
+	@echo "setenv GACODE_PLATFORM $(plat)"                                            >> modules/atom
+	@echo "if { [ module-info mode load ] } { "                                       >> modules/atom
+	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                                  >> modules/atom
+	@echo "}"                                                                         >> modules/atom
+	@echo "module load fann"                                                          >> modules/atom
+	@echo "module load `ls $(ATOM_DIR)/modules/$(plat) | grep -v '~' | tr '\n' ' '`"  >> modules/atom
+	@echo "if { [ module-info mode remove ] } {"                                      >> modules/atom
+	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                                  >> modules/atom
+	@echo "}"                                                                         >> modules/atom
 
 	@echo "export OMFIT_ROOT=$(ATOM_DIR)/$(OMFIT_DIR)"           > CONFIG
 	@echo "export OMFIT_DIR=$(ATOM_DIR)/$(OMFIT_DIR)"           >> CONFIG
