@@ -1,17 +1,13 @@
-Information for Developers
-==========================
+Getting Started with AToM
+=========================
 
-The AToM project philosophy is to **enhance and extend present modeling capabilities, 
-by supporting, leveraging, and integrating existing research**.  As such, the project supports numerous 
-physics codes, frameworks, and tools which have been developed independently by the fusion community 
-(in some instances over decades of research). AToM streamlines their integration, development, deployment, 
-and support. This page is meant to describe how to obtain and deploy the AToM environment.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Supported public AToM installations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 .. note:: Users are highly encouraged to make use of the AToM public installations, which we maintain and support.
+
+NERSC
+"""""
 
 We currently support an AToM public installation on the Edison supercomputer at NERSC.   The project install directory 
 is under::
@@ -22,13 +18,16 @@ Users must be part of the ``atom`` unix user group to access the NERSC public in
 an account at NERSC already, fill out `this form <https://nim.nersc.gov/nersc_account_request.php>`_ to request 
 one.  Use ``atom`` for the repository name. 
 
-~~~~~~~~~~~~~~~~~~~~~~
+General Atomics
+"""""""""""""""
+
+An AToM installation is also maintained at GA.  If you do not have GA computer access, follow the
+steps for `GA cyber access <https://fusion.gat.com/global/computing>`_. 
+
 Build AToM from source
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
-Contact :samp:`candy(at)fusion.gat.com` to obtain access to the `AToM GitHub repository <https://github.com/scidac/atom>`_ (GitHub account needed)
-
-If you are running MacOS, detailed instructions on building AToM from source can be found `here. <mac_setup.html>`_
+Contact :samp:`candy(at)fusion.gat.com` to obtain access to the `AToM GitHub repository <https://github.com/scidac/atom>`_.  You will need a GitHub account for this.  If you are running MacOS, detailed instructions on building AToM from source can be found `here. <mac_setup.html>`_
 
 To clone the repository::
 
@@ -70,9 +69,8 @@ To make all of the AToM components::
 
 The `Makefile` takes care of satisfying any interdependency between the AToM components.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Maintaining an AToM installation up-to-date
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Maintaining an up-to-date AToM installation
+"""""""""""""""""""""""""""""""""""""""""""
 
 The AToM `Makefile` is also capable of keeping the components up-to-date and in sync with each others' versions.
 To update the AToM installation simply::
@@ -81,12 +79,12 @@ To update the AToM installation simply::
     git pull
     make all ATOM_PLATFORM=VENUS
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Edit and build the AToM documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Edit and build the AToM Website
+-------------------------------
 
-The `AToM documentation website <http://scidac.github.io/atom/>`_ is self-contained in the AToM repository.
-To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files in the `docs/` directory::
+The `AToM documentation website <http://scidac.github.io/atom/>`_ is self-contained in the AToM repository.  To edit
+the AToM documentation one simply needs to follow the aforementioned steps and edit the `.rst` files in
+the `docs/` directory::
 
     cd atom/docs
     $EDITOR index.rst

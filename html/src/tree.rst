@@ -4,9 +4,11 @@ Advanced Tokamak Modeling Project
 .. toctree::
 
    index
-   literature
+   tour
+   components
    install
    team
+   literature
    find
 
  
