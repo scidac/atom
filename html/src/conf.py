@@ -98,13 +98,16 @@ html_theme_options = {
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Jump to",
 
-    # A list of tuples containing pages or urls to link to.
-    'navbar_links': [('Literature', "literature"),
-                     ("Install","install"),
-                     ("Team", "team"),
-                     ("Find", "find"),
-                     ("Tree", "tree")
-                     ],
+   # A list of tuples containing pages or urls to link to.
+   'navbar_links': [
+      ('Tour','tour'),
+      ('Components','components'),
+      ('Install','install'),
+      ('Team','team'),
+      ('Papers','literature'),
+      ('Find','find'),
+      ('Tree','tree')
+   ],
 
     # Render the next and previous page links in navbar. (Default: true)
     'navbar_sidebarrel': False,
