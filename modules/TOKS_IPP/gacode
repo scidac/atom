@@ -33,8 +33,6 @@ module load impi/5.1.1
 
 setenv FANN_ROOT $::env(FANN_DIR)
 
-prepend-path LD_LIBRARY_PATH $::env(NETCDF_HOME)/lib
-
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM TOKS_IPP
 
