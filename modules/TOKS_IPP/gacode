@@ -25,15 +25,18 @@ module-whatis gacode
 #=====================
 # begin of machine-specific settings here
 #=====================
-module load netcdf-mpi
-module load fftw
+module load intel/16.0
+module load netcdf-mpi/4.3.2
+module load fftw/3.3.4
 module load fann
-module load impi
+module load impi/5.1.1
 
 setenv FANN_ROOT $::env(FANN_DIR)
 
+prepend-path LD_LIBRARY_PATH $::env(NETCDF_HOME)/lib
+
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
-setenv GACODE_PLATFORM SATURN_GCC
+setenv GACODE_PLATFORM TOKS_IPP
 
 #=====================
 # end of machine-specific settings here

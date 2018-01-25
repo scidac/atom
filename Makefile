@@ -151,7 +151,7 @@ $(IPS_ATOM_DIR):
 $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
-GACODE: $(GACODE_DIR) FANN
+GACODE: $(GACODE_DIR) NEURAL
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
 $(GACODE_ADD_DIR):
@@ -198,7 +198,7 @@ FANN: $(FANN_DIR)
 $(NEURAL_DIR):
 	@./bin/clone_script $(NEURAL_GIT)  $(NEURAL_DIR)  $(NEURAL_VER)
 
-NEURAL: $(NEURAL_DIR)
+NEURAL: $(NEURAL_DIR) FANN
 	. ./CONFIG ; cd $(NEURAL_DIR) ; make
 
 $(OMAS_DIR):
