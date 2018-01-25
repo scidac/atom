@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Complete MacOS install of AToM with MacPorts &mdash; AToM</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="AToM" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img height=60, src="_static/atom_transparent.png">
+          <!-- AToM-->
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="install.html">Install</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="literature.html">Papers</a></li>
+                <li><a href="find.html">Find</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            
+            
+              
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">In this page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Complete MacOS install of AToM with MacPorts</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#install">Install</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+           <!-- 
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+           -->
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="complete-macos-install-of-atom-with-macports">
+<h1>Complete MacOS install of AToM with MacPorts<a class="headerlink" href="#complete-macos-install-of-atom-with-macports" title="Permalink to this headline">¶</a></h1>
+<p>This guide will provide step-by-step instructions for installing AToM Tier 1 on a fresh MacOS system.</p>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Adminstrator access on your Mac is required for an install with this method.</p>
+<p>Most instructions require the mac Terminal app to be open so commands can be input.</p>
+<p>In addition, for a full install, a <a class="reference external" href="https://github.com">github</a> account is required along with access to the following git repositories:</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://github.com/gafusion/OMFIT-source">https://github.com/gafusion/OMFIT-source</a></li>
+<li><a class="reference external" href="https://github.com/ORNL-Fusion/ips-atom">https://github.com/ORNL-Fusion/ips-atom</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/gacode">https://github.com/gafusion/gacode</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/gacode_add">https://github.com/gafusion/gacode_add</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/EPED">https://github.com/gafusion/EPED</a></li>
+<li><a class="reference external" href="https://github.com/boutproject/BOUT-dev">https://github.com/boutproject/BOUT-dev</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/harvest_client">https://github.com/gafusion/harvest_client</a></li>
+<li><a class="reference external" href="https://github.com/libfann/fann">https://github.com/libfann/fann</a></li>
+<li><a class="reference external" href="https://github.com/libfann/fann">https://github.com/libfann/fann</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/omas">https://github.com/gafusion/omas</a></li>
+<li><a class="reference external" href="https://github.com/gafusion/neural">https://github.com/gafusion/neural</a></li>
+</ol>
+<p>Any steps you have completed previously can be skipped.</p>
+</div>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install Developer command line tools type</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+</pre></div>
+</div>
+<p>Then click the &#8220;Install&#8221; button in the dialog box that appears.</p>
+<p>Then agree to the license agreement.</p>
+</li>
+<li><p class="first">Generate SSH keys if you do not currently have them. This is used to authenticate with github later.</p>
+<blockquote>
+<div><p>To check if you have existing ssh keys</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span>
+</pre></div>
+</div>
+<p>This will return &#8220;No such file or directory&#8221; if it does NOT exist.  If it exists, skip to step 3, if not,  generate your ssh keys</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">b</span> <span class="mi">4096</span>
+</pre></div>
+</div>
+<p>Keep the default location to save the key by pressing enter.</p>
+<p>Enter a passphrase.  You will need this passphrase every time you access a github repo.  If you do not enter a passphrase anyone who has access to your private key will be able to impersonate your computer.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Add public ssh key to github.  Instructions found <a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">here</a></p>
+</li>
+<li><p class="first">Setup git email and name</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Your Name&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;your_email@example.com&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install Mac Ports.  Instructions found <a class="reference external" href="https://www.macports.org/install.php">here</a></p>
+</li>
+<li><p class="first">In order to use any X11 enabled tools, install X-Quartz.  It can be found <a class="reference external" href="https://www.xquartz.org/">here</a> . After installing, it will require logging out of your computer and logging back in before it can be used. (Apple menu -&gt; Log Out)</p>
+</li>
+<li><p class="first">In the terminal, navigate to where you would like AToM installed and clone the git repository.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scidac</span><span class="o">/</span><span class="n">atom</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>If it asks if you want to continue connecting, say yes.</p>
+</li>
+<li><p class="first">Install and configure the prerequisites with Mac Ports.  Enter your computer&#8217;s password (not the SSH key passphrase) when promped and enter &#8216;Y&#8217; when prompted to confirm installs.  Some of these installs (like openmpi) may take a while.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">cmake</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">openmpi</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">select</span> <span class="o">--</span><span class="nb">set</span> <span class="n">mpi</span> <span class="n">openmpi</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="n">fortran</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">fftw</span><span class="o">-</span><span class="mi">3</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">fann</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span><span class="o">-</span><span class="n">fortran</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span><span class="o">-</span><span class="n">cxx</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">doxygen</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Export compiler locations for cmake (Exact names may vary.  If you close your terminal, you may have to do this step again)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">FC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+<span class="n">export</span> <span class="n">CC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+<span class="n">export</span> <span class="n">CXX</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Configure and make AToM.  Enter your ssh key passphrase when prompted (Not your computer password)</p>
+<p>cd atom
+make set plat=GFORTRAN_OSX_MACPORTS
+make all ATOM_PLATFORM=GFORTRAN_OSX_MACPORTS</p>
+</li>
+<li><p class="first">Add environment variables to your .profile so tools are available in your next terminal session</p>
+</li>
+<li><p class="first">Install OMFIT prerequisites.  Answer &#8216;Y&#8217; to any prompts asking if you want to install and enter computer&#8217;s password when prompted.  Assuming you are still in the atom directory, type ::
+cd OMFIT-source/install/ports
+./install.sh</p>
+</li>
+</ol>
+<blockquote>
+<div><p>If you run into problems with Mac Ports here, you may need to switch to the unstable branch. (From within the OMFIT-source directory)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">unstable</span>
+<span class="n">cd</span> <span class="n">OMFIT</span><span class="o">-</span><span class="n">source</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">ports</span>
+<span class="o">./</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/mac_setup.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014-2018.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

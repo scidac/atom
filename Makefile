@@ -3,6 +3,14 @@
 help:
 	@./bin/help_script
 
+#--------------
+# Prefix
+#
+SHELL=bash
+PREFIX=./conda
+$(PREFIX)/bin/conda:
+	PREFIX=$(PREFIX) ./bin/install_conda_script
+
 #---------------------------------------------------------
 # Module configuration
 #
@@ -49,7 +57,12 @@ NEURAL_VER=master
 NEURAL_GIT=git@github.com:gafusion/neural.git
 NEURAL_DIR=neural
 
+IPS_DIR=ips
+IPS_SOURCE_DIR=ipsframework-code
+
 #---------------------------------------------------------
+
+ATOM_DIR=$(PWD)
 
 clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR) $(NEURAL_DIR) $(OMAS_DIR)
 
@@ -64,78 +77,87 @@ delete:
 	rm -rf $(FANN_DIR)
 	rm -rf $(NEURAL_DIR)
 	rm -rf $(OMAS_DIR)
+	rm -rf $(IPS_DIR)
+	rm -rf $(IPS_SOURCE_DIR)
 
-set:
+CONFIG:
 ifndef plat
 	rm -rf CONFIG
+	@./bin/help_script
+	exit 1
 else
 	@echo ""
 	@echo "when this AToM installation will be completed"
 	@echo "you can use it by typing at the terminal: "
 	@echo ""
-	@echo "  module use $(PWD)/modules"
+	@echo "  module use $(ATOM_DIR)/modules"
 	@echo "  module load atom"
 	@echo ""
-	@echo "#%Module"                                        > modules/atom
-	@echo "#at the termial type the following to use this AToM installation"      >> modules/atom
-	@echo ""                                               >> modules/atom
-	@echo "#  module use $(PWD)/modules"                   >> modules/atom
-	@echo "#  module load atom"                            >> modules/atom
-	@echo ""                                               >> modules/atom
-	@echo "setenv ATOM_ROOT $(PWD)"                        >> modules/atom
-	@echo "setenv GACODE_PLATFORM $(plat)"                 >> modules/atom
-	@echo "if { [ module-info mode load ] } { "            >> modules/atom
-	@echo "  module use $(PWD)/modules/$(plat)"            >> modules/atom
-	@echo "}"                                              >> modules/atom
-	@echo "module load `ls $(PWD)/modules/$(plat)|tr '\n' ' '`"        >> modules/atom
-	@echo "if { [ module-info mode remove ] } {"           >> modules/atom
-	@echo "  module use $(PWD)/modules/$(plat)"            >> modules/atom
-	@echo "}"                                              >> modules/atom
+	@echo "#%Module"                                                                   > modules/atom
+	@echo "#at the termial type the following to use this AToM installation"          >> modules/atom
+	@echo ""                                                                          >> modules/atom
+	@echo "#  module use $(ATOM_DIR)/modules"                                         >> modules/atom
+	@echo "#  module load atom"                                                       >> modules/atom
+	@echo ""                                                                          >> modules/atom
+	@echo "setenv ATOM_ROOT $(ATOM_DIR)"                                              >> modules/atom
+	@echo "setenv GACODE_PLATFORM $(plat)"                                            >> modules/atom
+	@echo "if { [ module-info mode load ] } { "                                       >> modules/atom
+	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                                  >> modules/atom
+	@echo "}"                                                                         >> modules/atom
+	@echo "module load fann"                                                          >> modules/atom
+	@echo "module load `ls $(ATOM_DIR)/modules/$(plat) | grep -v '~' | tr '\n' ' '`"  >> modules/atom
+	@echo "if { [ module-info mode remove ] } {"                                      >> modules/atom
+	@echo "  module use $(ATOM_DIR)/modules/$(plat)"                                  >> modules/atom
+	@echo "}"                                                                         >> modules/atom
 
-	@echo "export OMFIT_ROOT=$(PWD)/$(OMFIT_DIR)"           > CONFIG
-	@echo "export OMFIT_DIR=$(PWD)/$(OMFIT_DIR)"           >> CONFIG
+	@echo "export OMFIT_ROOT=$(ATOM_DIR)/$(OMFIT_DIR)"           > CONFIG
+	@echo "export OMFIT_DIR=$(ATOM_DIR)/$(OMFIT_DIR)"           >> CONFIG
 
-	@echo "export IPS_ATOM_DIR=$(PWD)/$(IPS_ATOM_DIR)"     >> CONFIG
+	@echo "export IPS_ATOM_DIR=$(ATOM_DIR)/$(IPS_ATOM_DIR)"     >> CONFIG
 
-	@echo "export EPED_DIR=$(PWD)/$(EPED_DIR)"             >> CONFIG
+	@echo "export EPED_DIR=$(ATOM_DIR)/$(EPED_DIR)"             >> CONFIG
 
-	@echo "export BOUT_DIR=$(PWD)/$(BOUT_DIR)"             >> CONFIG
-	@echo "export BOUT_ROOT=$(PWD)/$(BOUT_DIR)"            >> CONFIG
+	@echo "export BOUT_DIR=$(ATOM_DIR)/$(BOUT_DIR)"             >> CONFIG
+	@echo "export BOUT_ROOT=$(ATOM_DIR)/$(BOUT_DIR)"            >> CONFIG
 
-	@echo "export HARVEST_DIR=$(PWD)/$(HARVEST_DIR)"       >> CONFIG
-	@echo "export HARVEST_ROOT=$(PWD)/$(HARVEST_DIR)"      >> CONFIG
+	@echo "export HARVEST_DIR=$(ATOM_DIR)/$(HARVEST_DIR)"       >> CONFIG
+	@echo "export HARVEST_ROOT=$(ATOM_DIR)/$(HARVEST_DIR)"      >> CONFIG
 
-	@echo "export FANN_DIR=$(PWD)/$(FANN_DIR)"             >> CONFIG
-	@echo "export FANN_ROOT=$(PWD)/$(FANN_DIR)"            >> CONFIG
+	@echo "export FANN_DIR=$(ATOM_DIR)/$(FANN_DIR)"             >> CONFIG
+	@echo "export FANN_ROOT=$(ATOM_DIR)/$(FANN_DIR)"            >> CONFIG
 
-	@echo "export NEURAL_DIR=$(PWD)/$(NEURAL_DIR)"         >> CONFIG
-	@echo "export NEURAL_ROOT=$(PWD)/$(NEURAL_DIR)"        >> CONFIG
+	@echo "export NEURAL_DIR=$(ATOM_DIR)/$(NEURAL_DIR)"         >> CONFIG
+	@echo "export NEURAL_ROOT=$(ATOM_DIR)/$(NEURAL_DIR)"        >> CONFIG
 
-	@echo "export OMAS_DIR=$(PWD)/$(OMAS_DIR)"             >> CONFIG
-	@echo "export OMAS_ROOT=$(PWD)/$(OMAS_DIR)"            >> CONFIG
+	@echo "export OMAS_DIR=$(ATOM_DIR)/$(OMAS_DIR)"             >> CONFIG
+	@echo "export OMAS_ROOT=$(ATOM_DIR)/$(OMAS_DIR)"            >> CONFIG
 
-	@echo "export GACODE_ROOT=$(PWD)/$(GACODE_DIR)"        >> CONFIG
-	@echo "export GACODE_PLATFORM=$(plat)"                 >> CONFIG
-	@echo ". $(PWD)/$(GACODE_DIR)/shared/bin/gacode_setup" >> CONFIG
+	@echo "export IPS_DIR=$(ATOM_DIR)/$(IPS_DIR)"               >> CONFIG
+	@echo "export IPS_ROOT=$(ATOM_DIR)/$(IPS_DIR)"              >> CONFIG
+
+	@echo "export GACODE_ROOT=$(ATOM_DIR)/$(GACODE_DIR)"        >> CONFIG
+	@echo "export GACODE_PLATFORM=$(plat)"                      >> CONFIG
+	@echo ". $(ATOM_DIR)/$(GACODE_DIR)/shared/bin/gacode_setup" >> CONFIG
 endif
 
 #--------------------------------------------------------------------
 # Modules that need to be built/cleaned
 
-BUILD=GACODE HARVEST EPED BOUT++ FANN
+BUILD=GACODE HARVEST EPED BOUT++ FANN IPS
 
 build: $(BUILD)
 
 all: clone build
 
+ENV: CONFIG $(PREFIX)/bin/conda
+	$(PREFIX)/bin/conda install -c smithsp -c conda-forge gacode
+	@echo "export PREFIX=$(PREFIX)" >> CONFIG
+
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
 OMFIT: $(OMFIT_DIR)
-	@echo
-
-IPS: $(IPS_ATOM_DIR)
-	@echo
+	cd $(OMFIT_DIR)/install/; ./install-conda.sh
 
 $(IPS_ATOM_DIR):
 	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
@@ -143,8 +165,8 @@ $(IPS_ATOM_DIR):
 $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
-GACODE: $(GACODE_DIR) FANN NEURAL
-	. ./CONFIG ; cd $(GACODE_DIR) ; make some
+GACODE: CONFIG NEURAL $(GACODE_DIR)
+	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
 $(GACODE_ADD_DIR):
 	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
@@ -152,13 +174,13 @@ $(GACODE_ADD_DIR):
 $(HARVEST_DIR):
 	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
 
-HARVEST:$(HARVEST_DIR)
+HARVEST:CONFIG $(HARVEST_DIR)
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
 
 $(EPED_DIR):
 	@./bin/clone_script $(EPED_GIT)  $(EPED_DIR)  $(EPED_VER)
 
-EPED: $(EPED_DIR)
+EPED: CONFIG $(EPED_DIR)
 	. ./CONFIG ; cd $(EPED_DIR) ; make
 
 $(BOUT_DIR):
@@ -190,7 +212,11 @@ FANN: $(FANN_DIR)
 $(NEURAL_DIR):
 	@./bin/clone_script $(NEURAL_GIT)  $(NEURAL_DIR)  $(NEURAL_VER)
 
+<<<<<<< HEAD
 NEURAL: $(NEURAL_DIR) FANN $(GACODE_DIR)
+=======
+NEURAL: CONFIG FANN $(NEURAL_DIR)
+>>>>>>> cc1f4cbe2d1bb43d63644f98155a3029cce7b3ae
 	. ./CONFIG ; cd $(NEURAL_DIR) ; make
 
 $(OMAS_DIR):
@@ -199,12 +225,19 @@ $(OMAS_DIR):
 OMAS: $(OMAS_DIR)
 	@cd $(OMAS_DIR); python samples/build_json_structures.py
 
+$(IPS_SOURCE_DIR):
+	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
+
+IPS: $(IPS_SOURCE_DIR)
+	@cd $(IPS_SOURCE_DIR) && rm -rf build && mkdir build && cd build && pwd && cmake -DCMAKE_INSTALL_PREFIX:PATH=$(ATOM_DIR)/$(IPS_DIR) -DCMAKE_BUILD_TYPE=Release .. && make && make install
+
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
 	. ./CONFIG ; cd $(EPED_DIR) ; make clean
 	. ./CONFIG ; cd $(BOUT_DIR) ; make clean
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
 	. ./CONFIG ; cd $(FANN_DIR) ; make clean
+	. ./CONFIG ; cd $(IPS_SOURCE_DIR) ; rm build; mkdir build
 
 .PHONY: $(BUILD)
 #--------------------------------------------------------------------

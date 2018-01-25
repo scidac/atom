@@ -72,6 +72,12 @@ Journal Publications
    * - Year
      - Main author
      - Title
+   * - 2018
+     - `J.M. Park <https://doi.org/10.1063/1.5013021>`_
+     - Integrated modeling of high betaN steady state scenario on DIII-D
+   * - 2017
+     - `J.M. Park <https://doi.org/10.1016/j.cpc.2016.12.018>`_
+     - An efficient transport solver for tokamak plasmas' 
    * - 2017
      - `O. Meneghini <https://doi.org/10.1088/1741-4326/aa7776>`_
      - Self-consistent core-pedestal transport simulations with neural network accelerated models

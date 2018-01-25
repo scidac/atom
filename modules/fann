@@ -1,0 +1,22 @@
+#%Module1.0#####################################################################
+##
+## fann modulefile
+##
+##
+proc ModulesHelp { } {
+     global version
+
+     puts stderr "   FANN $version compiled with AToM"
+     puts stderr "\n   This sets environment variable \$FANN_DIR to the FANN root directory"
+     puts stderr "   for use in makefiles, as \$(FANN_DIR)/include and -L\$(FANN_DIR)/lib."
+     puts stderr "   It also adds FANN_DIR/lib to your LD_LIBRARY_PATH.\n"
+}
+
+module-whatis	"FANN compiled with GCC 4.7.2"
+
+# for Tcl script use only
+set   version	 2.2.0
+
+set fanndir $::env(ATOM_ROOT)/fann
+setenv FANN_DIR $fanndir
+prepend-path LD_LIBRARY_PATH $fanndir/lib

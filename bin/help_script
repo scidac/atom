@@ -3,7 +3,7 @@
 DIR=$PWD/gacode
 
 echo "Usage: $ make clone                  [STEP 1: clone or update repositories]"
-echo "       $ make CONFIG plat=<platform>    [STEP 2: set platform]"
+echo "       $ make CONFIG plat=<platform> [STEP 2: set platform]"
 echo "       $ make <module>               [STEP 3: build, with <module>=GACODE,HARVEST,EPED,BOUT,all]" 
 echo " "
 echo "       $ make clean                  [clean all modules]"
