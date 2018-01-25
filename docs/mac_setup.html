@@ -32,7 +32,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="AToM" href="introduction.html" />
+    <link rel="top" title="AToM" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -50,7 +50,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="introduction.html"><img height=60, src="_static/atom_transparent.png">
+        <a class="navbar-brand" href="index.html"><img height=60, src="_static/atom_transparent.png">
           <!-- AToM-->
         </a>
         <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
@@ -59,11 +59,13 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="literature.html">Literature</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="components.html">Components</a></li>
                 <li><a href="install.html">Install</a></li>
                 <li><a href="team.html">Team</a></li>
+                <li><a href="literature.html">Papers</a></li>
                 <li><a href="find.html">Find</a></li>
-                <li><a href="index.html">Index</a></li>
+                <li><a href="tree.html">Tree</a></li>
             
             
               
@@ -80,7 +82,6 @@
 <li><a class="reference internal" href="#">Complete MacOS install of AToM with MacPorts</a><ul>
 <li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
 <li><a class="reference internal" href="#install">Install</a></li>
-<li><a class="reference internal" href="#tour">Tour</a></li>
 </ul>
 </li>
 </ul>
@@ -185,17 +186,21 @@
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span><span class="o">-</span><span class="n">fortran</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">netcdf</span><span class="o">-</span><span class="n">cxx</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">doxygen</span>
 </pre></div>
 </div>
 </li>
-</ol>
-<ol class="arabic" start="9">
-<li><p class="first">Configure and make AToM.  Enter your ssh key passphrase when prompted (Not your computer password)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atom</span>
-<span class="n">make</span> <span class="nb">set</span> <span class="n">plat</span><span class="o">=</span><span class="n">GFORTRAN_OSX_MACPORTS</span>
-<span class="n">make</span> <span class="nb">all</span> <span class="n">ATOM_PLATFORM</span><span class="o">=</span><span class="n">GFORTRAN_OSX_MACPORTS</span>
+<li><p class="first">Export compiler locations for cmake (Exact names may vary.  If you close your terminal, you may have to do this step again)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">FC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+<span class="n">export</span> <span class="n">CC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+<span class="n">export</span> <span class="n">CXX</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
 </pre></div>
 </div>
+</li>
+<li><p class="first">Configure and make AToM.  Enter your ssh key passphrase when prompted (Not your computer password)</p>
+<p>cd atom
+make set plat=GFORTRAN_OSX_MACPORTS
+make all ATOM_PLATFORM=GFORTRAN_OSX_MACPORTS</p>
 </li>
 <li><p class="first">Add environment variables to your .profile so tools are available in your next terminal session</p>
 </li>
@@ -206,22 +211,12 @@ cd OMFIT-source/install/ports
 </ol>
 <blockquote>
 <div><p>If you run into problems with Mac Ports here, you may need to switch to the unstable branch. (From within the OMFIT-source directory)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="n">unstable</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">unstable</span>
 <span class="n">cd</span> <span class="n">OMFIT</span><span class="o">-</span><span class="n">source</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">ports</span>
 <span class="o">./</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="tour">
-<h2>Tour<a class="headerlink" href="#tour" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p class="first">OMFIT : Getting started guides can be found <a class="reference external" href="https://gafusion.github.io/OMFIT-source/usage.html">here</a>  To launch OMFIT and explore</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">omfit</span>
-</pre></div>
-</div>
-</li>
-</ul>
 </div>
 </div>
 
@@ -245,7 +240,6 @@ cd OMFIT-source/install/ports
     </p>
     <p>
         &copy; Copyright 2014-2018.<br/>
-      Last updated on Jan 16, 2018.<br/>
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
     </p>
   </div>

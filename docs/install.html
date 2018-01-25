@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Information for Developers &mdash; AToM</title>
+    <title>Getting Started with AToM &mdash; AToM</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="AToM" href="introduction.html" />
+    <link rel="top" title="AToM" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -50,7 +50,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="introduction.html"><img height=60, src="_static/atom_transparent.png">
+        <a class="navbar-brand" href="index.html"><img height=60, src="_static/atom_transparent.png">
           <!-- AToM-->
         </a>
         <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
@@ -59,11 +59,13 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="literature.html">Literature</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="components.html">Components</a></li>
                 <li><a href="#">Install</a></li>
                 <li><a href="team.html">Team</a></li>
+                <li><a href="literature.html">Papers</a></li>
                 <li><a href="find.html">Find</a></li>
-                <li><a href="index.html">Index</a></li>
+                <li><a href="tree.html">Tree</a></li>
             
             
               
@@ -77,11 +79,17 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Information for Developers</a><ul>
-<li><a class="reference internal" href="#supported-public-atom-installations">Supported public AToM installations</a></li>
-<li><a class="reference internal" href="#build-atom-from-source">Build AToM from source</a></li>
-<li><a class="reference internal" href="#maintaining-an-atom-installation-up-to-date">Maintaining an AToM installation up-to-date</a></li>
-<li><a class="reference internal" href="#edit-and-build-the-atom-documentation">Edit and build the AToM documentation</a></li>
+<li><a class="reference internal" href="#">Getting Started with AToM</a><ul>
+<li><a class="reference internal" href="#supported-public-atom-installations">Supported public AToM installations</a><ul>
+<li><a class="reference internal" href="#nersc">NERSC</a></li>
+<li><a class="reference internal" href="#general-atomics">General Atomics</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#build-atom-from-source">Build AToM from source</a><ul>
+<li><a class="reference internal" href="#maintaining-an-up-to-date-atom-installation">Maintaining an up-to-date AToM installation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#edit-and-build-the-atom-website">Edit and build the AToM Website</a></li>
 </ul>
 </li>
 </ul>
@@ -112,19 +120,16 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="information-for-developers">
-<h1>Information for Developers<a class="headerlink" href="#information-for-developers" title="Permalink to this headline">¶</a></h1>
-<p>The AToM project philosophy is to <strong>enhance and extend present modeling capabilities,
-by supporting, leveraging, and integrating existing research</strong>.  As such, the project supports numerous
-physics codes, frameworks, and tools which have been developed independently by the fusion community
-(in some instances over decades of research). AToM streamlines their integration, development, deployment,
-and support. This page is meant to describe how to obtain and deploy the AToM environment.</p>
+  <div class="section" id="getting-started-with-atom">
+<h1>Getting Started with AToM<a class="headerlink" href="#getting-started-with-atom" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="supported-public-atom-installations">
 <h2>Supported public AToM installations<a class="headerlink" href="#supported-public-atom-installations" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Users are highly encouraged to make use of the AToM public installations, which we maintain and support.</p>
 </div>
+<div class="section" id="nersc">
+<h3>NERSC<a class="headerlink" href="#nersc" title="Permalink to this headline">¶</a></h3>
 <p>We currently support an AToM public installation on the Edison supercomputer at NERSC.   The project install directory
 is under:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">projectdirs</span><span class="o">/</span><span class="n">atom</span><span class="o">/</span><span class="n">atom</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="n">edison</span>
@@ -134,9 +139,15 @@ is under:</p>
 an account at NERSC already, fill out <a class="reference external" href="https://nim.nersc.gov/nersc_account_request.php">this form</a> to request
 one.  Use <code class="docutils literal"><span class="pre">atom</span></code> for the repository name.</p>
 </div>
+<div class="section" id="general-atomics">
+<h3>General Atomics<a class="headerlink" href="#general-atomics" title="Permalink to this headline">¶</a></h3>
+<p>An AToM installation is also maintained at GA.  If you do not have GA computer access, follow the
+steps for <a class="reference external" href="https://fusion.gat.com/global/computing">GA cyber access</a>.</p>
+</div>
+</div>
 <div class="section" id="build-atom-from-source">
 <h2>Build AToM from source<a class="headerlink" href="#build-atom-from-source" title="Permalink to this headline">¶</a></h2>
-<p>Contact <code class="samp docutils literal"><span class="pre">candy(at)fusion.gat.com</span></code> to obtain access to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a> (GitHub account needed)</p>
+<p>Contact <code class="samp docutils literal"><span class="pre">candy(at)fusion.gat.com</span></code> to obtain access to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a>.  You will need a GitHub account for this.  If you are running MacOS, detailed instructions on building AToM from source can be found <a class="reference external" href="mac_setup.html">here.</a></p>
 <p>To clone the repository:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scidac</span><span class="o">/</span><span class="n">atom</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
@@ -176,9 +187,8 @@ The AToM <cite>Makefile</cite> leverages the <a class="reference external" href=
 </pre></div>
 </div>
 <p>The <cite>Makefile</cite> takes care of satisfying any interdependency between the AToM components.</p>
-</div>
-<div class="section" id="maintaining-an-atom-installation-up-to-date">
-<h2>Maintaining an AToM installation up-to-date<a class="headerlink" href="#maintaining-an-atom-installation-up-to-date" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="maintaining-an-up-to-date-atom-installation">
+<h3>Maintaining an up-to-date AToM installation<a class="headerlink" href="#maintaining-an-up-to-date-atom-installation" title="Permalink to this headline">¶</a></h3>
 <p>The AToM <cite>Makefile</cite> is also capable of keeping the components up-to-date and in sync with each others&#8217; versions.
 To update the AToM installation simply:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atom</span>
@@ -187,10 +197,12 @@ To update the AToM installation simply:</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="edit-and-build-the-atom-documentation">
-<h2>Edit and build the AToM documentation<a class="headerlink" href="#edit-and-build-the-atom-documentation" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="http://scidac.github.io/atom/">AToM documentation website</a> is self-contained in the AToM repository.
-To edit the AToM documentation one simply needs to follow the aforementioned steps and edit the <cite>.rst</cite> files in the <cite>docs/</cite> directory:</p>
+</div>
+<div class="section" id="edit-and-build-the-atom-website">
+<h2>Edit and build the AToM Website<a class="headerlink" href="#edit-and-build-the-atom-website" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://scidac.github.io/atom/">AToM documentation website</a> is self-contained in the AToM repository.  To edit
+the AToM documentation one simply needs to follow the aforementioned steps and edit the <cite>.rst</cite> files in
+the <cite>docs/</cite> directory:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>cd atom/docs
 $EDITOR index.rst
 </pre></div>
@@ -243,7 +255,6 @@ $EDITOR index.rst
     </p>
     <p>
         &copy; Copyright 2014-2018.<br/>
-      Last updated on Jan 16, 2018.<br/>
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
     </p>
   </div>

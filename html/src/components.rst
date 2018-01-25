@@ -1,47 +1,5 @@
-About AToM 
-==========
-
-.. figure:: images/atom_banner.png
-  :width: 100%
-  :align: center
-  :alt: AToM banner
-  :target: _images/atom_banner.png
-
-Fusion is the process that powers the sun and stars, and magnetic confinement devices, such as 
-the tokamak, provide a possible path to tap this benign and inexhaustible source of energy 
-here on Earth.  The behavior of the hot ionized gas, or plasma, inside a tokamak is complex, and 
-varies between the extremely hot inner core region, the outer insulating region of the confined 
-plasma (or *pedestal*), and the cooler unconfined plasma (or *scrape-off-layer*).
-
-The goal of the AToM project is to support, integrate, and build upon a wide spectrum of existing 
-research activities in the US fusion program, and guide the integration of high performance computing 
-resources to enable a broad range of new physics capabilities.  A number of computational tools, 
-including a workflow manager (OMFIT), computational framework (IPS), and high performance simulation 
-codes (GYRO/CGYRO, NEO, TGYRO, COGENT), along with the research products and expertise of the FASTMath 
-and SUPER SciDAC institutes, will together enable simulations of complex plasma behavior, and extensive 
-validation against experimental data.  In particular, AToM will enable advanced integrated simulations 
-which couple core, pedestal and scrape-off-layer physics, in order to study important interactions 
-between regions of the plasma, and improve capability to predict, and further optimize, performance 
-of the fusion plasma.
-
-The AToM project focuses on seven research thrusts:
-
-1. Maintain OMFIT+IPS frameworks, provide wrappers and streamlining
-
-2. Create simulation workflows for the core, pedestal and scrape-off-layer
-
-3. Develop workflows for experimental validation
-
-4. Accelerate COGENT integration into AToM with FASTMath
-
-5. Carry out SUPER performance engineering of xGYRO/NEO
-
-6. Establish a data management scheme, provenance and portal services
-
-7. Provide user support and community outreach
-
-Components
-==========
+AToM Components
+===============
 
 The guiding philosophy of AToM is to fully leverage the existing capability represented by the OMFIT and 
 IPS frameworks and the components already integrated with them, as well as the advanced composite 
@@ -64,9 +22,8 @@ mission-critical integrated modeling capabilities.
 
   *A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM*
 
-~~~~~
 OMFIT
-~~~~~
+-----
 
 `OMFIT <http://gafusion.github.io/OMFIT-source/>`_
 is a software developed at General Atomics to support integrated modeling and experimental
@@ -75,9 +32,8 @@ The goal of OMFIT is to enhance existing scientific workflows and enable new int
 To achieve these goals OMFIT adopts a bottom-up collaborative development approach. Today the framework
 is used worldwide by over one hundred fusion scientists.
 
-~~~
 IPS
-~~~
+---
 
 `IPS <http://ipsframework.sourceforge.net/doc/html/>`_
 (Integrated Plasma Simulator) is an environment to orchestrate
@@ -87,9 +43,8 @@ a batch job typically comprising a single invocation of the framework,
 calling the individual physics codes many times as the simulation
 progresses.
 
-~~~~
 GYRO
-~~~~
+----
 
 `GYRO <https://fusion.gat.com/theory/Gyrooverview>`_
 is an Eulerian gyrokinetic code. Unlike the various US PIC codes (GTC, GTS,
@@ -103,9 +58,8 @@ required at most 20K cores, but typically (say for ITER) will probably use
 about 512-2048 cores.  The direct coupling scheme in TGYRO can use
 about 16*4=64 instances, which brings the TGYRO core count to over 100K cores.
 
-~~~~~~
 COGENT
-~~~~~~
+------
 
 COGENT is a continuum gyrokinetic code being developed at LLNL for edge plasma modeling.
 The present version of the code models a nonlinear (full-F) axisymmetric 4D gyrokinetic equation 
@@ -126,9 +80,8 @@ decomposed independently for flexible and efficient mapping to current and futur
 The code gets single-null geometric data via fourth-order interpolation of tabular data generated 
 by the UEDGE edge fluid code.
 
-~~~~~
 TGYRO
-~~~~~
+-----
 
 `TGYRO <https://fusion.gat.com/theory/Tgyrooverview>`_
 is a transport solver based on the drift-ordering formulation of Sugama.
@@ -147,9 +100,8 @@ component (say GYRO) TGYRO will also parallelize over radial zone (8-16
 are typically needed) and Jacobian.  This means a factor of about 64 over
 the parallelism of the turbulence component.
 
-~~~~
 TGLF
-~~~~
+----
 
 `TGLF <https://fusion.gat.com/theory/Tglfoverview>`_
 is a theory-based transport model based on linear gyrofluid equations plus
@@ -161,9 +113,8 @@ is far superior to any other transport model.  It is a significant
 improvement on its predecesor GLF23, especially in the weak or negative
 shear regime and for strongly shaped plasmas.
 
-~~~~
 NEO
-~~~~
+---
 
 `NEO <https://fusion.gat.com/theory/Neooverview>`_
 is a :math:`\large \delta f` Eulerian code which provides first-principles based numerical calculations
@@ -177,9 +128,8 @@ the Poisson equation, general geometry effects, and rapid toroidal rotation
 effects (including centrifugal effects). NEO has recently been upgraded to
 include the full linearized Fokker-Planck collision operator.
 
-~~~~
 EPED
-~~~~
+----
 
 EPED is a model to predict the height (ie pressure, or temperature at a given density) and width
 of the H-Mode pedestal in tokamaks.   It predicts a boundary condition (near the top of the

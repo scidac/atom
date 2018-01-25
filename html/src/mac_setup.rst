@@ -80,38 +80,36 @@ Install
     sudo port install netcdf
     sudo port install netcdf-fortran
     sudo port install netcdf-cxx
-..    sudo port install clang-5.0
+    sudo port install doxygen
 
-.. 9. Export compiler locations for cmake (Exact names may vary)::
+9. Export compiler locations for cmake (Exact names may vary.  If you close your terminal, you may have to do this step again) ::
+
     export FC=/opt/local/bin/gfortran-mp-7 
     export CC=/opt/local/bin/gcc-mp-7
     export CXX=/opt/local/bin/g++-mp-7
 
-.. 10. Make a symlink to clang. (Hack) ::
-    sudo ln -s /usr/bin/clang /opt/local/bin/clang
-    
-9. Configure and make AToM.  Enter your ssh key passphrase when prompted (Not your computer password) ::
+10. Configure and make AToM.  Enter your ssh key passphrase when prompted (Not your computer password) ::
 
     cd atom
     make set plat=GFORTRAN_OSX_MACPORTS
     make all ATOM_PLATFORM=GFORTRAN_OSX_MACPORTS
 
-10. Add environment variables to your .profile so tools are available in your next terminal session :: 
+11. Add environment variables to your .profile so tools are available in your next terminal session :: 
 
-11. Install OMFIT prerequisites.  Answer 'Y' to any prompts asking if you want to install and enter computer's password when prompted.  Assuming you are still in the atom directory, type ::
+12. Install OMFIT prerequisites.  Answer 'Y' to any prompts asking if you want to install and enter computer's password when prompted.  Assuming you are still in the atom directory, type ::
     cd OMFIT-source/install/ports
     ./install.sh
 
    If you run into problems with Mac Ports here, you may need to switch to the unstable branch. (From within the OMFIT-source directory) ::
 
-    git branch unstable
+    git checkout unstable
     cd OMFIT-source/install/ports
     ./install.sh
 
-~~~~
-Tour
-~~~~
+.. ~~~~
+.. Tour
+.. ~~~~
 
-- OMFIT : Getting started guides can be found `here <https://gafusion.github.io/OMFIT-source/usage.html>`_  To launch OMFIT and explore ::
+.. - OMFIT : Getting started guides can be found `here <https://gafusion.github.io/OMFIT-source/usage.html>`_  To launch OMFIT and explore ::
 
-    omfit
+..    omfit
