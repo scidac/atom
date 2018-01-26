@@ -23,5 +23,11 @@ Replacing "username" with your docker account name and "tag" with with a tag to 
     docker push username/omfit:tag
 
 
-To Run : 
-docker run -it --volume path/to/home/directory:/root -e DISPLAY=192.168.1.158:0 username/omfit:tag
+To Run on MacOS: 
+docker run -it --volume path/to/home/directory:/root -e DISPLAY=yourip:0 username/omfit:tag
+
+Where :
+    path/to/home/directory is the path to your home directory on your machine.
+    yourip is your comptuer's ip
+    username is the username you used when pushing the docker image
+    tag is the tag you used when tagging/pushing the docker image
