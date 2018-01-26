@@ -21,3 +21,7 @@ Replacing "username" with your docker account name and "tag" with with a tag to 
 5. Push the image to make it publicly available 
 
     docker push username/omfit:tag
+
+
+To Run : 
+docker run -it --volume path/to/home/directory:/root -e DISPLAY=192.168.1.158:0 username/omfit:tag

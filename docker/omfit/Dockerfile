@@ -11,10 +11,8 @@ ENV PATH=/opt/conda/bin:${PATH}
 ENV USER=root
 
 # Install any needed packages specified in requirements.txt
-#RUN conda install -y -c smithsp -c conda-forge omfit 
-RUN cd /omfit/install/ && ./install-conda.sh
+RUN cd /omfit/install/ && ./install-conda.sh -p /opt/conda
 RUN conda install tk=8.5.18
-########RUN conda install -y -c smithsp tk
 
 # Run bash when the container launches
 CMD ["bash"]
