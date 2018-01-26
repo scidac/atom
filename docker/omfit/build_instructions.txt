@@ -6,7 +6,7 @@ To build a docker image for OMFIT :
 
 2. Build the docker image.
 
-    docker build -t omfit
+    docker build -t omfit .
 
 3. If you wish to publish the image, log in to your docker account.
     
