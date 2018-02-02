@@ -26,7 +26,7 @@ from spack import *
 
 
 class Gacode(Package):
-    """FIXME: Put a proper description of your package here."""
+    """GACODE."""
 
     homepage = "http://scidac.github.io/atom/introduction.html"
 
@@ -34,9 +34,14 @@ class Gacode(Package):
 
     depends_on('openmpi')
     depends_on('fftw')
+    depends_on('netlib-lapack')
+
     parallel = False
+    
 
     def install(self, spec, prefix):
+        env['GACODE_ROOT'] = self.stage.source_path
+        env['GACODE_PLATFORM'] = 'SPACK'
         env['CC'] = spec['mpi'].mpicc
         env['CXX'] = spec['mpi'].mpicxx
         env['F77'] = spec['mpi'].mpif77
