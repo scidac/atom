@@ -9,8 +9,10 @@ ADD ./OMFIT-source /omfit
 
 ENV PATH=/opt/conda/bin:${PATH}
 ENV USER=root
+ENV SHELL=/bin/bash
 
 # Install any needed packages specified in requirements.txt
+RUN conda install -y -c ska asciitable 
 RUN apt-get update && apt-get install -y xterm
 RUN cd /omfit/install/ && ./install-conda.sh -p /opt/conda
 
