@@ -35,6 +35,8 @@ class Gacode(Package):
     depends_on('openmpi')
     depends_on('fftw')
     depends_on('netlib-lapack')
+    depends_on('netcdf')
+    depends_on('netcdf-fortran')
 
     parallel = False
     
@@ -42,10 +44,11 @@ class Gacode(Package):
     def install(self, spec, prefix):
         env['GACODE_ROOT'] = self.stage.source_path
         env['GACODE_PLATFORM'] = 'SPACK'
+        env['NETCDF_PATH'] = spec['netcdf'].prefix
         env['CC'] = spec['mpi'].mpicc
         env['CXX'] = spec['mpi'].mpicxx
         env['F77'] = spec['mpi'].mpif77
-        env['FC'] = spec['mpi'].mpifc
+        env['FC'] = spec['mpi'].mpifc + ' -std=f2008 -I' + env['GACODE_ROOT'] + '/modules -J' + env['GACODE_ROOT'] + '/modules -g'
 
         make()
-        make('install')
+        #make('install')
