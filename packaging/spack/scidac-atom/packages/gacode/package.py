@@ -22,8 +22,8 @@
 # License along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 ##############################################################################
+from distutils.dir_util import copy_tree
 from spack import *
-
 
 class Gacode(Package):
     """GACODE."""
@@ -39,7 +39,26 @@ class Gacode(Package):
     depends_on('netcdf-fortran')
 
     parallel = False
-    
+   
+    # Set up environment variables needed for GACODE 
+
+    def setup_environment(self, spack_env, run_env):
+        run_env.prepend_path('GACODE_ROOT',
+                            self.spec.prefix)
+        run_env.set('GACODE_PLATFORM', 'SPACK')
+
+        code_names = ['shared', 'quick', 'glf23', 'le3', 'tglf', 'vgen', 'neo', 'cgyro', 'gyro', 'tgyro']
+        gacode_bins = []        
+        for code_name in code_names:
+           gacode_bins.append(join_path(self.spec.prefix, code_name, 'bin'))
+        gacode_bins = ':'.join(gacode_bins)
+
+        run_env.prepend_path('PATH', gacode_bins)
+        run_env.prepend_path('PYTHONPATH',
+                            join_path(self.spec.prefix, 'python'))
+        run_env.prepend_path('IDL_PATH', 
+                            join_path(self.spec.prefix, 'gyro', 'vugyro'))
+        
 
     def install(self, spec, prefix):
         env['GACODE_ROOT'] = self.stage.source_path
@@ -51,4 +70,7 @@ class Gacode(Package):
         env['FC'] = spec['mpi'].mpifc + ' -std=f2008 -I' + env['GACODE_ROOT'] + '/modules -J' + env['GACODE_ROOT'] + '/modules -g'
 
         make()
-        #make('install')
+
+        # Due to interconnectedness of gacode, just copying entire tree over once built.
+        copy_tree(self.stage.source_path, prefix)
+
