@@ -1,5 +1,5 @@
 {% set name = "GACODE" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -15,6 +15,7 @@ requirements:
     - fann2
     - fftw
     - gfortran_osx-64  # [osx]
+    - lapack
     - libgfortran
     - libnetcdf
     - matplotlib
