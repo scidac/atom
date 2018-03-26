@@ -12,10 +12,10 @@ Presentations
    * - Year
      - Presenter
      - Title
-   * - 2016
+   * - 2015
      - `Orlov D. <http://www-internal.psfc.mit.edu/TTF2016/posters/posters.html>`_
      - The effects of non-axisymmetric perturbation field spectrum on core and edge transport in DIII-D
-   * - 2016
+   * - 2015
      - `Holland C. <http://www-internal.psfc.mit.edu/TTF2016/posters/posters.html>`_
      - Testing the Skill of Core Transport Models in Accurately Capturing Rotation and Heating Effects in I- and H-mode Plasmas
    * - 2016

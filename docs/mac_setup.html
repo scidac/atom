@@ -1,45 +1,43 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Complete MacOS install of AToM with MacPorts &mdash; AToM</title>
-    
+    <title>Complete MacOS install of AToM with MacPorts &#8212; AToM</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootswatch-3.3.6/spacelab/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="AToM" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -142,7 +140,7 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
-<p>Then click the &#8220;Install&#8221; button in the dialog box that appears.</p>
+<p>Then click the “Install” button in the dialog box that appears.</p>
 <p>Then agree to the license agreement.</p>
 </li>
 <li><p class="first">Generate SSH keys if you do not currently have them. This is used to authenticate with github later.</p>
@@ -151,7 +149,7 @@
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span>
 </pre></div>
 </div>
-<p>This will return &#8220;No such file or directory&#8221; if it does NOT exist.  If it exists, skip to step 3, if not,  generate your ssh keys</p>
+<p>This will return “No such file or directory” if it does NOT exist.  If it exists, skip to step 3, if not,  generate your ssh keys</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">b</span> <span class="mi">4096</span>
 </pre></div>
 </div>
@@ -177,7 +175,7 @@
 </div>
 <p>If it asks if you want to continue connecting, say yes.</p>
 </li>
-<li><p class="first">Install and configure the prerequisites with Mac Ports.  Enter your computer&#8217;s password (not the SSH key passphrase) when promped and enter &#8216;Y&#8217; when prompted to confirm installs.  Some of these installs (like openmpi) may take a while.</p>
+<li><p class="first">Install and configure the prerequisites with Mac Ports.  Enter your computer’s password (not the SSH key passphrase) when promped and enter ‘Y’ when prompted to confirm installs.  Some of these installs (like openmpi) may take a while.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">cmake</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">openmpi</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">select</span> <span class="o">--</span><span class="nb">set</span> <span class="n">mpi</span> <span class="n">openmpi</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="n">fortran</span>
@@ -204,7 +202,7 @@ make all ATOM_PLATFORM=GFORTRAN_OSX_MACPORTS</p>
 </li>
 <li><p class="first">Add environment variables to your .profile so tools are available in your next terminal session</p>
 </li>
-<li><p class="first">Install OMFIT prerequisites.  Answer &#8216;Y&#8217; to any prompts asking if you want to install and enter computer&#8217;s password when prompted.  Assuming you are still in the atom directory, type ::
+<li><p class="first">Install OMFIT prerequisites.  Answer ‘Y’ to any prompts asking if you want to install and enter computer’s password when prompted.  Assuming you are still in the atom directory, type ::
 cd OMFIT-source/install/ports
 ./install.sh</p>
 </li>
@@ -233,14 +231,14 @@ cd OMFIT-source/install/ports
         <br/>
         
 <div id="sourcelink">
-  <a href="_sources/mac_setup.txt"
+  <a href="_sources/mac_setup.rst.txt"
      rel="nofollow">Source</a>
 </div>
       
     </p>
     <p>
         &copy; Copyright 2014-2018.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.<br/>
     </p>
   </div>
 </footer>

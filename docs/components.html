@@ -1,45 +1,43 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>AToM Components &mdash; AToM</title>
-    
+    <title>AToM Components &#8212; AToM</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootswatch-3.3.6/spacelab/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="AToM" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   </head>
-  <body role="document">
+  <body>
 
   <div id="navbar" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -124,7 +122,7 @@
 IPS frameworks and the components already integrated with them, as well as the advanced composite
 components TGYRO, TSC and FASTRAN.  There are many established workflows, dedicated users and use cases
 represented by both the composite components, as well as for advanced components like GYRO, COGENT and M3Dc1.</p>
-<p>We endeavour to support &#8211; rather than subvert &#8211; current workflows, build essential new infrastructure
+<p>We endeavour to support – rather than subvert – current workflows, build essential new infrastructure
 to address critical modeling gaps, and guide integration of high-performance computing resources to enable
 new physics capabilities.  The guiding philosophy of AToM is to take a bottom-up, collaborative approach
 that focuses on leveraging and integrating the wide spectrum of existing research activities throughout
@@ -182,7 +180,7 @@ library, which is under development in the FASTMath SciDAC Institute (LBNL).  In
 exploits mapped multiblock grid technology, whereby the inner and outer closed flux surface regions,
 the inner and outer scrape off layer, the inner and outer divertor legs, and the inner and outer
 portions of the private flux region are mapped from the physical toroidal geometry (with appropriate
-metric information) onto communicating rectangular grid blocks. The code was &#8216;&#8217;born parallel&#8217;&#8216;, with
+metric information) onto communicating rectangular grid blocks. The code was ‘’born parallel’‘, with
 grid blocks assigned to groups of processors.  Phase, configuration and velocity space can be domain
 decomposed independently for flexible and efficient mapping to current and future parallel machines.
 The code gets single-null geometric data via fourth-order interpolation of tabular data generated
@@ -211,7 +209,7 @@ the parallelism of the turbulence component.</p>
 <h2>TGLF<a class="headerlink" href="#tglf" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Tglfoverview">TGLF</a>
 is a theory-based transport model based on linear gyrofluid equations plus
-&#8220;calibration&#8221; with a database of GYRO nonlinear simulations.  In some sense,
+“calibration” with a database of GYRO nonlinear simulations.  In some sense,
 the goal of TGLF is to provide an answer as close as possible to that one
 would obtain from GYRO but more quickly (10,000 times or more).  In some
 sense, practical performance modeling MUST use TGLF.  To my knowledge TGLF
@@ -239,7 +237,7 @@ include the full linearized Fokker-Planck collision operator.</p>
 of the H-Mode pedestal in tokamaks.   It predicts a boundary condition (near the top of the
 pedestal, typical psi_norm~0.9-0.95) that can be coupled to a core transport solver such as TGYRO
 to predict profiles across the confined plasma.  EPED is designed to predict the pedestal
-structure in &#8220;high performance&#8221; H-mode operation (ie Type I ELM or QH-Mode regime), and
+structure in “high performance” H-mode operation (ie Type I ELM or QH-Mode regime), and
 typically provides an upper bound in other regimes of operation.   EPED can be applied
 to existing experiments, future experiments on existing devices, or to predict and optimize
 future devices such as ITER or FNSF.    EPED has been tested on more than 300 cases
@@ -265,14 +263,14 @@ pedestal height and width.</p>
         <br/>
         
 <div id="sourcelink">
-  <a href="_sources/components.txt"
+  <a href="_sources/components.rst.txt"
      rel="nofollow">Source</a>
 </div>
       
     </p>
     <p>
         &copy; Copyright 2014-2018.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.4.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.<br/>
     </p>
   </div>
 </footer>

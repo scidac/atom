@@ -3,6 +3,25 @@ Meetings and AToM Team Members
 
 .. figure:: images/atom_cupcakes.jpg
 
+2018.03.30 -- March Conference Call
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Time: Friday, 30 March 2018 -- 12:30pm-2:30pm PDT 
+:Join: Email connection info sent (26 March)
+
+:Agenda:
+
+#. Summary of activity on Thrusts
+ 
+   - A: Meneghini, Kalling, Elwasif
+   - B: Green, Law
+   - C: Holland
+   - D: Kessel, Dorf, Chen
+   - E: Bernholdt
+   - F: Bonoli
+  
+----
+
 2018.01.18 -- January Conference Call
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
