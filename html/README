@@ -1,5 +1,5 @@
 To *edit* webpages, edit files in the src directory.
 
-To *build* webpages, type 'make' in this directory. This will copy data to ../docs
+To *build* webpages, type 'make' in this directory. 
 
-To *publish* webpages, 'git push' to push docs to master at GitHub.
+To *publish* webpages, type 'make sync' to move generated html then 'git push' to push docs to master at GitHub. In the case where a version of Sphinx is used that hasn't been used before, the sync may need to be done without excluding '_static'.

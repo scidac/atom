@@ -1,0 +1,33 @@
+To build a docker image for OMFIT : 
+
+1. In the directory that has the dockerfile, check out OMFIT.  (Note, you can not just edit the dockerfile to pull in files from parent directories.  All added directories must be subordinate to this one. 
+
+    git clone -b unstable git@github.com:gafusion/OMFIT-source.git 
+
+2. Build the docker image.
+
+    docker build -t omfit .
+
+3. If you wish to publish the image, log in to your docker account.
+    
+    docker login
+
+4. Tag the docker image.
+    
+    docker tag omfit username/omfit:tag
+
+Replacing "username" with your docker account name and "tag" with with a tag to identify this image.
+
+5. Push the image to make it publicly available 
+
+    docker push username/omfit:tag
+
+
+To Run on MacOS: 
+docker run -it --volume path/to/home/directory:/root -e DISPLAY=yourip:0 username/omfit:tag
+
+Where :
+    path/to/home/directory is the path to your home directory on your machine.
+    yourip is your comptuer's ip
+    username is the username you used when pushing the docker image
+    tag is the tag you used when tagging/pushing the docker image

@@ -24,6 +24,7 @@ mission-critical integrated modeling capabilities.
 
 OMFIT
 -----
+*Framework*
 
 `OMFIT <http://gafusion.github.io/OMFIT-source/>`_
 is a software developed at General Atomics to support integrated modeling and experimental
@@ -34,6 +35,7 @@ is used worldwide by over one hundred fusion scientists.
 
 IPS
 ---
+*Framework*
 
 `IPS <http://ipsframework.sourceforge.net/doc/html/>`_
 (Integrated Plasma Simulator) is an environment to orchestrate
@@ -45,6 +47,7 @@ progresses.
 
 GYRO
 ----
+*Modeling, Part of GACODE*
 
 `GYRO <https://fusion.gat.com/theory/Gyrooverview>`_
 is an Eulerian gyrokinetic code. Unlike the various US PIC codes (GTC, GTS,
@@ -60,6 +63,7 @@ about 16*4=64 instances, which brings the TGYRO core count to over 100K cores.
 
 COGENT
 ------
+*Modeling*
 
 COGENT is a continuum gyrokinetic code being developed at LLNL for edge plasma modeling.
 The present version of the code models a nonlinear (full-F) axisymmetric 4D gyrokinetic equation 
@@ -82,6 +86,7 @@ by the UEDGE edge fluid code.
 
 TGYRO
 -----
+*Modeling, Part of GACODE*
 
 `TGYRO <https://fusion.gat.com/theory/Tgyrooverview>`_
 is a transport solver based on the drift-ordering formulation of Sugama.
@@ -102,6 +107,7 @@ the parallelism of the turbulence component.
 
 TGLF
 ----
+*Modeling, Part of GACODE* 
 
 `TGLF <https://fusion.gat.com/theory/Tglfoverview>`_
 is a theory-based transport model based on linear gyrofluid equations plus
@@ -115,6 +121,7 @@ shear regime and for strongly shaped plasmas.
 
 NEO
 ---
+*Modeling, Part of GACODE*
 
 `NEO <https://fusion.gat.com/theory/Neooverview>`_
 is a :math:`\large \delta f` Eulerian code which provides first-principles based numerical calculations
@@ -130,6 +137,7 @@ include the full linearized Fokker-Planck collision operator.
 
 EPED
 ----
+*Modeling*
 
 EPED is a model to predict the height (ie pressure, or temperature at a given density) and width
 of the H-Mode pedestal in tokamaks.   It predicts a boundary condition (near the top of the
@@ -145,3 +153,37 @@ and stability calculations from baloo (or in the future, GYRO or TGLF), and then
 peeling-ballooning mode stability constraint using model equilibria from toq and stability
 calculations with ELITE.   The two constraints are combined to determine the two unknowns,
 pedestal height and width.
+
+BOUT++
+____
+*Framework*
+
+`BOUT++ <https://boutproject.github.io/>`_
+is a framework for writing fluid and plasma simulations in curvilinear geometry. It is 
+intended to be quite modular, with a variety of numerical methods and time-integration solvers 
+available. BOUT++ is primarily designed and tested with reduced plasma fluid models in mind, 
+but it can evolve any number of equations, with equations appearing in a readable form.
+
+
+OMAS
+____
+*Library*
+
+`OMAS <https://gafusion.github.io/omas/>`_
+is a Python library designed to simplify the interface of third-party codes with the ITER 
+Integrated Modeling and Analysis Suite (IMAS) . ITER IMAS defines a data model, a 
+data get/put API, and a data storage infrastructure used for manipulating ITER data.
+
+At the heart of OMAS is the idea of providing a convenient API which can store data in a 
+format that is compatible with the IMAS data model, but using other storage systems in 
+addition to the one provided by IMAS itself. Within OMAS data compatible with the IMAS 
+data model is easily translated between these different storage systems. Furthermore, 
+any physics code or programming language that is capable of reading/writing data using 
+one of the many OMAS supported data formats (eg. NetCDF) can take advantage of the 
+functionalities provided by OMAS.
+
+Harvest
+_______
+*Library*
+
+The harvest project aims at providing a convenient and scalable way to log metadata and store data for fusion applications.
