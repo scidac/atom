@@ -49,6 +49,8 @@ class GaHarvest(Package):
     version('harvest', git='https://github.com/gafusion/harvest_client.git', branch = 'master')
     parallel = False
 
+    tags = ['atom']
+
     # depends_on('foo')
 
     def install(self, spec, prefix):

@@ -49,3 +49,5 @@ class PyOmas(PythonPackage):
     version('0.4.0', '86aa435258c4d01b60a940b183738bf3')
 
     depends_on('py-setuptools')
+    tags = ['atom']
+

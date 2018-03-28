@@ -39,6 +39,7 @@ class Gacode(Package):
     depends_on('netcdf-fortran')
 
     parallel = False
+    tags = ['atom']
    
     # Set up environment variables needed for GACODE 
 
