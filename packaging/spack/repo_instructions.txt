@@ -1,12 +1,13 @@
 This is an AToM spack repo.
 
 It can be added to your spack repo list with
-
 spack repo add /path/to/this/directory/scidac-atom
 
 This will allow you to do 
-
 spack install <package>
+
+To list all AToM packages : 
+spack list -t atom
 
 For any of the AToM packages in this repo.
 
