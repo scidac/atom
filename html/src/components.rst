@@ -155,7 +155,8 @@ calculations with ELITE.   The two constraints are combined to determine the two
 pedestal height and width.
 
 BOUT++
-____
+------
+
 *Framework*
 
 `BOUT++ <https://boutproject.github.io/>`_
@@ -166,7 +167,8 @@ but it can evolve any number of equations, with equations appearing in a readabl
 
 
 OMAS
-____
+----
+
 *Library*
 
 `OMAS <https://gafusion.github.io/omas/>`_
@@ -183,7 +185,8 @@ one of the many OMAS supported data formats (eg. NetCDF) can take advantage of t
 functionalities provided by OMAS.
 
 Harvest
-_______
+-------
+
 *Library*
 
 The harvest project aims at providing a convenient and scalable way to log metadata and store data for fusion applications.

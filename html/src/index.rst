@@ -7,24 +7,29 @@ About AToM
   :alt: AToM banner
   :target: _images/atom_banner.png
 
-Fusion is the process that powers the sun and stars, and magnetic confinement devices, such as 
-the tokamak, provide a possible path to tap this benign and inexhaustible source of energy 
-here on Earth.  The behavior of the hot ionized gas, or plasma, inside a tokamak is complex, and 
-varies between the extremely hot inner core region, the outer insulating region of the confined 
-plasma (or *pedestal*), and the cooler unconfined plasma (or *scrape-off-layer*).
+A Brief Description of AToM 
+---------------------------
+
+The AToM project philosophy is to **enhance and extend present modeling capabilities by
+leveraging and integrating existing research**.  AToM supports numerous physics codes,
+frameworks, and tools which have been developed independently by the fusion community,
+often through years or decades of research.  AToM seeks to streamline the integration of
+these tools, to further their development, and to deploy and support the resulting software.
+
+AToM Thrusts
+------------
 
 The goal of the AToM project is to support, integrate, and build upon a wide spectrum of existing 
 research activities in the US fusion program, and guide the integration of high performance computing 
 resources to enable a broad range of new physics capabilities.  A number of computational tools, 
-including a workflow manager (OMFIT), computational framework (IPS), and high performance simulation 
-codes (GYRO/CGYRO, NEO, TGYRO, COGENT), along with the research products and expertise of the FASTMath 
-and SUPER SciDAC institutes, will together enable simulations of complex plasma behavior, and extensive 
-validation against experimental data.  In particular, AToM will enable advanced integrated simulations 
-which couple core, pedestal and scrape-off-layer physics, in order to study important interactions 
-between regions of the plasma, and improve capability to predict, and further optimize, performance 
-of the fusion plasma.
+including a workflow manager (`OMFIT <http://gafusion.github.io/OMFIT-source>`_), computational
+framework (IPS), and high performance simulation 
+codes (`GYRO/CGYRO, NEO, TGYRO, <http://gafusion.github.io/doc>`_ and COGENT) enable simulations
+of complex plasma behavior, and extensive validation against experimental data.  AToM targets advanced
+integrated simulations which couple core, pedestal and scrape-off-layer physics in order to predict,
+and further optimize, performance of the fusion plasma.
 
-The AToM project focuses on seven research thrusts:
+The AToM project is divided into six thrusts:
 
 1. Maintain OMFIT+IPS frameworks, provide wrappers and streamlining
 
@@ -40,3 +45,14 @@ The AToM project focuses on seven research thrusts:
 
 7. Provide user support and community outreach
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Navigation
+
+   components
+   find
+   install
+   literature
+   mac_setup
+   team
+   tour

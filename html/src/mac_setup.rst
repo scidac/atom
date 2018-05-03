@@ -3,9 +3,8 @@ Complete MacOS install of AToM with MacPorts
 
 This guide will provide step-by-step instructions for installing AToM Tier 1 on a fresh MacOS system.  
 
-~~~~~~~~~~~~~
 Prerequisites
-~~~~~~~~~~~~~
+-------------
 
 Adminstrator access on your Mac is required for an install with this method. 
 
@@ -27,9 +26,8 @@ In addition, for a full install, a `github <https://github.com>`_ account is req
 
 Any steps you have completed previously can be skipped. 
 
-~~~~~~~
 Install
-~~~~~~~
+-------
 
 1. Install Developer command line tools type ::
 
@@ -45,7 +43,7 @@ Install
 
         ls ~/.ssh/id_rsa.pub 
 
-    This will return "No such file or directory" if it does NOT exist.  If it exists, skip to step 3, if not,  generate your ssh keys ::
+    This will return "No such file or directory" if it does NOT exist.  If it exists, skip to step 3, if not, generate your ssh keys ::
     
         ssh-keygen -t rsa -b 4096
 

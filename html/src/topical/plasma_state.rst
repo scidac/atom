@@ -1,10 +1,10 @@
 plasma-state build notes
 ========================
 
-http://w3.pppl.gov/ntcc/PlasmaState/](http://w3.pppl.gov/ntcc/PlasmaState/
+http://w3.pppl.gov/ntcc/PlasmaState
 
 Requires: pspline, TranspSubs, Xplasma, sglib (all these are in ntcc-source)
-There seem to be both t_ versions and regular versions. Looks like the t_ versions are related to SWIM, so we will use those. Be nice if someone documented what the difference was.
+There seem to be both t\_ versions and regular versions. Looks like the t\_ versions are related to SWIM, so we will use those. Be nice if someone documented what the difference was.
 
 Looks like you simply put the contents of the downloaded source into the same directory and run the gmake command since all the top-level Makefiles are the same.
 

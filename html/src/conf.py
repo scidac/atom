@@ -16,7 +16,6 @@ import os
 import time
 import glob
 import numpy
-import sphinx_bootstrap_theme
 
 # -- General configuration -----------------------------------------------------
 
@@ -26,8 +25,10 @@ import sphinx_bootstrap_theme
 sys.path.insert(0, os.path.abspath('../..'))
 sys.path.append(os.path.abspath('sphinxext'))
 extensions=[
-    'sphinx.ext.mathjax',
-    'sphinxcontrib.bibtex']
+   'sphinx.ext.mathjax',
+   'sphinxcontrib.bibtex',
+   'mathmacro',
+   'sphinx.ext.autosectionlabel']
 
 autodoc_member_order = 'bysource'
 
@@ -72,89 +73,29 @@ exclude_patterns = []
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
 
-# If true, '()' will be appended to :func: etc. cross-reference text.
-#add_function_parentheses = True
-
-# If true, the current module name will be prepended to all description
-# unit titles (such as .. function::).
-#add_module_names = True
-
-# If true, sectionauthor and moduleauthor directives will be shown in the
-# output. They are ignored by default.
-#show_authors = False
-
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML pages.  
-html_theme = 'bootstrap'
+html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
-    # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': 'AToM',
-
-    # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Jump to",
-
-   # A list of tuples containing pages or urls to link to.
-   'navbar_links': [
-      ('Tour','tour'),
-      ('Components','components'),
-      ('Install','install'),
-      ('Team','team'),
-      ('Papers','literature'),
-      ('Find','find'),
-      ('Tree','tree')
-   ],
-
-    # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': False,
-
-    # Render the current pages TOC in the navbar. (Default: true)
-    'navbar_pagenav': True,
-
-    # Tab name for the current pages TOC. (Default: "Page")
-    'navbar_pagenav_name': "In this page",
-
-    # Global TOC depth for "site" navbar tab. (Default: 1)
-    # Switching to -1 shows all levels.
-    'globaltoc_depth': -1,
-
-    # Include hidden TOCs in Site navbar?
-    #
-    # Note: If this is "false", you cannot have mixed ``:hidden:`` and
-    # non-hidden ``toctree`` directives in the same page, or else the build
-    # will break.
-    #
-    # Values: "true" (default) or "false"
-    'globaltoc_includehidden': "true",
-
-    # HTML navbar class (Default: "navbar") to attach to <div> element.
-    # For black navbar, do "navbar navbar-inverse"
-    'navbar_class': "navbar",# navbar-inverse",
-
-    # Fix navigation bar to top of page?
-    # Values: "true" (default) or "false"
-    'navbar_fixed_top': "true",
-
-    # Location of link to source.
-    # Options are "nav" (default), "footer" or anything else to exclude.
-    'source_link_position': "footer",
-
-    # Bootswatch (http://bootswatch.com/) theme.
-    # Options are nothing (default) or the name of a valid them such as "amelia" or "cosmo".
-    'bootswatch_theme': "spacelab",
-
-    # Choose Bootstrap version.
-    # Values: "3" (default) or "2" (in quotes)
-    'bootstrap_version': "3"
+   'canonical_url': '',
+   'analytics_id': '',
+   'logo_only': False,
+   'display_version': True,
+   'prev_next_buttons_location': 'bottom',
+   'style_external_links': False,
+   'vcs_pageview_mode': '',
+   # Toc options
+   'collapse_navigation': True,
+   'sticky_navigation': True,
+   'navigation_depth': 4,
+   'includehidden': True,
+   'titles_only': False
 }
-
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -165,7 +106,7 @@ html_title = 'AToM'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'images/logo/atom_transparent.png'
+#html_logo = 'images/logo/atom_transparent.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -213,10 +154,10 @@ html_show_copyright = True
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    'papersize': 'letterpaper',
-    # The font size ('10pt', '11pt' or '12pt').
-    'pointsize': '12pt'
+   # The paper size ('letterpaper' or 'a4paper').
+   'papersize': 'letterpaper',
+   # The font size ('10pt', '11pt' or '12pt').
+   'pointsize': '12pt'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

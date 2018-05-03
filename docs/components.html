@@ -1,121 +1,172 @@
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AToM Components &#8212; AToM</title>
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootswatch-3.3.6/spacelab/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AToM Components &mdash; AToM</title>
+  
+
+  
+  
     <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="next" title="Repositories, links, and information" href="find.html" />
+    <link rel="prev" title="About AToM" href="index.html" /> 
 
-  </head>
-  <body>
+  
+  <script src="_static/js/modernizr.min.js"></script>
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img height=60, src="_static/atom_transparent.png">
-          <!-- AToM-->
-        </a>
-        <!-- <span class="navbar-text navbar-version pull-left"><b></b></span> -->
-      </div>
+</head>
 
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            
-                <li><a href="tour.html">Tour</a></li>
-                <li><a href="#">Components</a></li>
-                <li><a href="install.html">Install</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="literature.html">Papers</a></li>
-                <li><a href="find.html">Find</a></li>
-                <li><a href="tree.html">Tree</a></li>
-            
-            
-              
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">In this page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">AToM Components</a><ul>
-<li><a class="reference internal" href="#omfit">OMFIT</a></li>
-<li><a class="reference internal" href="#ips">IPS</a></li>
-<li><a class="reference internal" href="#gyro">GYRO</a></li>
-<li><a class="reference internal" href="#cogent">COGENT</a></li>
-<li><a class="reference internal" href="#tgyro">TGYRO</a></li>
-<li><a class="reference internal" href="#tglf">TGLF</a></li>
-<li><a class="reference internal" href="#neo">NEO</a></li>
-<li><a class="reference internal" href="#eped">EPED</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> AToM
+          
+
+          
+          </a>
+
+          
             
             
-            
-            
-            
-          </ul>
-           <!-- 
-            
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-           -->
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
         </div>
-    </div>
-  </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 content">
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Navigation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AToM Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#omfit">OMFIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ips">IPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gyro">GYRO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cogent">COGENT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tgyro">TGYRO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tglf">TGLF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#neo">NEO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eped">EPED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bout">BOUT++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#omas">OMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#harvest">Harvest</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="find.html">Repositories, links, and information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Getting Started with AToM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="literature.html">AToM Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mac_setup.html">Complete MacOS install of AToM with MacPorts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Meetings and AToM Team Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tour.html">A Brief Tour of AToM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
       
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AToM</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>AToM Components</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/components.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="atom-components">
 <h1>AToM Components<a class="headerlink" href="#atom-components" title="Permalink to this headline">¶</a></h1>
 <p>The guiding philosophy of AToM is to fully leverage the existing capability represented by the OMFIT and
@@ -128,12 +179,13 @@ new physics capabilities.  The guiding philosophy of AToM is to take a bottom-up
 that focuses on leveraging and integrating the wide spectrum of existing research activities throughout
 the US fusion community.  In this way, we seek to improve and extend the US fusion program’s existing,
 mission-critical integrated modeling capabilities.</p>
-<div class="figure align-center" id="id7" style="width: 80%">
+<div class="figure align-center" id="id9" style="width: 80%">
 <a class="reference external image-reference" href="_images/AToM_world.png"><img alt="AToM world" src="_images/AToM_world.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text"><em>A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM</em></span></p>
 </div>
 <div class="section" id="omfit">
 <h2>OMFIT<a class="headerlink" href="#omfit" title="Permalink to this headline">¶</a></h2>
+<p><em>Framework</em></p>
 <p><a class="reference external" href="http://gafusion.github.io/OMFIT-source/">OMFIT</a>
 is a software developed at General Atomics to support integrated modeling and experimental
 data analysis of magnetically confined thermonuclear fusion experiments.
@@ -143,6 +195,7 @@ is used worldwide by over one hundred fusion scientists.</p>
 </div>
 <div class="section" id="ips">
 <h2>IPS<a class="headerlink" href="#ips" title="Permalink to this headline">¶</a></h2>
+<p><em>Framework</em></p>
 <p><a class="reference external" href="http://ipsframework.sourceforge.net/doc/html/">IPS</a>
 (Integrated Plasma Simulator) is an environment to orchestrate
 complex coupled simulation workflows on parallel computers. The IPS
@@ -153,6 +206,7 @@ progresses.</p>
 </div>
 <div class="section" id="gyro">
 <h2>GYRO<a class="headerlink" href="#gyro" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Gyrooverview">GYRO</a>
 is an Eulerian gyrokinetic code. Unlike the various US PIC codes (GTC, GTS,
 XGC1, GEM) full gyrokinetic electron dynamics and compressional electromagnetic
@@ -167,6 +221,7 @@ about 16*4=64 instances, which brings the TGYRO core count to over 100K cores.</
 </div>
 <div class="section" id="cogent">
 <h2>COGENT<a class="headerlink" href="#cogent" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling</em></p>
 <p>COGENT is a continuum gyrokinetic code being developed at LLNL for edge plasma modeling.
 The present version of the code models a nonlinear (full-F) axisymmetric 4D gyrokinetic equation
 coupled to the long-wavelength limit of the gyro-Poisson equation. There are two configuration
@@ -188,6 +243,7 @@ by the UEDGE edge fluid code.</p>
 </div>
 <div class="section" id="tgyro">
 <h2>TGYRO<a class="headerlink" href="#tgyro" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Tgyrooverview">TGYRO</a>
 is a transport solver based on the drift-ordering formulation of Sugama.
 This formulation is by far the most complete and rigourous formulation of
@@ -207,6 +263,7 @@ the parallelism of the turbulence component.</p>
 </div>
 <div class="section" id="tglf">
 <h2>TGLF<a class="headerlink" href="#tglf" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Tglfoverview">TGLF</a>
 is a theory-based transport model based on linear gyrofluid equations plus
 “calibration” with a database of GYRO nonlinear simulations.  In some sense,
@@ -219,6 +276,7 @@ shear regime and for strongly shaped plasmas.</p>
 </div>
 <div class="section" id="neo">
 <h2>NEO<a class="headerlink" href="#neo" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Neooverview">NEO</a>
 is a <span class="math">\(\large \delta f\)</span> Eulerian code which provides first-principles based numerical calculations
 of the neoclassical transport (particle flux, energy flux, bootstrap current,
@@ -233,6 +291,7 @@ include the full linearized Fokker-Planck collision operator.</p>
 </div>
 <div class="section" id="eped">
 <h2>EPED<a class="headerlink" href="#eped" title="Permalink to this headline">¶</a></h2>
+<p><em>Modeling</em></p>
 <p>EPED is a model to predict the height (ie pressure, or temperature at a given density) and width
 of the H-Mode pedestal in tokamaks.   It predicts a boundary condition (near the top of the
 pedestal, typical psi_norm~0.9-0.95) that can be coupled to a core transport solver such as TGYRO
@@ -248,31 +307,106 @@ peeling-ballooning mode stability constraint using model equilibria from toq and
 calculations with ELITE.   The two constraints are combined to determine the two unknowns,
 pedestal height and width.</p>
 </div>
+<div class="section" id="bout">
+<h2>BOUT++<a class="headerlink" href="#bout" title="Permalink to this headline">¶</a></h2>
+<p><em>Framework</em></p>
+<p><a class="reference external" href="https://boutproject.github.io/">BOUT++</a>
+is a framework for writing fluid and plasma simulations in curvilinear geometry. It is
+intended to be quite modular, with a variety of numerical methods and time-integration solvers
+available. BOUT++ is primarily designed and tested with reduced plasma fluid models in mind,
+but it can evolve any number of equations, with equations appearing in a readable form.</p>
+</div>
+<div class="section" id="omas">
+<h2>OMAS<a class="headerlink" href="#omas" title="Permalink to this headline">¶</a></h2>
+<p><em>Library</em></p>
+<p><a class="reference external" href="https://gafusion.github.io/omas/">OMAS</a>
+is a Python library designed to simplify the interface of third-party codes with the ITER
+Integrated Modeling and Analysis Suite (IMAS) . ITER IMAS defines a data model, a
+data get/put API, and a data storage infrastructure used for manipulating ITER data.</p>
+<p>At the heart of OMAS is the idea of providing a convenient API which can store data in a
+format that is compatible with the IMAS data model, but using other storage systems in
+addition to the one provided by IMAS itself. Within OMAS data compatible with the IMAS
+data model is easily translated between these different storage systems. Furthermore,
+any physics code or programming language that is capable of reading/writing data using
+one of the many OMAS supported data formats (eg. NetCDF) can take advantage of the
+functionalities provided by OMAS.</p>
+</div>
+<div class="section" id="harvest">
+<h2>Harvest<a class="headerlink" href="#harvest" title="Permalink to this headline">¶</a></h2>
+<p><em>Library</em></p>
+<p>The harvest project aims at providing a convenient and scalable way to log metadata and store data for fusion applications.</p>
+</div>
 </div>
 
 
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="find.html" class="btn btn-neutral float-right" title="Repositories, links, and information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="About AToM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-      
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-        <br/>
-        
-<div id="sourcelink">
-  <a href="_sources/components.rst.txt"
-     rel="nofollow">Source</a>
-</div>
-      
-    </p>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
     <p>
-        &copy; Copyright 2014-2018.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.<br/>
+        &copy; Copyright 2014-2018.
+
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
 </footer>
-  </body>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
 </html>
