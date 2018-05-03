@@ -47,6 +47,7 @@ AToM Research Thrusts
    D2,"Predictive modeling and optimization of proposed future facilities",**Kessel**,"Holland, Park, Batchelor, Bonoli, Sachdev, Pankin"
    D4,"Interaction between low-n energetic particles driven modes and microturbulence",**Chen**,Orlov
    D5,"Multiscale simulations of experimental plasma conditions",**Howard**,"Holland, Candy"
+   D6,"Modeling temporal multiscale effects of neutral dynamics",**Dorf**,"Umansky, Dorr"
 
 .. csv-table:: **Thrust E: Data and Metadata Management**
    :header: "Task", "Description","Lead","Support"
