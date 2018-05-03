@@ -29,21 +29,19 @@ of complex plasma behavior, and extensive validation against experimental data. 
 integrated simulations which couple core, pedestal and scrape-off-layer physics in order to predict,
 and further optimize, performance of the fusion plasma.
 
-The AToM project is divided into six thrusts:
+The *key thrusts* of the AToM project are:
 
-1. Maintain OMFIT+IPS frameworks, provide wrappers and streamlining
+A. AToM environment, performance and packaging
+B. Physics component integration
+C. Validation and uncertainty quantification
+D. Physics and scenario exploration
+E. Data and metadata management
+F. Liaisons to SciDAC partnerships
 
-2. Create simulation workflows for the core, pedestal and scrape-off-layer
+In this document, we also provide a list of :ref:`thrusts`.      
 
-3. Develop workflows for experimental validation
-
-4. Accelerate COGENT integration into AToM with FASTMath
-
-5. Carry out SUPER performance engineering of xGYRO/NEO
-
-6. Establish a data management scheme, provenance and portal services
-
-7. Provide user support and community outreach
+Navigation
+----------
 
 .. toctree::
    :maxdepth: 2
@@ -53,6 +51,7 @@ The AToM project is divided into six thrusts:
    find
    install
    literature
+   thrusts
    mac_setup
    team
    tour

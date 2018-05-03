@@ -23,3 +23,4 @@ CONFIG
 platform
 PLATFORM
 modules/atom
+html/src/mathmacro.pyc
