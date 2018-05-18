@@ -93,7 +93,7 @@ The python packages required for buidling the AToM documentation can be installe
 
     sudo yum install sphinx
     sudo yum install python-sphinx
-    sudo pip install sphinx-bootstrap-theme
+    sudo pip install sphinx_rtd_theme
     sudo pip install sphinxcontrib.bibtex
 
 To build a local copy of the website::
