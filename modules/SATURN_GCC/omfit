@@ -35,7 +35,7 @@ setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
 prepend-path PATH $omfit_root/bin/
 set-alias python python2.7
 
-prepend-path PYTHONPATH $omfit_root/src/
+prepend-path PYTHONPATH $omfit_root/
 
 if { ! [ file exists /fusion/projects/omfit-results/$::env(USER) ] } {
     file mkdir /fusion/projects/omfit-results/$::env(USER)

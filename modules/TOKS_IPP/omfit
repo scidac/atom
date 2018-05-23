@@ -32,4 +32,4 @@ setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
 prepend-path PATH $omfit_root/bin/
 set-alias python /afs/.ipp/tok/soft/omfit/conda/bin/python2.7
 
-prepend-path PYTHONPATH $omfit_root/src/
+prepend-path PYTHONPATH $omfit_root/

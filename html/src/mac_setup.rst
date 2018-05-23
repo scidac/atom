@@ -20,9 +20,8 @@ In addition, for a full install, a `github <https://github.com>`_ account is req
 6. https://github.com/boutproject/BOUT-dev
 7. https://github.com/gafusion/harvest_client
 8. https://github.com/libfann/fann
-9. https://github.com/libfann/fann
-10. https://github.com/gafusion/omas
-11. https://github.com/gafusion/neural
+9. https://github.com/gafusion/omas
+10. https://github.com/gafusion/neural
 
 Any steps you have completed previously can be skipped. 
 
