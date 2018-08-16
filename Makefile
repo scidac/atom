@@ -219,7 +219,7 @@ $(OMAS_DIR):
 	@./bin/clone_script $(OMAS_GIT)  $(OMAS_DIR)  $(OMAS_VER)
 
 OMAS: $(OMAS_DIR)
-	@cd $(OMAS_DIR); python samples/build_json_structures.py
+	@cd $(OMAS_DIR);
 
 $(IPS_SOURCE_DIR):
 	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
