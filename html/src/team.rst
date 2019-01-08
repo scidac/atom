@@ -67,6 +67,16 @@ AGENDA
 |                 | 09:00AM   |              | TBA                                     |
 +-----------------+-----------+--------------+-----------------------------------------+
 
+:Attending:
+
+- **GA**: Candy, Meneghini, Smith, Eldon, Belli
+- **ORNL**: Batchelor, Elwasif, Park, Cianciosa, Kim, Kessel
+- **PPPL**: Sachdev
+- **LLNL**: Dorf, DOrr, Debojyoti, Umansky, Ricketson
+- **MIT**: Bonoli
+- **U. Colorado**: Chen
+- **UCSD**: Holland
+
 ----
 
 2018.10.18 -- October Conference Call
