@@ -69,14 +69,14 @@ AGENDA
 
 :Attending:
 
-- **GA**: Candy, Meneghini, Smith, Eldon, Belli
-- **ORNL**: Batchelor, Elwasif, Park, Cianciosa, Kim, Kessel
+- **GA**: Candy, Meneghini, Smith, Eldon, Belli, Snyder
+- **ORNL**: Batchelor, Elwasif, Park, Cianciosa, Kim, Kessel, Fann
 - **PPPL**: Sachdev
-- **LLNL**: Dorf, DOrr, Debojyoti, Umansky, Ricketson
+- **LLNL**: Dorf, Dorr, Debojyoti, Umansky, Ricketson
 - **MIT**: Bonoli
 - **U. Colorado**: Chen
-- **UCSD**: Holland
-
+- **UCSD**: Holland, Jian
+- **CompX**: Kinsey
 ----
 
 2018.10.18 -- October Conference Call
