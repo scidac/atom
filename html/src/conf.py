@@ -27,6 +27,7 @@ sys.path.append(os.path.abspath('sphinxext'))
 extensions=[
    'sphinx.ext.mathjax',
    'sphinxcontrib.bibtex',
+   'sphinxcontrib.contentui',
    'mathmacro',
    'sphinx.ext.autosectionlabel']
 
