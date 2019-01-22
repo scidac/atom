@@ -11,10 +11,6 @@ Meetings and AToM Team Members
 :Badges:   gonzalesl@fusion.gat.com
 :Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
 
-------
-AGENDA
-------
-
 .. toggle-header::
    :header: **Day 1**  -- Monday Feb 4
 
@@ -42,12 +38,13 @@ AGENDA
 
 :Time: Friday, 18 October 2018 -- 10:00am-12:30pm PT 
 
-:Agenda:
- 
-- rapid overview of status/activities (36 min total)
-- discuss small AToM meeting at APS (for those attending APS-DPP in Nov.) (8 min)
-- discuss February all-hands meeting (with PSI2) (8 min)
-- action items (goals) to be completed before Feb meeting (10 min)
+.. toggle-header::
+   :header: **Agenda**
+       
+      - rapid overview of status/activities (36 min total)
+      - discuss small AToM meeting at APS (for those attending APS-DPP in Nov.) (8 min)
+      - discuss February all-hands meeting (with PSI2) (8 min)
+      - action items (goals) to be completed before Feb meeting (10 min)
   
 ----
 
@@ -57,16 +54,17 @@ AGENDA
 :Time: Friday, 30 March 2018 -- 12:30pm-2:30pm PDT 
 :Join: Email connection info sent (26 March)
 
-:Agenda:
+.. toggle-header::
+   :header: **Agenda**
 
-#. Summary of activity on Thrusts
+     #. Summary of activity on Thrusts
  
-   - A: Meneghini, Kalling, Elwasif
-   - B: Green, Law
-   - C: Holland
-   - D: Kessel, Dorf, Chen
-   - E: Bernholdt
-   - F: Bonoli
+	- A: Meneghini, Kalling, Elwasif
+	- B: Green, Law
+	- C: Holland
+        - D: Kessel, Dorf, Chen
+        - E: Bernholdt
+        - F: Bonoli
   
 ----
 
@@ -76,25 +74,26 @@ AGENDA
 :Time: Thursday, 18 Jan 2018 -- 1:00pm-2:30pm PDT 
 :Join: Email connection info sent (16 Jan)
 
-:Agenda:
+.. toggle-header::
+   :header: **Agenda**
 
-#. Progress on AToM build system
+    #. Progress on AToM build system
  
-   - Tier-0 installation
-   - GACODE build system
-   - Spack
+       - Tier-0 installation
+       - GACODE build system
+       - Spack
 
-#. Liaisons
+    #. Liaisons
 
-   - Use/benchmark cases 
-   - Interacting with SciDAC centers
-   - Access to ITER scenario database
+       - Use/benchmark cases 
+       - Interacting with SciDAC centers
+       - Access to ITER scenario database
 
-#. Volunteers for webpage work
+    #. Volunteers for webpage work
 
-   - Managing publications
-   - Maintaining project overview/summary pages
-   - Developing useful software map (including liaison-related info)
+       - Managing publications
+       - Maintaining project overview/summary pages
+       - Developing useful software map (including liaison-related info)
 
 ----
 
@@ -106,9 +105,7 @@ AGENDA
 :Badges:   gonzalesl@fusion.gat.com
 :Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
 
-------
-AGENDA
-------
+:Agenda:
 
 +-----------------+-----------+--------------+-----------------------------------------+
 | Day             | Time      |      Speaker | Title                                   |
@@ -231,6 +228,7 @@ AGENDA
 :Join: https://fusion.gat.com/global/Remote13-301
 
 :Agenda:
+	  
 #. Summary of AToM-0, vision for AToM (Candy, 10 min)
 #. Self-introduction from each team member (all, 20 min)
 #. Summary presentations by AToM-0 Institutional PIs 
@@ -247,7 +245,6 @@ AGENDA
 
 AToM Team (2017-present)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _contact:
 
 :Project PI:
  | **Jeff Candy**, `@jcandy <https://github.com/jcandy>`_
@@ -297,7 +294,6 @@ AToM Team (2017-present)
  
 Original AToM Team (2014-2017)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _contact:
 
 :Project PI:
  | **Jeff Candy**, General Atomics 
