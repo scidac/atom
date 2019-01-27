@@ -31,6 +31,11 @@ Meetings and AToM Team Members
 
    .. figure:: images/2019.01-meeting/day4.png
 
+.. toggle-header::
+   :header: **Day 5**  -- Friday Feb 8
+
+   .. figure:: images/2019.01-meeting/day5.png
+
 ----
 
 2018.10.18 -- October Conference Call
