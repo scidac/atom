@@ -12,6 +12,19 @@ Meetings and AToM Team Members
 :Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
 
 .. toggle-header::
+   :header: **LOGISTICS** 
+
+      - This information is **subject to updates** before meeting
+      - Obtain badge at GA main building security on first arrival
+      - Bring passport (non US person), green card (resident) or DL (citizen)
+      - People will be escorted daily (out of main building to meeting spaces) at 8:45am, 9:00am, 9:15am
+      - Badge processing will take 15-20min so **please arrive early** 
+      - Presentations in PDF format (please), **16x9** aspect ratio
+      - Selected presentations will be broadcast on Zoom.  Connection information will be sent by email
+      - Please review agenda for issues or problems.  Report issues to Jeff Candy by email
+	    
+
+.. toggle-header::
    :header: **Day 1**  -- Monday Feb 4
 
    .. figure:: images/2019.01-meeting/day1.png
