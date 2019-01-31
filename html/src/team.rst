@@ -22,6 +22,7 @@ Meetings and AToM Team Members
       - Presentations in PDF format (please), **16x9** aspect ratio
       - Selected presentations will be broadcast via Bluejeans.  Connection information will be sent by email
       - Please review agenda for issues or problems.  Report issues to Jeff Candy by email
+      - AGENDA LEGEND: pink=lecture, blue=hacking, green=open room, grey=unavailable room 
 	    
 
 .. toggle-header::
