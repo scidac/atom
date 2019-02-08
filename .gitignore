@@ -21,7 +21,5 @@
 stats.txt
 html/src/_build
 CONFIG
-platform
-PLATFORM
 modules/atom
 html/src/mathmacro.pyc

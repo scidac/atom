@@ -1,0 +1,39 @@
+#---------------------------------------------------
+# OSX,Linux mpich from conda
+# conda install -c smithsp -c conda-forge gacode
+#---------------------------------------------------
+
+MAKE = make
+PREFIX = /atom
+NETCDF_PATH=/atom
+MF90 = mpif90
+
+# Compilers and flags
+#
+#set up for diff mpif90s
+#
+
+FC	= ${MF90} -std=f2008 -fall-intrinsics -I$(GACODE_ROOT)/modules -J$(GACODE_ROOT)/modules -g -I${PREFIX}/include
+F77	= ${MF90} -g 
+
+FMATH	= -fdefault-real-8 -fdefault-double-8
+FOPT	= -O3 -m64
+FDEBUG	= -Wall -fcheck=all -fbacktrace -fbounds-check -O0 -Wextra -finit-real=nan -Wunderflow -ffpe-trap=invalid,zero,overflow
+FBOUND	= -Wall -fbounds-check
+FOMP	= -fopenmp
+
+# System math libraries
+
+LMATH = -L/${PREFIX}/lib -lfftw3 -llapack
+
+NETCDF = -L/${PREFIX}/lib -lnetcdff -lnetcdf 
+NETCDF_INC =${PREFIX}/include
+
+# Archive
+
+ARCH = ar cr
+
+ifdef FANN_ROOT
+   # neural net libraries
+   NN_LIB=-L$(GACODE_ROOT)/../neural/ -I$(GACODE_ROOT)/../neural/ -lbrainfuse -lfann
+endif

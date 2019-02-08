@@ -1,0 +1,41 @@
+#---------------------------------------------------
+# OSX,gfortran+openmpi from MacPorts
+# sudo port install openmpi netcdf-fortran 
+# sudo port install fftw-3 +openmpi
+#---------------------------------------------------
+IDENTITY="OSX gfortran+openmpi from MacPorts"
+
+MAKE = make
+
+NETCDF_PATH=/opt/local
+MF90 = mpif90
+
+# Compilers and flags
+#
+#set up for diff mpif90s
+#
+
+FC  = ${MF90} -std=f2008 -fall-intrinsics -I$(GACODE_ROOT)/modules -J$(GACODE_ROOT)/modules -I/opt/local/include -fPIC
+F77 = ${MF90} 
+
+FOMP	= -fopenmp
+FMATH	= -fdefault-real-8 -fdefault-double-8
+FOPT	= -O3 -m64 -framework Accelerate
+FDEBUG	= -Wall -g -fcheck=all -fbacktrace -fbounds-check -O0 -Wextra -finit-real=nan -Wunderflow -ffpe-trap=invalid,zero,overflow
+#F2PY    = f2py-2.7
+
+# System math libraries
+
+LMATH = -L/opt/local/lib -lfftw3
+
+NETCDF = -L${NETCDF_PATH}/lib -lnetcdff -lnetcdf 
+NETCDF_INC =${NETCDF_PATH}/include
+
+# Archive
+
+ARCH = ar cr
+
+ifdef FANN_ROOT
+   # neural net libraries
+   NN_LIB=-L$(GACODE_ROOT)/../neural/ -I$(GACODE_ROOT)/../neural/ -lbrainfuse -lfann
+endif
