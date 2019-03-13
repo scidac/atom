@@ -3,13 +3,7 @@
 help:
 	@./bin/help_script
 
-#--------------
-# Prefix
-#
 SHELL=bash
-PREFIX=./conda
-$(PREFIX)/bin/conda:
-	PREFIX=$(PREFIX) ./bin/install_conda_script
 
 #---------------------------------------------------------
 # Module configuration
@@ -19,7 +13,7 @@ OMFIT_VER=unstable
 OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
 OMFIT_DIR=OMFIT-source
 
-IPS_ATOM_VER=master 
+IPS_ATOM_VER=master
 #IPS_ATOM_VER=devel
 IPS_ATOM_GIT=git@github.com:ORNL-Fusion/ips-atom.git
 IPS_ATOM_DIR=ips-atom
@@ -33,11 +27,11 @@ GACODE_ADD_VER=master
 GACODE_ADD_GIT=git@github.com:gafusion/gacode_add.git
 GACODE_ADD_DIR=gacode_add
 
-EPED_VER=master 
+EPED_VER=master
 EPED_GIT=git@github.com:gafusion/EPED.git
 EPED_DIR=EPED-source
 
-BOUT_VER=master 
+BOUT_VER=master
 BOUT_GIT=git@github.com:boutproject/BOUT-dev.git
 BOUT_DIR=BOUT
 
@@ -143,21 +137,24 @@ endif
 #--------------------------------------------------------------------
 # Modules that need to be built/cleaned
 
-BUILD=GACODE HARVEST EPED BOUT++ FANN IPS
+BUILD=GACODE HARVEST EPED BOUT++ FANN IPS NEURAL
 
 build: $(BUILD)
 
 all: clone build
 
-ENV: CONFIG $(PREFIX)/bin/conda
-	$(PREFIX)/bin/conda install -c smithsp -c conda-forge gacode
-	@echo "export PREFIX=$(PREFIX)" >> CONFIG
+ENV: CONDA2 CONDA3
+
+CONDA2: $(OMFIT_DIR)
+	cd $(OMFIT_DIR)/install/; ./install-conda-2.sh
+
+CONDA3: $(OMFIT_DIR)
+	cd $(OMFIT_DIR)/install/; ./install-conda-3.sh
 
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
-OMFIT: $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/install/; ./install-conda.sh
+OMFIT: $(OMFIT_DIR) ENV
 
 $(IPS_ATOM_DIR):
 	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
