@@ -26,3 +26,4 @@ html/src/_build
 CONFIG
 modules/atom
 html/src/mathmacro.pyc
+bin/pip
