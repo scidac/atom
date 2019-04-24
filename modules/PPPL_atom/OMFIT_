@@ -19,14 +19,10 @@ proc ModulesHelp { } {
 
 module-whatis omfit
 
-
-#module load atom
-
 set omfit_root $::env(ATOM_ROOT)/OMFIT-source
 setenv OMFIT_ROOT $omfit_root
 setenv OMFIT_TMPDIR /local/
 
-prepend-path PATH $omfit_root/bin/
-
-prepend-path PYTHONPATH $omfit_root/src/
-
+prepend-path PATH $atom_root/miniconda3/bin/
+prepend-path PATH $atom_root/miniconda2/bin/
+prepend-path PYTHONPATH $omfit_root/
