@@ -1,8 +1,0 @@
-#%Module
-#
-# Module file for loading paths for BOUT
-#
-
-module-whatis bout
-
-setenv BOUT_TOP $::env(ATOM_ROOT)/BOUT
