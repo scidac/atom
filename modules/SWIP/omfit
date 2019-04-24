@@ -30,5 +30,6 @@ setenv OMFIT_ROOT $omfit_root
 #setenv OMFIT_TMPDIR /local-scratch/
 #setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
 
+prepend-path PATH $atom_root/miniconda3/bin/
 prepend-path PATH $atom_root/miniconda2/bin/
 prepend-path PYTHONPATH $omfit_root/

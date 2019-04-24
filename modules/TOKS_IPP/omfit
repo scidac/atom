@@ -20,16 +20,13 @@ conflict omfit atom
 
 module-whatis omfit
 
-#module load python27/all
-module load mdsplus
 module load git
 
 set omfit_root $::env(ATOM_ROOT)/OMFIT-source
 setenv OMFIT_ROOT $omfit_root
-setenv OMFIT_TMPDIR /local-scratch/
-setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
+setenv OMFIT_TMPDIR /tmp/
+setenv OMFIT_GLOBAL_TMPDIR /toks/scratch/
 
-prepend-path PATH $omfit_root/bin/
-set-alias python /afs/.ipp/tok/soft/omfit/conda/bin/python2.7
-
+prepend-path PATH $atom_root/miniconda3/bin/
+prepend-path PATH $atom_root/miniconda2/bin/
 prepend-path PYTHONPATH $omfit_root/
