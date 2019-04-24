@@ -19,8 +19,11 @@
 /ips
 /miniconda2
 /miniconda3
+/stats
 stats.txt
+OMFITstats.txt
 html/src/_build
 CONFIG
 modules/atom
 html/src/mathmacro.pyc
+bin/pip
