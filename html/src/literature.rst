@@ -1,16 +1,49 @@
 AToM Literature
 ===============
 
-~~~~~~~~~~~~~
-Presentations
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+2018 Talks/Posters
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 5, 12, 65
+   :header-rows: 1
+
+   * - Presenter
+     - Meeting
+     - Title
+   * - :download:`Candy J. <doc/2018.07-SciDAC_PI.pdf>` 
+     - SciDAC-4 PI (talk)
+     - The Advanced Tokamak Modeling Environment (AToM) for Fusion Plasmas
+
+~~~~~~~~~~~~~~~~~~
+2016 Talks/Posters
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 5, 12, 65
+   :header-rows: 1
+
+   * - Presenter
+     - Meeting
+     - Title
+   * - `Meneghini O. <https://www.iter.org/org/team/fst/itpa/ios>`_
+     - ITPA
+     - Development and validation of EPED1-NN a neural-network regression of the EPED1 model
+   * - `Green D. L. <https://fusion.gat.com/theory-wiki/images/6/6b/Green-poster.pdf>`_
+     - Unknown
+     - Integrating RF Heating into Whole Device Modeling
+
+~~~~~~~~~~~~~~~~~~
+2015 Talks/Posters
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :widths: 5, 15, 60
    :header-rows: 1
 
-   * - Year
-     - Presenter
+   * - Presenter
+     - Meeting
      - Title
    * - 2015
      - `Orlov D. <http://www-internal.psfc.mit.edu/TTF2016/posters/posters.html>`_
@@ -18,12 +51,6 @@ Presentations
    * - 2015
      - `Holland C. <http://www-internal.psfc.mit.edu/TTF2016/posters/posters.html>`_
      - Testing the Skill of Core Transport Models in Accurately Capturing Rotation and Heating Effects in I- and H-mode Plasmas
-   * - 2016
-     - `Meneghini O. <https://www.iter.org/org/team/fst/itpa/ios>`_
-     - Development and validation of EPED1-NN a neural-network regression of the EPED1 model
-   * - 2016
-     - `Green D. L. <https://fusion.gat.com/theory-wiki/images/6/6b/Green-poster.pdf>`_
-     - Integrating RF Heating into Whole Device Modeling
    * - 2015
      - `Diem S.J. <http://adsabs.harvard.edu/abs/2015APS..DPPPP2117D>`_
      - Study of ITER Steady-State High :math:`{q_\mathrm{min}}` Scenarios Using FASTRAN/IPS Integrated Transport Modeling
@@ -36,8 +63,8 @@ Presentations
    * - 2015
      - `Dorf M. <http://meetings.aps.org/Meeting/DPP15/Event/251781>`_
      - Continuum Kinetic Modeling of the Tokamak Plasma Edge
-   * - 2015
-     - `Candy J. <https://www.orau.gov/scidac3pi2015/presentations/ThursdayPM/11_Candy-AToM-Advanced_Tokamak_Modeling.pdf>`_
+   * - :download:`Candy J. <doc/2015.07-SciDAC_PI.pdf>` 
+     - SciDAC-3 PI (talk)
      - AToM: Advanced Tokamak Modeling: Introduction and First Physics Results
    * - 2015
      - `Snyder P. <http://www-internal.psfc.mit.edu/TTF2015/index.html>`_
@@ -61,20 +88,47 @@ Presentations
      - `Meneghini O. <http://nstx.pppl.gov/DragNDrop/Scientific_Conferences/TUG2015/Presentations/meneghini_TRANSP_user_group_2015.pdf>`_
      - Integrated modeling with TRANSP and OMFIT
 
-~~~~~~~~~~~~~~~~~~~~
-Journal Publications
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+2019 Journal Publications
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :widths: 5, 15, 60
    :header-rows: 1
 
-   * - Year
-     - Main author
+   * - Main author
+     - Journal
      - Title
-   * - 2018
-     - `J.M. Park <https://doi.org/10.1063/1.5013021>`_
+   * - `Candy J. <https://doi.org/10.1016/j.compfluid.2019.04.016>`_
+     - Computers and Fluids
+     - Multiscale-optimized plasma turbulence simulation on petascale architectures
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+2018 Journal Publications
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 5, 15, 60
+   :header-rows: 1
+
+   * - Main author
+     - Journal
+     - Title
+   * - `J.M. Park <https://doi.org/10.1063/1.5013021>`_
+     - *Phys. Plasmas*
      - Integrated modeling of high betaN steady state scenario on DIII-D
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+2017 Journal Publications
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 5, 15, 60
+   :header-rows: 1
+
+   * - Main author
+     - Journal
+     - Title
    * - 2017
      - `J.M. Park <https://doi.org/10.1016/j.cpc.2016.12.018>`_
      - An efficient transport solver for tokamak plasmas' 
@@ -84,8 +138,20 @@ Journal Publications
    * - 2017
      - `Belli E.A. <http://iopscience.iop.org/0029-5515/57/11/116053>`_
      - Implications of advanced collision operators for gyrokinetic simulation
-   * - 2016
-     - `Candy J. <http://www.sciencedirect.com/science/article/pii/S0021999116303400>`_
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+2016 Journal Publications
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :widths: 5, 15, 60
+   :header-rows: 1
+
+   * - Main author
+     - Journal
+     - Title
+   * - `Candy J. <http://www.sciencedirect.com/science/article/pii/S0021999116303400>`_
+     - *J. Comput. Phys.*
      - A high-accuracy Eulerian gyrokinetic solver for collisional plasmas
    * - 2016
      - `Dorf M.A. <http://scitation.aip.org/content/aip/journal/pop/23/5/10.1063/1.4943106>`_
