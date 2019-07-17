@@ -23,6 +23,15 @@ Journal Articles and Presentations
    * - Presenter
      - Meeting
      - Title
+   * - :download:`J. Candy <doc/2019.07-SciDAC_PI.pdf>` 
+     - **SciDAC-4 PI**
+     - The Advanced Tokamak Modeling Environment (AToM-2019) for Fusion Plasmas
+   * - :download:`O. Meneghini <doc/2019.05-IAEATM_NN_meneghini.pdf>`
+     - IAEA TM
+     - Neural-network accelerated core-pedestal coupled simulations and applications to ITER
+   * - :download:`O. Meneghini <doc/2019.05-IAEATM_OMAS_meneghini.pdf>`
+     - IAEA TM
+     - Interfacing OMFIT with ITER IMAS via OMAS
    * - :download:`J. Candy <doc/2019.03-GTC_San_Jose_candy.pdf>` 
      - GTC 
      - Advancing Fusion Science with CGYRO using GPU-Based Leadership Systems
