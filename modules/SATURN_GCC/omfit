@@ -33,7 +33,7 @@ setenv OMFIT_TMPDIR /local-scratch/
 setenv OMFIT_GLOBAL_TMPDIR /cluster-scratch/
 
 prepend-path PATH $omfit_root/bin/
-set-alias python python2.7
+prepend-path PATH /fusion/usc/opt/python/2.7.11/bin/
 
 prepend-path PYTHONPATH $omfit_root/
 
