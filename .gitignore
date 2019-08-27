@@ -3,7 +3,7 @@
 *.DS_Store
 .idea
 /EPED-source
-/OMFIT-source
+/OMFIT-source*
 /OMFIT-docs
 /gacode
 /gacode_add
@@ -18,10 +18,12 @@
 /ipsframework-code
 /ips
 /miniconda2
+/miniconda3
+/stats
 stats.txt
+OMFITstats.txt
 html/src/_build
 CONFIG
-platform
-PLATFORM
 modules/atom
 html/src/mathmacro.pyc
+bin/pip

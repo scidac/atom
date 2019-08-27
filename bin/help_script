@@ -4,7 +4,7 @@ DIR=$PWD/gacode
 
 echo "Usage: $ make clone                  [STEP 1: clone or update repositories]"
 echo "       $ make CONFIG plat=<platform> [STEP 2: set platform]"
-echo "       $ make <module>               [STEP 3: build, with <module>=GACODE,HARVEST,EPED,BOUT,all]" 
+echo "       $ make <module>               [STEP 3: build, with <module>=[all, OMFIT, IPS_ATOM, GACODE, GACODE_ADD, EPED, BOUT, HARVEST, FANN, NEURAL, OMAS, IPS_SOURCE]"
 echo " "
 echo "       $ make clean                  [clean all modules]"
 echo "       $ make delete                 [delete all modules]"

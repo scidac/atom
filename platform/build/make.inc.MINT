@@ -1,0 +1,39 @@
+#---------------------------------------------------
+# Linux Mint 
+#---------------------------------------------------
+
+IDENTITY="Linux Mint gfortran+mpich+OpenBLAS (/usr)"
+CORES_PER_NODE=4
+NUMAS_PER_NODE=1
+#SOLVER_OPT=slumt
+
+FFTWDIR=/usr/lib/x86_64-linux-gnu
+
+ROOT=${HOME}/GIT
+
+# Compilers
+
+FC     = mpif90 -std=f2008 -fall-intrinsics -I $(GACODE_ROOT)/modules -J $(GACODE_ROOT)/modules -fPIC
+F77    = mpif77 
+FOMP   =-fopenmp
+FMATH  =-fdefault-real-8 -fdefault-double-8
+FOPT   =-Ofast 
+FDEBUG =-Wall -W -fcheck=all -g -fbacktrace -ffpe-trap=invalid,zero,overflow
+F2PY   = f2py
+
+# System math libraries
+LMATH = ${ROOT}/OpenBLAS/libopenblas.a $(FFTWDIR)/libfftw3.a $(FFTWDIR)/libfftw3_omp.a
+FFTW_INC=/usr/include
+
+ifdef FANN_ROOT
+   # neural net libraries
+   NN_LIB=-L$(GACODE_ROOT)/../neural/ -I$(GACODE_ROOT)/../neural/ -lbrainfuse -lfann
+endif
+
+# OPTIONAL NetCDF:
+NETCDF=-L/usr/lib -lnetcdff -lnetcdf
+NETCDF_INC=/usr/include
+
+# Archive 
+
+ARCH = ar cr

@@ -26,12 +26,12 @@
 
   
 
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="AToM Literature" href="literature.html" />
+    <link rel="next" title="Journal Articles and Presentations" href="literature.html" />
     <link rel="prev" title="Repositories, links, and information" href="find.html" /> 
 
   
@@ -98,7 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#edit-and-build-the-atom-website">Edit and build the AToM Website</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="literature.html">AToM Literature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="literature.html">Journal Articles and Presentations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thrusts.html">AToM Research Thrusts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac_setup.html">Complete MacOS install of AToM with MacPorts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="team.html">Meetings and AToM Team Members</a></li>
@@ -257,7 +257,7 @@ $EDITOR index.rst
 <p>The python packages required for buidling the AToM documentation can be installed with:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">sphinx</span>
 <span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">sphinx</span>
-<span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">bootstrap</span><span class="o">-</span><span class="n">theme</span>
+<span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span>
 <span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinxcontrib</span><span class="o">.</span><span class="n">bibtex</span>
 </pre></div>
 </div>
@@ -290,7 +290,7 @@ $EDITOR index.rst
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="literature.html" class="btn btn-neutral float-right" title="AToM Literature" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="literature.html" class="btn btn-neutral float-right" title="Journal Articles and Presentations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="find.html" class="btn btn-neutral" title="Repositories, links, and information" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -302,7 +302,7 @@ $EDITOR index.rst
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014-2018.
+        &copy; Copyright 2014-2019
 
     </p>
   </div>
@@ -321,34 +321,33 @@ $EDITOR index.rst
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script> 
 

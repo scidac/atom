@@ -3,22 +3,87 @@ Meetings and AToM Team Members
 
 .. figure:: images/atom_cupcakes.jpg
 
+2019.02.04 -- PSI2/AToM All-hands Meeting and Code Camp 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Time:     Monday 4 Feb. -- Friday 8 Feb. 
+:Location: General Atomics Bldg 7
+:Badges:   gonzalesl@fusion.gat.com
+:Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
+
+.. toggle-header::
+   :header: **LOGISTICS** 
+
+      - This information is **subject to updates** before meeting
+      - Obtain badge at GA main building security on first arrival
+      - Bring passport (non US person), green card (resident) or DL (citizen)
+      - People will be escorted daily (out of main building to meeting spaces) at 8:45am, 9:00am, 9:15am
+      - Badge processing will take 15-20min so **please arrive early** 
+      - Presentations in PDF format (please), **16x9** aspect ratio
+      - Selected presentations will be broadcast via Bluejeans.  Connection information will be sent by email
+      - Please review agenda for issues or problems.  Report issues to Jeff Candy by email
+      - AGENDA LEGEND: pink=lecture, blue=hacking, green=open room, grey=unavailable room 
+	    
+
+.. toggle-header::
+   :header: **Day 1**  -- Monday Feb 4
+
+   .. figure:: images/2019.01-meeting/day1.png
+
+.. toggle-header::
+   :header: **Day 2**  -- Tuesday Feb 5
+
+   .. figure:: images/2019.01-meeting/day2.png
+
+.. toggle-header::
+   :header: **Day 3**  -- Wednesday Feb 6
+
+   .. figure:: images/2019.01-meeting/day3.png
+
+.. toggle-header::
+   :header: **Day 4**  -- Thursday Feb 7
+
+   .. figure:: images/2019.01-meeting/day4.png
+
+.. toggle-header::
+   :header: **Day 5**  -- Friday Feb 8
+
+   .. figure:: images/2019.01-meeting/day5.png
+
+----
+
+2018.10.18 -- October Conference Call
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Time: Friday, 18 October 2018 -- 10:00am-12:30pm PT 
+
+.. toggle-header::
+   :header: **Agenda**
+       
+      - rapid overview of status/activities (36 min total)
+      - discuss small AToM meeting at APS (for those attending APS-DPP in Nov.) (8 min)
+      - discuss February all-hands meeting (with PSI2) (8 min)
+      - action items (goals) to be completed before Feb meeting (10 min)
+  
+----
+
 2018.03.30 -- March Conference Call
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :Time: Friday, 30 March 2018 -- 12:30pm-2:30pm PDT 
 :Join: Email connection info sent (26 March)
 
-:Agenda:
+.. toggle-header::
+   :header: **Agenda**
 
-#. Summary of activity on Thrusts
+     #. Summary of activity on Thrusts
  
-   - A: Meneghini, Kalling, Elwasif
-   - B: Green, Law
-   - C: Holland
-   - D: Kessel, Dorf, Chen
-   - E: Bernholdt
-   - F: Bonoli
+	- A: Meneghini, Kalling, Elwasif
+	- B: Green, Law
+	- C: Holland
+        - D: Kessel, Dorf, Chen
+        - E: Bernholdt
+        - F: Bonoli
   
 ----
 
@@ -28,25 +93,26 @@ Meetings and AToM Team Members
 :Time: Thursday, 18 Jan 2018 -- 1:00pm-2:30pm PDT 
 :Join: Email connection info sent (16 Jan)
 
-:Agenda:
+.. toggle-header::
+   :header: **Agenda**
 
-#. Progress on AToM build system
+    #. Progress on AToM build system
  
-   - Tier-0 installation
-   - GACODE build system
-   - Spack
+       - Tier-0 installation
+       - GACODE build system
+       - Spack
 
-#. Liaisons
+    #. Liaisons
 
-   - Use/benchmark cases 
-   - Interacting with SciDAC centers
-   - Access to ITER scenario database
+       - Use/benchmark cases 
+       - Interacting with SciDAC centers
+       - Access to ITER scenario database
 
-#. Volunteers for webpage work
+    #. Volunteers for webpage work
 
-   - Managing publications
-   - Maintaining project overview/summary pages
-   - Developing useful software map (including liaison-related info)
+       - Managing publications
+       - Maintaining project overview/summary pages
+       - Developing useful software map (including liaison-related info)
 
 ----
 
@@ -58,9 +124,7 @@ Meetings and AToM Team Members
 :Badges:   gonzalesl@fusion.gat.com
 :Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
 
-------
-AGENDA
-------
+:Agenda:
 
 +-----------------+-----------+--------------+-----------------------------------------+
 | Day             | Time      |      Speaker | Title                                   |
@@ -183,6 +247,7 @@ AGENDA
 :Join: https://fusion.gat.com/global/Remote13-301
 
 :Agenda:
+	  
 #. Summary of AToM-0, vision for AToM (Candy, 10 min)
 #. Self-introduction from each team member (all, 20 min)
 #. Summary presentations by AToM-0 Institutional PIs 
@@ -199,7 +264,6 @@ AGENDA
 
 AToM Team (2017-present)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _contact:
 
 :Project PI:
  | **Jeff Candy**, `@jcandy <https://github.com/jcandy>`_
@@ -249,7 +313,6 @@ AToM Team (2017-present)
  
 Original AToM Team (2014-2017)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _contact:
 
 :Project PI:
  | **Jeff Candy**, General Atomics 
