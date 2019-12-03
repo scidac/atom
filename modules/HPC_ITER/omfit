@@ -16,10 +16,8 @@ proc ModulesHelp { } {
 	puts stderr ""
 }
 
-conflict omfit atom
+conflict omfit
 module-whatis omfit
-
-module load git
 
 set atom_root $::env(ATOM_ROOT)
 set omfit_root $::env(ATOM_ROOT)/OMFIT-source
