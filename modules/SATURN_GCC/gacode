@@ -37,6 +37,10 @@ setenv FANN_ROOT $::env(FANN_DIR)
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM SATURN_GCC
 
+#uncomment two lines below when using pygacode branch:
+#module unload netcdf
+#module load netcdf/4.4.1-gcc7
+
 #=====================
 # end of machine-specific settings here
 # do not modify the settings below
