@@ -143,10 +143,7 @@ build: $(BUILD)
 
 all: clone build
 
-ENV: CONDA2 CONDA3
-
-CONDA2: $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/install/; ./install-conda-2.sh
+ENV: CONDA3
 
 CONDA3: $(OMFIT_DIR)
 	cd $(OMFIT_DIR)/install/; ./install-conda-3.sh
@@ -215,8 +212,8 @@ NEURAL: $(NEURAL_DIR) FANN $(GACODE_DIR)
 $(OMAS_DIR):
 	@./bin/clone_script $(OMAS_GIT)  $(OMAS_DIR)  $(OMAS_VER)
 
-OMAS: $(OMAS_DIR)
-	@cd $(OMAS_DIR);
+OMAS: $(OMAS_DIR) ENV
+	@cd $(OMAS_DIR); ../miniconda3/bin/pip install --no-deps -e .
 
 $(IPS_SOURCE_DIR):
 	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
