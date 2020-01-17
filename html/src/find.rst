@@ -17,7 +17,7 @@ Documentation
 -------------
 
 * `AToM media repository <https://github.com/scidac/atom>`_ 
-* `OMFIT documentation <http://gafusion.github.io/OMFIT-source>`_
+* `OMFIT documentation <https://omfit.io>`_
 * `GACODE documentation (Wiki) <https://fusion.gat.com/theory/Gyro/>`_ 
 * `IPS documentation (Sphinx) <http://ipsframework.sourceforge.net/doc/html/>`_ 
 

@@ -22,7 +22,7 @@ AToM Thrusts
 The goal of the AToM project is to support, integrate, and build upon a wide spectrum of existing 
 research activities in the US fusion program, and guide the integration of high performance computing 
 resources to enable a broad range of new physics capabilities.  A number of computational tools, 
-including a workflow manager (`OMFIT <http://gafusion.github.io/OMFIT-source>`_), computational
+including a workflow manager (`OMFIT <https://omfit.io>`_), computational
 framework (IPS), and high performance simulation 
 codes (`GYRO/CGYRO, NEO, TGYRO, <http://gafusion.github.io/doc>`_ and COGENT) enable simulations
 of complex plasma behavior, and extensive validation against experimental data.  AToM targets advanced

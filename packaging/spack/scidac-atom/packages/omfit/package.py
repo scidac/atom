@@ -34,7 +34,7 @@ from distutils.dir_util import copy_tree
 class Omfit(Package):
     """OMFIT is an integrated modeling and experimental data analysis software for magnetically confined thermonuclear fusion experiments."""
 
-    homepage = "http://gafusion.github.io/OMFIT-source/"
+    homepage = "https://omfit.io"
     version('0.24.4', git='https://github.com/gafusion/OMFIT-source.git', tag='v0.24.4')
 
     depends_on('astropy') 
