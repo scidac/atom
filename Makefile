@@ -146,7 +146,7 @@ all: clone build
 ENV: CONDA3
 
 CONDA3: $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/install/; ./install-conda-3.sh
+	cd $(OMFIT_DIR)/install/ ; ./install-conda-3.sh -b ; ./removeold-conda-3.sh
 
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
