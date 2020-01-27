@@ -58,10 +58,13 @@ IPS_SOURCE_DIR=ipsframework-code
 
 ATOM_DIR=$(PWD)
 
-clone: $(OMFIT_DIR) $(IPS_ATOM_DIR) $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR) $(NEURAL_DIR) $(OMAS_DIR) $(IPS_SOURCE_DIR)
+CLONE=OMFIT CONDA3 IPS $(GACODE_DIR) $(GACODE_ADD_DIR) $(EPED_DIR) $(BOUT_DIR) $(HARVEST_DIR) $(FANN_DIR) $(NEURAL_DIR) $(OMAS_DIR) $(IPS_SOURCE_DIR)
+
+clone: $(CLONE)
 
 delete:
 	rm -rf $(OMFIT_DIR)
+	rm -rf miniconda3*
 	rm -rf $(IPS_ATOM_DIR)
 	rm -rf $(GACODE_DIR)
 	rm -rf $(GACODE_ADD_DIR)
@@ -143,40 +146,45 @@ build: $(BUILD)
 
 all: clone build
 
-ENV: CONDA3
-
+.PHONY: CONDA3
 CONDA3: $(OMFIT_DIR)
 	cd $(OMFIT_DIR)/install/ ; ./install-conda-3.sh -b ; ./removeold-conda-3.sh
 
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
-OMFIT: $(OMFIT_DIR) ENV
+OMFIT: $(OMFIT_DIR)
 
+.PHONY: $(IPS_ATOM_DIR)
 $(IPS_ATOM_DIR):
 	@./bin/clone_script $(IPS_ATOM_GIT) $(IPS_ATOM_DIR) $(IPS_ATOM_VER)
 
+.PHONY: $(GACODE_DIR)
 $(GACODE_DIR):
 	@./bin/clone_script $(GACODE_GIT)   $(GACODE_DIR)   $(GACODE_VER)
 
 GACODE: CONFIG NEURAL $(GACODE_DIR)
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
+.PHONY: $(GACODE_ADD_DIR)
 $(GACODE_ADD_DIR):
 	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
 
+.PHONY: $(HARVEST_DIR)
 $(HARVEST_DIR):
 	@./bin/clone_script $(HARVEST_GIT)  $(HARVEST_DIR)  $(HARVEST_VER)
 
 HARVEST:CONFIG $(HARVEST_DIR)
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make all
 
+.PHONY: $(EPED_DIR)
 $(EPED_DIR):
 	@./bin/clone_script $(EPED_GIT)  $(EPED_DIR)  $(EPED_VER)
 
 EPED: CONFIG $(EPED_DIR)
 	. ./CONFIG ; cd $(EPED_DIR) ; make
 
+.PHONY: $(BOUT_DIR)
 $(BOUT_DIR):
 	@./bin/clone_script $(BOUT_GIT)  $(BOUT_DIR)  $(BOUT_VER)
 
@@ -195,6 +203,7 @@ MPICXX=mpicxx \
 
 	@cd $(BOUT_DIR); make
 
+.PHONY: $(FANN_DIR)
 $(FANN_DIR):
 	@./bin/clone_script $(FANN_GIT)  $(FANN_DIR)  $(FANN_VER)
 
@@ -203,18 +212,21 @@ FANN: $(FANN_DIR)
 	@cd $(FANN_DIR); make -i; echo
 	@cd $(FANN_DIR)/lib; ln -fs ../src/lib* ./
 
+.PHONY: $(NEURAL_DIR)
 $(NEURAL_DIR):
 	@./bin/clone_script $(NEURAL_GIT)  $(NEURAL_DIR)  $(NEURAL_VER)
 
 NEURAL: $(NEURAL_DIR) FANN $(GACODE_DIR)
 	. ./CONFIG ; cd $(NEURAL_DIR) ; make
 
+.PHONY: $(OMAS_DIR)
 $(OMAS_DIR):
 	@./bin/clone_script $(OMAS_GIT)  $(OMAS_DIR)  $(OMAS_VER)
 
-OMAS: $(OMAS_DIR) ENV
+OMAS: $(OMAS_DIR)
 	@cd $(OMAS_DIR); ../miniconda3/bin/pip install --no-deps -e .
 
+.PHONY: $(IPS_SOURCE_DIR)
 $(IPS_SOURCE_DIR):
 	svn checkout https://svn.code.sf.net/p/ipsframework/code/trunk $(IPS_SOURCE_DIR)
 
@@ -228,6 +240,4 @@ clean:
 	. ./CONFIG ; cd $(HARVEST_DIR) ; make clean
 	. ./CONFIG ; cd $(FANN_DIR) ; make clean
 	. ./CONFIG ; cd $(IPS_SOURCE_DIR) ; rm build; mkdir build
-
-.PHONY: $(BUILD)
 #--------------------------------------------------------------------
