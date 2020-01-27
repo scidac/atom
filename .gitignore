@@ -17,8 +17,8 @@
 /atom-website
 /ipsframework-code
 /ips
-/miniconda2
-/miniconda3
+/miniconda2*
+/miniconda3*
 /stats
 stats.txt
 OMFITstats.txt
