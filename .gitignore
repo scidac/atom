@@ -27,3 +27,5 @@ CONFIG
 modules/atom
 html/src/mathmacro.pyc
 bin/pip
+__pycache__/
+*.pyc
