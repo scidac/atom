@@ -150,6 +150,7 @@ all: clone build
 CONDA3: $(OMFIT_DIR)
 	cd $(OMFIT_DIR)/install/ ; ./install-conda-3.sh -b ; ./removeold-conda-3.sh
 
+.PHONY: $(OMFIT_DIR)
 $(OMFIT_DIR):
 	@./bin/clone_script $(OMFIT_GIT)    $(OMFIT_DIR)    $(OMFIT_VER)
 
