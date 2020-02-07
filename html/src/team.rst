@@ -1,269 +1,67 @@
-Meetings and AToM Team Members
-==============================
-
 .. figure:: images/atom_cupcakes.jpg
 
-2019.02.04 -- PSI2/AToM All-hands Meeting and Code Camp 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upcoming AToM Meetings
+======================
 
-:Time:     Monday 4 Feb. -- Friday 8 Feb. 
-:Location: General Atomics Bldg 7
-:Badges:   gonzalesl@fusion.gat.com
-:Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
-
-.. toggle-header::
-   :header: **LOGISTICS** 
-
-      - This information is **subject to updates** before meeting
-      - Obtain badge at GA main building security on first arrival
-      - Bring passport (non US person), green card (resident) or DL (citizen)
-      - People will be escorted daily (out of main building to meeting spaces) at 8:45am, 9:00am, 9:15am
-      - Badge processing will take 15-20min so **please arrive early** 
-      - Presentations in PDF format (please), **16x9** aspect ratio
-      - Selected presentations will be broadcast via Bluejeans.  Connection information will be sent by email
-      - Please review agenda for issues or problems.  Report issues to Jeff Candy by email
-      - AGENDA LEGEND: pink=lecture, blue=hacking, green=open room, grey=unavailable room 
-	    
-
-.. toggle-header::
-   :header: **Day 1**  -- Monday Feb 4
-
-   .. figure:: images/2019.01-meeting/day1.png
-
-.. toggle-header::
-   :header: **Day 2**  -- Tuesday Feb 5
-
-   .. figure:: images/2019.01-meeting/day2.png
-
-.. toggle-header::
-   :header: **Day 3**  -- Wednesday Feb 6
-
-   .. figure:: images/2019.01-meeting/day3.png
-
-.. toggle-header::
-   :header: **Day 4**  -- Thursday Feb 7
-
-   .. figure:: images/2019.01-meeting/day4.png
-
-.. toggle-header::
-   :header: **Day 5**  -- Friday Feb 8
-
-   .. figure:: images/2019.01-meeting/day5.png
-
-----
-
-2018.10.18 -- October Conference Call
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:Time: Friday, 18 October 2018 -- 10:00am-12:30pm PT 
-
-.. toggle-header::
-   :header: **Agenda**
-       
-      - rapid overview of status/activities (36 min total)
-      - discuss small AToM meeting at APS (for those attending APS-DPP in Nov.) (8 min)
-      - discuss February all-hands meeting (with PSI2) (8 min)
-      - action items (goals) to be completed before Feb meeting (10 min)
-  
-----
-
-2018.03.30 -- March Conference Call
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:Time: Friday, 30 March 2018 -- 12:30pm-2:30pm PDT 
-:Join: Email connection info sent (26 March)
-
-.. toggle-header::
-   :header: **Agenda**
-
-     #. Summary of activity on Thrusts
- 
-	- A: Meneghini, Kalling, Elwasif
-	- B: Green, Law
-	- C: Holland
-        - D: Kessel, Dorf, Chen
-        - E: Bernholdt
-        - F: Bonoli
-  
-----
-
-2018.01.18 -- January Conference Call
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:Time: Thursday, 18 Jan 2018 -- 1:00pm-2:30pm PDT 
-:Join: Email connection info sent (16 Jan)
-
-.. toggle-header::
-   :header: **Agenda**
-
-    #. Progress on AToM build system
- 
-       - Tier-0 installation
-       - GACODE build system
-       - Spack
-
-    #. Liaisons
-
-       - Use/benchmark cases 
-       - Interacting with SciDAC centers
-       - Access to ITER scenario database
-
-    #. Volunteers for webpage work
-
-       - Managing publications
-       - Maintaining project overview/summary pages
-       - Developing useful software map (including liaison-related info)
-
-----
-
-2017.11.27 -- ESL/AToM All-hands Meeting and Code Camp 
+(All-hands) + (US Integrated Modeling in the ITER Era)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:Time:     Monday 27 Nov -- Thursday Nov 30 
-:Location: General Atomics Bldg 7, Room G07-120
-:Badges:   gonzalesl@fusion.gat.com
-:Info:     `GA Visitor Information <http://www.ga.com/visitor-information>`_
+:Time:     Monday 30 March -- Friday 3 April 2020
 
-:Agenda:
+:Location: `Marriott - La Jolla <https://www.google.com/maps/place/San+Diego+Marriott+La+Jolla/@32.8716294,-117.2352407,15z/data=!4m18!1m9!3m8!1s0x80dc072bc042a0ed:0xe871e61189c75941!2sSan+Diego+Marriott+La+Jolla!5m2!4m1!1i2!8m2!3d32.873131!4d-117.215772!3m7!1s0x0:0xe871e61189c75941!5m2!4m1!1i2!8m2!3d32.8731311!4d-117.2157714>`_
 
-+-----------------+-----------+--------------+-----------------------------------------+
-| Day             | Time      |      Speaker | Title                                   |
-+=================+===========+==============+=========================================+
-| **Monday**      |      **ESL day**         |                                         |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:30AM   | Snyder/Candy | Welcome and logistics                   |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:45AM   | Snyder       | ESL project overview and timeline       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:00PM   | Dorf         | COGENT progress and plans               |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:45PM   | **BREAK**    | [possible call with J. Mandrekas]       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:55AM   | Candy        | CGYRO/NEO progress and plans            |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 11:40AM   |Krasheninnikov| UCSD progress and plans                 |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 12:00PM   |**DISCUSSION**| Physics coordination                    |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 12:15AM   | **LUNCH**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:30PM   | Dorr         | ESL math overview                       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 02:30PM   | Ghosh        | Semi-implicit COGENT time-integration   |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:00PM   | Ricketson    | Sparse grid methods                     |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:30PM   | **BREAK**    |                                         |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:45AM   |**DISCUSSION**| Math and math/physics coordination      |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 04:00PM   | Candy        | AToM introduction, relation to ESL      |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 04:10PM   |Snyder/Meneg. | EPED and ESL-AToM coordination          |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 04:30PM   | Dorf/Dorr    | COGENT and ESL-AToM coordination        |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 05:00PM   |**DISCUSSION**| Joint AToM/ESL issues                   |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 07:00PM   |**DINNER**    | Location TBA                            |
-+-----------------+-----------+--------------+-----------------------------------------+
-| **Tuesday**     | **AToM Presentations**   |                                         |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:00AM   | Candy        | Welcome and AToM overview               |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:40AM   | Batchelor    | IPS for physics studies                 |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:00AM   | Holland      | Validation thrusts                      |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:20AM   | Green        | WDM thrust action items                 |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:40AM   | Bonoli       | AToM liaisons, SciDAC center interact.  |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 11:00AM   |**DISCUSSION**| Strategy for WDM, liaisons, integration |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 11:40AM   | **LUNCH**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:00PM   | Fann         | Parallel-in-time methods                |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:20PM   | Law          | Reduced Models                          |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:40PM   | Elwasif/Dorr | RAPIDS and FASTMath (ASCR SciDAC)       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 02:00PM   | **BREAK**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 02:20PM   | Kessel       | Modeling activities at PPPL             |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 02:40PM   | Chen         | EP inteaction with MHD/turbulence       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:00PM   | Dorf         | Modeling activities at LLNL             |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:20PM   | Park         | CESOL                                   |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 03:40PM   | **BREAK**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 04:00PM   |**DISCUSSION**| Create action items                     |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 07:00PM   |**DINNER**    | Location TBA                            |
-+-----------------+-----------+--------------+-----------------------------------------+
-| **Wednesday**   | **AToM Technical day**   |                                         |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:00AM   | Smith        | Logistics, Github navigation, etc       |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:25AM   | Elwasif      | IPS modules and development             |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:50AM   | Kalling      | My experience installing AToM           |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:15PM   | **BREAK**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 10:30AM   |**DISCUSSION**| Strategy for WDM, liaisons, integration |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 11:40AM   | **LUNCH**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:00PM   | Candy        | AToM makefile, Sphinx/rst, website tasks|
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:30PM   | Meneghini    | AToM+ITER-IMAS = OMAS                   |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 02:00PM   | Snoep        | 1.5D STRAHL-TGYRO coupling              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 07:00PM   |**DINNER**    | Location TBA                            |
-+-----------------+-----------+--------------+-----------------------------------------+
-| **Thursday**    | **AToM hackathon**       |                                         |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 09:00AM   |  **CODING**  | Questions and open discussion/coding    |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 11:40AM   | **LUNCH**                                              |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 01:30AM   |  **CODING**  | Questions and open discussion/coding    |
-+-----------------+-----------+--------------+-----------------------------------------+
-|                 | 07:00PM   |**DINNER**    | Location TBA                            |
-+-----------------+-----------+--------------+-----------------------------------------+
+:All-hands meeting:
+  - TBD
 
+:US Integrated Modeling in the ITER Era:
 
+  **What is it:**
 
-2017.09.27 -- Kickoff Conference call 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  The last two days of the 2020 April meeting focus on identifying the challenges and requirements for the US fusion integrated modeling program to effectively support ITER experiments, and exploit ITER data to its full capacity.
 
-:Time: Wednesday, 27 Sept 2017 -- 1:00pm-2:30pm PDT 
-:Join: https://fusion.gat.com/global/Remote13-301
+  **Goals:**
 
-:Agenda:
-	  
-#. Summary of AToM-0, vision for AToM (Candy, 10 min)
-#. Self-introduction from each team member (all, 20 min)
-#. Summary presentations by AToM-0 Institutional PIs 
+  - Overview of the ITER integrated modeling technology
+  - Identify and raise awareness about potential problem for remote exploitation of ITER data, and suggest possible solutions
+  - Identify gaps in the US theory and modeling program with respect to ITER requirements for shot validation and planning, as well as for high fidelity simulations
+  - Coordinate mapping the data of US and fusion facilities and modeling codes to the IMAS format
+  - Write an executive summary with the findings, to be reported to DoE and ITER
 
-   #. Bernholdt (6 min)
-   #. Dorf (6 min)
-   #. Dorr (6 min)
-   #. Green (6 min)
-   #. Holland (6 min)
-   
-#. Open discussion of action items for November F2F meeting at GA (30 min)
+ **Tentative list of topics and speakers:**
+
+  - IMAS overview (Lao)
+  - ITER remote data access and computing infrastructure (Schissel)
+  - Universal Data Access (Margo)
+  - IMAS data structure and OMAS (Meneghini)
+  - Mapping US experiments to IMAS (Smith)
+  - ITER shot validation (Grierson/Walker)
+  - AToM high-fidelity modeling for ITER (Park)
+  - IPS plasma state with the OMAS data structure (Elwasif)
+  - Generalizing OMFIT data analyses workflows for devices other than DIII-D (McClenaghan)
+  - Running IMAS actors with OMFIT (Meneghini)
+  - AToM use-cases and the ITER scenario database (Holland)
+  - Models for the ITER control system (Humphreys)
+  - SciDAC projects in the ITER context (Candy/Bonoli)
+  - US ITER engagement -- Contracts, ITER fellow, IMEG, ITPA, BPO  (Greenfield)
+  - US ITER workforce (Nazikian)
+
+  **Agenda:**
+  - TBD
 
 ----
 
-AToM Team (2017-present)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Past Meetings
+=============
+
+List of :ref:`past_meetings`
+
+----
+
+AToM Team
+=========
+
+2017-present
+~~~~~~~~~~~~
 
 :Project PI:
  | **Jeff Candy**, `@jcandy <https://github.com/jcandy>`_
@@ -311,8 +109,8 @@ AToM Team (2017-present)
 
 ----
  
-Original AToM Team (2014-2017)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2014-2017
+~~~~~~~~~
 
 :Project PI:
  | **Jeff Candy**, General Atomics 
