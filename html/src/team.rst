@@ -11,7 +11,7 @@ Upcoming AToM Meetings
 :Location: `Marriott - La Jolla <https://www.google.com/maps/place/San+Diego+Marriott+La+Jolla/@32.8716294,-117.2352407,15z/data=!4m18!1m9!3m8!1s0x80dc072bc042a0ed:0xe871e61189c75941!2sSan+Diego+Marriott+La+Jolla!5m2!4m1!1i2!8m2!3d32.873131!4d-117.215772!3m7!1s0x0:0xe871e61189c75941!5m2!4m1!1i2!8m2!3d32.8731311!4d-117.2157714>`_
 
 :All-hands meeting:
-  - TBD
+  - Agenda to be defined
 
 :US Integrated Modeling in the ITER Era:
 
@@ -29,28 +29,38 @@ Upcoming AToM Meetings
 
  **Tentative list of topics and speakers:**
 
-  - IMAS overview (Lao, GA)
-  - ITER remote data access and computing infrastructure (Schissel, GA)
-  - Universal Data Access (J. Holcombe, CCFE)
-  - Benchmarking Universal Data Access (Margo, GA)
-  - IMAS data structure and OMAS (Meneghini, GA)
-  - Mapping US experiments to IMAS (Smith, GA)
-  - ITER shot validation (Grierson, PPPL)
-  - Integrated modeling for control design (Walker, GA)
-  - AToM high-fidelity modeling for ITER (Park, ORNL)
-  - IPS plasma state with the OMAS data structure (Elwasif, ORNL)
-  - Generalizing OMFIT data analyses workflows for devices other than DIII-D (McClenaghan, GA)
-  - Running IMAS actors with OMFIT (Meneghini, GA)
-  - AToM use-cases and the ITER scenario database (Holland, UCSD)
-  - Models for the ITER control system (Humphreys, GA)
-  - AToM in the ITER context (Candy, GA)
-  - SciDAC projects in the ITER context (Bonoli, MIT)
-  - Exascale computing related data managment in the ITER context (Shaun de Witt, CCFE)
-  - US ITER engagement -- Contracts, ITER fellow, IMEG, ITPA, BPO  (Greenfield, GA)
-  - US ITER workforce (Nazikian, PPPL)
+  Overview:
+    - IMAS overview (Lao, GA)
+    - ITER remote data access and computing infrastructure (Schissel, GA)
 
-  **Agenda:**
-  - TBD
+  UDA:
+    - Universal Data Access (J. Holcombe, CCFE)
+    - Benchmarking Universal Data Access (Margo, GA)
+
+  Data Structure:
+    - IMAS data structure and OMAS (Meneghini, GA)
+    - Mapping US experiments and models to IMAS (Smith, GA)
+    - IPS plasma state with the OMAS data structure (Elwasif, ORNL)
+
+  Whole device modeling:
+    - ITER shot validation (Grierson, PPPL)
+    - Models for the ITER control system (Walker/Humphreys, GA)
+    - AToM high-fidelity modeling for ITER (Park, ORNL)
+    - Generalizing OMFIT data analyses workflows for ITER (McClenaghan, GA)
+    - Running IMAS actors with OMFIT (Meneghini, GA)
+
+  Scenario database:
+    - AToM use-cases and the ITER scenario database (Holland, UCSD)
+
+  SciDAC and exascale:
+    - AToM in the ITER context (Candy, GA)
+    - SciDAC projects in the ITER context (Bonoli, MIT)
+    - Exascale computing related data managment in the ITER context (Shaun de Witt, CCFE)
+    - Manipulating large volumes of data with Toksearch (Sammuli, GA)
+
+  Engagement:
+    - US ITER engagement -- Contracts, ITER fellow, IMEG, ITPA, BPO  (Greenfield, GA)
+    - US ITER workforce (Nazikian, PPPL)
 
 ----
 
