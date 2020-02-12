@@ -19,33 +19,37 @@
   
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/contentui.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/contentui.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -164,7 +168,7 @@ There seem to be both t_ versions and regular versions. Looks like the t_ versio
 </div>
 <div class="section" id="edison-gnu">
 <h2>Edison GNU<a class="headerlink" href="#edison-gnu" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>module swap PrgEnv-intel PrgEnv-gnu
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module swap PrgEnv-intel PrgEnv-gnu
 module swap gcc gcc/4.8.2 <span class="c1"># This is because there is no netcdf built for gcc49</span>
 module load netcdf
 <span class="nb">cd</span> /project/projectdirs/atom/atom-install-edison/plasma-state-source/ntcc-source
@@ -175,7 +179,7 @@ gmake install <span class="nv">PREFIX</span><span class="o">=</span><span class=
 </pre></div>
 </div>
 <p>A lot of the test routines seem to fail building with the following error</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>/opt/cray/hdf5/1.8.13/GNU/48/lib/libhdf5.a(H5PL.o): In function `H5PL_load&#39;: H5PL.c:(.text+0x4ac): warning: Using &#39;dlopen&#39; in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/opt/cray/hdf5/1.8.13/GNU/48/lib/libhdf5.a(H5PL.o): In function `H5PL_load&#39;: H5PL.c:(.text+0x4ac): warning: Using &#39;dlopen&#39; in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 /usr/bin/ld: link errors found, deleting executable `../LINUX/test/update_state&#39;
 collect2: error: ld returned 1 exit status
 gmake[1]: *** [../LINUX/test/update_state] Error 1
@@ -196,7 +200,7 @@ gmake[1]: *** [../LINUX/test/update_state] Error 1
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014-2019
+        &copy; Copyright 2014-2020
 
     </p>
   </div>
@@ -213,37 +217,16 @@ gmake[1]: *** [../LINUX/test/update_state] Error 1
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../',
-              VERSION:'',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="../_static/contentui.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
