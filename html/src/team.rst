@@ -17,7 +17,7 @@ Upcoming AToM Meetings
 
   **What is it:**
 
-  The last two days of the 2020 April meeting focus on identifying the challenges and requirements for the US fusion integrated modeling program to effectively support ITER experiments, and exploit ITER data to its full capacity.
+  **April 2nd and 3rd** we will focus on identifying the challenges and requirements for the US fusion integrated modeling program to effectively support ITER experiments, and exploit ITER data to its full capacity.
 
   **Goals:**
 
