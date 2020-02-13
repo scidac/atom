@@ -32,6 +32,7 @@ Upcoming AToM Meetings
   Overview:
     - IMAS overview (Lao, GA)
     - ITER remote data access and computing infrastructure (Schissel, GA)
+    - Installing IMAS and using it via docker (Kalling, Kalling)
 
   UDA:
     - Universal Data Access (J. Holcombe, CCFE)
@@ -45,9 +46,9 @@ Upcoming AToM Meetings
   Whole device modeling:
     - ITER shot validation (Grierson, PPPL)
     - Models for the ITER control system (Walker/Humphreys, GA)
-    - AToM high-fidelity modeling for ITER (Park, ORNL)
-    - Generalizing OMFIT data analyses workflows for ITER (McClenaghan, GA)
-    - Running IMAS actors with OMFIT (Meneghini, GA)
+    - High-fidelity whole device modeling for ITER (Park, ORNL)
+    - Generalizing OMFIT workflows for ITER (McClenaghan, GA)
+    - Running IMAS actors within OMFIT (Meneghini, GA)
 
   Scenario database:
     - AToM use-cases and the ITER scenario database (Holland, UCSD)
