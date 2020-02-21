@@ -29,14 +29,17 @@ Upcoming AToM Meetings
 
  **Tentative list of topics and speakers:**
 
+  **THURSDAY**
+
   Overview:
-    - IMAS overview (Lao, GA)
-    - ITER remote data access and computing infrastructure (Schissel, GA)
-    - Installing IMAS and using it via docker (Kalling, Kalling)
+    - Importance of engaging with ITER IM program (Nazikian, PPPL)
+    - Technical overview of IMAS (Meneghini, GA)
 
   UDA:
+    - Installing IMAS and using it via docker (Kalling, Kalling)
     - Universal Data Access (J. Holcombe, CCFE)
     - Benchmarking Universal Data Access (Margo, GA)
+    - ITER remote data access and computing infrastructure (Schissel, GA)
 
   Data Structure:
     - IMAS data structure and OMAS (Meneghini, GA)
@@ -46,9 +49,13 @@ Upcoming AToM Meetings
   Whole device modeling:
     - ITER shot validation (Grierson, PPPL)
     - Models for the ITER control system (Walker/Humphreys, GA)
-    - High-fidelity whole device modeling for ITER (Park, ORNL)
+
+  **FRIDAY**
+
+  Whole device modeling (continued):
     - Generalizing OMFIT workflows for ITER (McClenaghan, GA)
     - Running IMAS actors within OMFIT (Meneghini, GA)
+    - High-fidelity whole device modeling for ITER (Park, ORNL)
 
   Scenario database:
     - AToM use-cases and the ITER scenario database (Holland, UCSD)
@@ -56,12 +63,11 @@ Upcoming AToM Meetings
   SciDAC and exascale:
     - AToM in the ITER context (Candy, GA)
     - SciDAC projects in the ITER context (Bonoli, MIT)
-    - Exascale computing related data managment in the ITER context (Shaun de Witt, CCFE)
     - Manipulating large volumes of data with Toksearch (Sammuli, GA)
 
   Engagement:
-    - US ITER engagement -- Contracts, ITER fellow, IMEG, ITPA, BPO  (Greenfield, GA)
-    - US ITER workforce (Nazikian, PPPL)
+    - Steering the IMAS development with IMEG (Lao, GA)
+    - US ITER engagement -- Contracts, ITER fellow, ITPA, BPO  (Greenfield/Smith, GA)
 
 ----
 
