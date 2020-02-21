@@ -27,9 +27,9 @@ Upcoming AToM Meetings
   - Coordinate mapping the data of US and fusion facilities and modeling codes to the IMAS format
   - Write an executive summary with the findings, to be reported to DoE and ITER
 
- **Tentative list of topics and speakers:**
+ **Tentative agenda and list of speakers:**
 
-  **THURSDAY**
+  *--- --- THURSDAY --- ---*
 
   Overview:
     - Importance of engaging with ITER IM program (Nazikian, PPPL)
@@ -50,7 +50,7 @@ Upcoming AToM Meetings
     - ITER shot validation (Grierson, PPPL)
     - Models for the ITER control system (Walker/Humphreys, GA)
 
-  **FRIDAY**
+  *--- --- FRIDAY --- ---*
 
   Whole device modeling (continued):
     - Generalizing OMFIT workflows for ITER (McClenaghan, GA)

@@ -1,4 +1,7 @@
-About AToM 
+.. role:: underline
+    :class: underline
+
+About AToM
 ==========
 
 .. figure:: images/atom_banner.png
