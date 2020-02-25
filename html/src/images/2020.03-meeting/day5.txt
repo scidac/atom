@@ -1,0 +1,10 @@
+ 9:00 | 30 | Whole device modeling (McClenaghan, GA) \n Generalizing OMFIT workflows for ITER
+ 9:30 | 30 | Whole device modeling (Meneghini, GA) \n Running IMAS actors within OMFIT
+10:00 | 30 | Whole device modeling (Park, ORNL) \n High-fidelity whole device modeling for ITER
+10:30 | 30 | Scenario database (Holland, UCSD) \n AToM use-cases and the ITER scenario database
+11:00 | 30 | SciDAC and exascale (Candy, GA) \n AToM in the ITER context
+11:30 | 30 | SciDAC and exascale (Bonoli, MIT) \n SciDAC projects in the ITER context
+12:00 | 60 | LUNCH
+ 1:00 | 30 | SciDAC and exascale (Sammuli, GA) \n Manipulating large volumes of data with Toksearch
+ 1:30 | 30 | Engagement (Lao, GA) \n Steering the IMAS development with IMEG
+ 2:00 | 30 | Engagement (Greenfield/Smith, GA) \n US ITER engagement -- Contracts, ITER fellow, ITPA, BPO

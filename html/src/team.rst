@@ -3,71 +3,48 @@
 Upcoming AToM Meetings
 ======================
 
-(All-hands) + (US Integrated Modeling in the ITER Era)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+AToM 2020: US Integrated Modeling in the ITER Era
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:Time:     Monday 30 March -- Friday 3 April 2020
+.. figure:: images/2020.03-meeting/bevatron.jpg
 
-:Location: `Marriott - La Jolla <https://www.google.com/maps/place/San+Diego+Marriott+La+Jolla/@32.8716294,-117.2352407,15z/data=!4m18!1m9!3m8!1s0x80dc072bc042a0ed:0xe871e61189c75941!2sSan+Diego+Marriott+La+Jolla!5m2!4m1!1i2!8m2!3d32.873131!4d-117.215772!3m7!1s0x0:0xe871e61189c75941!5m2!4m1!1i2!8m2!3d32.8731311!4d-117.2157714>`_
+:Time: Monday 30 March -- Friday 3 April 2020
 
-:All-hands meeting:
-  - Agenda to be defined
+:Location: `Marriott La Jolla <https://www.google.com/maps/place/San+Diego+Marriott+La+Jolla/@32.8716294,-117.2352407,15z/data=!4m18!1m9!3m8!1s0x80dc072bc042a0ed:0xe871e61189c75941!2sSan+Diego+Marriott+La+Jolla!5m2!4m1!1i2!8m2!3d32.873131!4d-117.215772!3m7!1s0x0:0xe871e61189c75941!5m2!4m1!1i2!8m2!3d32.8731311!4d-117.2157714>`_
 
-:US Integrated Modeling in the ITER Era:
+:Agenda Overview: Following in the tradition of a supplementary topic for the yearly AToM project meeting, we will explore **US Integrated Modeling in the ITER Era** on the final two meeting days (April 2-3).  We will identify the challenges and requirements for the US integrated modeling program to effectively support ITER experiments, and fully exploit ITER data.  This includes
 
-  **What is it:**
+- Overview of the ITER integrated modeling technology
+- Potential problems/solutions for remote use of ITER data
+- US modeling program gaps for ITER shot validation and planning
+- High-fidelity gyrokinetic simulation needs
+- Data mapping required for US fusion facilities/codes to use IMAS format
+- Produce executive summary of findings, and report to DoE and ITER
 
-  **April 2nd and 3rd** we will focus on identifying the challenges and requirements for the US fusion integrated modeling program to effectively support ITER experiments, and exploit ITER data to its full capacity.
+.. toggle-header::
+   :header: **Day 1**  -- Monday March 30
 
-  **Goals:**
+   .. figure:: images/2020.03-meeting/day1.png
 
-  - Overview of the ITER integrated modeling technology
-  - Identify and raise awareness about potential problem for remote exploitation of ITER data, and suggest possible solutions
-  - Identify gaps in the US theory and modeling program with respect to ITER requirements for shot validation and planning, as well as for high fidelity simulations
-  - Coordinate mapping the data of US and fusion facilities and modeling codes to the IMAS format
-  - Write an executive summary with the findings, to be reported to DoE and ITER
+.. toggle-header::
+   :header: **Day 2**  -- Tuesday March 31
 
- **Tentative agenda and list of speakers:**
+   .. figure:: images/2020.03-meeting/day2.png
 
-  *--- --- THURSDAY --- ---*
+.. toggle-header::
+   :header: **Day 3**  -- Wednesday April 1
 
-  Overview:
-    - Importance of engaging with ITER IM program (Nazikian, PPPL)
-    - Technical overview of IMAS (Meneghini, GA)
+   .. figure:: images/2020.03-meeting/day3.png
 
-  UDA:
-    - Installing IMAS and using it via docker (Kalling, Kalling)
-    - Universal Data Access (J. Holcombe, CCFE)
-    - Benchmarking Universal Data Access (Margo, GA)
-    - ITER remote data access and computing infrastructure (Schissel, GA)
+.. toggle-header::
+   :header: **Day 4**  -- Thursday April 2
 
-  Data Structure:
-    - IMAS data structure and OMAS (Meneghini, GA)
-    - Mapping US experiments and models to IMAS (Smith, GA)
-    - IPS plasma state with the OMAS data structure (Elwasif, ORNL)
+   .. figure:: images/2020.03-meeting/day4.png
 
-  Whole device modeling:
-    - ITER shot validation (Grierson, PPPL)
-    - Models for the ITER control system (Walker/Humphreys, GA)
+.. toggle-header::
+   :header: **Day 5**  -- Friday April 3
 
-  *--- --- FRIDAY --- ---*
-
-  Whole device modeling (continued):
-    - Generalizing OMFIT workflows for ITER (McClenaghan, GA)
-    - Running IMAS actors within OMFIT (Meneghini, GA)
-    - High-fidelity whole device modeling for ITER (Park, ORNL)
-
-  Scenario database:
-    - AToM use-cases and the ITER scenario database (Holland, UCSD)
-
-  SciDAC and exascale:
-    - AToM in the ITER context (Candy, GA)
-    - SciDAC projects in the ITER context (Bonoli, MIT)
-    - Manipulating large volumes of data with Toksearch (Sammuli, GA)
-
-  Engagement:
-    - Steering the IMAS development with IMEG (Lao, GA)
-    - US ITER engagement -- Contracts, ITER fellow, ITPA, BPO  (Greenfield/Smith, GA)
+   .. figure:: images/2020.03-meeting/day5.png
 
 ----
 
