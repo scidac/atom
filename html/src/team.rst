@@ -22,27 +22,27 @@ AToM 2020: US Integrated Modeling in the ITER Era
 - Produce executive summary of findings, and report to DoE and ITER
 
 .. toggle-header::
-   :header: **Day 1**  -- Monday March 30
+   :header: **Day 1**  -- Monday March 30 [AToM core team]
 
    .. figure:: images/2020.03-meeting/day1.png
 
 .. toggle-header::
-   :header: **Day 2**  -- Tuesday March 31
+   :header: **Day 2**  -- Tuesday March 31 [AToM core team]
 
    .. figure:: images/2020.03-meeting/day2.png
 
 .. toggle-header::
-   :header: **Day 3**  -- Wednesday April 1
+   :header: **Day 3**  -- Wednesday April 1 [AToM core team]
 
    .. figure:: images/2020.03-meeting/day3.png
 
 .. toggle-header::
-   :header: **Day 4**  -- Thursday April 2
+   :header: **Day 4**  -- Thursday April 2 [ITER]
 
    .. figure:: images/2020.03-meeting/day4.png
 
 .. toggle-header::
-   :header: **Day 5**  -- Friday April 3
+   :header: **Day 5**  -- Friday April 3 [ITER]
 
    .. figure:: images/2020.03-meeting/day5.png
 
