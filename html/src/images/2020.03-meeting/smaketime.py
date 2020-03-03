@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 if len(sys.argv) == 1:
-    ext = 'screen'
+    ext = 'png'
 else:
     ext = sys.argv[1]
 
