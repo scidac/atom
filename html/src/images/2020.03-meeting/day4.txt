@@ -1,13 +1,13 @@
- 9:00 | 30 | Overview (Nazikian, PPPL) \n Importance of engaging with ITER IM program 
- 9:30 | 30 | Overview (Meneghini, GA) \n Technical overview of IMAS 
-10:00 | 30 | UDA (Kalling, Kalling) \n Installing IMAS and using it via uDocker
-10:30 | 30 | UDA (J. Holcombe, CCFE) \n Universal Data Access
-11:00 | 30 | UDA (Margo/Panaflor, GA) \n Benchmarking Universal Data Access
-11:30 | 30 | UDA (Schissel, GA) \n ITER remote data access and computing infrastructure
+ 9:00 | 30 | Overview (Nazikian/Greenfield) \n Importance of engaging with ITER IM program
+ 9:30 | 30 | Overview (Meneghini) \n Technical overview of IMAS
+10:00 | 30 | IMAS infrastructure (Kalling) \n Installing IMAS and using it via uDocker
+10:30 | 30 | IMAS infrastructure (J. Holcombe) \n Universal Data Access
+11:00 | 30 | IMAS infrastructure (Margo/Panaflor) \n Benchmarking Universal Data Access
+11:30 | 30 | IMAS infrastructure (Schissel) \n ITER remote data access and computing infrastructure
 12:00 | 60 | LUNCH
-13:00 | 30 | Data Structure (Meneghini, GA) \n IMAS data structure and OMAS 
-13:30 | 30 | Data Structure (Smith, GA) \n Mapping US experiments and models to IMAS 
-14:00 | 30 | Data Structure (Elwasif, ORNL)\n IPS plasma state with the OMAS data structure 
-14:30 | 30 | Whole device modeling (Grierson, PPPL) \n ITER shot validation 
-15:00 | 30 | Whole device modeling (Walker/Humphreys, GA) \n Models for the ITER control system
-15:30 | 30 | Whole device modeling (Yong-Su Na, SNU) \n Interfacing legacy codes to IMAS using F2PY in TRIASSIC
+13:00 | 30 | Data Structure (Meneghini) \n IMAS data structure and OMAS
+13:30 | 30 | Data Structure (Smith) \n Mapping US experiments and models to IMAS
+14:00 | 30 | Data Structure (Elwasif)\n IPS plasma state with the OMAS data structure
+14:30 | 30 | Whole device modeling (Grierson) \n ITER shot validation
+15:00 | 30 | Whole device modeling (Walker/Humphreys) \n Models for the ITER control system
+15:30 | 30 | Whole device modeling (Yong-Su Na) \n Interfacing legacy codes to IMAS using F2PY in TRIASSIC
