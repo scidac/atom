@@ -6,45 +6,22 @@ Upcoming AToM Meetings
 AToM 2020: US Integrated Modeling in the ITER Era
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Because of COVID-19 the original week-long AToM meeting will be remote and in a much condensed form.
+
 .. figure:: images/2020.03-meeting/bevatron.jpg
 
-:Time: Monday 30 March -- Friday 3 April 2020
+:Time: Monday 30 March -- Tuesday 31 March 2020
 
-:Location: `Marriott La Jolla <https://www.google.com/maps/place/San+Diego+Marriott+La+Jolla/@32.8716294,-117.2352407,15z/data=!4m18!1m9!3m8!1s0x80dc072bc042a0ed:0xe871e61189c75941!2sSan+Diego+Marriott+La+Jolla!5m2!4m1!1i2!8m2!3d32.873131!4d-117.215772!3m7!1s0x0:0xe871e61189c75941!5m2!4m1!1i2!8m2!3d32.8731311!4d-117.2157714>`_
+:Location: Remote ZOOM meeting
 
-:Agenda Overview: Following in the tradition of a supplementary topic for the yearly AToM project meeting, we will explore **US Integrated Modeling in the ITER Era** on the final two meeting days (April 2-3).  We will identify the challenges and requirements for the US integrated modeling program to effectively support ITER experiments, and fully exploit ITER data.  This includes
+:Monday March 30th agenda:
+ | **10:00am-noon:** AToM task progress
+ | **1:00pm-4:00pm:** AToM task progress
 
-- Overview of the ITER integrated modeling technology
-- Potential problems/solutions for remote use of ITER data
-- US modeling program gaps for ITER shot validation and planning
-- High-fidelity gyrokinetic simulation needs
-- Data mapping required for US fusion facilities/codes to use IMAS format
-- Produce executive summary of findings, and report to DoE and ITER
-
-.. toggle-header::
-   :header: **Day 1**  -- Monday March 30 [AToM core team]
-
-   .. figure:: images/2020.03-meeting/day1.png
-
-.. toggle-header::
-   :header: **Day 2**  -- Tuesday March 31 [AToM core team]
-
-   .. figure:: images/2020.03-meeting/day2.png
-
-.. toggle-header::
-   :header: **Day 3**  -- Wednesday April 1 [AToM core team]
-
-   .. figure:: images/2020.03-meeting/day3.png
-
-.. toggle-header::
-   :header: **Day 4**  -- Thursday April 2 [ITER]
-
-   .. figure:: images/2020.03-meeting/day4.png
-
-.. toggle-header::
-   :header: **Day 5**  -- Friday April 3 [ITER]
-
-   .. figure:: images/2020.03-meeting/day5.png
+:Tuesday March 31st agenda:
+ | **10:00am-noon:** AToM shot-term action items
+ | **1:00pm-3:00pm:** ITER IM
+ | **3:00pm-4:00pm:** wrap-up
 
 ----
 
