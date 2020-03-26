@@ -14,14 +14,54 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
 
 :Location: Remote ZOOM meeting
 
-:Monday March 30th agenda:
- | **10:00am-noon:** AToM task progress
- | **1:00pm-4:00pm:** AToM task progress
+----
 
-:Tuesday March 31st agenda:
- | **10:00am-noon:** AToM shot-term action items
- | **1:00pm-3:00pm:** ITER IM
- | **3:00pm-4:00pm:** wrap-up
+:Monday March 30th:
+   
+.. toggle-header::
+   :header: Agenda 
+	    
+      | **10:00am-noon:**
+      | Update on RF IPS components for AToM (Batchelor)
+      | Role of electrons in gyrokinetic edge transport (Belli)
+      | Update on AToM SciDAC Center Liaisons and Interactions (Bonoli)
+      | Interaction of low-n EP-driven modes and microturbulence (Chen / D4)
+      | Reconstructing SOLPS transport coefficents using the ips-quasi-newton workflow (Cianciosa)
+      | LLNL progress report (Dorf / D6,F5)
+      | An Ultra-fast procedure for learning the TGLF Discontinuous Function (Etienam)
+      | Adaptive high-order time-stepping in CGYRO (Fann / A2)
+      | V&V of turbulence and transport models for reactor-relevant scenarios (Holland)
+      | An update on multi-scale gyrokinetic simulation and comparison with experiment (Howard)
+      |
+      | **LUNCH**
+      |
+      | **1:00pm-4:00pm:** 
+      | OMFIT development workflow (Kalling)
+      | Plans to Use IPS-FASTRAN to explore FNSF/Pilot Plant configurations (Kessel)
+      | IPS-FASTRAN progress (Kim / B1)
+      | Scalable Data & Metadata Capture for AToM (Kostuk / E1,E2)
+      | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
+      | CESOL progress (Park)
+      | TRANSP Update (Sachdev)
+      | Starting the STEP workflow from 0D tokamak quantities in OMFIT (Slendebroek)
+      | Improved TGLF performance in L-mode edge (Staebler)
+
+
+----
+
+:Tuesday March 31st:
+
+.. toggle-header::
+   :header: Agenda
+	    
+      | **10:00am-noon:** 
+      | Communication and community coding (Smith)
+      | Use-Case breakout discussion (Holland)
+      |
+      | **LUNCH**
+      |
+      | **1:00pm-3:00pm:** ITER IM
+      | **3:00pm-4:00pm:** wrap-up
 
 ----
 
