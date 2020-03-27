@@ -22,6 +22,7 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
    :header: Agenda 
 	    
       | **10:00am-noon:**
+      | EP tools for integrated modeling (Bass)
       | Update on RF IPS components for AToM (Batchelor)
       | Role of electrons in gyrokinetic edge transport (Belli)
       | Update on AToM SciDAC Center Liaisons and Interactions (Bonoli)
@@ -40,6 +41,7 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
       | Plans to Use IPS-FASTRAN to explore FNSF/Pilot Plant configurations (Kessel)
       | IPS-FASTRAN progress (Kim / B1)
       | Scalable Data & Metadata Capture for AToM (Kostuk / E1,E2)
+      | ML techniques for improving the TGLF saturation rule (Neiser)
       | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
       | CESOL progress (Park)
       | TRANSP Update (Sachdev)
