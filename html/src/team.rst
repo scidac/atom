@@ -22,32 +22,34 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
    :header: Agenda 
 	    
       | **10:00am-noon:**
-      | EP tools for integrated modeling (Bass)
-      | Update on RF IPS components for AToM (Batchelor)
-      | Role of electrons in gyrokinetic edge transport (Belli)
       | Update on AToM SciDAC Center Liaisons and Interactions (Bonoli)
-      | Interaction of low-n EP-driven modes and microturbulence (Chen / D4)
+      | Update on RF IPS components for AToM (Batchelor)
+      | Plans to Use IPS-FASTRAN to explore FNSF/Pilot Plant configurations (Kessel / D1,D2)
       | Reconstructing SOLPS transport coefficents using the ips-quasi-newton workflow (Cianciosa)
-      | LLNL progress report (Dorf / D6,F5)
+      | ML techniques for improving the TGLF saturation rule (Neiser)
       | An Ultra-fast procedure for learning the TGLF Discontinuous Function (Etienam)
-      | Adaptive high-order time-stepping in CGYRO (Fann / A2)
-      | V&V of turbulence and transport models for reactor-relevant scenarios (Holland)
       | An update on multi-scale gyrokinetic simulation and comparison with experiment (Howard)
+      | Adaptive high-order time-stepping in CGYRO (Fann / A2)
+      | TRANSP Update (Sachdev)
       |
       | **LUNCH**
       |
-      | **1:00pm-4:00pm:** 
-      | OMFIT development workflow (Kalling)
-      | Plans to Use IPS-FASTRAN to explore FNSF/Pilot Plant configurations (Kessel)
-      | IPS-FASTRAN progress (Kim / B1)
-      | Scalable Data & Metadata Capture for AToM (Kostuk / E1,E2)
-      | ML techniques for improving the TGLF saturation rule (Neiser)
-      | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
-      | CESOL progress (Park)
-      | TRANSP Update (Sachdev)
-      | Starting the STEP workflow from 0D tokamak quantities in OMFIT (Slendebroek)
+      | **1:00pm-3:00pm:** 
+      | LLNL progress report (Dorf / D6,F5)
+      | Interaction of low-n EP-driven modes and microturbulence (Chen / D4)
+      | EP tools for integrated modeling (Bass)
       | Improved TGLF performance in L-mode edge (Staebler)
-
+      | V&V of turbulence and transport models for reactor-relevant scenarios (Holland)
+      | Role of electrons in gyrokinetic edge transport (Belli)
+      | Starting the STEP workflow from 0D tokamak quantities in OMFIT (Slendebroek)
+      | OMFIT development workflow (Kalling)
+      | CESOL progress (Park)
+      | IPS-FASTRAN progress (Kim / B1)
+      | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
+      | Scalable Data & Metadata Capture for AToM (Kostuk / E1,E2)
+      | 
+      | **3:30pm-4:00pm**
+      | Recap and open discussion (Candy)
 
 ----
 
