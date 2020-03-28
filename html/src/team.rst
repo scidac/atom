@@ -28,7 +28,7 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
       | Reconstructing SOLPS transport coefficents using the ips-quasi-newton workflow (Cianciosa)
       | ML techniques for improving the TGLF saturation rule (Neiser)
       | An Ultra-fast procedure for learning the TGLF Discontinuous Function (Etienam)
-      | An update on multi-scale gyrokinetic simulation and comparison with experiment (Howard)
+      | An update on multi-scale gyrokinetic simulation and comparison with experiment (Howard / D5)
       | Adaptive high-order time-stepping in CGYRO (Fann / A2)
       | TRANSP Update (Sachdev)
       |
@@ -37,12 +37,13 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
       | **1:00pm-3:00pm:** 
       | LLNL progress report (Dorf / D6,F5)
       | Interaction of low-n EP-driven modes and microturbulence (Chen / D4)
+      | Planning and analyzing plasma control with OMFIT (Eldon)
       | EP tools for integrated modeling (Bass)
       | Improved TGLF performance in L-mode edge (Staebler)
-      | V&V of turbulence and transport models for reactor-relevant scenarios (Holland)
+      | V&V of turbulence and transport models for reactor-relevant scenarios (Holland / C4)
       | Role of electrons in gyrokinetic edge transport (Belli)
       | Starting the STEP workflow from 0D tokamak quantities in OMFIT (Slendebroek)
-      | OMFIT development workflow (Kalling)
+      | OMFIT development workflow (Kalling / A3)
       | CESOL progress (Park)
       | IPS-FASTRAN progress (Kim / B1)
       | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
@@ -59,7 +60,7 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
    :header: Agenda
 	    
       | **10:00am-noon:** 
-      | Communication and community coding (Smith)
+      | Communication and community coding (Smith / A3,A4,A6)
       | Use-Case breakout discussion (Holland)
       |
       | **LUNCH**
