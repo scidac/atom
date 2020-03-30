@@ -45,7 +45,7 @@ Because of COVID-19 the original week-long AToM meeting will be remote and in a 
       | Role of electrons in gyrokinetic edge transport (Belli / C4,D5)
       | Starting the STEP workflow from 0D tokamak quantities in OMFIT (Slendebroek)
       | OMFIT development workflow (Kalling / A3)
-      | CESOL progress (Park / B1)
+      | CESOL progress (Park / B4,B5,B6)
       | IPS-FASTRAN progress (Kim / B1)
       | Progress Towards Standardized Synthetic Diagnostic Package (Pankin)
       | Scalable Data & Metadata Capture for AToM (Kostuk / E1,E2)
