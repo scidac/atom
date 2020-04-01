@@ -23,12 +23,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/contentui.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -105,9 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="literature.html">Journal Articles and Presentations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thrusts.html">AToM Research Thrusts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac_setup.html">Complete MacOS install of AToM with MacPorts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Upcoming AToM Meetings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html#past-meetings">Past Meetings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html#atom-team">AToM Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Meetings and AToM Team Members</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tour.html">A Brief Tour of AToM</a></li>
 </ul>
 
@@ -178,8 +176,8 @@
 <div class="section" id="supported-public-atom-installations">
 <h2>Supported public AToM installations<a class="headerlink" href="#supported-public-atom-installations" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Users are highly encouraged to make use of the AToM public installations, which we maintain and support.</p>
+<p class="first admonition-title">Note</p>
+<p class="last">Users are highly encouraged to make use of the AToM public installations, which we maintain and support.</p>
 </div>
 <div class="section" id="nersc">
 <h3>NERSC<a class="headerlink" href="#nersc" title="Permalink to this headline">¶</a></h3>
@@ -224,12 +222,12 @@ The AToM <cite>Makefile</cite> leverages the <a class="reference external" href=
 </div>
 <p>AToM components include:</p>
 <ul class="simple">
-<li><p>OMFIT</p></li>
-<li><p>IPS_ATOM</p></li>
-<li><p>GACODE</p></li>
-<li><p>HARVEST_CLIENT</p></li>
-<li><p>GACODE_ADD</p></li>
-<li><p>EPED</p></li>
+<li>OMFIT</li>
+<li>IPS_ATOM</li>
+<li>GACODE</li>
+<li>HARVEST_CLIENT</li>
+<li>GACODE_ADD</li>
+<li>EPED</li>
 </ul>
 <p>To make individual components (for example <cite>GACODE</cite> on the <cite>VENUS</cite> platform):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">GACODE</span> <span class="n">ATOM_PLATFORM</span><span class="o">=</span><span class="n">VENUS</span>
