@@ -1,0 +1,11 @@
+ 9:00 | 30 | LOGISTICS \n (Candy)
+ 9:30 | 30 | Welcome 1 \n (Candy)
+10:00 | 120 | AToM Use Cases \n (Holland)
+12:00 | 60 | LUNCH
+13:00 | 20 | Welcome 2 \n (Candy)
+13:20 | 20 | Thrust A progress (IPS) \n (Elwasif)
+13:40 | 20 | Thrust B progress \n (Park)
+14:00 | 20 | Thrust C progress \n (Holland)
+14:20 | 20 | Thrust D progress \n (Sachdev)
+14:40 | 20 | Thrust E progress \n (Kostuk)
+15:00 | 20 | Thrust F progress \n (Bonoli)

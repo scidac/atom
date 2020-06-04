@@ -26,7 +26,7 @@ OMFIT
 -----
 *Framework*
 
-`OMFIT <http://gafusion.github.io/OMFIT-source/>`_
+`OMFIT <https://omfit.io>`_
 is a software developed at General Atomics to support integrated modeling and experimental
 data analysis of magnetically confined thermonuclear fusion experiments.
 The goal of OMFIT is to enhance existing scientific workflows and enable new integrated modeling capabilities.
