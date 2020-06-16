@@ -167,6 +167,10 @@ $(GACODE_DIR):
 GACODE: CONFIG NEURAL $(GACODE_DIR)
 	. ./CONFIG ; cd $(GACODE_DIR) ; make
 
+.PHONY: PYGACODE
+PYGACODE: CONDA3
+	../miniconda3/bin/pip install --upgrade pygacode
+
 .PHONY: $(GACODE_ADD_DIR)
 $(GACODE_ADD_DIR):
 	@./bin/clone_script $(GACODE_ADD_GIT)   $(GACODE_ADD_DIR)   $(GACODE_ADD_VER)
