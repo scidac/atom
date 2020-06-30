@@ -25,14 +25,11 @@ module-whatis gacode
 #=====================
 # begin of machine-specific settings here
 #=====================
-if { ! [ is-loaded default-paths ] } {
-  module load default-paths
-}
-module load netcdf/gnu
+
 module load fftw
-module load git
 module load fann
 setenv FANN_ROOT $::env(FANN_DIR)
+module load netcdf/4.4.1-gcc7
 
 set GACODE_ROOT $::env(ATOM_ROOT)/gacode
 setenv GACODE_PLATFORM SATURN_GCC
