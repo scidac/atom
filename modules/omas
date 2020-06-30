@@ -1,0 +1,20 @@
+#%Module1.0#####################################################################
+##
+## fann modulefile
+##
+##
+proc ModulesHelp { } {
+     global version
+
+     puts stderr "   OMAS"
+     puts stderr "   This sets the PYTHONPATH environmental variable to include the OMAS library"
+
+}
+
+module-whatis	"OMAS"
+
+# for Tcl script use only
+set   version	 2.2.0
+
+set omasdir $::env(ATOM_ROOT)/omas
+prepend-path PYTHONPATH $omasdir

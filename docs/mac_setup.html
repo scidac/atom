@@ -19,13 +19,22 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
@@ -33,21 +42,16 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Meetings and AToM Team Members" href="team.html" />
     <link rel="prev" title="AToM Research Thrusts" href="thrusts.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -185,7 +189,7 @@
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Install Developer command line tools type</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
 <p>Then click the “Install” button in the dialog box that appears.</p>
@@ -194,11 +198,11 @@
 <li><p class="first">Generate SSH keys if you do not currently have them. This is used to authenticate with github later.</p>
 <blockquote>
 <div><p>To check if you have existing ssh keys</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span>
 </pre></div>
 </div>
 <p>This will return “No such file or directory” if it does NOT exist.  If it exists, skip to step 3, if not, generate your ssh keys</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">b</span> <span class="mi">4096</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">rsa</span> <span class="o">-</span><span class="n">b</span> <span class="mi">4096</span>
 </pre></div>
 </div>
 <p>Keep the default location to save the key by pressing enter.</p>
@@ -208,7 +212,7 @@
 <li><p class="first">Add public ssh key to github.  Instructions found <a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">here</a></p>
 </li>
 <li><p class="first">Setup git email and name</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Your Name&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Your Name&quot;</span>
 <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;your_email@example.com&quot;</span>
 </pre></div>
 </div>
@@ -218,13 +222,13 @@
 <li><p class="first">In order to use any X11 enabled tools, install X-Quartz.  It can be found <a class="reference external" href="https://www.xquartz.org/">here</a> . After installing, it will require logging out of your computer and logging back in before it can be used. (Apple menu -&gt; Log Out)</p>
 </li>
 <li><p class="first">In the terminal, navigate to where you would like AToM installed and clone the git repository.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scidac</span><span class="o">/</span><span class="n">atom</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scidac</span><span class="o">/</span><span class="n">atom</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 <p>If it asks if you want to continue connecting, say yes.</p>
 </li>
 <li><p class="first">Install and configure the prerequisites with Mac Ports.  Enter your computer’s password (not the SSH key passphrase) when promped and enter ‘Y’ when prompted to confirm installs.  Some of these installs (like openmpi) may take a while.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">cmake</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">cmake</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">openmpi</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">select</span> <span class="o">--</span><span class="nb">set</span> <span class="n">mpi</span> <span class="n">openmpi</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="n">fortran</span>
 <span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">fftw</span><span class="o">-</span><span class="mi">3</span>
@@ -237,7 +241,7 @@
 </div>
 </li>
 <li><p class="first">Export compiler locations for cmake (Exact names may vary.  If you close your terminal, you may have to do this step again)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">FC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">FC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
 <span class="n">export</span> <span class="n">CC</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
 <span class="n">export</span> <span class="n">CXX</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mi">7</span>
 </pre></div>
@@ -257,7 +261,7 @@ cd OMFIT-source/install/ports
 </ol>
 <blockquote>
 <div><p>If you run into problems with Mac Ports here, you may need to switch to the unstable branch. (From within the OMFIT-source directory)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">unstable</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">unstable</span>
 <span class="n">cd</span> <span class="n">OMFIT</span><span class="o">-</span><span class="n">source</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">ports</span>
 <span class="o">./</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
@@ -277,7 +281,7 @@ cd OMFIT-source/install/ports
         <a href="team.html" class="btn btn-neutral float-right" title="Meetings and AToM Team Members" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="thrusts.html" class="btn btn-neutral" title="AToM Research Thrusts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="thrusts.html" class="btn btn-neutral float-left" title="AToM Research Thrusts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -286,7 +290,7 @@ cd OMFIT-source/install/ports
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014-2019
+        &copy; Copyright 2014-2020
 
     </p>
   </div>
@@ -303,37 +307,16 @@ cd OMFIT-source/install/ports
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'./',
-              VERSION:'',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/contentui.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

@@ -41,7 +41,7 @@ about:
   description: |
     GACODE contains the transport solver, TGYRO, the turbulence transport model, TGLF,
     the neoclassical model, NEO, and the gyrokinetic models, CGYRO and GYRO.  
-  doc_url: http://gafusion.github.io/OMFIT-source
+  doc_url: https://omfit.io
   dev_url: https://github.com/gafusion/OMFIT-source
 
 extra:

@@ -1,0 +1,31 @@
+#%Module
+#
+# Module file for loading paths for OMFIT
+#
+
+proc ModulesHelp { } {
+        puts stderr "This modulefile sets the environment for OMFIT"
+	puts stderr ""
+	puts stderr "OMFIT is a software developed to support both integrated modeling and experimental data analysis."
+	puts stderr ""
+	puts stderr "The main idea at the heart of OMFIT is to treat files, data, and scripts as a uniform collection "
+	puts stderr "of objects organized into a tree structure. The OMFIT framework provides a consistent way to "
+	puts stderr "access and manipulate such a collection of heterogeneous objects, independent of their origin. "
+	puts stderr ""
+	puts stderr "http://gafusion.github.io/OMFIT-source/index.html"
+	puts stderr ""
+}
+
+conflict omfit
+module-whatis omfit
+
+set atom_root $::env(ATOM_ROOT)
+set omfit_root $::env(ATOM_ROOT)/OMFIT-source
+
+setenv OMFIT_ROOT $omfit_root
+setenv OMFIT_TMPDIR /tmp/
+setenv OMFIT_GLOBAL_TMPDIR /scratch/
+
+prepend-path PATH $atom_root/miniconda3/bin/
+prepend-path PATH $omfit_root/bin/
+prepend-path PYTHONPATH $omfit_root/

@@ -19,13 +19,22 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
@@ -33,21 +42,16 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Repositories, links, and information" href="find.html" />
     <link rel="prev" title="About AToM" href="index.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -187,7 +191,7 @@ mission-critical integrated modeling capabilities.</p>
 <div class="section" id="omfit">
 <h2>OMFIT<a class="headerlink" href="#omfit" title="Permalink to this headline">¶</a></h2>
 <p><em>Framework</em></p>
-<p><a class="reference external" href="http://gafusion.github.io/OMFIT-source/">OMFIT</a>
+<p><a class="reference external" href="https://omfit.io">OMFIT</a>
 is a software developed at General Atomics to support integrated modeling and experimental
 data analysis of magnetically confined thermonuclear fusion experiments.
 The goal of OMFIT is to enhance existing scientific workflows and enable new integrated modeling capabilities.
@@ -236,7 +240,7 @@ library, which is under development in the FASTMath SciDAC Institute (LBNL).  In
 exploits mapped multiblock grid technology, whereby the inner and outer closed flux surface regions,
 the inner and outer scrape off layer, the inner and outer divertor legs, and the inner and outer
 portions of the private flux region are mapped from the physical toroidal geometry (with appropriate
-metric information) onto communicating rectangular grid blocks. The code was ‘’born parallel’‘, with
+metric information) onto communicating rectangular grid blocks. The code was ‘’born parallel’’, with
 grid blocks assigned to groups of processors.  Phase, configuration and velocity space can be domain
 decomposed independently for flexible and efficient mapping to current and future parallel machines.
 The code gets single-null geometric data via fourth-order interpolation of tabular data generated
@@ -279,7 +283,7 @@ shear regime and for strongly shaped plasmas.</p>
 <h2>NEO<a class="headerlink" href="#neo" title="Permalink to this headline">¶</a></h2>
 <p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Neooverview">NEO</a>
-is a <span class="math">\(\large \delta f\)</span> Eulerian code which provides first-principles based numerical calculations
+is a <span class="math notranslate nohighlight">\(\large \delta f\)</span> Eulerian code which provides first-principles based numerical calculations
 of the neoclassical transport (particle flux, energy flux, bootstrap current,
 poloidal flows, etc.). NEO solves a hierarchy of equations derived by expanding
 the drift-kinetic equation in powers of , the ratio of the ion gyroradius to
@@ -350,7 +354,7 @@ functionalities provided by OMAS.</p>
         <a href="find.html" class="btn btn-neutral float-right" title="Repositories, links, and information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="About AToM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="About AToM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -359,7 +363,7 @@ functionalities provided by OMAS.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2014-2019
+        &copy; Copyright 2014-2020
 
     </p>
   </div>
@@ -376,37 +380,16 @@ functionalities provided by OMAS.</p>
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'./',
-              VERSION:'',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/contentui.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

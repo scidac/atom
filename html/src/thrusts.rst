@@ -22,6 +22,7 @@ AToM Research Thrusts
    :header: "Task", "Description","Lead","Support"
    :widths: 4,25,5,10
 
+   B1,"Implement enhanced core physics modules",**Park**,"Green, Smith, Belli"
    B2,"Implement leadership-scale physics modules",**Belli**,"Candy, Chen"
    B3,"Enhance pedestal physics model",**Snyder**, "Park, Meneghini, Smith"
    B4,"Modular enhancement of SOL physics model",**Green**, "Park, Meneghini, Smith"

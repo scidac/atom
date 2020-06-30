@@ -1,0 +1,8 @@
+ 9:00 | 30 | Whole device modeling (McClenaghan) \n Generalizing OMFIT workflows for ITER
+ 9:30 | 30 | Whole device modeling (Meneghini) \n Running IMAS actors within OMFIT
+10:00 | 30 | Whole device modeling (Park) \n High-fidelity whole device modeling for ITER
+10:30 | 30 | Scenario database (Holland) \n AToM use-cases and the ITER scenario database
+11:00 | 30 | SciDAC and exascale (Sammuli) \n Manipulating large volumes of data with Toksearch
+11:30 | 30 | SciDAC and exascale (Candy) \n AToM in the ITER context
+12:00 | 30 | SciDAC and exascale (Bonoli) \n SciDAC projects in the ITER context
+12:30 | 60 | LUNCH
