@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,6 +11,11 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
+
+  
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
@@ -19,25 +23,22 @@
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/contentui.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/contentui.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="AToM Components" href="components.html" /> 
@@ -54,7 +55,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> AToM
+            <a href="#" class="icon icon-home" alt="Documentation Home"> AToM
           
 
           
@@ -77,6 +78,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -91,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="install.html">Getting Started with AToM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="literature.html">Journal Articles and Presentations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thrusts.html">AToM Research Thrusts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usecase.html">AToM Use Cases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac_setup.html">Complete MacOS install of AToM with MacPorts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="team.html">Last AToM Meeting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="team.html#past-meetings">Past Meetings</a></li>
@@ -101,6 +104,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -139,7 +143,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
       <li>About AToM</li>
     
@@ -186,12 +190,12 @@ integrated simulations which couple core, pedestal and scrape-off-layer physics 
 and further optimize, performance of the fusion plasma.</p>
 <p>The <em>key thrusts</em> of the AToM project are:</p>
 <ol class="upperalpha simple">
-<li>AToM environment, performance and packaging</li>
-<li>Physics component integration</li>
-<li>Validation and uncertainty quantification</li>
-<li>Physics and scenario exploration</li>
-<li>Data and metadata management</li>
-<li>Liaisons to SciDAC partnerships</li>
+<li><p>AToM environment, performance and packaging</p></li>
+<li><p>Physics component integration</p></li>
+<li><p>Validation and uncertainty quantification</p></li>
+<li><p>Physics and scenario exploration</p></li>
+<li><p>Data and metadata management</p></li>
+<li><p>Liaisons to SciDAC partnerships</p></li>
 </ol>
 <p>In this document, we also provide a list of <a class="reference internal" href="thrusts.html#thrusts"><span class="std std-ref">AToM Research Thrusts</span></a>.</p>
 </div>
@@ -236,6 +240,7 @@ and further optimize, performance of the fusion plasma.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="thrusts.html">AToM Research Thrusts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usecase.html">AToM Use Cases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mac_setup.html">Complete MacOS install of AToM with MacPorts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="mac_setup.html#prerequisites">Prerequisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mac_setup.html#install">Install</a></li>
@@ -275,11 +280,19 @@ and further optimize, performance of the fusion plasma.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2014-2020
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -290,7 +303,6 @@ and further optimize, performance of the fusion plasma.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
