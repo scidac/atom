@@ -55,6 +55,7 @@ Navigation
    install
    literature
    thrusts
+   usecase
    mac_setup
    team
    tour

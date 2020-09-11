@@ -28,7 +28,6 @@ extensions=[
    'sphinx.ext.mathjax',
    'sphinxcontrib.bibtex',
    'sphinxcontrib.contentui',
-   'mathmacro',
    'sphinx.ext.autosectionlabel']
 
 autodoc_member_order = 'bysource'
