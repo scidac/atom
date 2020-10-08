@@ -238,6 +238,12 @@ $(IPS_SOURCE_DIR):
 IPS: $(IPS_SOURCE_DIR)
 	@cd $(IPS_SOURCE_DIR) && rm -rf build && mkdir build && cd build && pwd && cmake -DCMAKE_INSTALL_PREFIX:PATH=$(ATOM_DIR)/$(IPS_DIR) -DCMAKE_BUILD_TYPE=Release .. && make && make install
 
+.PHONY: IMAS
+IMAS:
+	mkdir -p IMAS
+	@read -p "Enter username on login.eufus.eu cluster:" user; \
+	scp $$user@login.eufus.eu:~g2michal/public/imas-fc2k-latest.tar.xz ./IMAS/
+
 clean:
 	. ./CONFIG ; cd $(GACODE_DIR) ; make clean
 	. ./CONFIG ; cd $(EPED_DIR) ; make clean
