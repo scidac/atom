@@ -28,7 +28,7 @@ Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
 EFIT
 ----
 
-.. image:: efits/155196_2200-kefit.pdf
+.. image:: ../efits/155196_2200-kefit.pdf
     :width: 500px
     :align: left
     :height: 500px
