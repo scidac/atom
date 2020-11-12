@@ -20,6 +20,8 @@
 /miniconda2*
 /miniconda3*
 /stats
+/omfit_standalone_classes
+/IMAS/imas-fc2k-latest.tar.xz
 stats.txt
 OMFITstats.txt
 html/src/_build
