@@ -229,7 +229,7 @@ $(OMAS_DIR):
 	@./bin/clone_script $(OMAS_GIT)  $(OMAS_DIR)  $(OMAS_VER)
 
 OMAS: $(OMAS_DIR)
-	@cd $(OMAS_DIR); ../miniconda3/bin/pip install --no-deps -e .
+	@cd $(OMAS_DIR); ../miniconda3/bin/pip install --no-deps .
 
 .PHONY: $(IPS_SOURCE_DIR)
 $(IPS_SOURCE_DIR):
