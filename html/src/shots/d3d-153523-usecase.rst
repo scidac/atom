@@ -24,6 +24,7 @@ ONETWO files:
 | :download:`inone file <./../../../../atom-usecase/d3d/onetwo/153523/inone.153523>`
 | :download:`iterdb file <./../../../../atom-usecase/d3d/onetwo/153523/iterdb.153523>`
 | :download:`statefile <./../../../../atom-usecase/d3d/onetwo/153523/state153523_12_3.745000E+00.nc>`
+| :download:`summary <./../../../../atom-usecase/d3d/onetwo/153523/summary>`
 
 EFIT
 ----
