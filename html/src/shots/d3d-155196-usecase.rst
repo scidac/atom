@@ -26,11 +26,6 @@ TRANSP statefiles:
 | :download:`statefile at 3000 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_3000.cdf>`
 
 
-Publication
------------
-
-Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
-
 EFIT
 ----
 
@@ -40,3 +35,17 @@ Kinetic efits at 2200 and 3000ms:
 | :download:`g-file at 2200 <./../../../../atom-usecase/d3d/efits/155196/g155196.02200>`
 | :download:`a-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/a155196.03000>`
 | :download:`g-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/g155196.03000>`
+
+TGYRO
+-----
+
+TGYRO runs with TGLF09(SAT0) and EPED1-NN models:
+
+| :download:`TGYRO at 2200 <./../../../../atom-usecase/d3d/tgyro/155196/155196_2200-tglf09-eped.tar.gz>`
+| :download:`TGYRO at 3000 <./../../../../atom-usecase/d3d/tgyro/155196/155196_3000-tglf09-eped.tar.gz>`
+
+
+Publication
+-----------
+
+Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
