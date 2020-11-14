@@ -20,6 +20,27 @@ Data analysis
 ONETWO run with 51 radial grid points. The EFIT used is EFIT04
 with a 65x65 grid.
 
+ONETWO files:
+
+| :download:`inone file<./../../../../atom-usecase/d3d/onetwo/153523/inone.153523>`
+| :download:`iterdb file<./../../../../atom-usecase/d3d/onetwo/153523/iterdb.153523>`
+| :download:`statefile <./../../../../atom-usecase/d3d/onetwo/153523/state153523_12_3.745000E+00.nc>`
+
+EFIT
+----
+
+Kinetic efits at 3745ms:
+
+| :download:`a-file <./../../../../atom-usecase/d3d/efits/153523/a153523.03745>`
+| :download:`g-file <./../../../../atom-usecase/d3d/efits/153523/g153523.03745>`
+
+TGYRO
+-----
+
+TGYRO run with TGLF09(SAT0) and EPED1-NN models:
+
+| :download:`TGYRO at 3745 <./../../../../atom-usecase/d3d/tgyro/153523/153523-tglf09-eped.tar.gz>`
+
 Publication
 -----------
 
