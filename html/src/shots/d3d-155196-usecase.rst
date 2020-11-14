@@ -28,8 +28,9 @@ Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
 EFIT
 ----
 
-.. image:: ../efits/155196_2200-kefit.pdf
-    :width: 500px
-    :align: left
-    :height: 500px
-    :alt: alternate text
+Kinetic efits at 2200 and 3000ms:
+
+| :download:`a-file at 2200 <./../../../../atom-usecase/d3d/efits/155196/a155196.02200>`
+| :download:`g-file at 2200 <./../../../../atom-usecase/d3d/efits/155196/g155196.02200>`
+| :download:`a-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/a155196.03000>`
+| :download:`g-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/g155196.03000>`
