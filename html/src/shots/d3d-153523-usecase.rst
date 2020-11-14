@@ -17,13 +17,12 @@ there is nearly zero beam torque (0.42 Nt-m).
 Data analysis
 -------------
 
-ONETWO run with 51 radial grid points. The EFIT used is EFIT04
-with a 65x65 grid.
+ONETWO run with 51 radial grid points.
 
 ONETWO files:
 
-| :download:`inone file<./../../../../atom-usecase/d3d/onetwo/153523/inone.153523>`
-| :download:`iterdb file<./../../../../atom-usecase/d3d/onetwo/153523/iterdb.153523>`
+| :download:`inone file <./../../../../atom-usecase/d3d/onetwo/153523/inone.153523>`
+| :download:`iterdb file <./../../../../atom-usecase/d3d/onetwo/153523/iterdb.153523>`
 | :download:`statefile <./../../../../atom-usecase/d3d/onetwo/153523/state153523_12_3.745000E+00.nc>`
 
 EFIT
