@@ -27,6 +27,11 @@ TRANSP statefiles:
 | :download:`statefile at 2200 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_2200.cdf>`
 | :download:`statefile at 3000 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_3000.cdf>`
 
+.. toggle-header::
+   :header: **Reviewplus time traces**
+
+   .. figure:: ../images/revplus/155196-revplus.png
+
 ----
 
 EFIT

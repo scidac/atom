@@ -28,6 +28,11 @@ ONETWO files:
 | :download:`statefile <./../../../../atom-usecase/d3d/onetwo/153523/state153523_12_3.745000E+00.nc>`
 | :download:`summary <./../../../../atom-usecase/d3d/onetwo/153523/summary>`
 
+.. toggle-header::
+   :header: **Reviewplus time traces**
+
+   .. figure:: ../images/revplus/153523-revplus.png
+
 ----
 
 EFIT
