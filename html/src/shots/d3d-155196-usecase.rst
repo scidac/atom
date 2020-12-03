@@ -24,8 +24,8 @@ TRANSP run E04 by B. Grierson
 
 TRANSP statefiles:
 
-| :download:`statefile at 2200 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_2200.cdf>`
-| :download:`statefile at 3000 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_3000.cdf>`
+| :download:`statefile at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/statefiles/155196/state155196E04_2200.cdf>`
+| :download:`statefile at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/statefiles/155196/state155196E04_3000.cdf>`
 
 .. toggle-header::
    :header: **Reviewplus time traces**
