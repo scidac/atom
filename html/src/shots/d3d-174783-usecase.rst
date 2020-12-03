@@ -59,5 +59,5 @@ TGYRO run with TGLF09(SAT0) and EPED1-NN models:
 Publication
 -----------
 
-J.P. Floyd, et al., Phys. Plasmas 22, 022508 (2015).
+S. Ding, et al., Nucl. Fusion 60, 034001 (2020).
 
