@@ -20,9 +20,9 @@ ONETWO run with 51 radial grid points.
 
 ONETWO files:
 
-| :download:`inone file <./../../../../atom-usecase/d3d/onetwo/144981/inone.144981>`
-| :download:`iterdb file <./../../../../atom-usecase/d3d/onetwo/144981/iterdb.144981>`
-| :download:`summary <./../../../../atom-usecase/d3d/onetwo/144981/summary.144981>`
+| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/144981/inone.144981>`
+| :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/144981/iterdb.144981>`
+| :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/144981/summary.144981>`
 
 .. toggle-header::
    :header: **Reviewplus time traces**
@@ -36,8 +36,8 @@ EFIT
 
 EFIT02 at 2990ms:
 
-| :download:`a-file <./../../../../atom-usecase/d3d/efits/144981/a144981.03200>`
-| :download:`g-file <./../../../../atom-usecase/d3d/efits/144981/g144981.03200>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144981/a144981.03200>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144981/g144981.03200>`
 
 .. toggle-header::
    :header: **Plot of EFIT**
@@ -51,7 +51,7 @@ TGYRO
 
 TGYRO run with TGLF09(SAT0) and EPED1-NN models:
 
-| :download:`TGYRO at 3200 <./../../../../atom-usecase/d3d/tgyro/144981/144981-tglf09-eped.tar.gz>`
+| :download:`TGYRO at 3200 <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/144981/144981-tglf09-eped.tar.gz>`
 
 ----
 
