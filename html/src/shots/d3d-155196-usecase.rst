@@ -24,8 +24,8 @@ TRANSP run E04 by B. Grierson
 
 TRANSP statefiles:
 
-| :download:`statefile at 2200 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_2200.cdf>`
-| :download:`statefile at 3000 <./../../../../atom-usecase/d3d/statefiles/155196/state155196E04_3000.cdf>`
+| :download:`statefile at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/statefiles/155196/state155196E04_2200.cdf>`
+| :download:`statefile at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/statefiles/155196/state155196E04_3000.cdf>`
 
 .. toggle-header::
    :header: **Reviewplus time traces**
@@ -39,10 +39,10 @@ EFIT
 
 Kinetic efits at 2200 and 3000ms:
 
-| :download:`a-file at 2200 <./../../../../atom-usecase/d3d/efits/155196/a155196.02200>`
-| :download:`g-file at 2200 <./../../../../atom-usecase/d3d/efits/155196/g155196.02200>`
-| :download:`a-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/a155196.03000>`
-| :download:`g-file at 3000 <./../../../../atom-usecase/d3d/efits/155196/g155196.03000>`
+| :download:`a-file at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/155196/a155196.02200>`
+| :download:`g-file at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/155196/g155196.02200>`
+| :download:`a-file at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/155196/a155196.03000>`
+| :download:`g-file at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/155196/g155196.03000>`
 
 .. toggle-header::
    :header: **Plot of EFIT at 2200ms**
@@ -61,8 +61,8 @@ TGYRO
 
 TGYRO runs with TGLF09(SAT0) and EPED1-NN models:
 
-| :download:`TGYRO at 2200 <./../../../../atom-usecase/d3d/tgyro/155196/155196_2200-tglf09-eped.tar.gz>`
-| :download:`TGYRO at 3000 <./../../../../atom-usecase/d3d/tgyro/155196/155196_3000-tglf09-eped.tar.gz>`
+| :download:`TGYRO at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/155196/155196_2200-tglf09-eped.tar.gz>`
+| :download:`TGYRO at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/155196/155196_3000-tglf09-eped.tar.gz>`
 
 ----
 
