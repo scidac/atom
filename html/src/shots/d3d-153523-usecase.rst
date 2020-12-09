@@ -66,6 +66,13 @@ CGYRO
 
    .. figure:: ../cgyro/153523-cgyro-lin-r0.50ky0.30-phi.png
 
+|  
+| CGYRO files:
+| :download:`input.cgyro <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/153523/input.cgyro>`
+| :download:`input.gacode <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/153523/input.gacode>`
+| :download:`out.cgyro.info <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/153523/out.cgyro.info>`
+
+
 ----
 
 
