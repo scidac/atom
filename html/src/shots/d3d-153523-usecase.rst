@@ -50,6 +50,25 @@ Kinetic efits at 3745ms:
 
 ----
 
+CGYRO
+-----
+
+| Linear run at r/a=0.50, ky=0.30:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time**
+
+   .. figure:: ../cgyro/153523-cgyro-lin-r0.50ky0.30-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta**
+
+   .. figure:: ../cgyro/153523-cgyro-lin-r0.50ky0.30-phi.png
+
+----
+
+
 TGYRO
 -----
 
