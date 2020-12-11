@@ -46,6 +46,29 @@ EFIT02 at 2990ms:
 
 ----
 
+CGYRO
+-----
+
+| Linear run at r/a=0.75, ky=0.30:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time**
+
+   .. figure:: ../cgyro/144977-cgyro-lin-r0.75ky0.30-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta**
+
+   .. figure:: ../cgyro/144977-cgyro-lin-r0.75ky0.30-phi.png
+
+|  
+| CGYRO files:
+| :download:`input.cgyro <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/144977/input.cgyro>`
+| :download:`input.gacode <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/144977/input.gacode>`
+| :download:`out.cgyro.info <<https://github.com/scidac/atom-usecase/raw/main/d3d/cgyro/144977/out.cgyro.info>`
+
+
 TGYRO
 -----
 
