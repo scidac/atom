@@ -17,7 +17,7 @@ in this series at 0.8 and 1.4MA.
 Data analysis
 -------------
 
-ONETWO run with 51 radial grid points.
+ONETWO run with 101 radial grid points.
 
 ONETWO files:
 
@@ -35,7 +35,7 @@ ONETWO files:
 EFIT
 ----
 
-EFIT02 at 2990ms:
+EFIT02 at 2040ms:
 
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150142/a150142.02040>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150142/g150142.02040>`
