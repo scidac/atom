@@ -11,7 +11,7 @@ SHELL=bash
 #OMFIT_VER=master
 OMFIT_VER=unstable
 OMFIT_GIT=git@github.com:gafusion/OMFIT-source.git
-OMFIT_DIR=OMFIT-source
+OMFIT_DIR=OMFIT-source$(shell date +%Y.%U)
 
 IPS_ATOM_VER=master
 #IPS_ATOM_VER=devel
