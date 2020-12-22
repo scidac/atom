@@ -21,6 +21,7 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
    :widths: 10,10,10,10,10,10,10
 
+   128913,1500,2.1,1.0,2.6,0.0,:doc:`128913 <shots/d3d-128913-usecase>`
    150139,2026,1.9,0.8,2.2,0.0,:doc:`150139 <shots/d3d-150139-usecase>`
    150142,2040,1.9,1.0,2.2,0.0,:doc:`150142 <shots/d3d-150142-usecase>`
    150136,2086,1.9,1.4,2.3,0.0,:doc:`150136 <shots/d3d-150136-usecase>`
