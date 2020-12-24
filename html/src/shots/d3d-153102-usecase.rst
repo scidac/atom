@@ -1,0 +1,60 @@
+DIII-D #153102
+==============
+
+Description
+-----------
+
+This H-mode discharge was part of an experiment designed
+to study particle transport in low power NBI and NBI+ECH discharges.
+This discharge used NBI only and two times are provided. The
+first time slice is at 1900ms and has 4.3MW of NBI. The second
+time slice is at 2400MS and has 2.9MW of NBI. The major plasma 
+parameters are Bt=1.9T, Ip=1.1MA, kappa=1.8, and delta(u,l)=(0.35,0.80). 
+
+----
+
+Data analysis
+-------------
+
+ONETWO run with 51 radial grid points.
+
+ONETWO files:
+
+| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_1900>`
+| :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_1900>`
+| :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_1900>`
+| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_2400>`
+| :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_2400>`
+| :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_2400>`
+
+.. toggle-header::
+   :header: **Reviewplus time traces**
+
+   .. figure:: ../images/revplus/153102-revplus.png
+
+----
+
+EFIT
+----
+
+EFIT02 at 1900ms,2400ms:
+
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/a153102.01900>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/g153102.01900>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/a153102.02400>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/g153102.02400>`
+
+.. toggle-header::
+   :header: **Plots of EFIT**
+
+   .. figure:: ../efits/153102_1900-efit.png
+   .. figure:: ../efits/153102_2400-efit.png
+
+----
+
+
+Publication
+-----------
+
+S. Mordijck, et al., Nucl. Fusion 55, 113025 (2015).
+
