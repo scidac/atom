@@ -20,12 +20,12 @@ ONETWO run with 51 radial grid points.
 
 ONETWO files:
 
-| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_1900>`
-| :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_1900>`
-| :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_1900>`
-| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_2400>`
-| :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_2400>`
-| :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_2400>`
+| :download:`inone_1900 file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_1900>`
+| :download:`iterdb_1900 file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_1900>`
+| :download:`summary_1900 <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_1900>`
+| :download:`inone_2400 file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/inone.153102_2400>`
+| :download:`iterdb_2400 file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/iterdb.153102_2400>`
+| :download:`summary_2400 <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_2400>`
 
 .. toggle-header::
    :header: **Reviewplus time traces**
@@ -45,9 +45,13 @@ EFIT02 at 1900ms,2400ms:
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/g153102.02400>`
 
 .. toggle-header::
-   :header: **Plots of EFIT**
+   :header: **Plots of EFIT at 1900ms**
 
    .. figure:: ../efits/153102_1900-efit.png
+
+.. toggle-header::
+   :header: **Plots of EFIT at 2400ms**
+
    .. figure:: ../efits/153102_2400-efit.png
 
 ----
