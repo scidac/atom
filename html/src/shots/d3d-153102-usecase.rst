@@ -56,6 +56,63 @@ EFIT02 at 1900ms,2400ms:
 
 ----
 
+CGYRO
+-----
+
+| Linear runs for t=2400ms at r/a=0.50, ky=0.20,0.30,0.40,0.50,0.60:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time, ky=0.20**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.20-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta, ky=0.20**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.20-phi.png
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time, ky=0.30**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.30-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta, ky=0.30**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.30-phi.png
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time, ky=0.40**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.40-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta, ky=0.40**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.40-phi.png
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time, ky=0.50**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.50-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta, ky=0.50**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.50-phi.png
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs time, ky=0.60**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.60-gamma.png
+
+.. toggle-header::
+   :header: **Plot of phi vs theta, ky=0.60**
+
+   .. figure:: ../cgyro/153102_2400-cgyro-lin-r0.50ky0.60-phi.png
+
+----
 
 Publication
 -----------
