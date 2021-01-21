@@ -35,7 +35,7 @@ ONETWO files:
 EFIT
 ----
 
-EFIT02 at 2086ms:
+EFIT02 at 2026ms:
 
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150136/a150139.02026>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150136/g150139.02026>`
@@ -47,6 +47,24 @@ EFIT02 at 2086ms:
 
 ----
 
+TGYRO
+-----
+
+TGYRO run with TGLF09(SAT0) with Te and Ti evolved, rho_BC=0.80:
+
+| :download:`TGYRO at 2260ms <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/150139/150139-tglf09.tar.gz>`
+
+.. toggle-header::
+   :header: **Plot of Te**
+
+   .. figure:: ../images/tgyro/150139/150139-tglf09-te.png
+
+.. toggle-header::
+   :header: **Plot of Ti**
+
+   .. figure:: ../images/tgyro/150139/150139-tglf09-ti.png
+
+----
 
 Publication
 -----------
