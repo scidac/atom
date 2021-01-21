@@ -47,6 +47,24 @@ EFIT02 at 2086ms:
 
 ----
 
+TGYRO
+-----
+
+TGYRO run with TGLF09(SAT0) with Te and Ti evolved, using vphi_carbon,rho_BC=0.80:
+
+| :download:`TGYRO at 2260ms <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/150136/150136-tglf09.tar.gz>`
+
+.. toggle-header::
+   :header: **Plot of Te**
+
+   .. figure:: ../images/tgyro/150136/150136-tglf09-te.png
+
+.. toggle-header::
+   :header: **Plot of Ti**
+
+   .. figure:: ../images/tgyro/150136/150136-tglf09-ti.png
+
+----
 
 Publication
 -----------
