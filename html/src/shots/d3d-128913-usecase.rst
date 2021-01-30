@@ -47,6 +47,24 @@ Kinetic EFIT at 1500ms:
 
 ----
 
+TGYRO
+-----
+
+TGYRO run with TGLF09(SAT0) with Te and Ti evolved, using vphi_carbon,rho_BC=0.80:
+
+| :download:`TGYRO at 1500ms <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/128913/128913-tglf09.tar.gz>`
+
+.. toggle-header::
+   :header: **Plot of Te**
+
+   .. figure:: ../images/tgyro/128913/128913-tglf09-te.png
+
+.. toggle-header::
+   :header: **Plot of Ti**
+
+   .. figure:: ../images/tgyro/128913/128913-tglf09-ti.png
+
+----
 
 Publication
 -----------
