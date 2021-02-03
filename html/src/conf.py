@@ -30,6 +30,7 @@ extensions=[
     'sphinxcontrib.contentui',
     'sphinx.ext.autosectionlabel',
     'fluiddoc.mathmacro']
+bibtex_bibfiles = ['publications.bib']
 
 autodoc_member_order = 'bysource'
 
