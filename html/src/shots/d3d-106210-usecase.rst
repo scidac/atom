@@ -33,7 +33,7 @@ ONETWO files:
 EFIT
 ----
 
-EFIT02 at 1900ms:
+EFIT03 at 4290ms:
 
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106210/a106210.04290>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106210/g106210.04290>`
