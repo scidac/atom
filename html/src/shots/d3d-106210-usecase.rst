@@ -45,6 +45,25 @@ EFIT03 at 4290ms:
 
 ----
 
+TGYRO
+-----
+
+TGYRO run with the Tensorflow neural net version of TGLF09(SAT0) with Te and Ti evolved, EPEDnn, 
+and rho_BC=0.80:
+
+| :download:`TGYRO at 1500ms <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/106210/106210-tglfnn-eped.tar.gz>`
+
+.. toggle-header::
+   :header: **Plot of Te**
+
+   .. figure:: ../images/tgyro/106210/106210-tglfnn-eped-te.png
+
+.. toggle-header::
+   :header: **Plot of Ti**
+
+   .. figure:: ../images/tgyro/106210/106210-tglfnn-eped-ti.png
+
+----
 
 
 Publication
