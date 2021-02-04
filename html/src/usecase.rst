@@ -10,6 +10,7 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    :widths: 10,10,10,10,10,10,10
 
    106210,4290,1.9,1.1,2.4,0.0,:doc:`106210 <shots/d3d-106210-usecase>`
+   106217,2070,1.9,0.8,3.3,0.0,:doc:`106217 <shots/d3d-106217-usecase>`
    144977,2990,2.1,1.0,4.0,0.0,:doc:`144977 <shots/d3d-144977-usecase>`
    144981,3200,2.1,1.5,4.0,0.0,:doc:`144981 <shots/d3d-144981-usecase>`
    153102,1900,1.9,1.1,4.3,0.0,:doc:`153102 <shots/d3d-153102-usecase>`
