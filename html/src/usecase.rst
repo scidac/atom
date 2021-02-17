@@ -20,6 +20,12 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    155196,3000,1.7,1.3,3.5,0.0
    174783,2109,2.1,2.0,14.2,0.0,:doc:`174783 <shots/d3d-174783-usecase>`
 
+.. csv-table:: **Thrust C: H-mode Discharges for Benchmarking in the Pedestal**
+   :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
+   :widths: 10,10,10,10,10,10,10
+
+   166613,1765,2.0,1.3,6.3,0.0,:doc:`166613 <shots/d3d-166613-usecase>`
+   166616,1765,2.0,1.3,3.2,0.0,:doc:`166616 <shots/d3d-166616-usecase>`
 
 .. csv-table:: **Thrust C: L-mode Discharges for Benchmarking in the Plasma Core**
    :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
