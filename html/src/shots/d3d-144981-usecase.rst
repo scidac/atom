@@ -81,5 +81,5 @@ TGYRO run with TGLF09(SAT0) and EPED1-NN models:
 Publication
 -----------
 
-J.P. Floyd, et al., Phys. Plasmas 22, 022508 (2015).
-
+| J.P. Floyd, et al., Phys. Plasmas 22, 022508 (2015).
+`Journal paper hyperlink <https://doi.org/10.1063/1.4907780>`__
