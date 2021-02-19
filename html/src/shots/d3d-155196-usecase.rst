@@ -69,4 +69,5 @@ TGYRO runs with TGLF09(SAT0) and EPED1-NN models:
 Publication
 -----------
 
-Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
+| Grierson, B., et al, Phys. Plasmas 25, 022509 (2018).
+`Journal paper hyperlink <https://doi.org/10.1063/1.5011387>`__
