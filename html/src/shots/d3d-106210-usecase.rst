@@ -69,5 +69,6 @@ and rho_BC=0.80:
 Publication
 -----------
 
-T. Luce, C. Petty, and J. Kinsey, 28th EPS Conference on Controlled Fusion 
-and Plasma Physics, Funchal, ECA Vol. 25A, 1377 (2001).
+| T. Luce, C. Petty, and J. Kinsey, 28th EPS Conference on Controlled Fusion 
+| and Plasma Physics, Funchal, ECA Vol. 25A, 1377 (2001).
+`Conference paper P4.012 hyperlink <http://epsppd.epfl.ch/Madeira/html/authors/nav/AutL04fr.html>`__
