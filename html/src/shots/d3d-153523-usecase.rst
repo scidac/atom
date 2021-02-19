@@ -88,6 +88,6 @@ TGYRO run with TGLF09(SAT0) and EPED1-NN models:
 Publication
 -----------
 
-T. C. Luce et al., Proc. 25th IAEA FEC, St. Petersburg, Russia PPC/P2-34 (2014)
-C. Holland, N.T. Howard, and B. Grierson, Nucl. Fusion 57, 066043 (2017).
-
+| T. C. Luce et al., Proc. 25th IAEA FEC, St. Petersburg, Russia PPC/P2-34 (2014)
+| C. Holland, N.T. Howard, and B. Grierson, Nucl. Fusion 57, 066043 (2017).
+`Journal paper hyperlink <https://doi.org/10.1088/1741-4326/aa6c16>`__
