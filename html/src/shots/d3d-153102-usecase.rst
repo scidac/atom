@@ -117,5 +117,5 @@ CGYRO
 Publication
 -----------
 
-S. Mordijck, et al., Nucl. Fusion 55, 113025 (2015).
-
+| S. Mordijck, et al., Nucl. Fusion 55, 113025 (2015).
+`Journal paper hyperlink <https://doi.org/10.1088/0029-5515/55/11/113025>`__
