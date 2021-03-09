@@ -46,10 +46,3 @@ Kinetic EFIT (129x29) at 2705ms:
 
 ----
 
-
-
-Publication
------------
-
-| H. Lan, T. Osborne, et al., Nucl. Fusion 60, 056013 (2020).
-`Journal paper hyperlink <https://doi.org/10.1088/1741-4326/ab7c2b>`__
