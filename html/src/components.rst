@@ -37,7 +37,7 @@ IPS
 ---
 *Framework*
 
-`IPS <http://ipsframework.sourceforge.net/doc/html/>`_
+`IPS <https://ips-framework.readthedocs.io>`_
 (Integrated Plasma Simulator) is an environment to orchestrate
 complex coupled simulation workflows on parallel computers. The IPS
 is designed primarily for use in a batch-processing environment, with
