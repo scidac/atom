@@ -16,7 +16,7 @@ delta(u,l)=(0.25,0.38). This discharge complements 144981 (1.5MA).
 Data analysis
 -------------
 
-ONETWO run with 51 radial grid points.
+ONETWO run with 101 radial grid points.
 
 ONETWO files:
 
@@ -34,7 +34,7 @@ ONETWO files:
 EFIT
 ----
 
-EFIT02 at 2990ms:
+Kinetic EFIT at 2990ms:
 
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144977/a144977.02990>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144977/g144977.02990>`
