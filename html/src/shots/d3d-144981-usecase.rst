@@ -6,7 +6,7 @@ Description
 
 This H-mode discharge was part of a plasma current scan carried
 out at fixed toroidal field, plasma shape, and heating power.
-It was heated with 4.0W of NBI. Analysis was performed at 2.99 secs.
+It was heated with 4.0W of NBI. Analysis was performed at 3.20 secs.
 
 The major plasma parameters are Bt=2.1T, Ip=1.5MA, kappa=1.73, and
 delta(u,l)=(0.25,0.38). This discharge complements 144977 (1.0MA).
@@ -16,7 +16,7 @@ delta(u,l)=(0.25,0.38). This discharge complements 144977 (1.0MA).
 Data analysis
 -------------
 
-ONETWO run with 51 radial grid points.
+ONETWO run with 101 radial grid points.
 
 ONETWO files:
 
@@ -34,7 +34,7 @@ ONETWO files:
 EFIT
 ----
 
-EFIT02 at 2990ms:
+Kinetic EFIT at 3200ms:
 
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144981/a144981.03200>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/144981/g144981.03200>`
