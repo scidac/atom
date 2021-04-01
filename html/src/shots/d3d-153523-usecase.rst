@@ -53,16 +53,16 @@ Kinetic efits at 3745ms:
 CGYRO
 -----
 
-| Linear run at r/a=0.50, ky=0.30:
+| Linear runs versus radius, ky=0.30:
 | Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
 
 .. toggle-header::
-   :header: **Plot of gamma,omega vs time**
+   :header: **Plot of gamma,omega vs rho**
 
-   .. figure:: ../cgyro/153523-cgyro-lin-r0.50ky0.30-gamma.png
+   .. figure:: ../cgyro/153523-gam,om_vs_rho.png
 
 .. toggle-header::
-   :header: **Plot of phi vs theta**
+   :header: **Plot of phi vs theta at rho=0.50**
 
    .. figure:: ../cgyro/153523-cgyro-lin-r0.50ky0.30-phi.png
 
