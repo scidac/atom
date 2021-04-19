@@ -64,6 +64,17 @@ TGYRO runs with TGLF09(SAT0) and EPED1-NN models:
 | :download:`TGYRO at 2200 <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/155196/155196_2200-tglf09-eped.tar.gz>`
 | :download:`TGYRO at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/tgyro/155196/155196_3000-tglf09-eped.tar.gz>`
 
+CGYRO
+-----
+
+| Linear runs versus radius, ky=0.30:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs rho**
+
+   .. figure:: ../cgyro/155196-gam,om_vs_rho.png
+
 ----
 
 Publication
