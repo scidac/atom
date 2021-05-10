@@ -55,7 +55,7 @@ CGYRO
 .. toggle-header::
    :header: **Plot of gamma,omega vs rho**
 
-   .. figure:: ../cgyro/16613-gam,om_vs_rho.png
+   .. figure:: ../cgyro/166613-gam,om_vs_rho.png
 
 ----
 
