@@ -36,11 +36,16 @@ EFIT
 
 EFIT02 (129x29) at 1765ms:
 
-| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/a166616.01765>`
-| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/g166616.01765>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/a166616.01765_efit02>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/g166616.01765_efit02>`
+
+Kinetic EFIT (129x29) at 1765ms:
+
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/a166616.01765_kefit>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/166616/g166616.01765_kefit>`
 
 .. toggle-header::
-   :header: **Plots of EFIT at 1765ms**
+   :header: **Plots of EFIT02 at 1765ms**
 
    .. figure:: ../efits/166616-efit.png
 
@@ -49,7 +54,7 @@ EFIT02 (129x29) at 1765ms:
 CGYRO
 -----
 
-| Linear runs versus radius, ky=0.30:
+| Linear runs versus radius, ky=0.30, using KEFIT:
 | Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
 
 .. toggle-header::
