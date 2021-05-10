@@ -46,7 +46,18 @@ EFIT02 (129x29) at 1765ms:
 
 ----
 
+CGYRO
+-----
 
+| Linear runs versus radius, ky=0.30:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs rho**
+
+   .. figure:: ../cgyro/166616-gam,om_vs_rho.png
+
+----
 
 Publication
 -----------
