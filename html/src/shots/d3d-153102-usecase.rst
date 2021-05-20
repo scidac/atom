@@ -44,13 +44,18 @@ EFIT02 at 1900ms,2400ms:
 | :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/a153102.02400>`
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/g153102.02400>`
 
+Kinetic EFIT (129x29) at 1900ms:
+
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/a153102.01900_kefit>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/153102/g153102.01900_kefit>`
+
 .. toggle-header::
-   :header: **Plots of EFIT at 1900ms**
+   :header: **Plots of EFIT02 at 1900ms**
 
    .. figure:: ../efits/153102_1900-efit.png
 
 .. toggle-header::
-   :header: **Plots of EFIT at 2400ms**
+   :header: **Plots of EFIT02 at 2400ms**
 
    .. figure:: ../efits/153102_2400-efit.png
 
