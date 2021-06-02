@@ -64,6 +64,16 @@ Kinetic EFIT (129x29) at 1900ms:
 CGYRO
 -----
 
+| Linear runs versus radius for t=1900ms, ky=0.30:
+| Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
+
+.. toggle-header::
+   :header: **Plot of gamma,omega vs rho**
+
+   .. figure:: ../cgyro/153102_1900-gam,om_vs_rho.png
+
+|
+
 | Linear runs for t=2400ms at r/a=0.50, ky=0.20,0.30,0.40,0.50,0.60:
 | Electrostatic, Miller equil., Suguma coll. model, n_species=2, n_theta=24, n_radial=8
 
