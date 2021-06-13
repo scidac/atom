@@ -37,8 +37,13 @@ EFIT
 
 EFIT03 at 2070ms:
 
-| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/a106217.02070>`
-| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/g106217.02070>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/a106217.02070_efit03>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/g106217.02070_efit03>`
+
+Kinetic EFIT at 2070ms:
+
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/a106217.02070_kefit>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/106217/g106217.02070_kefit>`
 
 .. toggle-header::
    :header: **Plots of EFIT at 2070ms**
