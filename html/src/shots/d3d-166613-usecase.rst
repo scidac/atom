@@ -27,7 +27,7 @@ ONETWO files:
 .. toggle-header::
    :header: **Plot of power densities**
 
-   .. figure:: <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/166613/166613-qplt.png
+   .. figure:: ../images/onetwo/166613-revplus.png
 
 .. toggle-header::
    :header: **Reviewplus time traces**
