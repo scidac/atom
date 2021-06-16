@@ -29,6 +29,11 @@ ONETWO files:
 | :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153523/summary.153523>`
 
 .. toggle-header::
+   :header: **Plot of power densities**
+
+   .. figure:: ../images/onetwo/153523-qplt.png
+
+.. toggle-header::
    :header: **Reviewplus time traces**
 
    .. figure:: ../images/revplus/153523-revplus.png
