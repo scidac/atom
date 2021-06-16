@@ -28,6 +28,11 @@ ONETWO files:
 | :download:`summary_2400 <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/153102/summary.153102_2400>`
 
 .. toggle-header::
+   :header: **Plot of power densities at 1900ms**
+
+   .. figure:: ../images/onetwo/153102_1900-qplt.png
+
+.. toggle-header::
    :header: **Reviewplus time traces**
 
    .. figure:: ../images/revplus/153102-revplus.png
