@@ -28,6 +28,11 @@ TRANSP statefiles:
 | :download:`statefile at 3000 <https://github.com/scidac/atom-usecase/raw/main/d3d/statefiles/155196/state155196E04_3000.cdf>`
 
 .. toggle-header::
+   :header: **Plot of power densities from ONETWO analysis**
+
+   .. figure:: ../images/onetwo/155196_2200-qplt.png
+
+.. toggle-header::
    :header: **Reviewplus time traces**
 
    .. figure:: ../images/revplus/155196-revplus.png
