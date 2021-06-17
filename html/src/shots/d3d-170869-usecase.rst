@@ -44,9 +44,14 @@ Kinetic EFIT (129x29) at 3730ms:
 | :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/170869/g170869.03730_kefit>`
 
 .. toggle-header::
-   :header: **Plot of KEFIT0**
+   :header: **Plot of KEFIT**
 
    .. figure:: ../efits/170869-efit.png
+
+.. toggle-header::
+   :header: **Plot of q-profile for 170868,69**
+
+   .. figure:: ../efits/170868,69-q.png
 
 ----
 
