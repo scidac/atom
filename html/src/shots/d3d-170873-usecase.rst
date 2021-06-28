@@ -38,10 +38,10 @@ ONETWO files:
 EFIT
 ----
 
-Kinetic EFIT (129x29) at 3730ms:
+Kinetic EFIT (129x29) at 4250ms:
 
-| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/170873/a170873.03730_kefit>`
-| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/170873/g170873.03730_kefit>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/170873/a170873.04250_kefit>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/170873/g170873.04250_kefit>`
 
 .. toggle-header::
    :header: **Plot of KEFIT**
