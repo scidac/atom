@@ -7,10 +7,9 @@ Description
 This H-mode discharge was part of an experiment designed to
 investigate the impact of the plasma current profile on transport
 and stability in steady-state scenerio discharges. This disharge has 
-10.3MW of NB heating, 2.2MW of ECH, q(0)=2.0, and q95=6.6.
-It has a high normalized pressure of betaN=2.6.
-The major plasma parameters are Bt=2.0T, Ip=1.0MA, kappa=1.84, 
-and delta(u,l)=(0.61,0.44).
+10.3MW of NB heating and 2.2MW of ECH. It has a high normalized pressure 
+of betaN=2.6 with q(0)=2.0 and q95=6.6.. The major plasma 
+parameters are Bt=2.0T, Ip=1.0MA, kappa=1.84, and delta(u,l)=(0.61,0.44).
 
 ----
 
