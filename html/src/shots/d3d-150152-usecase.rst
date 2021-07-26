@@ -22,7 +22,6 @@ ONETWO run with 101 radial grid points.
 
 ONETWO files:
 
-| :download:`inone file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/150152/inone.150152>`
 | :download:`iterdb file <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/150152/iterdb.150152>`
 | :download:`summary <https://github.com/scidac/atom-usecase/raw/main/d3d/onetwo/150152/summary.150152>`
 
@@ -38,8 +37,8 @@ EFIT
 
 Kinetic EFIT at 2006ms:
 
-| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150152/a150152.02006>`
-| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150152/g150152.02006>`
+| :download:`a-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150152/a150152.02006_kefit>`
+| :download:`g-file <https://github.com/scidac/atom-usecase/raw/main/d3d/efits/150152/g150152.02006_kefit>`
 
 .. toggle-header::
    :header: **Plot of EFIT**
