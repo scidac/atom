@@ -17,6 +17,7 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    153102,1900,1.9,1.1,4.3,0.0,:doc:`153102 <shots/d3d-153102-usecase>`
    153102,2400,1.9,1.1,2.9,0.0
    153523,3745,1.7,1.3,2.6,3.3,:doc:`153523 <shots/d3d-153523-usecase>`
+   154372,2380,2.0,0.6,8.2,0.0,:doc:`154372 <shots/d3d-154372-usecase>`
    155196,2200,1.7,1.3,2.6,3.3,:doc:`155196 <shots/d3d-155196-usecase>`
    155196,3000,1.7,1.3,3.5,0.0
    164510,4745,2.1,1.0,8.3,0.0,:doc:`164510 <shots/d3d-164510-usecase>`
