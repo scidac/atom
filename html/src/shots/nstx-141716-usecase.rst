@@ -10,7 +10,7 @@ just prior to the onset of MHD activity. It was heated with 2.0W
 of NBI with analysis performed at 0.448 secs during the current flattop.
 
 The major plasma parameters are R=0.84, a=0.66, Bt=0.54T, Ip=0.975MA, 
-kappa=1.55, and delta=0.09.
+kappa=1.9, and delta=0.40.
 
 ----
 
