@@ -4,7 +4,7 @@ NSTX #141716
 Description
 -----------
 
-This L-mode discharge is was well diagnosed and widely published.
+This L-mode discharge is well diagnosed and widely published.
 Transport analysis was performed during the 2nd NBI heating phased
 just prior to the onset of MHD activity. It was heated with 2.0W 
 of NBI with analysis performed at 0.448 secs during the current flattop.
