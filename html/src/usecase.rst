@@ -5,7 +5,7 @@ AToM Use Cases
 
 Below is a list of the tokamak discharges assembled for the ATOM project
 
-.. csv-table:: **Thrust C: H-mode Discharges for Benchmarking in the Plasma Core**
+.. csv-table:: **Thrust C: DIII-D H-mode Discharges for Benchmarking in the Plasma Core**
    :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
    :widths: 10,10,10,10,10,10,10
 
@@ -24,7 +24,7 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    164510,4745,2.1,1.0,8.3,0.0,:doc:`164510 <shots/d3d-164510-usecase>`
    174783,2109,2.1,2.0,14.2,0.0,:doc:`174783 <shots/d3d-174783-usecase>`
 
-.. csv-table:: **Thrust C: H-mode Discharges for Benchmarking in the Pedestal**
+.. csv-table:: **Thrust C: DIII-D H-mode Discharges for Benchmarking in the Pedestal**
    :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
    :widths: 10,10,10,10,10,10,10
 
@@ -38,7 +38,7 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    170869,3730,2.1,1.3,2.2,0.0,:doc:`170869 <shots/d3d-170869-usecase>`
    170873,4250,2.1,1.0,2.4,1.8,:doc:`170873 <shots/d3d-170873-usecase>`
 
-.. csv-table:: **Thrust C: L-mode Discharges for Benchmarking in the Plasma Core**
+.. csv-table:: **Thrust C: DIIII-D L-mode Discharges for Benchmarking in the Plasma Core**
    :header: "**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","**Pech (MW)**","README"
    :widths: 10,10,10,10,10,10,10
 
@@ -47,3 +47,10 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    150142,2040,1.9,1.0,2.2,0.0,:doc:`150142 <shots/d3d-150142-usecase>`
    150136,2086,1.9,1.4,2.3,0.0,:doc:`150136 <shots/d3d-150136-usecase>`
    150152,2006,1.9,1.4,1.2,0.0,:doc:`150152 <shots/d3d-150152-usecase>`
+
+
+.. csv-table:: **NSTX/NSTX-U Discharges for Benchmarking in the Plasma Core**
+   :header: "**Tokamak**","**Phase**","**Shot**", "**Time (ms)**","**Bt (T)**","**Ip (MA)**","**Pnb (MW)**","README"
+   :widths: 4,2,4,4,4,4,4,5
+
+   NSTX,L,141716,448,0.54,0.975,2.0,:doc:`141716 <shots/nstx-141716-usecase>`
