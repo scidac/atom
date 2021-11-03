@@ -54,3 +54,4 @@ Below is a list of the tokamak discharges assembled for the ATOM project
    :widths: 4,2,4,4,4,4,4,5
 
    NSTX,L,141716,448,0.54,0.975,2.0,:doc:`141716 <shots/nstx-141716-usecase>`
+   NSTX-U,L,204551,900,0.63,0.79,2.6,:doc:`204551 <shots/nstx-204551-usecase>`
