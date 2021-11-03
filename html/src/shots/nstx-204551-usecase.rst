@@ -40,6 +40,16 @@ EFIT01 at 897ms:
 
 ----
 
+.. toggle-header::
+   :header: **q and pressure profiles at 897ms**
+
+   .. figure:: ../efits/204551_0897-q.png
+   .. figure:: ../efits/204551_0897-press.png
+
+----
+
+
+
 
 Publication
 -----------
