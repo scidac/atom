@@ -5,7 +5,7 @@ Description
 -----------
 
 This L-mode discharge is well diagnosed and widely published.
-Transport analysis was performed during the 2nd NBI heating phased
+Transport analysis was performed during the 2nd NBI heating phase
 just prior to the onset of MHD activity. It was heated with 2.0W 
 of NBI with analysis performed at 0.448 secs during the current flattop.
 The major plasma parameters are R=0.84, a=0.66, Bt=0.54T, Ip=0.975MA, 
@@ -37,6 +37,14 @@ EFIT01 at 448ms:
    :header: **Plot of EFIT at 445ms**
 
    .. figure:: ../efits/141716_0445-efit.png
+
+----
+
+.. toggle-header::
+   :header: **q and pressure profiles at 445ms**
+
+   .. figure:: ../efits/141716_0445-q.png
+   .. figure:: ../efits/141716_0445-press.png
 
 ----
 
