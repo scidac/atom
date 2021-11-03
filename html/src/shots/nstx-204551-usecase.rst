@@ -23,7 +23,7 @@ TRANSP run A08.
 .. toggle-header::
    :header: **Time traces**
 
-   .. figure:: ../images/revplus/nstx204551-timehistory.png
+   .. figure:: ../images/revplus/nstxu204551-timehistory-short.png
 
 ----
 
@@ -45,5 +45,4 @@ Publication
 -----------
 
 W. Guttenfelder, et al., Nucl. Fusion 59, 056027 (2019).
-S.M. Kaye, et al., Nucl. Fusion 59, 112007 (2019).
 
