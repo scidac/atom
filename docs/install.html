@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started with AToM &mdash; AToM</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -90,15 +91,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="getting-started-with-atom">
+  <section id="getting-started-with-atom">
 <h1>Getting Started with AToM<a class="headerlink" href="#getting-started-with-atom" title="Permalink to this headline"></a></h1>
-<div class="section" id="supported-public-atom-installations">
+<section id="supported-public-atom-installations">
 <h2>Supported public AToM installations<a class="headerlink" href="#supported-public-atom-installations" title="Permalink to this headline"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Users are highly encouraged to make use of the AToM public installations, which we maintain and support.</p>
 </div>
-<div class="section" id="nersc">
+<section id="nersc">
 <h3>NERSC<a class="headerlink" href="#nersc" title="Permalink to this headline"></a></h3>
 <p>We currently support an AToM public installation on the Edison supercomputer at NERSC.   The project install directory
 is under:</p>
@@ -108,14 +109,14 @@ is under:</p>
 <p>Users must be part of the <code class="docutils literal notranslate"><span class="pre">atom</span></code> unix user group to access the NERSC public installation.  If you do not have
 an account at NERSC already, fill out <a class="reference external" href="https://nim.nersc.gov/nersc_account_request.php">this form</a> to request
 one.  Use <code class="docutils literal notranslate"><span class="pre">atom</span></code> for the repository name.</p>
-</div>
-<div class="section" id="general-atomics">
+</section>
+<section id="general-atomics">
 <h3>General Atomics<a class="headerlink" href="#general-atomics" title="Permalink to this headline"></a></h3>
 <p>An AToM installation is also maintained at GA.  If you do not have GA computer access, follow the
 steps for <a class="reference external" href="https://fusion.gat.com/global/computing">GA cyber access</a>.</p>
-</div>
-</div>
-<div class="section" id="build-atom-from-source">
+</section>
+</section>
+<section id="build-atom-from-source">
 <h2>Build AToM from source<a class="headerlink" href="#build-atom-from-source" title="Permalink to this headline"></a></h2>
 <p>Contact <code class="samp docutils literal notranslate"><span class="pre">candy(at)fusion.gat.com</span></code> to obtain access to the <a class="reference external" href="https://github.com/scidac/atom">AToM GitHub repository</a>.  You will need a GitHub account for this.  If you are running MacOS, detailed instructions on building AToM from source can be found <a class="reference external" href="mac_setup.html">here.</a></p>
 <p>To clone the repository:</p>
@@ -157,7 +158,7 @@ The AToM <cite>Makefile</cite> leverages the <a class="reference external" href=
 </pre></div>
 </div>
 <p>The <cite>Makefile</cite> takes care of satisfying any interdependency between the AToM components.</p>
-<div class="section" id="maintaining-an-up-to-date-atom-installation">
+<section id="maintaining-an-up-to-date-atom-installation">
 <h3>Maintaining an up-to-date AToM installation<a class="headerlink" href="#maintaining-an-up-to-date-atom-installation" title="Permalink to this headline"></a></h3>
 <p>The AToM <cite>Makefile</cite> is also capable of keeping the components up-to-date and in sync with each others’ versions.
 To update the AToM installation simply:</p>
@@ -166,9 +167,9 @@ To update the AToM installation simply:</p>
 <span class="n">make</span> <span class="nb">all</span> <span class="n">ATOM_PLATFORM</span><span class="o">=</span><span class="n">VENUS</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="edit-and-build-the-atom-website">
+</section>
+</section>
+<section id="edit-and-build-the-atom-website">
 <h2>Edit and build the AToM Website<a class="headerlink" href="#edit-and-build-the-atom-website" title="Permalink to this headline"></a></h2>
 <p>The <a class="reference external" href="http://scidac.github.io/atom/">AToM documentation website</a> is self-contained in the AToM repository.  To edit
 the AToM documentation one simply needs to follow the aforementioned steps and edit the <cite>.rst</cite> files in
@@ -202,8 +203,8 @@ $EDITOR index.rst
 <span class="n">make</span> <span class="n">ATOM</span><span class="o">-</span><span class="n">online</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

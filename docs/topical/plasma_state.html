@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>plasma-state build notes &mdash; AToM</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -76,16 +77,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="plasma-state-build-notes">
+  <section id="plasma-state-build-notes">
 <h1>plasma-state build notes<a class="headerlink" href="#plasma-state-build-notes" title="Permalink to this headline"></a></h1>
 <p><a class="reference external" href="http://w3.pppl.gov/ntcc/PlasmaState">http://w3.pppl.gov/ntcc/PlasmaState</a></p>
 <p>Requires: pspline, TranspSubs, Xplasma, sglib (all these are in ntcc-source)
 There seem to be both t_ versions and regular versions. Looks like the t_ versions are related to SWIM, so we will use those. Be nice if someone documented what the difference was.</p>
 <p>Looks like you simply put the contents of the downloaded source into the same directory and run the gmake command since all the top-level Makefiles are the same.</p>
-<div class="figure align-default">
+<figure class="align-default">
 <img alt="../_images/ps-tree.png" src="../_images/ps-tree.png" />
-</div>
-<div class="section" id="edison-gnu">
+</figure>
+<section id="edison-gnu">
 <h2>Edison GNU<a class="headerlink" href="#edison-gnu" title="Permalink to this headline"></a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module swap PrgEnv-intel PrgEnv-gnu
 module swap gcc gcc/4.8.2 <span class="c1"># This is because there is no netcdf built for gcc49</span>
@@ -105,8 +106,8 @@ gmake[1]: *** [../LINUX/test/update_state] Error 1
 </pre></div>
 </div>
 <p>But it seems OK not to worry about that.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

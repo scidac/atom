@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AToM Components &mdash; AToM</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -92,7 +93,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="atom-components">
+  <section id="atom-components">
 <h1>AToM Components<a class="headerlink" href="#atom-components" title="Permalink to this headline"></a></h1>
 <p>The guiding philosophy of AToM is to fully leverage the existing capability represented by the OMFIT and
 IPS frameworks and the components already integrated with them, as well as the advanced composite
@@ -104,11 +105,13 @@ new physics capabilities.  The guiding philosophy of AToM is to take a bottom-up
 that focuses on leveraging and integrating the wide spectrum of existing research activities throughout
 the US fusion community.  In this way, we seek to improve and extend the US fusion program’s existing,
 mission-critical integrated modeling capabilities.</p>
-<div class="figure align-center" id="id9" style="width: 80%">
+<figure class="align-center" id="id9" style="width: 80%">
 <a class="reference external image-reference" href="_images/AToM_world.png"><img alt="AToM world" src="_images/AToM_world.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text"><em>A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
-</div>
-<div class="section" id="omfit">
+<figcaption>
+<p><span class="caption-text"><em>A schematic of the current inter-relationship and nesting of the frameworks and components selected for inclusion into AToM</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="omfit">
 <h2>OMFIT<a class="headerlink" href="#omfit" title="Permalink to this headline"></a></h2>
 <p><em>Framework</em></p>
 <p><a class="reference external" href="https://omfit.io">OMFIT</a>
@@ -117,8 +120,8 @@ data analysis of magnetically confined thermonuclear fusion experiments.
 The goal of OMFIT is to enhance existing scientific workflows and enable new integrated modeling capabilities.
 To achieve these goals OMFIT adopts a bottom-up collaborative development approach. Today the framework
 is used worldwide by over one hundred fusion scientists.</p>
-</div>
-<div class="section" id="ips">
+</section>
+<section id="ips">
 <h2>IPS<a class="headerlink" href="#ips" title="Permalink to this headline"></a></h2>
 <p><em>Framework</em></p>
 <p><a class="reference external" href="https://ips-framework.readthedocs.io">IPS</a>
@@ -128,8 +131,8 @@ is designed primarily for use in a batch-processing environment, with
 a batch job typically comprising a single invocation of the framework,
 calling the individual physics codes many times as the simulation
 progresses.</p>
-</div>
-<div class="section" id="gyro">
+</section>
+<section id="gyro">
 <h2>GYRO<a class="headerlink" href="#gyro" title="Permalink to this headline"></a></h2>
 <p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Gyrooverview">GYRO</a>
@@ -143,8 +146,8 @@ changes that improved performance at NERSC were retained.  Sensible GYRO runs
 required at most 20K cores, but typically (say for ITER) will probably use
 about 512-2048 cores.  The direct coupling scheme in TGYRO can use
 about 16*4=64 instances, which brings the TGYRO core count to over 100K cores.</p>
-</div>
-<div class="section" id="cogent">
+</section>
+<section id="cogent">
 <h2>COGENT<a class="headerlink" href="#cogent" title="Permalink to this headline"></a></h2>
 <p><em>Modeling</em></p>
 <p>COGENT is a continuum gyrokinetic code being developed at LLNL for edge plasma modeling.
@@ -165,8 +168,8 @@ grid blocks assigned to groups of processors.  Phase, configuration and velocity
 decomposed independently for flexible and efficient mapping to current and future parallel machines.
 The code gets single-null geometric data via fourth-order interpolation of tabular data generated
 by the UEDGE edge fluid code.</p>
-</div>
-<div class="section" id="tgyro">
+</section>
+<section id="tgyro">
 <h2>TGYRO<a class="headerlink" href="#tgyro" title="Permalink to this headline"></a></h2>
 <p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Tgyrooverview">TGYRO</a>
@@ -185,8 +188,8 @@ for usage of leadership resources.  In addition to the parallelism of the
 component (say GYRO) TGYRO will also parallelize over radial zone (8-16
 are typically needed) and Jacobian.  This means a factor of about 64 over
 the parallelism of the turbulence component.</p>
-</div>
-<div class="section" id="tglf">
+</section>
+<section id="tglf">
 <h2>TGLF<a class="headerlink" href="#tglf" title="Permalink to this headline"></a></h2>
 <p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Tglfoverview">TGLF</a>
@@ -198,8 +201,8 @@ sense, practical performance modeling MUST use TGLF.  To my knowledge TGLF
 is far superior to any other transport model.  It is a significant
 improvement on its predecesor GLF23, especially in the weak or negative
 shear regime and for strongly shaped plasmas.</p>
-</div>
-<div class="section" id="neo">
+</section>
+<section id="neo">
 <h2>NEO<a class="headerlink" href="#neo" title="Permalink to this headline"></a></h2>
 <p><em>Modeling, Part of GACODE</em></p>
 <p><a class="reference external" href="https://fusion.gat.com/theory/Neooverview">NEO</a>
@@ -213,8 +216,8 @@ calculation of the first-order electrostatic potential via coupling with
 the Poisson equation, general geometry effects, and rapid toroidal rotation
 effects (including centrifugal effects). NEO has recently been upgraded to
 include the full linearized Fokker-Planck collision operator.</p>
-</div>
-<div class="section" id="eped">
+</section>
+<section id="eped">
 <h2>EPED<a class="headerlink" href="#eped" title="Permalink to this headline"></a></h2>
 <p><em>Modeling</em></p>
 <p>EPED is a model to predict the height (ie pressure, or temperature at a given density) and width
@@ -231,8 +234,8 @@ and stability calculations from baloo (or in the future, GYRO or TGLF), and then
 peeling-ballooning mode stability constraint using model equilibria from toq and stability
 calculations with ELITE.   The two constraints are combined to determine the two unknowns,
 pedestal height and width.</p>
-</div>
-<div class="section" id="bout">
+</section>
+<section id="bout">
 <h2>BOUT++<a class="headerlink" href="#bout" title="Permalink to this headline"></a></h2>
 <p><em>Framework</em></p>
 <p><a class="reference external" href="https://boutproject.github.io/">BOUT++</a>
@@ -240,8 +243,8 @@ is a framework for writing fluid and plasma simulations in curvilinear geometry.
 intended to be quite modular, with a variety of numerical methods and time-integration solvers
 available. BOUT++ is primarily designed and tested with reduced plasma fluid models in mind,
 but it can evolve any number of equations, with equations appearing in a readable form.</p>
-</div>
-<div class="section" id="omas">
+</section>
+<section id="omas">
 <h2>OMAS<a class="headerlink" href="#omas" title="Permalink to this headline"></a></h2>
 <p><em>Library</em></p>
 <p><a class="reference external" href="https://gafusion.github.io/omas/">OMAS</a>
@@ -255,13 +258,13 @@ data model is easily translated between these different storage systems. Further
 any physics code or programming language that is capable of reading/writing data using
 one of the many OMAS supported data formats (eg. NetCDF) can take advantage of the
 functionalities provided by OMAS.</p>
-</div>
-<div class="section" id="harvest">
+</section>
+<section id="harvest">
 <h2>Harvest<a class="headerlink" href="#harvest" title="Permalink to this headline"></a></h2>
 <p><em>Library</em></p>
 <p>The harvest project aims at providing a convenient and scalable way to log metadata and store data for fusion applications.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
