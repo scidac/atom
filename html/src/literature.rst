@@ -2,6 +2,49 @@ Journal Articles and Presentations
 ==================================
 
 ~~~~
+2021
+~~~~
+
+.. list-table::
+   :widths: 5, 12, 65
+   :header-rows: 1
+
+   * - Main author
+     - Journal
+     - Title
+   * - `E. Belli <https://doi.org/10.1063/5.0048620>`_
+     - *Phys. Plasmas*
+     - Asymmetry between deuterium and tritium turbulent particle flows
+   * - `R. Arbon <https://doi.org/10.1088/1361-6587/abc63b>`_
+     - *Plasma Phys. Control. Fusion*
+     - Rapidly-convergent flux-surface shape parameterization
+
+.. list-table::
+   :widths: 5, 12, 65
+   :header-rows: 1
+
+   * - Presenter
+     - Meeting
+     - Title
+   * - :download:`B. Lyons <doc/2021.11-APS_lyons.pdf>` 
+     - **APS DPP**
+     - Predicting Performance and Stability of Tokamak Plasmas Using Flexible Integrated Modeling
+   * - :download:`T. Neiser <doc/2021.11-APS_neiser.pdf>` 
+     - **APS DPP**
+     - Directing TGLF saturation rule development with machine learning tools
+   * - :download:`O. Meneghini <doc/2021.11-APS_meneghini.pdf>` 
+     - **APS DPP**
+     - Ushering the US integrated modeling community into the ITER IMAS era
+   * - :download:`T. Slendebroek <doc/2021.11-APS_slendebroek.pdf>` 
+     - **APS DPP**
+     - Elevating zero-dimensional predictions of tokamak plasmas to self-consistent theory-based simulations 
+   * - :download:`X. Jian <doc/2021.11-APS_jian.pdf>` 
+     - **APS DPP**
+     - Role of Beta-Induced Alfvén Eigenmode in DIII-D high βp scenario
+
+~~~~
+
+~~~~
 2019
 ~~~~
 
