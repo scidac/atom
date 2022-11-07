@@ -148,7 +148,7 @@ all: clone build
 
 .PHONY: CONDA3
 CONDA3: $(OMFIT_DIR)
-	cd $(OMFIT_DIR)/install/ ; ./install-conda-3.sh -b
+	cd $(OMFIT_DIR)/install/ ; ./install.sh -b
 
 .PHONY: $(OMFIT_DIR)
 $(OMFIT_DIR):
