@@ -26,6 +26,7 @@ module-whatis gacode
 # begin of machine-specific settings here
 #=====================
 
+module unload gcc
 module load env/gcc8.x
 
 #module load fann
