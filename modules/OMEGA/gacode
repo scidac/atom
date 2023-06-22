@@ -26,7 +26,7 @@ module-whatis gacode
 # begin of machine-specific settings here
 #=====================
 
-module load env/gcc8.3.1
+module load env/gcc8.x
 
 #module load fann
 #setenv FANN_ROOT $::env(FANN_DIR)
