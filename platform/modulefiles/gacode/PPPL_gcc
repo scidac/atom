@@ -18,6 +18,6 @@ if { [ module-info mode remove ] } {
 module load fann
 module load fftw
 module load lapack
-module load ntcc/gcc/9.3.0/22.1.4
+module load ntcc/gcc
 module load mod_ntcc
 }
